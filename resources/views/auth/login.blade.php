@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <img src="images/logo-8.png" alt="" width="30%" style="text-align: center;">
+      <img src="{{ asset('images/logo-8.png') }}" alt="" width="30%" style="text-align: center;">
       <h2 class="text-center">Login</h2>
       <form action="{{ route('authenticate') }}" method="post">
         @csrf

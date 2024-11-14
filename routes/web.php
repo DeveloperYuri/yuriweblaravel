@@ -5,7 +5,7 @@ use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
-Route::get('/', [BlogController::class,'home']);
+Route::get('/', [BlogController::class,'home'])->name('index');
 Route::get('/tentangkami', [BlogController::class,'tentangKami']);
 Route::get('/brands', [BlogController::class,'brands']);
 Route::get('/onlineshop', [BlogController::class,'onlineShop']);
@@ -50,7 +50,7 @@ Route::get('/handmoisturizer', [BlogController::class,'handmoisturizerproduk']);
 
 //Login & Register
 Route::controller(LoginRegisterController::class)->group(function() {
-    Route::get('/register', 'register')->name('register');
+    Route::get('/register/yuri', 'register')->name('register');
     Route::post('/store', 'store')->name('store');
     Route::get('/login', 'login')->name('login');
     Route::post('/authenticate', 'authenticate')->name('authenticate');

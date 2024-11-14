@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
     public function home(){
-        return view('home');
+        $blog = Blog::all();
+        return view('home', compact('blog'));
     }
 
     public function tentangKami(){
@@ -147,4 +149,5 @@ class BlogController extends Controller
     public function handmoisturizerproduk(){
         return view('produkhandmoisturizer');
     }
+
 }

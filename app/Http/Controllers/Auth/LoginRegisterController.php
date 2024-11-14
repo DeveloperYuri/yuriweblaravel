@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Produk;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -75,7 +76,8 @@ class LoginRegisterController extends Controller implements HasMiddleware
     
     public function home(): View
     {
-        return view('index');
+        $blog = Blog::all();
+        return view('index', compact('blog'));
     } 
     
     public function logout(Request $request): RedirectResponse
@@ -83,7 +85,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('login')
+        return redirect()->route('index')
             ->withSuccess('You have logged out successfully!');
     }
 }
