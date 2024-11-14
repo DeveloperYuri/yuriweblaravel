@@ -1,0 +1,960 @@
+.navbar-nav a.active {
+  border-bottom: 3px solid #005eb8;
+}
+
+.navbar-nav a {
+  font-size: 14px;
+}
+
+.sosmed ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.sosmed li {
+  float: right;
+}
+
+.sosmed li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.index-content-dua a:hover {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+#brandsid .imagebrand1:hover {
+  filter: drop-shadow(1px 1px 8px #005eb8);
+}
+
+#brandsid .imagebrand2:hover {
+  filter: drop-shadow(1px 1px 8px #005eb8);
+}
+
+#brandsid .imagebrand3:hover {
+  filter: drop-shadow(1px 1px 8px #005eb8);
+}
+
+.button-brand:hover img {
+  filter: drop-shadow(1px 1px 5px #005eb8);
+}
+
+.button-media:hover img {
+  filter: drop-shadow(1px 1px 5px #005eb8);
+}
+
+#brandsid .imagebrand1 {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+#brandsid .imagebrand2 {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+#brandsid .imagebrand3 {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+.imagebrand1:hover {
+  filter: drop-shadow(1px 1px 10px gray);
+}
+
+.imagebrand2:hover {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+.imagebrand3:hover {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+#brandbuttonhouseholdcleaner .img-fluid:hover {
+  filter: drop-shadow(1px 1px 6px gray);
+}
+
+.button-brand {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.button-media {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.babysoft-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.biosoftdetergen-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.biosofthijab-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.bathroomcleaner-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.yuribleach-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.fabriccare-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.glasscleaner-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.handgel-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.handsoap-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.ligent-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.lysorin-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.yurisoft-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.porstex-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.yurisol-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.taf-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.yurimatic-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.tril-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.laundrydisinfektan-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.disinfektanspray-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.yurihandmoisturizer-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.childrentoilet-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.babytoilet-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.adulttoilet-produk img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 90px;
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 600px) {
+  #footerprodukbabytoilet {
+    bottom: 0;
+  }
+
+  #footerbrand {
+    margin-top: 20px;
+  }
+
+  #imagebrandbabydee{
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .content-satu img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-dua img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-dua p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .content-dua a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button-brand a img {
+    width: 50%;
+    height: auto;
+  }
+
+  .content-tiga a img {
+    margin-top: 15px;
+    width: 50%;
+    height: 50px;
+  }
+
+  .content-dua br {
+    display: none;
+  }
+
+  .brand-content-satu h4 {
+    font-size: 12px;
+  }
+
+  .brand-content-satu p {
+    display: none;
+  }
+
+  .content-dua p {
+    font-size: 14px;
+  }
+
+  .tentang-kami-content-satu p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .tentang-kami-content-dua p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .tentang-kami-content-tiga p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .tentang-kami-content-tiga img {
+    margin-top: 40px;
+  }
+
+  .tentang-kami-content-dua h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .tentang-kami-content-tiga h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .tentang-kami-content-tiga h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .content-satu h1 {
+    font-size: 24px;
+  }
+
+  .banner-produk-baru img {
+    margin-top: 70px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .content-household img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-household {
+    margin-top: 20px;
+  }
+
+  .content-childrentoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-childrentoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content-babytoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-babytoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content-adulttoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-adulttoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .d-flex {
+    margin-top: -20px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: myFirstFont;
+    font-size: 16px;
+  }
+
+  .centered-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: myFirstFont;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  #brandsid .imagebrand1 {
+    margin-top: 10px;
+  }
+
+  #brandsid .imagebrand2 {
+    margin-left: 10px;
+  }
+
+  #brandsid .imagebrand3 {
+    margin-left: 5px;
+  }
+
+  #imagebrandbabydee .babydee3 img {
+    padding-bottom: 20px;
+    background-color: #005eb8;
+  }
+}
+
+/* Desktop Screen */
+@media only screen and (min-width: 992px) {
+
+  #imagebrandbabydee{
+    margin-bottom: 20px;
+  }
+  
+  .tentang-kami-content-empat img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .tentangkamudesc p {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .berikutadalah p {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .article1 h4 {
+    text-align: center;
+  }
+
+  .banner-article1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+  .artikel-content-satu {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  #produkbarufooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: myFirstFont;
+    font-size: 28px;
+  }
+
+  .centered-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: myFirstFont;
+    font-size: 24px;
+  }
+
+  #brandsid .imagebrand1 {
+    margin-top: 10px;
+  }
+
+  #brandsid .imagebrand2 {
+    margin-left: 25px;
+  }
+
+  #brandsid .imagebrand3 {
+    margin-left: 20px;
+  }
+
+  .aganol-produk .card {
+    height: 420px;
+  }
+
+  .aganol-produk h5 {
+    margin-top: 20px;
+  }
+
+  .babysoft-produk .card {
+    height: 420px;
+  }
+
+  .babysoft-produk h5 {
+    margin-top: 40px;
+  }
+
+  .babysoft-produk img {
+    margin-top: 40px;
+  }
+
+  .babysoft-produk a {
+    font-weight: bold;
+  }
+
+  .biosoftdetergen-produk .card {
+    height: 420px;
+  }
+
+  .biosoftdetergen-produk h5 {
+    margin-top: 40px;
+  }
+
+  .biosoftdetergen-produk img {
+    margin-top: 40px;
+  }
+
+  .biosofthijab-produk .card {
+    height: 420px;
+  }
+
+  .biosofthijab-produk h5 {
+    margin-top: 40px;
+  }
+
+  .biosofthijab-produk img {
+    margin-top: 40px;
+  }
+
+  .bathroomcleaner-produk .card {
+    height: 420px;
+  }
+
+  .bathroomcleaner-produk h5 {
+    margin-top: 40px;
+  }
+
+  .bathroomcleaner-produk img {
+    margin-top: 40px;
+  }
+
+  .yuribleach-produk .card {
+    height: 420px;
+  }
+
+  .yuribleach-produk h5 {
+    margin-top: 40px;
+  }
+
+  .yuribleach-produk img {
+    margin-top: 40px;
+  }
+
+  .yuribleach-produk h5 {
+    margin-top: 60px;
+  }
+
+  .fabriccare-produk h5 {
+    margin-top: 40px;
+  }
+
+  .fabriccare-produk img {
+    margin-top: 40px;
+  }
+
+  .fabriccare-produk .card {
+    height: 420px;
+  }
+
+  .glasscleaner-produk h5 {
+    margin-top: 40px;
+  }
+
+  .glasscleaner-produk img {
+    margin-top: 40px;
+  }
+
+  .glasscleaner-produk .card {
+    height: 420px;
+  }
+
+  .handgel-produk h5 {
+    margin-top: 40px;
+  }
+
+  .handgel-produk img {
+    margin-top: 40px;
+  }
+
+  .handgel-produk .card {
+    height: 420px;
+  }
+
+  .handsoap-produk h5 {
+    margin-top: 40px;
+  }
+
+  .handsoap-produk img {
+    margin-top: 40px;
+  }
+
+  .handsoap-produk .card {
+    height: 420px;
+  }
+
+  .ligent-produk h5 {
+    margin-top: 40px;
+  }
+
+  .ligent-produk img {
+    margin-top: 40px;
+  }
+
+  .ligent-produk .card {
+    height: 420px;
+  }
+
+  .lysorin-produk h5 {
+    margin-top: 40px;
+  }
+
+  .lysorin-produk img {
+    margin-top: 40px;
+  }
+
+  .lysorin-produk .card {
+    height: 420px;
+  }
+
+  .yurisoft-produk h5 {
+    margin-top: 40px;
+  }
+
+  .yurisoft-produk img {
+    margin-top: 40px;
+  }
+
+  .yurisoft-produk .card {
+    height: 420px;
+  }
+
+  .porstex-produk h5 {
+    margin-top: 40px;
+  }
+
+  .porstex-produk img {
+    margin-top: 40px;
+  }
+
+  .porstex-produk .card {
+    height: 420px;
+  }
+
+  .yurisol-produk h5 {
+    margin-top: 40px;
+  }
+
+  .yurisol-produk img {
+    margin-top: 40px;
+  }
+
+  .yurisol-produk .card {
+    height: 420px;
+  }
+
+  .taf-produk h5 {
+    margin-top: 40px;
+  }
+
+  .taf-produk img {
+    margin-top: 40px;
+  }
+
+  .taf-produk .card {
+    height: 420px;
+  }
+
+  .yurimatic-produk h5 {
+    margin-top: 40px;
+  }
+
+  .yurimatic-produk img {
+    margin-top: 40px;
+  }
+
+  .yurimatic-produk .card {
+    height: 420px;
+  }
+
+  .tril-produk h5 {
+    margin-top: 40px;
+  }
+
+  .tril-produk img {
+    margin-top: 40px;
+  }
+
+  .tril-produk .card {
+    height: 420px;
+  }
+
+  .laundrydisinfektan-produk h5 {
+    margin-top: 40px;
+  }
+
+  .laundrydisinfektan-produk img {
+    margin-top: 40px;
+  }
+
+  .laundrydisinfektan-produk .card {
+    height: 420px;
+  }
+
+  .disinfektanspray-produk h5 {
+    margin-top: 40px;
+  }
+
+  .disinfektanspray-produk img {
+    margin-top: 40px;
+  }
+
+  .disinfektanspray-produk .card {
+    height: 420px;
+  }
+
+  .yurihandmoisturizer-produk h5 {
+    margin-top: 40px;
+  }
+
+  .yurihandmoisturizer-produk img {
+    margin-top: 40px;
+  }
+
+  .yurihandmoisturizer-produk .card {
+    height: 420px;
+  }
+
+  .childrentoilet-produk h5 {
+    margin-top: 70px;
+  }
+
+  .childrentoilet-produk img {
+    margin-top: 70px;
+  }
+
+  .childrentoilet-produk .card {
+    height: 420px;
+  }
+
+  .babytoilet-produk h5 {
+    margin-top: 70px;
+  }
+
+  .babytoilet-produk img {
+    margin-top: 70px;
+  }
+
+  .babytoilet-produk .card {
+    height: 420px;
+  }
+
+  .adulttoilet-produk h5 {
+    margin-top: 70px;
+  }
+
+  .adulttoilet-produk img {
+    margin-top: 70px;
+  }
+
+  .adulttoilet-produk .card {
+    height: 420px;
+  }
+}
+
+/* Tablet Screen */
+@media only screen and (max-width: 800px) {
+  .banner-produk-baru img {
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .content-childrentoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-childrentoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content-babytoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-babytoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content-adulttoilet a img {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #footer-adulttoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footercopyrightarticle1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .article1 h4 {
+    text-align: center;
+  }
+
+  .banner-article1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  #faq-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: myFirstFont;
+    font-size: 18px;
+  }
+
+  .centered-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: myFirstFont;
+    font-size: 14px;
+  }
+
+  #brandsid .imagebrand2 {
+    margin-left: 25px;
+  }
+
+  #brandsid .imagebrand3 {
+    margin-left: 20px;
+  }
+
+  #brandsid .imagebrand1 {
+    margin-top: 10px;
+  }
+
+  #footer-media {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerprodukaganol {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .aganol-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .aganol-produk {
+    margin-top: 80px;
+  }
+
+  #footerprodukbabytoilet {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #imagebrandbabydee{
+    margin-bottom: 20px;
+  }
+}
