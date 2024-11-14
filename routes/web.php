@@ -57,3 +57,11 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/home', 'home')->name('home');
     Route::post('/logout', 'logout')->name('logout');
 });
+
+//CRUD 
+Route::get('/homepage', [BlogController::class, 'index'])->name('index.index');
+Route::get('/create', [BlogController::class, 'create'])->name('index.create');
+Route::post('/storesave', [BlogController::class, 'store'])->name('index.store');
+Route::delete('/blog/delete{id}', [BlogController::class, 'destroy'])->name('index.destroy');
+Route::get('/blog/edit{id}', [BlogController::class, 'edit'])->name('index.edit');
+Route::put('/blog/update{id}', [BlogController::class, 'update'])->name('index.update');

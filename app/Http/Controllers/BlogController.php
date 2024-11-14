@@ -150,4 +150,40 @@ class BlogController extends Controller
         return view('produkhandmoisturizer');
     }
 
+    public function create()
+    {
+        return view('create');
+    }
+
+    public function store(Request $request)
+    {
+        Blog::create($request->all());
+
+        return redirect()->route('home');
+    }
+
+    public function destroy(Blog $id)
+    {
+        $id->delete();
+
+        return redirect()->route('home');
+    }
+
+    public function edit(Blog $id)
+    {
+        //
+        return view('edit', compact('id'));
+    }
+
+    public function update(Request $request, string $id){
+        $blog = Blog::findOrFail($id);
+
+        $blog->update([
+            'title'         => $request->title,
+            'description'   => $request->description
+        ]);
+ 
+        return redirect()->route('home');
+    }
+
 }

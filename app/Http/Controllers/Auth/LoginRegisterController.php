@@ -88,4 +88,6 @@ class LoginRegisterController extends Controller implements HasMiddleware
         return redirect()->route('index')
             ->withSuccess('You have logged out successfully!');
     }
+
+    
 }

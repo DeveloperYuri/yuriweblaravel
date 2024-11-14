@@ -47,37 +47,24 @@
     </nav>
 
     <div class="container">
-        <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Artikel Post</h2>
+        <a href="{{ route('home')}}" class="btn btn-primary mt-3"><- Kembali </a>
 
-        <a href="{{ route('index.create')}}" class="btn btn-primary mb-3"> Buat Artikel </a>
+        <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Buat Artikel</h2>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($blog as $k)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $k->title }}</td>
-                        <td>{{ $k->description }}</td>
-                        <td>
-                            <form action="{{ route('index.destroy', $k->id) }}" method="POST" style="display:inline;">
-                                <a href="{{ route('index.edit', $k->id) }}" class="btn btn-sm btn-warning">Edit</a>
-                                @method('DELETE')
-                                @csrf
-                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
+        <form action="{{ route('index.store') }}" method="POST">
+            @csrf
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title">
+            </div>
+            <div class="form-group mt-2">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4 fw-bold">Save</button>
+        </form>
+
     </div>
 
 

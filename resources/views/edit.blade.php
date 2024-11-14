@@ -12,8 +12,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo-8.png" width="100px"
-                    height="50px" /></a>
+            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('images/logo-8.png') }}"
+                    alt="" width="100px" height="50px"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,37 +47,25 @@
     </nav>
 
     <div class="container">
-        <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Artikel Post</h2>
+        <a href="{{ route('home') }}" class="btn btn-primary mt-3"><- Kembali </a>
 
-        <a href="{{ route('index.create')}}" class="btn btn-primary mb-3"> Buat Artikel </a>
+                <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Edit Artikel</h2>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($blog as $k)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $k->title }}</td>
-                        <td>{{ $k->description }}</td>
-                        <td>
-                            <form action="{{ route('index.destroy', $k->id) }}" method="POST" style="display:inline;">
-                                <a href="{{ route('index.edit', $k->id) }}" class="btn btn-sm btn-warning">Edit</a>
-                                @method('DELETE')
-                                @csrf
-                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
+                <form action="{{ route('index.update', $id->id) }}" method="POST">
+                    @method("PUT")
+                    @csrf
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" value="{{ $id->title }}">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" name="description" value="{{ $id->description }}" >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 fw-bold">Update</button>
+                </form>
+
     </div>
 
 
