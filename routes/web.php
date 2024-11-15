@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BlogControllerBaru;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -65,3 +66,10 @@ Route::post('/storesave', [BlogController::class, 'store'])->name('index.store')
 Route::delete('/blog/delete{id}', [BlogController::class, 'destroy'])->name('index.destroy');
 Route::get('/blog/edit{id}', [BlogController::class, 'edit'])->name('index.edit');
 Route::put('/blog/update{id}', [BlogController::class, 'update'])->name('index.update');
+
+//CRUD Image
+Route::resource('/artikel', \App\Http\Controllers\BlogControllerBaru::class);
+
+
+
+
