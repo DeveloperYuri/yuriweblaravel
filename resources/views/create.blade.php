@@ -7,7 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yuri Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
+<style>
+    .ck-editor__editable {
+        min-height: 300px;
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -47,23 +54,23 @@
     </nav>
 
     <div class="container">
-        <a href="{{ route('home')}}" class="btn btn-primary mt-3"><- Kembali </a>
+        <a href="{{ route('home') }}" class="btn btn-primary mt-3"><- Kembali </a>
 
-        <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Buat Artikel</h2>
+                <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Buat Artikel</h2>
 
-        <form action="{{ route('index.store') }}" method="POST">
-            @csrf
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" name="title">
-            </div>
-            <div class="form-group mt-2">
-                <label for="description">Description</label>
-                <input type="text" class="form-control" id="description" name="description">
-            </div>
+                <form action="{{ route('index.store') }}" method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="description">Description</label>
+                        <textarea type="text" class="form-control" id="description" name="description"></textarea>
+                    </div>
 
-            <button type="submit" class="btn btn-primary mt-4 fw-bold">Save</button>
-        </form>
+                    <button type="submit" class="btn btn-primary mt-4 fw-bold">Save</button>
+                </form>
 
     </div>
 
@@ -71,6 +78,21 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+    <script>
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('textarea'))
+
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+            })
+            .catch(error => {
+                console.error('Error during initialization of the editor', error);
+            });
+    </script>
+
 </body>
 
 </html>

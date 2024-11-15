@@ -9,6 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+<style>
+    .descriptionclass p{
+        width: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
@@ -20,10 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#"
-                            style="font-size: 20px; margin-left:50px; color:#005EB8">Artikel</a>
-                    </li>
+                    
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
@@ -49,14 +55,13 @@
     <div class="container">
         <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Artikel Post</h2>
 
-        <a href="{{ route('index.create')}}" class="btn btn-primary mb-3"> Buat Artikel </a>
+        <a href="{{ route('index.create') }}" class="btn btn-primary mb-3"> Buat Artikel </a>
 
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Title</th>
-                    <th scope="col">Description</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -65,7 +70,6 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $k->title }}</td>
-                        <td>{{ $k->description }}</td>
                         <td>
                             <form action="{{ route('index.destroy', $k->id) }}" method="POST" style="display:inline;">
                                 <a href="{{ route('index.edit', $k->id) }}" class="btn btn-sm btn-warning">Edit</a>
@@ -84,6 +88,28 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        //message with sweetalert
+        @if (session('success'))
+            Swal.fire({
+                icon: "success",
+                title: "BERHASIL",
+                text: "{{ session('success') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @elseif (session('error'))
+            Swal.fire({
+                icon: "error",
+                title: "GAGAL!",
+                text: "{{ session('error') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @endif
+    </script>
 </body>
 
 </html>

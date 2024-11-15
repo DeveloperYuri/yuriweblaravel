@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+<style>
+    .ck-editor__editable {
+        min-height: 300px;
+    }
+</style>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
@@ -52,15 +58,16 @@
                 <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Edit Artikel</h2>
 
                 <form action="{{ route('index.update', $id->id) }}" method="POST">
-                    @method("PUT")
+                    @method('PUT')
                     @csrf
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" value="{{ $id->title }}">
+                        <input type="text" class="form-control" id="title" name="title"
+                            value="{{ $id->title }}">
                     </div>
                     <div class="form-group mt-2">
                         <label for="description">Description</label>
-                        <input type="text" class="form-control" id="description" name="description" value="{{ $id->description }}" >
+                        <textarea type="text" class="form-control" id="description" name="description">{{ old('description', $id->description) }}</textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary mt-4 fw-bold">Update</button>
@@ -72,6 +79,21 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+    <script>
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('textarea'))
+
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+            })
+            .catch(error => {
+                console.error('Error during initialization of the editor', error);
+            });
+    </script>
+
 </body>
 
 </html>
