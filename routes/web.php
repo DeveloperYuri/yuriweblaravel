@@ -3,11 +3,12 @@
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogControllerBaru;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
-Route::get('/', [BlogController::class,'home'])->name('index');
+Route::get('/', [HomeController::class,'index'])->name('index');
 Route::get('/tentangkami', [BlogController::class,'tentangKami']);
 Route::get('/brands', [BlogController::class,'brands']);
 Route::get('/onlineshop', [BlogController::class,'onlineShop']);
