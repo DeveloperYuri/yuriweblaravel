@@ -23,9 +23,9 @@
               </tr>
             </thead>
             <tbody>
-                @forelse ($artikels as $artikel)
+                @forelse ($artikels as $key => $artikel)
                 <tr>
-                    <td class="text-center">{{ $loop->iteration }}</td>
+                    <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
                     <td class="text-center">
                         <img src="{{ asset('/storage/artikels/'.$artikel->image) }}" class="rounded" style="width: 100px" height="70px">
                     </td>
