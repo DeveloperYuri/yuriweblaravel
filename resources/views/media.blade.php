@@ -84,23 +84,25 @@
                 </h1>
             </div>
 
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 justify-content-center">
                 @forelse ($artikels as $artikel)
-                    <div class="col-lg-4">
-                        <div class="card mt-2 mb-2" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                alt="Card image cap" width="100%" height="100%">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="{{ asset('/storage/artikels/' . $artikel->image) }}" class="card-img-top" alt="..." width="400px" height="200px">
+                        <div class="card-body">
                             <a href="{{ route('media.show', $artikel->id) }}">
                                 <h5 class="card-title" style="font-size: 17px;">{{ $artikel->title }}</h5>
                             </a>
                         </div>
-                    </div>
 
+                    </div>
+                </div>
                 @empty
                     <div class="alert alert-danger">
                         Data Products belum Tersedia.
                     </div>
                 @endforelse
+               
             </div>
 
             {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}

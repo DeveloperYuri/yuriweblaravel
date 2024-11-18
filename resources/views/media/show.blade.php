@@ -79,7 +79,7 @@
     <div class="container">
 
         <div class="article1">
-            <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
+            <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
         </div>
 
         <!-- Banner Homepage-->
@@ -96,5 +96,5 @@
         </div>
 
     </div>
-    
+
 @endsection
