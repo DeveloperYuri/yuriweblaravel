@@ -49,19 +49,19 @@ class BlogController extends Controller
     }
 
     public function householdcleaner(){
-        return view('householdcleaner');
+        return view('brands.householdcleaner');
     }
 
     public function childrentoilet(){
-        return view('childrentoilet');
+        return view('brands.childrentoilet');
     }
 
     public function babytoilet(){
-        return view('babytoilet');
+        return view('brands.babytoilet');
     }
 
     public function adulttoilet(){
-        return view('adulttoilet');
+        return view('brands.adulttoilet');
     }
 
     public function aganolproduk(){
