@@ -1,7 +1,6 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
-<!-- Navbar Menu -->
 <!-- Navbar Menu -->
 <div class="menubar">
     <nav class="navbar navbar-expand-lg bg-body-white">
@@ -37,7 +36,7 @@
 
                     <li class="nav-item">
                         <a
-                            class="nav-link fw-bold"
+                            class="nav-link active fw-bold"
                             aria-current="page"
                             href="{{ url('/brands') }}"
                             style="color: #005EB8">BRANDS</a>
@@ -82,7 +81,7 @@
 
                     <li class="nav-item">
                         <a
-                            class="nav-link active fw-bold"
+                            class="nav-link fw-bold"
                             aria-current="page"
                             href="{{ url('/distributor') }}"
                             style="color: #005EB8">DISTRIBUTOR</a>
@@ -99,16 +98,70 @@
 @section('content')
 <div class="container">
     <!-- Banner Homepage-->
-    <div class="banner-distributor text-center mt-3" data-aos="fade-up">
-        <img src="images/3d-map-of-indonesia-png.png" class="img-fluid" alt="..." width="100%" height="100%">
+    <div class="banner-home" data-aos="fade-up">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/brandcarousel1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/brandcarousel2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/brandcarousel3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/brandcarousel4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
     <!-- End Banner Homepage -->
+
+    <!-- Content1 -->
+    <div class="brand-content-satu" style="margin-top: 20px" data-aos="fade-up">
+        <h4 class="text-center fw-bold" style="color: #005EB8">
+            YURI telah diakui sebagai merek terkemuka
+            <br class="mobile-break" />untuk perawatan rumah serta perawatan anak & pribadi
+        </h4>
+
+        <div class="tentangkamudesc" style="margin-top: 20px;">
+            <p style="text-align: justify">
+                Menjadi grup bisnis yang dinamis dan beragam. Yuri berkomitment akan
+                selalu meningkatkan layanan kami untuk lebih memenuhi kebutuhan
+                konsumen dalam membuat hidup lebih baik bagi konsumen Indonesia
+                dengan menyediakan kualitas produk tanpa komporomi </p>
+        </div>
+    </div>
+    <!-- End Content1-->
+
+    <div class="brand1 text-center" data-aos="fade-up">
+        <a href="{{ url('/householdcleaner') }}"><img src="images/brand1.png" alt="" width="100%" /></a>
+    </div>
+    <div class="brand2 text-center" data-aos="fade-up">
+        <a href="{{ url('/childrentoilet') }}"><img src="images/brand2.png" alt="" width="100%" /></a>
+    </div>
+    <div class="brand3 text-center" data-aos="fade-up">
+        <a href="{{ url('/babytoilet') }}"><img src="images/brand3.png" alt="" width="100%" /></a>
+    </div>
+    <div class="brand4 text-center" data-aos="fade-up">
+        <a href="{{ url('/adulttoilet') }}"><img src="images/brand4.png" alt="" width="100%" /></a>
+    </div>
+
 
 </div>
 <!-- End Container -->
 
 <!-- Start Footer -->
-<div id="distributor-footer"
+<div
     class="card-footer text-body-secondary bg-dark text-center"
     style="margin-top: 30px; height: 40px; padding-top: 5px;">
     <div style="margin-top: 5px;">
@@ -117,6 +170,4 @@
 
 </div>
 <!-- End Footer -->
-</div>
-
 @endsection

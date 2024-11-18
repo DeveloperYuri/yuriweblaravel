@@ -14,7 +14,7 @@ class MediaController extends Controller
         $artikels = Artikel::latest()->paginate(9);
 
         //render view with products
-        return view('media', compact('artikels'));
+        return view('media.index', compact('artikels'));
     }
 
     public function show(string $id): View

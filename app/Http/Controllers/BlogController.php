@@ -9,35 +9,31 @@ class BlogController extends Controller
 {
     public function home(){
         $blog = Blog::all();
-        return view('home', compact('blog'));
+        return view('homepage.index', compact('blog'));
     }
 
     public function tentangKami(){
-        return view('tentangkami');
+        return view('tentangkami.index');
     }
 
     public function brands(){
-        return view('brands');
+        return view('brands.index');
     }
 
     public function onlineShop(){
         return view('onlineshop');
     }
 
-    public function media(){
-        return view('media');
-    }
-
     public function produkBaru(){
-        return view('produkbaru');
+        return view('produkbaru.index');
     }
 
     public function kontak(){
-        return view('kontak');
+        return view('kontak.index');
     }
 
     public function distributor(){
-        return view('distributor');
+        return view('distributor.index');
     }
 
     public function article1(){
