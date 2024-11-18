@@ -49,6 +49,15 @@ class BlogControllerBaru extends Controller
         return redirect()->route('artikel.index')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 
+    public function show(string $id): View
+    {
+        //get product by ID
+        $artikels = Artikel::findOrFail($id);
+
+        //render view with product
+        return view('artikel.show', compact('artikels'));
+    }
+
     public function edit(string $id): View
     {
         //get product by ID

@@ -10,7 +10,7 @@
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo-8.png" width="100px"
+            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('images/logo-8.png')}}" width="100px"
                     height="50px" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
 
                     <td class="text-center">
                         <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('artikel.destroy', $artikel->id) }}" method="POST">
-                            <a href="" class="btn btn-sm btn-dark">SHOW</a>
+                            <a href="{{ route('artikel.show', $artikel->id) }}" class="btn btn-sm btn-dark">SHOW</a>
                             <a href="{{ route('artikel.edit', $artikel->id) }}" class="btn btn-sm btn-primary">EDIT</a>
                             @csrf
                             @method('DELETE')

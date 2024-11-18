@@ -18,7 +18,7 @@
 <body>
     <div class="container">
 
-        <h1 class="text-center mt-4 mb-4">Buat Artikel</h1>
+        <h1 class="text-center mt-4 mb-4" style="color: #005EB8 ">Buat Artikel</h1>
 
         <a href="{{ route('artikel.store') }}" class="btn btn-success mb-3"><- Kembali </a>
 
