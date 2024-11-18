@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogControllerBaru;
+use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -10,7 +11,6 @@ Route::get('/', [BlogController::class,'home'])->name('index');
 Route::get('/tentangkami', [BlogController::class,'tentangKami']);
 Route::get('/brands', [BlogController::class,'brands']);
 Route::get('/onlineshop', [BlogController::class,'onlineShop']);
-Route::get('/media', [BlogController::class,'media']);
 Route::get('/produkbaru', [BlogController::class,'produkBaru']);
 Route::get('/kontak', [BlogController::class,'kontak']);
 Route::get('/distributor', [BlogController::class,'distributor']);
@@ -69,6 +69,11 @@ Route::put('/blog/update{id}', [BlogController::class, 'update'])->name('index.u
 
 //CRUD Image
 Route::resource('/artikel', \App\Http\Controllers\BlogControllerBaru::class);
+
+//Media
+Route::get('/media', [MediaController::class,'index'])->name('media.index');
+Route::get('/media/{id}', [MediaController::class,'show'])->name('media.show');
+
 
 
 

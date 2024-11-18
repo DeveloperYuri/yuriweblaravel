@@ -37,10 +37,10 @@
       <div class="sosmed mb-2">
         <ul>
           <li><a href="kontak.html"><img src="{{ asset('images/kontak-small.png') }}" alt="kontak"></a></a></li>
-          <li><a href="https://www.youtube.com/@YuriDee2" target="_blank"><img src="images/youtube-small.png" alt="Youtube"></a></a></li>
-          <li><a href="https://www.instagram.com/yurihousehold/" target="_blank"><img src="images/instagram-small.png" alt="Instagram"></a></a></li>
-          <li><a href="https://web.facebook.com/p/Yuri-Household-61556415279542/?_rdc=1&_rdr" target="_blank"><img src="images/fb-small.png" alt="Fb"></a></a></li>
-          <li><a href="https://www.tiktok.com/@yurihousehold" target="_blank"><img src="images/tiktok-small.png" alt="Tiktok"></a></li>
+          <li><a href="https://www.youtube.com/@YuriDee2" target="_blank"><img src="{{ asset('images/youtube-small.png') }}" alt="Youtube"></a></a></li>
+          <li><a href="https://www.instagram.com/yurihousehold/" target="_blank"><img src="{{ asset('images/instagram-small.png') }}" alt="Instagram"></a></a></li>
+          <li><a href="https://web.facebook.com/p/Yuri-Household-61556415279542/?_rdc=1&_rdr" target="_blank"><img src="{{ asset('images/fb-small.png') }}" alt="Fb"></a></a></li>
+          <li><a href="https://www.tiktok.com/@yurihousehold" target="_blank"><img src="{{ asset('images/tiktok-small.png') }}" alt="Tiktok"></a></li>
         </ul>
       </div>
       <!-- End Sosmed -->

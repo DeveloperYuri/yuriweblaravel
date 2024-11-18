@@ -173,7 +173,7 @@
 
        <div class="button-brand">
         <a
-        href="brand.html"
+        href="{{ url('/brands') }}"
         ><img src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="20%"><div class="centered fw-bold">Brand Kami</div></a
       >
        </div>
@@ -227,7 +227,7 @@
 
       <div class="button-media">
         <a
-        href="media.html"
+        href="{{ url('/media') }}"
         ><img src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="20%"><div class="centered-media fw-bold">Lihat Semua Media</div></a
       >
        </div>

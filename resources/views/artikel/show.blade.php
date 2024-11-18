@@ -45,58 +45,57 @@
     </nav>
 
     <div class="container">
-        <div class="container">
 
-            <div class="article1">
-                <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
-            </div>
+        <div class="article1">
+            <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
+        </div>
 
-            <!-- Banner Homepage-->
-            <div class="banner-article1 text-center" data-aos="fade-up">
-                <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
-            </div>
-            <!-- End Banner Homepage -->
+        <!-- Banner Homepage-->
+        <div class="banner-article1 text-center" data-aos="fade-up">
+            <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
+        </div>
+        <!-- End Banner Homepage -->
 
-            <!-- Content1 -->
-            <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+        <!-- Content1 -->
+        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
 
-                {!! $artikels->description !!}
-
-            </div>
-
-            <div>
-                <a href="{{ route('artikel.edit', $artikels->id) }}" class="btn btn-sm btn-warning">Edit Artikel</a>
-                <a href="{{ route('artikel.store') }}" class="btn btn-sm btn-success">Kembali Ke Dashboard</a>
-            </div>
-
+            {!! $artikels->description !!}
 
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <div>
+            <a href="{{ route('artikel.edit', $artikels->id) }}" class="btn btn-sm btn-warning">Edit Artikel</a>
+            <a href="{{ route('artikel.store') }}" class="btn btn-sm btn-success">Kembali Ke Dashboard</a>
+        </div>
 
-        <script>
-            //message with sweetalert
-            @if (session('success'))
-                Swal.fire({
-                    icon: "success",
-                    title: "BERHASIL",
-                    text: "{{ session('success') }}",
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-            @elseif (session('error'))
-                Swal.fire({
-                    icon: "error",
-                    title: "GAGAL!",
-                    text: "{{ session('error') }}",
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-            @endif
-        </script>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        //message with sweetalert
+        @if (session('success'))
+            Swal.fire({
+                icon: "success",
+                title: "BERHASIL",
+                text: "{{ session('success') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @elseif (session('error'))
+            Swal.fire({
+                icon: "error",
+                title: "GAGAL!",
+                text: "{{ session('error') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @endif
+    </script>
 
 </body>
 
