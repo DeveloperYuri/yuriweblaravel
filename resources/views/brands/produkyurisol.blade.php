@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,29 +76,31 @@
 @endsection
 
 @section('content')
-    <div class="yurisol-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkyurisol.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri-sol Natural Pine Disinfectant</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Yuri-sol® Natural Pine didesain khusus untuk
-                            menggabungkan pembersih higienis dengan wewangian cemara serta pembasmi kuman pada permukaan
-                            lantai. Mengandung formula pine oil alami yang bersifat disinfektan dan menghasilkan aroma
-                            menyegarkan. Selain untuk membersihkan lantai, Yuri-sol® Natural Pine juga cocok digunakan untuk
-                            membersihkan toilet, rumah sakit, dan berbagai area di rumah Anda.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="yurisol-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkyurisol.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri-sol Natural Pine Disinfectant</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Yuri-sol® Natural Pine didesain khusus
+                                untuk
+                                menggabungkan pembersih higienis dengan wewangian cemara serta pembasmi kuman pada permukaan
+                                lantai. Mengandung formula pine oil alami yang bersifat disinfektan dan menghasilkan aroma
+                                menyegarkan. Selain untuk membersihkan lantai, Yuri-sol® Natural Pine juga cocok digunakan
+                                untuk
+                                membersihkan toilet, rumah sakit, dan berbagai area di rumah Anda.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

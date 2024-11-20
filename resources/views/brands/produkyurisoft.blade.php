@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,29 +76,32 @@
 @endsection
 
 @section('content')
-    <div class="yurisoft-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkyurisoft.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri-soft Fabric Softener And Freshener Romantic</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Hanya dengan setengah tutup botol pelembut
-                            pakaian konsentrat Yuri-Soft Romantic Blue saja dapat memberikan Anda kelembutan ekstra dan
-                            kesegaran yang tahan lama. Cairannya yang dapat mengurangi busa pada cucian membuat Anda lebih
-                            hemat karena tidak perlu menghabiskan banyak air ketika membilas. Kelembutannya akan memberikan
-                            kenyamanan pada keluarga Anda.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="yurisoft-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkyurisoft.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri-soft Fabric Softener And Freshener Romantic</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Hanya dengan setengah tutup botol
+                                pelembut
+                                pakaian konsentrat Yuri-Soft Romantic Blue saja dapat memberikan Anda kelembutan ekstra dan
+                                kesegaran yang tahan lama. Cairannya yang dapat mengurangi busa pada cucian membuat Anda
+                                lebih
+                                hemat karena tidak perlu menghabiskan banyak air ketika membilas. Kelembutannya akan
+                                memberikan
+                                kenyamanan pada keluarga Anda.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

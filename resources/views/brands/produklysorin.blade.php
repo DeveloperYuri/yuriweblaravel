@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,28 +76,30 @@
 @endsection
 
 @section('content')
-    <div class="lysorin-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produklysorin.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Lysorin Disinfectant</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Lysorin pembersih lantai efektif untuk
-                            membunuh kuman- kuman dan jamur. Dapat digunakan untuk membersihkan lantai rumah, rumah sakit,
-                            kantor, bioskop, kandang hewan dan selokan. Lysorin dengan wewangian khasnya dapat menyegarkan
-                            ruangan dan sekeliling Anda.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="lysorin-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produklysorin.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Lysorin Disinfectant</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Lysorin pembersih lantai efektif untuk
+                                membunuh kuman- kuman dan jamur. Dapat digunakan untuk membersihkan lantai rumah, rumah
+                                sakit,
+                                kantor, bioskop, kandang hewan dan selokan. Lysorin dengan wewangian khasnya dapat
+                                menyegarkan
+                                ruangan dan sekeliling Anda.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

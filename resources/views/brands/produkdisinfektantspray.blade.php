@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,30 +76,31 @@
 @endsection
 
 @section('content')
-    <div class="disinfektanspray-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkdisinfektantspray.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri Disinfectant Spray </h5>
-                        <p class="card-text mt-3" style="text-align: justify;">
-                            Yuri Disinfectant Spray, merupakan cairan dengan pH netral serta mengandung bahan aktif
-                            Benzalkonium Chloride yang berguna untuk membunuh bakteri atau kuman penyakit pada permukaan
-                            benda yang sering disentuh tangan dan bagian tubuh yang lain, membersihkan kain atau pakaian,
-                            alas kaki, yang terpapar bakteri dan kuman penyakit.
-                        </p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Surface-Cleaner"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="disinfektanspray-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkdisinfektantspray.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri Disinfectant Spray </h5>
+                            <p class="card-text mt-3" style="text-align: justify;">
+                                Yuri Disinfectant Spray, merupakan cairan dengan pH netral serta mengandung bahan aktif
+                                Benzalkonium Chloride yang berguna untuk membunuh bakteri atau kuman penyakit pada permukaan
+                                benda yang sering disentuh tangan dan bagian tubuh yang lain, membersihkan kain atau
+                                pakaian,
+                                alas kaki, yang terpapar bakteri dan kuman penyakit.
+                            </p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Surface-Cleaner"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

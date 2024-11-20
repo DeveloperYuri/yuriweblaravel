@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,27 +76,28 @@
 @endsection
 
 @section('content')
-    <div class="yuribleach-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkyuribleach.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri Bleach Morning Fresh</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Yuri Bleach cairan pemutih pakaian digunakan
-                            untuk memutihkan dan menghilangkan noda pada pakaian dan kain. Yuri Bleach mengandung
-                            disinfektan yang membunuh 99.9% kuman dan bakteri pada pakaian Anda.</p>
-                        <a href="https://www.yurishop.co/id/product/Biosoft-Hijab-Detergent-Softener-900-Ml"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="yuribleach-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkyuribleach.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri Bleach Morning Fresh</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Yuri Bleach cairan pemutih pakaian
+                                digunakan
+                                untuk memutihkan dan menghilangkan noda pada pakaian dan kain. Yuri Bleach mengandung
+                                disinfektan yang membunuh 99.9% kuman dan bakteri pada pakaian Anda.</p>
+                            <a href="https://www.yurishop.co/id/product/Biosoft-Hijab-Detergent-Softener-900-Ml"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

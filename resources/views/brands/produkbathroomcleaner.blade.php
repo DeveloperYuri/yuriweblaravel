@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,28 +76,32 @@
 @endsection
 
 @section('content')
-    <div class="bathroomcleaner-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkbathroomcleaner.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">Yuri Antibacterial Bathroom Cleaner</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Yuri Antibacterial Bathroom Cleaner
-                            diformulasikan secara khusus untuk menghilangkan noda membandel seperti jamur dan kotoran dari
-                            permukaan kamar mandi. Selain membersihkan, Yuri Antibacterial Bathroom Cleaner juga dapat
-                            menghilangkan kuman dan memberikan keharuman yang tahan lama. Sangat cocok untuk digunakan untuk
-                            mengkilapkan porselen dan keramik dinding ubin dan lantai, tirai mandi, bak, toilet, wastafel,
-                            plastik, stainless steel, marmer, granit, batu alam, kayu, varnish, dan lainnya.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Bathroom-Cleaner"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="bathroomcleaner-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkbathroomcleaner.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">Yuri Antibacterial Bathroom Cleaner</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Yuri Antibacterial Bathroom Cleaner
+                                diformulasikan secara khusus untuk menghilangkan noda membandel seperti jamur dan kotoran
+                                dari
+                                permukaan kamar mandi. Selain membersihkan, Yuri Antibacterial Bathroom Cleaner juga dapat
+                                menghilangkan kuman dan memberikan keharuman yang tahan lama. Sangat cocok untuk digunakan
+                                untuk
+                                mengkilapkan porselen dan keramik dinding ubin dan lantai, tirai mandi, bak, toilet,
+                                wastafel,
+                                plastik, stainless steel, marmer, granit, batu alam, kayu, varnish, dan lainnya.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Bathroom-Cleaner"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
     <!-- End Container -->

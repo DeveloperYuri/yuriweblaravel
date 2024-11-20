@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,29 +76,31 @@
 @endsection
 
 @section('content')
-    <div class="ligent-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkligent.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Ligent Dishwashing Detergent</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Ligent® Lime deterjen cair pencuci piring
-                            memiliki daya pembersih yang aktif dengan aroma jeruk nipis segar, melarutkan lemak-lemak secara
-                            tuntas dan menghilangkan bau tidak sedap. Cukup menggunakan sedikit cairan Ligent® dapat
-                            menjadikan perlengkapan dapur bersih kemilau tanpa meninggalkan lemak dan bau yang tak sedap.
-                        </p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Dishwashing-Detergent"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="ligent-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkligent.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Ligent Dishwashing Detergent</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Ligent® Lime deterjen cair pencuci piring
+                                memiliki daya pembersih yang aktif dengan aroma jeruk nipis segar, melarutkan lemak-lemak
+                                secara
+                                tuntas dan menghilangkan bau tidak sedap. Cukup menggunakan sedikit cairan Ligent® dapat
+                                menjadikan perlengkapan dapur bersih kemilau tanpa meninggalkan lemak dan bau yang tak
+                                sedap.
+                            </p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Dishwashing-Detergent"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 
