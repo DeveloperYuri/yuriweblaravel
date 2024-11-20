@@ -110,7 +110,9 @@
 <!-- Start Footer -->
 <div id="distributor-footer"
     class="card-footer text-body-secondary bg-dark text-center"
-    style="margin-top: 30px; height: 40px; padding-top: 5px;">
+    style="margin-top: 30px; height: 40px; padding-top: 5px; position: fixed;
+    bottom: 0;
+    width: 100%;">
     <div style="margin-top: 5px;">
         <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
     </div>

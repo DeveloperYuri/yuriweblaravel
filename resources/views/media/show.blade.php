@@ -5,9 +5,8 @@
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <img src="{{ asset('images/logo-8.png') }}" width="100px" height="50px" />
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -82,6 +81,11 @@
             <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
         </div>
 
+        <div style="margin-left: 280px">
+            <p class="fw-bold">Yuri-Artikel</p>
+            <p style="margin-top: -17px">Rabu, 20 November 2024</p>
+        </div>
+
         <!-- Banner Homepage-->
         <div class="banner-article1 text-center" data-aos="fade-up">
             <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
@@ -89,12 +93,11 @@
         <!-- End Banner Homepage -->
 
         <!-- Content1 -->
-        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
 
             {!! $artikels->description !!}
 
         </div>
 
     </div>
-
 @endsection

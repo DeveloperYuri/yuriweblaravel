@@ -81,7 +81,7 @@
         <div class="article1">
             <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
         </div>
-
+        
         <!-- Banner Homepage-->
         <div class="banner-article1 text-center" data-aos="fade-up">
             <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
