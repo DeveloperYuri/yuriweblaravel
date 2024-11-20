@@ -457,6 +457,10 @@ a:active { text-decoration: none; }
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
 
+  #navbardashboard ul{
+    margin-left: 200px
+  }  
+
   #imagebrandbabydee{
     margin-bottom: 20px;
   }
