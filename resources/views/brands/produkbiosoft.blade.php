@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,27 +76,30 @@
 @endsection
 
 @section('content')
-    <div class="biosofthijab-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkbiosofthijabdetergen.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">Biosoft Hijab Detergent + Softener</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Hanya dengan 1/2 tutup botol Biosoft® Hijab
-                            Detergent + Softener Anda akan mendapatkan hasil mencuci yang bersih menakjubkan, kotoran dan
-                            noda pada hijab dibersihkan secara tuntas dalam proses pencucian. Tak hanya membersihkan, produk
-                            ini juga dapat melembutkan hijab dan ramah lingkungan.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="biosofthijab-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkbiosofthijabdetergen.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">Biosoft Hijab Detergent + Softener</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Hanya dengan 1/2 tutup botol Biosoft®
+                                Hijab
+                                Detergent + Softener Anda akan mendapatkan hasil mencuci yang bersih menakjubkan, kotoran
+                                dan
+                                noda pada hijab dibersihkan secara tuntas dalam proses pencucian. Tak hanya membersihkan,
+                                produk
+                                ini juga dapat melembutkan hijab dan ramah lingkungan.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

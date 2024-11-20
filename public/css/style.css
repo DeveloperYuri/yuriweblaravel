@@ -457,6 +457,12 @@ a:active { text-decoration: none; }
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
 
+  #footerprodukaganol{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
   #navbardashboard ul{
     margin-left: 200px
   }  

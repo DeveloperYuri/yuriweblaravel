@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -13,22 +13,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="index.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/') }}"
                                 style="color: #005EB8">HOME</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="tentang-kami.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/tentangkami') }}"
                                 style="color: #005EB8">TENTANG KAMI</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-current="page" href="brand.html"
+                            <a class="nav-link active fw-bold" aria-current="page" href="{{ url('/brands') }}"
                                 style="color: #005EB8">BRANDS</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fw-bold" href="{{ url('/onlineshop') }}" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
                                 ONLINE SHOP
                             </a>
@@ -48,22 +48,22 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="media.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/media') }}"
                                 style="color: #005EB8">MEDIA</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="produk-baru.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/produkbaru') }}"
                                 style="color: #005EB8">PRODUK BARU</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="kontak.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/kontak') }}"
                                 style="color: #005EB8">KONTAK</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="distributor.html"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/distributor') }}"
                                 style="color: #005EB8">DISTRIBUTOR</a>
                         </li>
 
@@ -76,28 +76,33 @@
 @endsection
 
 @section('content')
-    <div class="aganol-produk">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkaganol.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8">Aganol Antibacterial Floor Cleaner</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">aganol® Pembersih lantai antibakteri dapat
-                            digunakan untuk lantai di rumah atau di ruang kerja Anda. Formulanya efektif mengangkat kotoran
-                            membandel dan bekerja dengan cepat sehingga Anda akan memiliki lantai bersih dan mengkilap dalam
-                            waktu singkat . Disempurnakan dengan aroma lavender yang meninggalkan kesegaran pada ruangan
-                            Anda. Cocok untuk semua jenis lantai : Marmer, Terraso, Vinyl, Kayu , Plastik, dan-lain lain.
-                        </p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="aganol-produk">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkaganol.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8">Aganol Antibacterial Floor Cleaner</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">aganol® Pembersih lantai antibakteri
+                                dapat
+                                digunakan untuk lantai di rumah atau di ruang kerja Anda. Formulanya efektif mengangkat
+                                kotoran
+                                membandel dan bekerja dengan cepat sehingga Anda akan memiliki lantai bersih dan mengkilap
+                                dalam
+                                waktu singkat . Disempurnakan dengan aroma lavender yang meninggalkan kesegaran pada ruangan
+                                Anda. Cocok untuk semua jenis lantai : Marmer, Terraso, Vinyl, Kayu , Plastik, dan-lain
+                                lain.
+                            </p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
     <!-- End Container -->

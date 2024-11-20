@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,32 +76,32 @@
 @endsection
 
 @section('content')
-    <div class="yurihandmoisturizer-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkhandmoisturizer.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri Hand Moisturizer </h5>
-                        <p class="card-text mt-3" style="text-align: justify;">
-                            - Sangat cocok untuk kulit normal dan sensitif (Label Dermatologically Test).
-                            <br>- Dapat membunuh kuman bakteri dalam 15 detik.
-                            <br>- Tidak mengandung alkohol.
-                            <br>- Tidak lengket dan Cepat kering.
-                            <br>- Lembut dan halus di tangan.
-                            <br>- Mudah di bawa-bawa.
-                        </p>
-                        <a href="https://www.yurishop.co/id/product/Yuri-Hand-Moisturizer-40-G"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="yurihandmoisturizer-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkhandmoisturizer.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri Hand Moisturizer </h5>
+                            <p class="card-text mt-3" style="text-align: justify;">
+                                - Sangat cocok untuk kulit normal dan sensitif (Label Dermatologically Test).
+                                <br>- Dapat membunuh kuman bakteri dalam 15 detik.
+                                <br>- Tidak mengandung alkohol.
+                                <br>- Tidak lengket dan Cepat kering.
+                                <br>- Lembut dan halus di tangan.
+                                <br>- Mudah di bawa-bawa.
+                            </p>
+                            <a href="https://www.yurishop.co/id/product/Yuri-Hand-Moisturizer-40-G"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

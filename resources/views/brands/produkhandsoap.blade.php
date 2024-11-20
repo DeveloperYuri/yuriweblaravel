@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,27 +76,29 @@
 @endsection
 
 @section('content')
-    <div class="handsoap-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkhandsoap.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Yuri Hand Soap</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Yuri Hand Soap Grape membersihkan tangan Anda
-                            tanpa membuatnya kering atau iritasi. Diperkaya dengan aroma buah anggur segar dan Vitamin E,
-                            sabun pencuci tangan ini dibuat dengan formulasi ramah lingkungan.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Hand-Care"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="handsoap-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkhandsoap.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Yuri Hand Soap</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Yuri Hand Soap Grape membersihkan tangan
+                                Anda
+                                tanpa membuatnya kering atau iritasi. Diperkaya dengan aroma buah anggur segar dan Vitamin
+                                E,
+                                sabun pencuci tangan ini dibuat dengan formulasi ramah lingkungan.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Hand-Care"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,26 +76,29 @@
 @endsection
 
 @section('content')
-    <div class="babysoft-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produkbabysoft.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005eb8;">Babysoft Fabric Softener</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">babysoft® merupakan pelembut dan pengharum
-                            cucian antibakteri serta diformulasi dengan bahan-bahan ramah lingkungan. Digunakan terutama
-                            untuk pakaian bayi, mengandung aroma yang akan membuat pakaian bayi terasa segar sepanjang hari.
-                        </p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="babysoft-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produkbabysoft.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005eb8;">Babysoft Fabric Softener</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">babysoft® merupakan pelembut dan
+                                pengharum
+                                cucian antibakteri serta diformulasi dengan bahan-bahan ramah lingkungan. Digunakan terutama
+                                untuk pakaian bayi, mengandung aroma yang akan membuat pakaian bayi terasa segar sepanjang
+                                hari.
+                            </p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
     <!-- End Container -->

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('navbar')
     <!-- Navbar Menu -->
@@ -76,28 +76,30 @@
 @endsection
 
 @section('content')
-    <div class="tril-produk mt-4" data-aos="fade-up">
-        <div class="card mb-3 mx-auto" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <img src="images/produktril.png" class="img-fluid rounded-start">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #005EB8;">
-                            Tril Ironing Starch</h5>
-                        <p class="card-text mt-3" style="text-align: justify;">Hadirkan sensasi laundry profesional di rumah
-                            dengan Tril Ironing Starch Lavender. Aroma memikat yang terkandung di dalamnya memberikan
-                            keharuman yang segar. Menyetrika lebih mudah, pakaian keluarga tercinta pun lebih licin, rapi,
-                            harum, dan higienis.</p>
-                        <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                            class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+    <div class="container">
+        <div class="tril-produk mt-4" data-aos="fade-up">
+            <div class="card mb-3 mx-auto" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="images/produktril.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #005EB8;">
+                                Tril Ironing Starch</h5>
+                            <p class="card-text mt-3" style="text-align: justify;">Hadirkan sensasi laundry profesional di
+                                rumah
+                                dengan Tril Ironing Starch Lavender. Aroma memikat yang terkandung di dalamnya memberikan
+                                keharuman yang segar. Menyetrika lebih mudah, pakaian keluarga tercinta pun lebih licin,
+                                rapi,
+                                harum, dan higienis.</p>
+                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
+                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <!-- End Container -->
 
