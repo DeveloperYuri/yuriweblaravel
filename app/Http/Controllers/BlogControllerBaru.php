@@ -24,6 +24,10 @@ class BlogControllerBaru extends Controller
         return view('dashboard.index');
     }
 
+    public function artikel(){
+        return view('dashboard.artikel');
+    }
+
     public function create(): View
     {
         return view('artikel.create');
