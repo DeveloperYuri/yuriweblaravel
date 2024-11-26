@@ -77,6 +77,7 @@ Route::get('/media/{id}', [MediaController::class,'show'])->name('media.show');
 
 
 Route::get('/dashboard', [BlogControllerBaru::class,'dashboard'])->name('dashboard.index');
+Route::get('/artikel', [BlogControllerBaru::class,'artikel'])->name('dashboard.artikel');
 
 
 
