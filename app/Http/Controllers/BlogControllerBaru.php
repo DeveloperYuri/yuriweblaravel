@@ -14,7 +14,7 @@ class BlogControllerBaru extends Controller
     public function index(): View
     {
         //get all products
-        $artikels = Artikel::latest()->paginate(4);
+        $artikels = Artikel::latest()->paginate(10);
 
         //render view with products
         return view('artikel.index', compact('artikels'));
@@ -25,7 +25,9 @@ class BlogControllerBaru extends Controller
     }
 
     public function artikel(){
-        return view('dashboard.artikel');
+        $artikels = Artikel::latest()->paginate(10);
+
+        return view('dashboard.artikel', compact('artikels'));
     }
 
     public function create(): View
