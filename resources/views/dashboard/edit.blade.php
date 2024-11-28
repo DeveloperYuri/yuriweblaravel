@@ -133,12 +133,14 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <form action="{{ route('dashboard.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('dashboard.update', $artikels->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
+                            @method('PUT')
         
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">IMAGE</label>
-                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
+                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image"
+                                    value="{{ old('title', $artikels->image) }}">
         
                                 <!-- error message untuk image -->
                                 @error('image')
@@ -151,7 +153,7 @@
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">TITLE</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror" name="title"
-                                    value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
+                                    value="{{ old('title', $artikels->title) }}" placeholder="Masukkan Judul Artikel">
         
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -164,7 +166,7 @@
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
-                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikels->description) }}</textarea>
         
                                 <!-- error message untuk description -->
                                 @error('description')
@@ -174,7 +176,7 @@
                                 @enderror
                             </div>
         
-                            <button type="submit" class="btn btn-md btn-primary me-3">SAVE</button>
+                            <button type="submit" class="btn btn-md btn-primary me-3">Update</button>
         
                         </form>
 
