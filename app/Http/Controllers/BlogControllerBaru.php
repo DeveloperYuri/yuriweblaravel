@@ -20,16 +20,6 @@ class BlogControllerBaru extends Controller
         return view('artikel.index', compact('artikels'));
     }
 
-    public function dashboard(){
-        return view('dashboard.index');
-    }
-
-    public function artikel(){
-        $artikels = Artikel::latest()->paginate(10);
-
-        return view('dashboard.artikel', compact('artikels'));
-    }
-
     public function create(): View
     {
         return view('artikel.create');

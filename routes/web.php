@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogControllerBaru;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
@@ -76,8 +77,11 @@ Route::get('/media', [MediaController::class,'index'])->name('media.index');
 Route::get('/media/{id}', [MediaController::class,'show'])->name('media.show');
 
 
-Route::get('/dashboard', [BlogControllerBaru::class,'dashboard'])->name('dashboard.index');
-Route::get('/artikel', [BlogControllerBaru::class,'artikel'])->name('dashboard.artikel');
+Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard.index');
+Route::get('/dashboardartikel', [DashboardController::class,'dashboardartikel'])->name('dashboard.artikel');
+Route::get('/create', [DashboardController::class,'create'])->name('dashboard.create');
+Route::post('/store', [DashboardController::class, 'store'])->name('dashboard.store');
+
 
 
 
