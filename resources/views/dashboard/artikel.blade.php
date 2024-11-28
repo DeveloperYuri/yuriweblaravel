@@ -38,11 +38,21 @@
             </ul>
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
+            <ul class="navbar-nav ml-auto" style="margin-right: 90px">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{ Auth::user()->name }}
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">Logout</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -127,7 +137,7 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3">Buat Artikel</a>
+                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3"><i class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
 
                         <table class="table mb-3">
                             <thead>
@@ -192,6 +202,9 @@
     </div>
     <!-- ./wrapper -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 
     <script src="{{ asset('template/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
