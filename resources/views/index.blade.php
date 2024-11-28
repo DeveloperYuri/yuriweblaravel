@@ -55,7 +55,7 @@
     <div class="container">
         <h2 class="mt-4 mb-5 text-center" style="color: #005EB8">Artikel Post</h2>
 
-        <a href="{{ route('index.create') }}" class="btn btn-primary mb-3"> Buat Artikel </a>
+        <a href="" class="btn btn-primary mb-3"> Buat Artikel </a>
 
         <table class="table">
             <thead>
