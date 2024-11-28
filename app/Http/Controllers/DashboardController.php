@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
@@ -69,9 +71,13 @@ class DashboardController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $id): View
     {
-        //
+        //get product by ID
+        $artikels = Artikel::findOrFail($id);
+
+        //render view with product
+        return view('artikel.edit', compact('artikels'));
     }
 
     /**
@@ -85,8 +91,18 @@ class DashboardController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id): RedirectResponse
     {
-        //
+        //get product by ID
+        $artikels = Artikel::findOrFail($id);
+
+        //delete image
+        Storage::delete('public/artikels/'. $artikels->image);
+
+        //delete product
+        $artikels->delete();
+
+        //redirect to index
+        return redirect()->route('dashboard.artikel')->with(['success' => 'Data Berhasil Dihapus!']);
     }
 }
