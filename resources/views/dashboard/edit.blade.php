@@ -59,6 +59,12 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex text-center">
+                    <div class="info">
+                        <p class="fw-bold text-white">Dashboard Admin</p>
+                    </div>
+                </div>
 
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
@@ -111,12 +117,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DAFTAR ARTIKEL</h1>
+                            <h1>Edit Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Daftar Artikel</li>
+                                <li class="breadcrumb-item active">Edit Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -127,50 +133,50 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3">Buat Artikel</a>
-
-                        <table class="table mb-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Image</th>
-                                    <th scope="col" class="text-center">Title</th>
-                                    <th scope="col" class="text-center">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @forelse ($artikels as $key => $artikel)
-                                    <tr>
-                                        <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
-                                        <td class="text-center">
-                                            <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
-                                        </td>
-                                        <td class="text-center">{{ $artikel->title }}</td>
-
-                                        <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
-                                                <a href="{{ route('artikel.show', $artikel->id) }}"
-                                                    class="btn btn-sm btn-dark">SHOW</a>
-                                                <a href="{{ route('dashboard.edit', $artikel->id) }}"
-                                                    class="btn btn-sm btn-primary">EDIT</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                            </form>
-                                        </td>
-
-                                    </tr>
-                                @empty
-                                    <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                        <form action="{{ route('dashboard.store') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+        
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">IMAGE</label>
+                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
+        
+                                <!-- error message untuk image -->
+                                @error('image')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
                                     </div>
-                                @endforelse
-                            </tbody>
-                        </table>
-
-                        {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
+                                @enderror
+                            </div>
+        
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">TITLE</label>
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title"
+                                    value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
+        
+                                <!-- error message untuk title -->
+                                @error('title')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+        
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
+        
+                                <!-- error message untuk description -->
+                                @error('description')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+        
+                            <button type="submit" class="btn btn-md btn-primary me-3">SAVE</button>
+        
+                        </form>
 
                     </div>
                 </div>
