@@ -77,15 +77,52 @@ class DashboardController extends Controller
         $artikels = Artikel::findOrFail($id);
 
         //render view with product
-        return view('artikel.edit', compact('artikels'));
+        return view('dashboard.edit', compact('artikels'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id): RedirectResponse
     {
-        //
+        //validate form
+        $request->validate([
+            'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
+            'title'         => 'required|min:5',
+            'description'   => 'required|min:10'
+        ]);
+
+        //get product by ID
+        $artikels = Artikel::findOrFail($id);
+
+        //check if image is uploaded
+        if ($request->hasFile('image')) {
+
+            //upload new image
+            $image = $request->file('image');
+            $image->storeAs('public/artikels', $image->hashName());
+
+            //delete old image
+            Storage::delete('public/artikels/'.$artikels->image);
+
+            //update product with new image
+            $artikels->update([
+                'image'         => $image->hashName(),
+                'title'         => $request->title,
+                'description'   => $request->description
+            ]);
+
+        } else {
+
+            //update product without image
+            $artikels->update([
+                'title'         => $request->title,
+                'description'   => $request->description
+            ]);
+        }
+
+        //redirect to index
+        return redirect()->route('dashboard.artikel')->with(['success' => 'Data Berhasil Diubah!']);
     }
 
     /**

@@ -83,6 +83,7 @@ Route::get('/create', [DashboardController::class,'create'])->name('dashboard.cr
 Route::post('/store', [DashboardController::class, 'store'])->name('dashboard.store');
 Route::get('/dashboard/edit{id}', [DashboardController::class, 'edit'])->name('dashboard.edit');
 Route::delete('/dashboard/delete{id}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
+Route::put('/dashboard/update{id}', [DashboardController::class, 'update'])->name('dashboard.update');
 
 
 
