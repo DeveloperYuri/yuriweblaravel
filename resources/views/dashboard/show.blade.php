@@ -59,6 +59,12 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex text-center">
+                    <div class="info">
+                        <p class="fw-bold text-white">Dashboard Admin</p>
+                    </div>
+                </div>
 
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
@@ -111,12 +117,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DAFTAR ARTIKEL</h1>
+                            <h1>Preview Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Daftar Artikel</li>
+                                <li class="breadcrumb-item active">Preview Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -127,50 +133,27 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3">Buat Artikel</a>
-
-                        <table class="table mb-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Image</th>
-                                    <th scope="col" class="text-center">Title</th>
-                                    <th scope="col" class="text-center">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @forelse ($artikels as $key => $artikel)
-                                    <tr>
-                                        <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
-                                        <td class="text-center">
-                                            <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
-                                        </td>
-                                        <td class="text-center">{{ $artikel->title }}</td>
-
-                                        <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
-                                                <a href="{{ route('dashboard.show', $artikel->id) }}"
-                                                    class="btn btn-sm btn-dark">SHOW</a>
-                                                <a href="{{ route('dashboard.edit', $artikel->id) }}"
-                                                    class="btn btn-sm btn-primary">EDIT</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                            </form>
-                                        </td>
-
-                                    </tr>
-                                @empty
-                                    <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
-                                    </div>
-                                @endforelse
-                            </tbody>
-                        </table>
-
-                        {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
+                        <div class="article1">
+                            <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
+                        </div>
+                
+                        <!-- Banner Homepage-->
+                        <div class="banner-article1 text-center" data-aos="fade-up">
+                            <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
+                        </div>
+                        <!-- End Banner Homepage -->
+                
+                        <!-- Content1 -->
+                        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+                
+                            {!! $artikels->description !!}
+                
+                        </div>
+                
+                        <div>
+                            <a href="{{ route('dashboard.edit', $artikels->id) }}" class="btn btn-sm btn-warning">Edit Artikel</a>
+                            <a href="{{ route('dashboard.artikel') }}" class="btn btn-sm btn-success">Kembali Ke Dashboard</a>
+                        </div>
 
                     </div>
                 </div>

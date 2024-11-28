@@ -63,9 +63,13 @@ class DashboardController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id): View
     {
-        //
+        //get product by ID
+        $artikels = Artikel::findOrFail($id);
+
+        //render view with product
+        return view('dashboard.show', compact('artikels'));
     }
 
     /**
@@ -142,4 +146,5 @@ class DashboardController extends Controller
         //redirect to index
         return redirect()->route('dashboard.artikel')->with(['success' => 'Data Berhasil Dihapus!']);
     }
+
 }

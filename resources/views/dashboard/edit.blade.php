@@ -133,6 +133,9 @@
                 <div class="card">
                     <div class="card-body">
 
+                        <a href="{{ route('dashboard.artikel') }}" class="btn btn-success mb-3"><- Kembali </a>
+
+
                         <form action="{{ route('dashboard.update', $artikels->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
