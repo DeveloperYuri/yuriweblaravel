@@ -44,6 +44,7 @@
 
             </ul>
 
+
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto" style="margin-right: 90px">
                 <li class="nav-item dropdown">
@@ -51,7 +52,7 @@
                         aria-expanded="false">
                         {{ Auth::user()->name }}
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">Logout</a>
@@ -69,8 +70,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link text-center">
-                <span class="brand-text font-weight-light"><img src="{{ asset('images/logo-8.png') }}"
-                        width="100px" height="50px" /></span>
+                <span class="brand-text font-weight-light"><img src="{{ asset('images/logo-8.png') }}" width="100px"
+                        height="50px" /></span>
             </a>
 
             <!-- Sidebar -->
