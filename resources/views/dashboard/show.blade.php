@@ -98,7 +98,7 @@
                         </li>
 
                         <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
+                            <a href="{{ route('dashboard.artikel')}}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -147,7 +147,7 @@
                         <!-- End Banner Homepage -->
                 
                         <!-- Content1 -->
-                        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+                        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
                 
                             {!! $artikels->description !!}
                 

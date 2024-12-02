@@ -70,7 +70,7 @@ Route::get('/blog/edit{id}', [BlogController::class, 'edit'])->name('index.edit'
 Route::put('/blog/update{id}', [BlogController::class, 'update'])->name('index.update');
 
 //CRUD Image
-Route::resource('/artikel', \App\Http\Controllers\BlogControllerBaru::class);
+Route::resource('/artikellama', \App\Http\Controllers\BlogControllerBaru::class);
 
 //Media
 Route::get('/media', [MediaController::class,'index'])->name('media.index');

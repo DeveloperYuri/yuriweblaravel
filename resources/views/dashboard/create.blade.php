@@ -25,6 +25,12 @@
 
 </head>
 
+<style>
+    .ck-editor__editable {
+        min-height: 300px;
+    }
+</style>
+
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         <!-- Navbar -->
@@ -136,15 +142,17 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.artikel') }}" class="btn btn-success mb-3"><i class="fas fa-undo"></i>&nbsp Kembali </a>
+                        <a href="{{ route('dashboard.artikel') }}" class="btn btn-success mb-3"><i
+                                class="fas fa-undo"></i>&nbsp Kembali </a>
 
                         <form action="{{ route('dashboard.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">IMAGE</label>
-                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
-        
+                                <input type="file" class="form-control @error('image') is-invalid @enderror"
+                                    name="image">
+
                                 <!-- error message untuk image -->
                                 @error('image')
                                     <div class="alert alert-danger mt-2">
@@ -152,12 +160,12 @@
                                     </div>
                                 @enderror
                             </div>
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">TITLE</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title"
-                                    value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
-        
+                                <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
+
                                 <!-- error message untuk title -->
                                 @error('title')
                                     <div class="alert alert-danger mt-2">
@@ -165,12 +173,12 @@
                                     </div>
                                 @enderror
                             </div>
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
                                     rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
-        
+
                                 <!-- error message untuk description -->
                                 @error('description')
                                     <div class="alert alert-danger mt-2">
@@ -178,9 +186,10 @@
                                     </div>
                                 @enderror
                             </div>
-        
-                            <button type="submit" class="btn btn-md btn-primary me-3"><i class="fas fa-save"></i>&nbsp Save</button>
-        
+
+                            <button type="submit" class="btn btn-md btn-primary me-3"><i
+                                    class="fas fa-save"></i>&nbsp Save</button>
+
                         </form>
 
                     </div>
@@ -228,6 +237,45 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('template/dist/js/demo.js') }}"></script>
     <!-- Page specific script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+
+    <script>
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('textarea'))
+
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+            })
+            .catch(error => {
+                console.error('Error during initialization of the editor', error);
+            });
+    </script>
+
+    <script>
+        //message with sweetalert
+        @if (session('success'))
+            Swal.fire({
+                icon: "success",
+                title: "BERHASIL",
+                text: "{{ session('success') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @elseif (session('error'))
+            Swal.fire({
+                icon: "error",
+                title: "GAGAL!",
+                text: "{{ session('error') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @endif
+    </script>
+
     <script>
         $(function() {
             $("#example1").DataTable({
