@@ -29,7 +29,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
         return view('auth.register');
     }
     
-    public function store(Request $request): RedirectResponse
+    public function registerstore(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required|string|max:250',

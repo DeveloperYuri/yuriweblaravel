@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{{ asset('cssloginregister/style.css') }}">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" style="margin-left: 20px; margin-right: 20px">
       <img src="{{ asset('images/logo-8.png') }}" alt="">
       <h2 class="text-center">Register</h2>
-      <form action="{{ route('store') }}" method="post">
+      <form action="{{ route('register.store')}}" method="post">
         @csrf
         <div class="input-box">
           <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" placeholder="Enter your name" required>
@@ -26,7 +26,7 @@
           
         </div>
         <div class="input-box">
-          <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Enter your confirm password" required>
+          <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="confirm password" required>
         </div>
         <div class="input-box button">
           <input type="Submit" value="Register">

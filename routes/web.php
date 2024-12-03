@@ -58,7 +58,7 @@ Route::get('/faq', [BlogController::class,'faq'])->name('index.faq');
 //Login & Register
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register/yuri', 'register')->name('register');
-    Route::post('/store', 'store')->name('store');
+    Route::post('/registerstore', 'registerstore')->name('register.store');
     Route::get('/login', 'login')->name('login');
     Route::post('/authenticate', 'authenticate')->name('authenticate');
     Route::get('/home', 'home')->name('home');
