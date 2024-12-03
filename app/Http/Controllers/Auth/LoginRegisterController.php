@@ -65,7 +65,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
         if(Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->route('dashboard.index');
+            return redirect()->route('dashboard.artikel');
         }
 
         return back()->withErrors([

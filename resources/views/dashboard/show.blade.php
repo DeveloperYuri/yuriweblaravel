@@ -88,6 +88,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+                        <!--
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -96,9 +97,10 @@
                                 </p>
                             </a>
                         </li>
+                    -->
 
                         <li class="nav-item menu-open">
-                            <a href="{{ route('dashboard.artikel')}}" class="nav-link active">
+                            <a href="{{ route('dashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -139,23 +141,27 @@
                         <div class="article1">
                             <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
                         </div>
-                
+
                         <!-- Banner Homepage-->
                         <div class="banner-article1 text-center" data-aos="fade-up">
-                            <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid" alt="...">
+                            <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid"
+                                alt="...">
                         </div>
                         <!-- End Banner Homepage -->
-                
+
                         <!-- Content1 -->
-                        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
-                
+                        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify"
+                            data-aos="fade-up">
+
                             {!! $artikels->description !!}
-                
+
                         </div>
-                
+
                         <div>
-                            <a href="{{ route('dashboard.edit', $artikels->id) }}" class="btn btn-sm btn-warning">Edit Artikel</a>
-                            <a href="{{ route('dashboard.artikel') }}" class="btn btn-sm btn-success">Kembali Ke Dashboard</a>
+                            <a href="{{ route('dashboard.edit', $artikels->id) }}"
+                                class="btn btn-sm btn-warning">Edit Artikel</a>
+                            <a href="{{ route('dashboard.artikel') }}" class="btn btn-sm btn-success">Kembali Ke
+                                Dashboard</a>
                         </div>
 
                     </div>

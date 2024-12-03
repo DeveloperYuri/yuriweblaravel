@@ -94,6 +94,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+                        <!--
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -102,6 +103,7 @@
                                 </p>
                             </a>
                         </li>
+                    -->
 
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link active">
@@ -142,18 +144,20 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.artikel') }}" class="btn btn-success mb-3"><i class="fas fa-undo"></i>&nbsp Kembali </a>
+                        <a href="{{ route('dashboard.artikel') }}" class="btn btn-success mb-3"><i
+                                class="fas fa-undo"></i>&nbsp Kembali </a>
 
 
-                        <form action="{{ route('dashboard.update', $artikels->id) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('dashboard.update', $artikels->id) }}" method="POST"
+                            enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">IMAGE</label>
-                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image"
-                                    value="{{ old('title', $artikels->image) }}">
-        
+                                <input type="file" class="form-control @error('image') is-invalid @enderror"
+                                    name="image" value="{{ old('title', $artikels->image) }}">
+
                                 <!-- error message untuk image -->
                                 @error('image')
                                     <div class="alert alert-danger mt-2">
@@ -161,12 +165,13 @@
                                     </div>
                                 @enderror
                             </div>
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">TITLE</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title"
-                                    value="{{ old('title', $artikels->title) }}" placeholder="Masukkan Judul Artikel">
-        
+                                <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    name="title" value="{{ old('title', $artikels->title) }}"
+                                    placeholder="Masukkan Judul Artikel">
+
                                 <!-- error message untuk title -->
                                 @error('title')
                                     <div class="alert alert-danger mt-2">
@@ -174,12 +179,12 @@
                                     </div>
                                 @enderror
                             </div>
-        
+
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
                                     rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikels->description) }}</textarea>
-        
+
                                 <!-- error message untuk description -->
                                 @error('description')
                                     <div class="alert alert-danger mt-2">
@@ -187,9 +192,10 @@
                                     </div>
                                 @enderror
                             </div>
-        
-                            <button type="submit" class="btn btn-md btn-primary me-3"><i class="fas fa-save"></i>&nbsp Update</button>
-        
+
+                            <button type="submit" class="btn btn-md btn-primary me-3"><i
+                                    class="fas fa-save"></i>&nbsp Update</button>
+
                         </form>
 
                     </div>
