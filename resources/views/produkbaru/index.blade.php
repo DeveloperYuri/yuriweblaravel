@@ -76,7 +76,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container mb-5">
         <div class="text-center mt-2 mb-2">
             <h1 style="color: #005EB8;">Produk Baru</h1>
         </div>
