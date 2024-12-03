@@ -214,12 +214,23 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div class="card-footer text-body-secondary bg-dark text-center"
-        style="margin-top: 30px; height: 40px; padding-top: 5px;">
-        <div style="margin-top: 5px;">
-            <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
+    <div id="footerindex"
+      class="card-footer text-body-secondary bg-dark"
+      style="margin-top: 40px;"
+    >
+    <div class="container">
+      <div class="row" style="padding-top: 0px;">
+        <div id="footercopyright" class="col-md-8">
+          <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
         </div>
+        <div id="footercopyright2" class="col-md-4">
+            <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
+            <a class="footerfaq" href="{{ route('index.faq')}}" class="" style="font-size: 14px; color: white; ">FAQ</a>
+        </div>
+      </div>
+    </div>
 
     </div>
     <!-- End Footer -->
+    
 @endsection

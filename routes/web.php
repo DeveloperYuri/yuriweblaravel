@@ -51,6 +51,10 @@ Route::get('/laundrydisinfektant', [BlogController::class,'laundrydisinfektantpr
 Route::get('/disinfektantspray', [BlogController::class,'disinfektantsprayproduk']);
 Route::get('/handmoisturizer', [BlogController::class,'handmoisturizerproduk']);
 
+//FAQ
+Route::get('/faq', [BlogController::class,'faq'])->name('index.faq');
+
+
 //Login & Register
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register/yuri', 'register')->name('register');

@@ -262,6 +262,33 @@ a:active { text-decoration: none; }
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+
+  #footerindexdistributor{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindexprodukbaru{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindex{
+    height: 50px;
+    padding-top: 10px;
+  }
+
+  #footerindex{
+    height: 50px;
+    padding-top: 10px;
+  }
+
   #footerprodukbabytoilet {
     bottom: 0;
   }
@@ -456,6 +483,27 @@ a:active { text-decoration: none; }
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+  #footerindexdistributor{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindexprodukbaru{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindex{
+    height: 50px;
+    padding-top: 10px;
+  }
 
   #footerprodukaganol{
     position: fixed;
@@ -901,6 +949,28 @@ a:active { text-decoration: none; }
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+  #footerindexdistributor{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindexprodukbaru{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerindex{
+    height: 50px;
+    padding-top: 10px;
+  }
+
   #faq-footer {
     position: fixed;
     bottom: 0;
@@ -973,3 +1043,106 @@ a:active { text-decoration: none; }
     margin-bottom: 20px;
   }
 }
+
+/* High Screen Resolution */
+@media only screen and (min-width: 1300px) {
+
+  #footerindexdistributor{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .yurimatic-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .childrentoilet-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .button-brand{
+    margin-top: 30px;
+  }
+
+  .aganol-produk img{
+    width: 700px;
+    height: 800px;
+  }
+
+  #footer-babytoilet{
+    padding-top: 20px;
+  }
+
+  #footer-householdcleaner{
+    padding-top: 20px;
+  }
+
+  #footer-article3{
+    padding-top: 20px;
+  }
+
+  #footercopyright2{
+    padding-left: 200px;
+  }
+
+  #footercopyrightarticle1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footer-article1{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  #footer-article2{
+    padding-top: 20px;
+  }
+
+  .footerfaq{
+    padding-left: 15px;
+  }
+
+  #footerbrand {
+    padding-top: 20px;
+  }
+
+  #footer-media{
+    padding-top: 20px;
+  }
+
+  #footer-distributor{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  #footer-media{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footerprodukaganol{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+}
+

@@ -182,4 +182,8 @@ class BlogController extends Controller
         return redirect()->route('home');
     }
 
+    public function faq(){
+        return view('faq.index');
+    }
+
 }
