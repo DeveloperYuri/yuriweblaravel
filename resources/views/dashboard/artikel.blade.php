@@ -162,12 +162,12 @@
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                 action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
                                                 <a href="{{ route('dashboard.show', $artikel->id) }}"
-                                                    class="btn btn-sm btn-dark">SHOW</a>
+                                                    class="btn btn-sm btn-dark mt-2">SHOW</a>
                                                 <a href="{{ route('dashboard.edit', $artikel->id) }}"
-                                                    class="btn btn-sm btn-primary">EDIT</a>
+                                                    class="btn btn-sm btn-primary mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
+                                                <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
                                             </form>
                                         </td>
 
