@@ -77,6 +77,21 @@
 
 @section('content')
     <div class="container">
+
+        <div class="aganol-produk text-center mt-4">
+            <div class="col-12">
+              <img src="images/infografisproduk/yuri/infographic aganol-01.jpg" alt="" style="border-radius: 10%;">
+            </div>
+          </div>
+    
+          <div class="button-brand">
+            <a
+            href="https://www.yurishop.co/id/category/Household-Cleaners/Floor-Cleaner" target="_blank"
+            ><img src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="10%"><div class="centered">Beli Sekarang</div></a
+          >
+           </div>
+
+           <!--
         <div class="aganol-produk">
             <div class="card mb-3 mx-auto" style="max-width: 900px;">
                 <div class="row g-0">
@@ -103,6 +118,7 @@
                 </div>
             </div>
         </div>
+    -->
 
     </div>
     <!-- End Container -->

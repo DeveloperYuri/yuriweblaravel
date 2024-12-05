@@ -77,30 +77,18 @@
 
 @section('content')
     <div class="container">
-        <div class="yurimatic-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkyurimatic.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Yuri-matic Laundry Liquid Colour</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Cairan pencuci pakaian Yuri-matic® Colour
-                                memberikan Anda pakaian yang bersih dan sempurna seperti yang Anda harapkan. Mengandung
-                                sifat
-                                colour-protecting yang akan menjaga pakaian Anda terlihat cemerlang. Warna pada pakaian Anda
-                                tetap terjaga dengan deterjen 3-in-1 yang membersihkan, mencerahkan, sekaligus melindungi
-                                pakaian favorit Anda dari kepudaran. Yuri-matic® Colour telah meraih sertifikat
-                                Biodegradable
-                                Formulation oleh Green Label Singapore.</p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="yurimatic-produk text-center">
+            <div class="col-12">
+                <img src="images/infografisproduk/yuri/infographic yurimatic-01.jpg" alt=""
+                    style="border-radius: 3%;">
             </div>
+        </div>
+
+        <div class="button-brand">
+            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry" target="_blank"><img
+                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="10%">
+                <div class="centered">Beli Sekarang</div>
+            </a>
         </div>
     </div>
     <!-- End Container -->

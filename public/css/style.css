@@ -201,13 +201,6 @@ a:active { text-decoration: none; }
   width: 50%;
 }
 
-.yurimatic-produk img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .tril-produk img {
   display: block;
   margin-left: auto;
@@ -262,6 +255,30 @@ a:active { text-decoration: none; }
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+
+  .button-brand{
+    margin-bottom: 50px;
+  }
+
+  .yurimatic-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  #footerprodukaganol{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+
+  .aganol-produk img{
+      width: 300px;
+      height: 300px;
+  }
 
   #footerindexdistributor{
     height: 50px;
@@ -483,6 +500,23 @@ a:active { text-decoration: none; }
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+  .button-brand{
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .yurimatic-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .aganol-produk img{
+    width: 500px;
+    height: 450px;
+  }
 
   #footerindexdistributor{
     height: 50px;
@@ -950,6 +984,17 @@ a:active { text-decoration: none; }
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+  .button-brand{
+    margin-bottom: 50px;
+  }
+
+  .yurimatic-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
   #footerindexdistributor{
     height: 50px;
     padding-top: 10px;
@@ -1046,6 +1091,13 @@ a:active { text-decoration: none; }
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+  .yurimatic-produk img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
   #footerindexdistributor{
     height: 50px;
