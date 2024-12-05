@@ -77,7 +77,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
     public function home(): View
     {
         $blog = Blog::all();
-        return view('index', compact('blog'));
+        return view('dashboard.artikel', compact('blog'));
     } 
     
     public function logout(Request $request): RedirectResponse

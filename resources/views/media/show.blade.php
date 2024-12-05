@@ -81,7 +81,7 @@
             <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
         </div>
 
-        <div style="margin-left: 280px">
+        <div class="tglshowproduk">
             <p class="fw-bold">Yuri-Artikel</p>
             <p style="margin-top: -17px">Rabu, 20 November 2024</p>
         </div>

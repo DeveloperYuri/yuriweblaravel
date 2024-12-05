@@ -501,6 +501,10 @@ a:active { text-decoration: none; }
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
 
+  .tglshowproduk{
+    margin-left: 280px
+  }
+
   .button-brand{
     margin-bottom: 50px;
     margin-top: 30px;
@@ -1091,6 +1095,10 @@ a:active { text-decoration: none; }
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+  .tglshowproduk{
+    margin-left: 280px
+  }
 
   .yurimatic-produk img {
     display: block;
