@@ -82,10 +82,6 @@
             <img src="images/logobabydee.png" alt="">
         </div>
 
-        <div class="caption text-center mt-3">
-            <img src="images/infografisproduk/logobabydee.png" alt="">
-        </div>
-
         <div id="imagebrandbabydee" class="row mt-3">
             <div class="col-6">
                 <img class="babydee1" src="images/infografisproduk/babydee/testbrandimage.png" alt="" width="100%"

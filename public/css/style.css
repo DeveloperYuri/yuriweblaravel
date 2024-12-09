@@ -3,6 +3,10 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: none; }
 
+#imagebrandaganol{
+  margin-bottom: 20px;
+}
+
 .navbar-nav a.active {
   border-bottom: 3px solid #005eb8;
 }
@@ -256,6 +260,14 @@ a:active { text-decoration: none; }
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+  .aganolgeneral img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10%;
+  }
+
   .button-brand{
     margin-bottom: 50px;
   }
@@ -500,6 +512,14 @@ a:active { text-decoration: none; }
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+  .aganolgeneral img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10%;
+  }
 
   .tglshowproduk{
     margin-left: 280px
@@ -988,6 +1008,14 @@ a:active { text-decoration: none; }
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+  .aganolgeneral img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10%;
+  }
+
   .button-brand{
     margin-bottom: 50px;
   }
@@ -1095,6 +1123,14 @@ a:active { text-decoration: none; }
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+  .aganolgeneral img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10%;
+  }
 
   .tglshowproduk{
     margin-left: 280px

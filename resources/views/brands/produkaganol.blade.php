@@ -78,47 +78,39 @@
 @section('content')
     <div class="container">
 
-        <div class="aganol-produk text-center mt-4">
-            <div class="col-12">
-              <img src="images/infografisproduk/yuri/infographic aganol-01.jpg" alt="" style="border-radius: 10%;">
-            </div>
-          </div>
-    
-          <div class="button-brand">
-            <a
-            href="https://www.yurishop.co/id/category/Household-Cleaners/Floor-Cleaner" target="_blank"
-            ><img src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="10%"><div class="centered">Beli Sekarang</div></a
-          >
-           </div>
+        <div class="caption text-center">
+            <img src="images/logoaganol.png" alt="" width="150px">
+        </div>
 
-           <!--
-        <div class="aganol-produk">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkaganol.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8">Aganol Antibacterial Floor Cleaner</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">aganol® Pembersih lantai antibakteri
-                                dapat
-                                digunakan untuk lantai di rumah atau di ruang kerja Anda. Formulanya efektif mengangkat
-                                kotoran
-                                membandel dan bekerja dengan cepat sehingga Anda akan memiliki lantai bersih dan mengkilap
-                                dalam
-                                waktu singkat . Disempurnakan dengan aroma lavender yang meninggalkan kesegaran pada ruangan
-                                Anda. Cocok untuk semua jenis lantai : Marmer, Terraso, Vinyl, Kayu , Plastik, dan-lain
-                                lain.
-                            </p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
+        <div id="imagebrandaganol" class="row mt-3">
+            <div class="col-6">
+                <img class="aganol1" src="images/infografisproduk/yuri/infographicaganol-02.jpg" alt=""
+                    width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6">
+                <img class="aganol2" src="images/infografisproduk/yuri/infographicaganol-03.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol3" src="images/infografisproduk/yuri/infographicaganol-04.jpg" alt=""
+                    width="100%" alt="" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol4" src="images/infografisproduk/yuri/infographicaganol-05.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>
-    -->
+
+        <div class="aganolgeneral">
+            <img src="images/infografisproduk/yuri/infographicaganol-01.jpg" alt="" />
+        </div>
+
+        <div class="button-brand">
+            <a href="https://www.yurishop.co/id/category/Household-Cleaners/Floor-Cleaner" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+                    alt="Responsive image" width="30%" height="10%">
+                <div class="centered"><strong>Beli Sekarang</strong></div>
+            </a>
+        </div>
 
     </div>
     <!-- End Container -->
