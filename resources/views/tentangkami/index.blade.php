@@ -22,7 +22,7 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/') }}"
+                    href="{{ route('index') }}"
                     style="color: #005EB8">HOME</a>
                 </li>
 
@@ -30,7 +30,7 @@
                   <a
                     class="nav-link active fw-bold"
                     aria-current="page"
-                    href="{{ url('/tentangkami') }}"
+                    href="{{ route('index.tentangkami') }}"
                     style="color: #005EB8">TENTANG KAMI</a>
                 </li>
 
@@ -38,12 +38,12 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/brands') }}"
+                    href="{{ route('index.brands') }}"
                     style="color: #005EB8">BRANDS</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fw-bold" href="{{ url('/onlineshop') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
+                  <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
                     ONLINE SHOP
                   </a>
                   <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/media') }}"
+                    href="{{ route('media.index') }}"
                     style="color: #005EB8">MEDIA</a>
                 </li>
 
@@ -67,7 +67,7 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/produkbaru') }}"
+                    href="{{ route('index.produkbaru') }}"
                     style="color: #005EB8">PRODUK BARU</a>
                 </li>
 
@@ -75,7 +75,7 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/kontak') }}"
+                    href="{{ route('index.kontak') }}"
                     style="color: #005EB8">KONTAK</a>
                 </li>
 
@@ -83,7 +83,7 @@
                   <a
                     class="nav-link fw-bold"
                     aria-current="page"
-                    href="{{ url('/distributor') }}"
+                    href="{{ route('index.distributor') }}"
                     style="color: #005EB8">DISTRIBUTOR</a>
                 </li>
 

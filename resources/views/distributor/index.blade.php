@@ -14,22 +14,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index') }}"
                                 style="color: #005EB8">HOME</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/tentangkami') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
                                 style="color: #005EB8">TENTANG KAMI</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/brands') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
                                 style="color: #005EB8">BRANDS</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" href="{{ url('/onlineshop') }}" role="button"
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
                                 ONLINE SHOP
                             </a>
@@ -49,22 +49,22 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/media') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
                                 style="color: #005EB8">MEDIA</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/produkbaru') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
                                 style="color: #005EB8">PRODUK BARU</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ url('/kontak') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
                                 style="color: #005EB8">KONTAK</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-current="page" href="{{ url('/distributor') }}"
+                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
                                 style="color: #005EB8">DISTRIBUTOR</a>
                         </li>
 

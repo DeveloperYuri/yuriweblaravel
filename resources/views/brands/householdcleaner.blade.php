@@ -22,7 +22,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/') }}"
+                            href="{{ route('index') }}"
                             style="color: #005EB8">HOME</a>
                     </li>
 
@@ -30,7 +30,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/tentangkami') }}"
+                            href="{{ route('index.tentangkami') }}"
                             style="color: #005EB8">TENTANG KAMI</a>
                     </li>
 
@@ -38,12 +38,12 @@
                         <a
                             class="nav-link active fw-bold"
                             aria-current="page"
-                            href="{{ url('/brands') }}"
+                            href="{{ route('index.brands') }}"
                             style="color: #005EB8">BRANDS</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold" href="{{ url('/onlineshop') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
                             ONLINE SHOP
                         </a>
                         <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/media') }}"
+                            href="{{ route('media.index') }}"
                             style="color: #005EB8">MEDIA</a>
                     </li>
 
@@ -67,7 +67,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/produkbaru') }}"
+                            href="{{ route('index.produkbaru') }}"
                             style="color: #005EB8">PRODUK BARU</a>
                     </li>
 
@@ -75,7 +75,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/kontak') }}"
+                            href="{{ route('index.kontak') }}"
                             style="color: #005EB8">KONTAK</a>
                     </li>
 
@@ -83,7 +83,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ url('/distributor') }}"
+                            href="{{ route('index.distributor') }}"
                             style="color: #005EB8">DISTRIBUTOR</a>
                     </li>
 
@@ -112,45 +112,45 @@
     <!-- Content -->
     <div class="content-household">
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/aganol') }}" ><img src="images/household1.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/babysoft') }}" ><img src="images/household2.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/biosoftdetergen') }}" ><img src="images/household3.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.aganol') }}" ><img src="images/household1.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.babysoft') }}" ><img src="images/household2.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.biosoftdetergen') }}" ><img src="images/household3.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/biosoft') }}" ><img src="images/household4.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/bathroomcleaner') }}" ><img src="images/household5.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/yuribleach') }}" ><img src="images/household6.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.biosoft') }}" ><img src="images/household4.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.bathroomcleaner') }}" ><img src="images/household5.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.yuribleach') }}" ><img src="images/household6.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/fabriccare') }}" ><img src="images/household7.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/glasscleaner') }}" ><img src="images/household8.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/handgel') }}" ><img src="images/household9.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.fabriccare') }}" ><img src="images/household7.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.glasscleaner') }}" ><img src="images/household8.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.handgel') }}" ><img src="images/household9.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/handsoap') }}" ><img src="images/household10.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/ligent') }}" ><img src="images/household11.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/lysorin') }}" ><img src="images/household12.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.handsoap') }}" ><img src="images/household10.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.ligent') }}" ><img src="images/household11.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.lysorin') }}" ><img src="images/household12.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/yurisoft') }}" ><img src="images/household13.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/porstex') }}" ><img src="images/household14.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/yurisol') }}" ><img src="images/household15.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.yurisoft') }}" ><img src="images/household13.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.porstex') }}" ><img src="images/household14.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.yurisol') }}" ><img src="images/household15.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/taf') }}" ><img src="images/household16.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/yurimatic') }}" ><img src="images/household17.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/trill') }}" ><img src="images/household18.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.taf') }}" ><img src="images/household16.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.yurimatic') }}" ><img src="images/household17.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.tril') }}" ><img src="images/household18.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ url('/laundrydisinfektant') }}" ><img src="images/household19.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/disinfektantspray') }}" ><img src="images/household20.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ url('/handmoisturizer') }}" ><img src="images/household21.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.laundrydisinfektant') }}" ><img src="images/household19.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.disinfektantspray') }}" ><img src="images/household20.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('brands.handmoisturizer') }}" ><img src="images/household21.png" alt="" /></a></div>
         </div>
     </div>
     <!-- End Content-->

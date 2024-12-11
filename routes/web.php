@@ -10,49 +10,43 @@ use Illuminate\Support\Facades\Route;
 
 //Navbar
 Route::get('/', [HomeController::class,'index'])->name('index');
-Route::get('/tentangkami', [BlogController::class,'tentangKami']);
-Route::get('/brands', [BlogController::class,'brands']);
-Route::get('/onlineshop', [BlogController::class,'onlineShop']);
-Route::get('/produkbaru', [BlogController::class,'produkBaru']);
-Route::get('/kontak', [BlogController::class,'kontak']);
-Route::get('/distributor', [BlogController::class,'distributor']);
-
-//Artikel
-Route::get('/article1', [BlogController::class,'article1']);
-Route::get('/article2',[BlogController::class,'article2']);
-Route::get('/article3', [BlogController::class,'article3']);
+Route::get('/tentangkami', [HomeController::class,'tentangKami'])->name('index.tentangkami');
+Route::get('/brands', [HomeController::class,'brands'])->name('index.brands');
+Route::get('/produkbaru', [HomeController::class,'produkBaru'])->name('index.produkbaru');
+Route::get('/kontak', [HomeController::class,'kontak'])->name('index.kontak');
+Route::get('/distributor', [HomeController::class,'distributor'])->name('index.distributor');
 
 //Brand
-Route::get('/householdcleaner', [BlogController::class,'householdcleaner']);
-Route::get('/childrentoilet', [BlogController::class,'childrentoilet']);
-Route::get('/babytoilet', [BlogController::class,'babytoilet']);
-Route::get('/adulttoilet', [BlogController::class,'adulttoilet']);
+Route::get('/householdcleaner', [HomeController::class,'householdcleaner'])->name('brands.householdcleaner');
+Route::get('/childrentoilet', [HomeController::class,'childrentoilet'])->name('brands.childrentoilet');
+Route::get('/babytoilet', [HomeController::class,'babytoilet'])->name('brands.babytoilet');
+Route::get('/adulttoilet', [HomeController::class,'adulttoilet'])->name('brands.adulttoilet');
 
 //Produk
-Route::get('/aganol', [BlogController::class,'aganolproduk']);
-Route::get('/babysoft', [BlogController::class,'babysoftproduk']);
-Route::get('/biosoftdetergen', [BlogController::class,'biosoftdetergenproduk']);
-Route::get('/biosoft', [BlogController::class,'biosoftproduk']);
-Route::get('/bathroomcleaner', [BlogController::class,'bathroomcleanerproduk']);
-Route::get('/yuribleach', [BlogController::class,'yuribleachproduk']);
-Route::get('/fabriccare', [BlogController::class,'fabriccareproduk']);
-Route::get('/glasscleaner', [BlogController::class,'glasscleanerproduk']);
-Route::get('/handgel', [BlogController::class,'handgelproduk']);
-Route::get('/handsoap', [BlogController::class,'handsoapproduk']);
-Route::get('/ligent', [BlogController::class,'ligentproduk']);
-Route::get('/lysorin', [BlogController::class,'lysorinproduk']);
-Route::get('/yurisoft', [BlogController::class,'yurisoftproduk']);
-Route::get('/porstex', [BlogController::class,'porstexproduk']);
-Route::get('/yurisol', [BlogController::class,'yurisolproduk']);
-Route::get('/taf', [BlogController::class,'tafproduk']);
-Route::get('/yurimatic', [BlogController::class,'yurimaticproduk']);
-Route::get('/tril', [BlogController::class,'trilproduk']);
-Route::get('/laundrydisinfektant', [BlogController::class,'laundrydisinfektantproduk']);
-Route::get('/disinfektantspray', [BlogController::class,'disinfektantsprayproduk']);
-Route::get('/handmoisturizer', [BlogController::class,'handmoisturizerproduk']);
+Route::get('/aganol', [HomeController::class,'aganolproduk'])->name('brands.aganol');
+Route::get('/babysoft', [HomeController::class,'babysoftproduk'])->name('brands.babysoft');
+Route::get('/biosoftdetergen', [HomeController::class,'biosoftdetergenproduk'])->name('brands.biosoftdetergen');
+Route::get('/biosoft', [HomeController::class,'biosoftproduk'])->name('brands.biosoft');
+Route::get('/bathroomcleaner', [HomeController::class,'bathroomcleanerproduk'])->name('brands.bathroomcleaner');
+Route::get('/yuribleach', [HomeController::class,'yuribleachproduk'])->name('brands.yuribleach');
+Route::get('/fabriccare', [HomeController::class,'fabriccareproduk'])->name('brands.fabriccare');
+Route::get('/glasscleaner', [HomeController::class,'glasscleanerproduk'])->name('brands.glasscleaner');
+Route::get('/handgel', [HomeController::class,'handgelproduk'])->name('brands.handgel');
+Route::get('/handsoap', [HomeController::class,'handsoapproduk'])->name('brands.handsoap');
+Route::get('/ligent', [HomeController::class,'ligentproduk'])->name('brands.ligent');
+Route::get('/lysorin', [HomeController::class,'lysorinproduk'])->name('brands.lysorin');
+Route::get('/yurisoft', [HomeController::class,'yurisoftproduk'])->name('brands.yurisoft');
+Route::get('/porstex', [HomeController::class,'porstexproduk'])->name('brands.porstex');
+Route::get('/yurisol', [HomeController::class,'yurisolproduk'])->name('brands.yurisol');
+Route::get('/taf', [HomeController::class,'tafproduk'])->name('brands.taf');
+Route::get('/yurimatic', [HomeController::class,'yurimaticproduk'])->name('brands.yurimatic');
+Route::get('/tril', [HomeController::class,'trilproduk'])->name('brands.tril');
+Route::get('/laundrydisinfektant', [HomeController::class,'laundrydisinfektantproduk'])->name('brands.laundrydisinfektant');
+Route::get('/disinfektantspray', [HomeController::class,'disinfektantsprayproduk'])->name('brands.disinfektantspray');
+Route::get('/handmoisturizer', [HomeController::class,'handmoisturizerproduk'])->name('brands.handmoisturizer');
 
 //FAQ
-Route::get('/faq', [BlogController::class,'faq'])->name('index.faq');
+Route::get('/faq', [HomeController::class,'faq'])->name('index.faq');
 
 
 //Login & Register
@@ -65,14 +59,6 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/logout', 'logout')->name('logout');
 });
 
-//CRUD 
-Route::get('/homepage', [BlogController::class, 'index'])->name('index.index');
-Route::get('/create', [BlogController::class, 'create'])->name('index.create');
-Route::post('/storesave', [BlogController::class, 'store'])->name('index.store');
-Route::delete('/blog/delete{id}', [BlogController::class, 'destroy'])->name('index.destroy');
-Route::get('/blog/edit{id}', [BlogController::class, 'edit'])->name('index.edit');
-Route::put('/blog/update{id}', [BlogController::class, 'update'])->name('index.update');
-
 //CRUD Image
 Route::resource('/artikellama', \App\Http\Controllers\BlogControllerBaru::class);
 
@@ -80,7 +66,7 @@ Route::resource('/artikellama', \App\Http\Controllers\BlogControllerBaru::class)
 Route::get('/media', [MediaController::class,'index'])->name('media.index');
 Route::get('/media/{id}', [MediaController::class,'show'])->name('media.show');
 
-
+//Dashboard
 Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard.index');
 Route::get('/dashboardartikel', [DashboardController::class,'dashboardartikel'])->name('dashboard.artikel');
 Route::get('/create', [DashboardController::class,'create'])->name('dashboard.create');
