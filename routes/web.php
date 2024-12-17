@@ -1,8 +1,6 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginRegisterController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\BlogControllerBaru;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
@@ -58,9 +56,6 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/home', 'home')->name('home');
     Route::post('/logout', 'logout')->name('logout');
 });
-
-//CRUD Image
-Route::resource('/artikellama', \App\Http\Controllers\BlogControllerBaru::class);
 
 //Media
 Route::get('/media', [MediaController::class,'index'])->name('media.index');

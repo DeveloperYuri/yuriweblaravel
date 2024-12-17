@@ -140,7 +140,7 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerindex" class="card-footer text-body-secondary bg-dark" style="margin-top: 40px;">
+    <div id="footerindexmedia" class="card-footer text-body-secondary bg-dark" style="margin-top: 40px;">
         <div class="container">
             <div class="row" style="padding-top: 0px;">
                 <div id="footercopyright" class="col-md-8">

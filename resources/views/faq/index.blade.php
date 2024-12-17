@@ -394,7 +394,7 @@
             </div>
 
             <div class="button-brand">
-                <a href={{ route('index') }} target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+                <a href={{ route('index') }} ><img src="images/bingkai klik-8.png" class="img-fluid"
                         alt="Responsive image" width="30%" height="10%">
                     <div class="centered"><strong>Selengkapnya</strong></div>
                 </a>

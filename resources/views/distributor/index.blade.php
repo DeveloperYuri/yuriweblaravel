@@ -80,7 +80,7 @@
     <div class="container">
         <!-- Banner Homepage-->
         <div class="banner-distributor text-center mt-3" data-aos="fade-up">
-            <img src="images/3d-map-of-indonesia-png-pinpoint.png" class="img-fluid" alt="..." width="100%" height="100%">
+            <img src="images/PetaCabang.png" class="img-fluid" alt="..." width="100%" height="100%">
         </div>
         <!-- End Banner Homepage -->
 

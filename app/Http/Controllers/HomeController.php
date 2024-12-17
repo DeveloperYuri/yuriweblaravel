@@ -143,8 +143,7 @@ class HomeController extends Controller
     public function handmoisturizerproduk(){
         return view('brands.produkhandmoisturizer');
     }
-
-
+    
     public function faq(){
         return view('faq.index');
     }
