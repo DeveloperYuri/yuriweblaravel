@@ -17,6 +17,19 @@
     <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css') }}">
     <link rel="icon" href="images/logo-8.png" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NKRW8V3SDC');
+    </script>
+
 </head>
 <!--
 `body` tag options:
@@ -179,8 +192,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link text-center">
-                <span class="brand-text font-weight-light"><img src="{{ asset('images/logo-8.png') }}"
-                    width="100px" height="50px" /></span>
+                <span class="brand-text font-weight-light"><img src="{{ asset('images/logo-8.png') }}" width="100px"
+                        height="50px" /></span>
             </a>
 
             <!-- Sidebar -->
@@ -233,7 +246,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.artikel')}}" class="nav-link">
+                            <a href="{{ route('dashboard.artikel') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Artikel
@@ -247,7 +260,7 @@
             <!-- /.sidebar -->
         </aside>
 
-            @yield('content')
+        @yield('content')
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
