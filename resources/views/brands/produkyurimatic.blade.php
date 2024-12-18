@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('navbar')
-        <!-- Navbar Menu -->
+    <!-- Navbar Menu -->
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
@@ -77,24 +77,43 @@
 
 @section('content')
     <div class="container">
-        <div class="yurimatic-produk text-center">
-            <div class="col-12">
-                <img src="images/infografisproduk/yuri/infographic yurimatic-01.jpg" alt=""
-                    style="border-radius: 3%;">
+        
+        <div class="captionyurimatic text-center">
+            <img src="images/infografisproduk/yuri/yurimatic/yurimaticlogo-8.png" alt="" width="250px">
+        </div>
+
+        <div id="imagebrandaganol" class="row mt-3">
+            <div class="col-6">
+                <img class="aganol1" src="images/infografisproduk/yuri/yurimatic/infographicyurimatic-01.jpg" alt=""
+                    width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6">
+                <img class="aganol2" src="images/infografisproduk/yuri/yurimatic/infographicyurimatic-02.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol3" src="images/infografisproduk/yuri/yurimatic/infographicyurimatic-03.jpg" alt=""
+                    width="100%" alt="" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol4" src="images/infografisproduk/yuri/yurimatic/infographicyurimatic-04.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>
 
         <div class="button-brand">
             <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry" target="_blank"><img
-                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="10%">
-                <div class="centered">Beli Sekarang</div>
+                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                    height="10%">
+                <div class="centered"><strong>Beli Sekarang</strong></div>
             </a>
         </div>
+
     </div>
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukyurimatic" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>

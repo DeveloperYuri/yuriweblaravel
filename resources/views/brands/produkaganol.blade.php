@@ -79,24 +79,24 @@
     <div class="container">
 
         <div class="caption text-center">
-            <img src="images/logoaganol.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/aganol/logoaganol.png" alt="" width="150px">
         </div>
 
         <div id="imagebrandaganol" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/infographicaganol-02.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/yuri/aganol/infographicaganol-02.jpg" alt=""
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/infographicaganol-03.jpg" alt=""
+                <img class="aganol2" src="images/infografisproduk/yuri/aganol/infographicaganol-03.jpg" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/infographicaganol-04.jpg" alt=""
+                <img class="aganol3" src="images/infografisproduk/yuri/aganol/infographicaganol-04.jpg" alt=""
                     width="100%" alt="" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/infographicaganol-05.jpg" alt=""
+                <img class="aganol4" src="images/infografisproduk/yuri/aganol/infographicaganol-05.jpg" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>

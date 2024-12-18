@@ -260,6 +260,10 @@ a:active { text-decoration: none; }
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+  .captionyurimatic img{
+    width: 160px;
+  }
+
   #footerindexmedia{
     padding-top: 10px;
   }
@@ -291,14 +295,6 @@ a:active { text-decoration: none; }
     margin-right: auto;
     width: 80%;
   }
-
-  #footerprodukaganol{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: 10px;
-  }
-
 
   .aganol-produk img{
       width: 300px;
@@ -574,12 +570,6 @@ a:active { text-decoration: none; }
   #footerindex{
     height: 50px;
     padding-top: 10px;
-  }
-
-  #footerprodukaganol{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
   }
 
   #navbardashboard ul{
@@ -1106,12 +1096,6 @@ a:active { text-decoration: none; }
     width: 100%;
   }
 
-  #footerprodukaganol {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
   .aganol-produk img {
     display: block;
     margin-left: auto;
@@ -1253,13 +1237,6 @@ a:active { text-decoration: none; }
     bottom: 0;
     width: 100%;
   }
-
-  #footerprodukaganol{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
 
 }
 
