@@ -13,12 +13,19 @@ class ForgotPasswordMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $user;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($user)
     {
-        //
+        $this->user = $user;
+    }
+
+    public function build()
+    {
+        return $this->markdown('authbaru.emails.forgot_password')->subject(config('app,name') . ', Forgot Password');
     }
 
     /**
@@ -37,7 +44,7 @@ class ForgotPasswordMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'authbaru.emails.forgot_password',
         );
     }
 

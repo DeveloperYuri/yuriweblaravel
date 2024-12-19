@@ -65,7 +65,7 @@ class AuthControllerBaru extends Controller
 
     public function forgot()
     {
-        return view('auth.forgot');
+        return view('authbaru.forgot');
     }
 
     public function forgot_post(Request $request)
@@ -100,7 +100,7 @@ class AuthControllerBaru extends Controller
         $user = $user->first();
         $data['token'] = $token;
 
-        return view('auth.reset', $data);
+        return view('authbaru.reset', $data);
     }
 
     public function postReset($token, ResetPassword $request)
@@ -117,7 +117,7 @@ class AuthControllerBaru extends Controller
         $user->remember_token = Str::random(50);
         $user->save();
 
-        return redirect('login')->with('success', 'Successfully Password Reset');
+        return redirect('loginbaru')->with('success', 'Successfully Password Reset');
     }
 
     public function logout()

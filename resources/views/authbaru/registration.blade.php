@@ -33,7 +33,7 @@
                 <img src="{{ asset('images/logo-8.png') }}" alt="" width="30%" style="">
             </div>
 
-            <div class="title"><span>Registration Page</span></div>
+            <div class="title"><span>Registration</span></div>
             <form action="{{ url('registration_post') }}" method="POST">
 
                 {{ csrf_field() }}
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="signup-link">
-                    Sign In? <a href="{{ url('login') }}">Login</a>
+                    Sign In? <a href="{{ url('loginbaru') }}">Login</a>
                 </div>
 
             </form>
