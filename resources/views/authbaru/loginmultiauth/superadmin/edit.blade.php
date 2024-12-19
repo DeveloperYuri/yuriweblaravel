@@ -25,6 +25,12 @@
 
 </head>
 
+<style>
+    .ck-editor__editable {
+        min-height: 300px;
+    }
+</style>
+
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         <!-- Navbar -->
@@ -42,7 +48,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        {{ Auth::user()->name }}
+                        <i class="fas fa-user-circle"> {{ Auth::user()->name }}</i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
@@ -69,7 +75,6 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
-
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
@@ -89,22 +94,29 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <!--
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link">
+                            <a href="#" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
                         </li>
-                    -->
 
-                        <li class="nav-item menu-open">
-                            <a href="{{ route('dashboard.artikel')}}" class="nav-link active">
+                        <li class="nav-item">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.artikel') }}" class="nav-link">
+                                <i class="nav-icon fab fa-product-hunt"></i>
+                                <p>
+                                    Produk Baru
                                 </p>
                             </a>
                         </li>
@@ -123,12 +135,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DAFTAR ARTIKEL</h1>
+                            <h1>Edit Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Daftar Artikel</li>
+                                <li class="breadcrumb-item active">Edit Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -139,50 +151,59 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3"><i class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
+                        <a href="{{ route('superadmindashboard.artikel') }}" class="btn btn-success mb-3"><i
+                                class="fas fa-undo"></i>&nbsp Kembali </a>
 
-                        <table class="table mb-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Image</th>
-                                    <th scope="col" class="text-center">Title</th>
-                                    <th scope="col" class="text-center">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @forelse ($artikels as $key => $artikel)
-                                    <tr>
-                                        <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
-                                        <td class="text-center">
-                                            <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
-                                        </td>
-                                        <td class="text-center">{{ $artikel->title }}</td>
 
-                                        <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
-                                                <a href="{{ route('dashboard.show', $artikel->id) }}"
-                                                    class="btn btn-sm btn-dark mt-2">SHOW</a>
-                                                <a href="{{ route('dashboard.edit', $artikel->id) }}"
-                                                    class="btn btn-sm btn-primary mt-2">EDIT</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
-                                            </form>
-                                        </td>
+                        <form action="{{ route('superadmindashboard.update', $artikels->id) }}" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
 
-                                    </tr>
-                                @empty
-                                    <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">IMAGE</label>
+                                <input type="file" class="form-control @error('image') is-invalid @enderror"
+                                    name="image" value="{{ old('title', $artikels->image) }}">
+
+                                <!-- error message untuk image -->
+                                @error('image')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
                                     </div>
-                                @endforelse
-                            </tbody>
-                        </table>
+                                @enderror
+                            </div>
 
-                        {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">TITLE</label>
+                                <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    name="title" value="{{ old('title', $artikels->title) }}"
+                                    placeholder="Masukkan Judul Artikel">
+
+                                <!-- error message untuk title -->
+                                @error('title')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikels->description) }}</textarea>
+
+                                <!-- error message untuk description -->
+                                @error('description')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <button type="submit" class="btn btn-md btn-primary me-3"><i
+                                    class="fas fa-save"></i>&nbsp Update</button>
+
+                        </form>
 
                     </div>
                 </div>
@@ -229,6 +250,46 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('template/dist/js/demo.js') }}"></script>
     <!-- Page specific script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+
+
+    <script>
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('textarea'))
+
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+            })
+            .catch(error => {
+                console.error('Error during initialization of the editor', error);
+            });
+    </script>
+
+    <script>
+        //message with sweetalert
+        @if (session('success'))
+            Swal.fire({
+                icon: "success",
+                title: "BERHASIL",
+                text: "{{ session('success') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @elseif (session('error'))
+            Swal.fire({
+                icon: "error",
+                title: "GAGAL!",
+                text: "{{ session('error') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @endif
+    </script>
+
     <script>
         $(function() {
             $("#example1").DataTable({

@@ -42,7 +42,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        {{ Auth::user()->name }}
+                        <i class="fas fa-user-circle"> {{ Auth::user()->name }}</i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
@@ -89,19 +89,17 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <!--
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link">
+                            <a href="{{ route('superadmindashboard.dashboard') }}" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
                         </li>
-                    -->
 
-                        <li class="nav-item menu-open">
-                            <a href="{{ route('dashboard.artikel')}}" class="nav-link active">
+                        <li class="nav-item">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -109,6 +107,14 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.artikel') }}" class="nav-link">
+                                <i class="nav-icon fab fa-product-hunt"></i>
+                                <p>
+                                    Produk Baru
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -123,7 +129,7 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DAFTAR ARTIKEL</h1>
+                            <h1>Daftar Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -139,7 +145,8 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3"><i class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
+                        <a href="{{ route('superadmindashboard.create') }}" class="btn btn-md btn-primary mb-3"><i
+                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
 
                         <table class="table mb-3">
                             <thead>
@@ -162,14 +169,16 @@
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
-                                                <a href="{{ route('dashboard.show', $artikel->id) }}"
+                                                action="{{ route('superadmindashboard.destroy', $artikel->id) }}"
+                                                method="POST">
+                                                <a href="{{ route('superadmindashboard.show', $artikel->id) }}"
                                                     class="btn btn-sm btn-dark mt-2">SHOW</a>
-                                                <a href="{{ route('dashboard.edit', $artikel->id) }}"
+                                                <a href="{{ route('superadmindashboard.edit', $artikel->id) }}"
                                                     class="btn btn-sm btn-primary mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                                <button type="submit"
+                                                    class="btn btn-sm btn-danger mt-2">HAPUS</button>
                                             </form>
                                         </td>
 

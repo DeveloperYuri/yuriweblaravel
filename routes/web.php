@@ -48,7 +48,6 @@ Route::get('/handmoisturizer', [HomeController::class,'handmoisturizerproduk'])-
 //FAQ
 Route::get('/faq', [HomeController::class,'faq'])->name('index.faq');
 
-
 //Login & Register
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register/yuri', 'register')->name('register');
@@ -73,7 +72,6 @@ Route::delete('/dashboard/delete{id}', [DashboardController::class, 'destroy'])-
 Route::put('/dashboard/update{id}', [DashboardController::class, 'update'])->name('dashboard.update');
 Route::get('/dashboard/{id}', [DashboardController::class,'show'])->name('dashboard.show');
 
-
 // Login Multi Auth 
 
 // Registration
@@ -96,12 +94,23 @@ Route::post('reset_post/{token}', [AuthControllerBaru::class, 'postReset']);
 Route::get('logoutbaru', [AuthControllerBaru::class, 'logout']);
 
 Route::group(['middleware' => 'superadmin'], function () {
-    Route::get('superadmin/dashboard', [DashboardControllerBaru::class, 'dashboard']);
+    Route::get('superadmin/dashboard', [DashboardControllerBaru::class, 'dashboard'])->name('superadmindashboard.dashboard');
 });
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin/dashboard', [DashboardControllerBaru::class, 'dashboard']);
 });
+
+// Dashboard Baru
+Route::get('/superadmin/artikel', [DashboardControllerBaru::class,'dashboardartikel'])->name('superadmindashboard.artikel');
+Route::get('/superadmin/create', [DashboardControllerBaru::class,'create'])->name('superadmindashboard.create');
+Route::post('/superadmin/store', [DashboardControllerBaru::class, 'store'])->name('superadmindashboard.store');
+Route::get('/superadmin/dashboard/edit{id}', [DashboardControllerBaru::class, 'edit'])->name('superadmindashboard.edit');
+Route::delete('/superadmin/dashboard/delete{id}', [DashboardControllerBaru::class, 'destroy'])->name('superadmindashboard.destroy');
+Route::put('/superadmin/dashboard/update{id}', [DashboardControllerBaru::class, 'update'])->name('superadmindashboard.update');
+Route::get('/superadmin/dashboard/{id}', [DashboardControllerBaru::class,'show'])->name('superadmindashboard.show');
+
+
 
 
 
