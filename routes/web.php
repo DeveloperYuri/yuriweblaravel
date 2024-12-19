@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
+use App\Http\Controllers\AuthControllerBaru;
+use App\Http\Controllers\DashboardControllerBaru;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -70,6 +72,37 @@ Route::get('/dashboard/edit{id}', [DashboardController::class, 'edit'])->name('d
 Route::delete('/dashboard/delete{id}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
 Route::put('/dashboard/update{id}', [DashboardController::class, 'update'])->name('dashboard.update');
 Route::get('/dashboard/{id}', [DashboardController::class,'show'])->name('dashboard.show');
+
+
+// Login Multi Auth 
+
+// Registration
+Route::get('registrationbaru', [AuthControllerBaru::class, 'registrationbaru']);
+Route::post('registration_post', [AuthControllerBaru::class, 'registration_post']);
+
+// Login
+Route::get('loginbaru', [AuthControllerBaru::class, 'loginbaru']);
+Route::post('login_post', [AuthControllerBaru::class, 'login_post']);
+
+// Forgot Password
+Route::get('forgot', [AuthControllerBaru::class, 'forgot']);
+Route::post('forgot_post', [AuthControllerBaru::class, 'forgot_post']);
+
+// Reset Password
+Route::get('reset/{token}', [AuthControllerBaru::class, 'getReset']);
+Route::post('reset_post/{token}', [AuthControllerBaru::class, 'postReset']);
+
+// Logout
+Route::get('logoutbaru', [AuthControllerBaru::class, 'logout']);
+
+Route::group(['middleware' => 'superadmin'], function () {
+    Route::get('superadmin/dashboard', [DashboardControllerBaru::class, 'dashboard']);
+});
+
+Route::group(['middleware' => 'admin'], function () {
+    Route::get('admin/dashboard', [DashboardControllerBaru::class, 'dashboard']);
+});
+
 
 
 
