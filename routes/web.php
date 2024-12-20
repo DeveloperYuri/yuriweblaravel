@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\DashboardControllerBaru;
+use App\Http\Controllers\ProdukBaruController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -109,6 +110,15 @@ Route::get('/superadmin/dashboard/edit{id}', [DashboardControllerBaru::class, 'e
 Route::delete('/superadmin/dashboard/delete{id}', [DashboardControllerBaru::class, 'destroy'])->name('superadmindashboard.destroy');
 Route::put('/superadmin/dashboard/update{id}', [DashboardControllerBaru::class, 'update'])->name('superadmindashboard.update');
 Route::get('/superadmin/dashboard/{id}', [DashboardControllerBaru::class,'show'])->name('superadmindashboard.show');
+
+Route::get('/superadmin/produkbaru', [ProdukBaruController::class,'index'])->name('produkbaru.index');
+Route::get('/superadmin/createprodukbaru', [ProdukBaruController::class,'create'])->name('produkbaru.create');
+Route::get('/superadmin/editprodukbaru/edit{id}', [ProdukBaruController::class,'edit'])->name('produkbaru.edit');
+Route::post('/superadmin/postprodukbaru', [ProdukBaruController::class,'store'])->name('produkbaru.store');
+Route::delete('/superadmin/deleteprodukbaru/delete{id}', [ProdukBaruController::class,'destroy'])->name('produkbaru.destroy');
+Route::put('/superadmin/produkbaru/update{id}', [ProdukBaruController::class, 'update'])->name('produkbaru.update');
+Route::get('/superadmin/showprodukbaru/{id}', [ProdukBaruController::class,'show'])->name('produkbaru.show');
+
 
 
 

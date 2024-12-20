@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | Show Artikel</title>
+    <title>Dashboard | Produk Baru</title>
 
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
 
@@ -71,6 +71,7 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
+
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
@@ -100,7 +101,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link ">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -140,12 +141,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Preview Artikel</h1>
+                            <h1>Daftar Produk Baru</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Preview Artikel</li>
+                                <li class="breadcrumb-item active">Produk Baru</li>
                             </ol>
                         </div>
                     </div>
@@ -156,30 +157,54 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <div class="article1">
-                            <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikels->title }}</h4>
-                        </div>
+                        <a href="{{ route('produkbaru.create') }}" class="btn btn-md btn-primary mb-3"><i
+                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Produk</a>
+                        <table class="table mb-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">No</th>
+                                    <th scope="col" class="text-center">Image</th>
+                                    <th scope="col" class="text-center">Description</th>
+                                    <th scope="col" class="text-center">Slug</th>
+                                    <th scope="col" class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse ($produkbaru as $key => $produks)
+                                    <tr>
+                                        <td class="text-center">{{ $produkbaru->firstItem() + $key }}</td>
+                                        <td class="text-center">
+                                            <img src="{{ asset('/storage/produkbaru/' . $produks->image) }}"
+                                                class="rounded" style="width: 100px" height="70px">
+                                        </td>
 
-                        <!-- Banner Homepage-->
-                        <div class="banner-article1 text-center" data-aos="fade-up">
-                            <img src="{{ asset('/storage/artikels/' . $artikels->image) }}" class="img-fluid"
-                                alt="...">
-                        </div>
-                        <!-- End Banner Homepage -->
+                                        <td class="text-center">{{ $produks->description }}</td>
+                                        <td class="text-center">{{ $produks->slug }}</td>
 
-                        <!-- Content1 -->
-                        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify"
-                            data-aos="fade-up">
+                                        <td class="text-center">
+                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                                                action="{{ route('produkbaru.destroy', $produks->id) }}"
+                                                method="POST">
+                                                <a href="{{ route('produkbaru.show', $produks->id)}}" class="btn btn-sm btn-dark mt-2">SHOW</a>
+                                                <a href="{{ route('produkbaru.edit', $produks->id)}}" class="btn btn-sm btn-primary mt-2">EDIT</a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit"
+                                                    class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                            </form>
+                                        </td>
 
-                            {!! $artikels->description !!}
+                                    </tr>
+                                @empty
+                                    <div class="alert alert-danger">
+                                        Data Products belum Tersedia.
+                                    </div>
+                                @endforelse
+                            </tbody>
+                        </table>
 
-                        </div>
+                        {!! $produkbaru->withQueryString()->links('pagination::bootstrap-5') !!}
 
-                        <div>
-                            <a href="{{ route('superadmindashboard.edit', $artikels->id) }}"
-                                class="btn btn-sm btn-warning">Edit Artikel</a>
-                            <a href="{{ route('produkbaru.index') }}" class="btn btn-sm btn-success">Kembali Ke Daftar Artikel</a>
-                        </div>
 
                     </div>
                 </div>

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('produk_barus', function (Blueprint $table) {
             $table->id();
             $table->string('image');
+            $table->text('description');
             $table->timestamps();
         });
     }

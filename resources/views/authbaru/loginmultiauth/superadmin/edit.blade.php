@@ -115,7 +115,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.artikel') }}" class="nav-link">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru

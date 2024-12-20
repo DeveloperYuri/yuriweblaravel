@@ -6,6 +6,7 @@ use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\ProdukBaru;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
@@ -150,4 +151,5 @@ class DashboardControllerBaru extends Controller
         //redirect to index
         return redirect()->route('superadmindashboard.artikel')->with(['success' => 'Data Berhasil Dihapus!']);
     }
+    
 }

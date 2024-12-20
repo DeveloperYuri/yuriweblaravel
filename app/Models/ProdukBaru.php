@@ -15,6 +15,7 @@ class ProdukBaru extends Model
      * @var array
      */
     protected $fillable = [
-        'image'
+        'image',
+        'description'
     ];
 }
