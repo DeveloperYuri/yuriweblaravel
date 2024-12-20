@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | Artikel</title>
+    <title>Dashboard | Edit Artikel</title>
+
+    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -95,7 +97,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">
+                            <a href="{{ route('superadmindashboard.dashboard') }}" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -117,6 +119,15 @@
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-circle"></i>
+                                <p>
+                                    User
                                 </p>
                             </a>
                         </li>
