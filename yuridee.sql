@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2024 at 01:58 AM
+-- Generation Time: Dec 23, 2024 at 01:37 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,10 +41,9 @@ CREATE TABLE `artikels` (
 --
 
 INSERT INTO `artikels` (`id`, `image`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(19, 'TNkMAFG5QBrxrl57ymIjHtPGoBS6P2IS6wdeI4xO.png', '9 Tips Cerdas Membersihkan Rumah dan Dapur Dengan Benar', '<p>Pekerjaan rumah tangga memang tak pernah ada hentinya dan tak pernah pula ada habisnya. Jika Anda ingin membersihkan rumah tetapi tidak memiliki banyak waktu untuk berbelanja berbagai macam pembersih, yuk, pelajari 9 cara praktis yang bisa mempersingkat dan memudahkan tugas kita di dalam rumah berikut ini.</p><ul><li>Bubuk Kopi</li><li>Selotip</li><li>Blender</li><li>Wastafel yang Tersumbat</li><li>Sepatu Basah</li><li>Noda pada Karpet</li><li>Bubuk Kopi</li><li>Beking Soda</li><li>Spons dan Sikat Arang</li><li>Peralatan Berbahan Perak</li></ul>', '2024-11-17 18:21:44', '2024-11-17 18:59:32'),
-(20, 'BuH5EtEsFxt3e88Ac3mEPoEy79g1vE2eWLPwBm5z.png', '7 Ciri-ciri Anak Sehat', '<p>Anak yang sehat dengan pertumbuhan dan perkembangan yang normal tentu menjadi idaman semua orang tua. Ciri-ciri anak yang sehat tidak hanya dapat dilihat dari fisiknya, namun juga dari psikis dan sosialisasi terhadap lingkungan di sekitarnya. Seperti apa ciri-ciri anak sehat tersebut? Berikut ulasannya:</p><ol><li>Memiliki nafsu makan yang baik</li><li>Pernapasan tidak berbau</li><li>Memiliki gigi cemerlang dan gusi berwarna merah muda</li><li>Kulit bersih dan apabila terluka mudah sembuh</li><li>Suhu tubuh berada di antara 36,3oC - 37,7oC</li><li>Rambut tidak kusam dan rontok</li><li>Antusias bermain</li></ol>', '2024-11-17 18:22:32', '2024-11-17 18:22:32'),
-(21, 'LZ3b0Ykevakeqd2HEO43iPYyEMojQY0isyzDASJs.png', 'Tetap Cantik Setelah Melahirkan dengan Tips Berikut Ini!', '<p>Terkadang flek-flek hitam serta jerawat sering dijumpai pada area wajah pasca melahirkan. Juga Selulit dan berbagai jenis gangguan pada kulit seperti pigmentasi. Munculnya flek hitam ataupun jerawat disebabkan oleh gangguan peningkatan aktifitas hormon pada masa kehamilan, sedangkan selulit bisa disebabkan karena penurunan elastisistas jaringan kulit. Oleh karena itu, agar kesehatan kulit tubuh dan wajah kembali normal seperti sebelumnya, ada baiknya jika dilakukan berbagai macam tindakan perawatan ataupun pengobatan. Berikut ini beberapa jenis dan macam perawatan kulit tubuh dan wajah pasca melahirkan secara alami yang bisa diakukan, yaitu:</p>', '2024-11-17 20:13:08', '2024-11-18 00:35:45'),
-(29, 'nxBq2hf4tdYckQ4iaba3zGMy4LpDHO7mpJBSfYe6.png', 'fadfsafafaf', '<p>fsafsafsafafasfas</p>', '2024-11-18 01:56:38', '2024-11-18 01:56:38');
+(41, 'afGjMCTmR3iS33zXBpCa3DphoiznhOqikAN6Yiun.png', '7 Langkah Efektif Mencuci Tangan dengan Sabun', '<p>Cara yang paling dianjurkan oleh WHO untuk membersihkan tangan ialah dengan cara mencuci tangan dengan sabun dan menggunakan air bersih yang mengalir dari keran selama 30 detik. Lalu bagaimana cara yang tepat untuk mencuci tangan?</p><ul><li>Basahi kedua telapak setinggi pertengahan lengan memakai air yang mengalir, ambil sabun kemudian usap lalu gosok kedua telapak secara lembut.</li><li>Usap dan gosok juga kedua punggung tangan secara bergantian, jangan terburu-buru.</li><li>Jangan lupa jari-jari anda, gosok sela-sela jari hingga bersih.</li><li>Bersihkan ujung jari secara bergantian dengan mengatupkannya.</li><li>Gosok dan putar kedua ibu jari secara bergantian.</li><li>Letakkan ujung jari ke telapak tangan kemudian gosok perlahan.</li><li>Bersihkan kedua pergelangan secara bergantian dengan cara memutar, kemudian diakhiri dengan membilas seluruh bagian tangan dengan air bersih yang mengalir lalu keringkan memakai handuk atau tisu</li></ul><p>Gunakan <strong>Yuri® Antibacterial Hand Soap</strong> untuk menghilangkan kuman maupun bakteri secara maksimal.</p>', '2024-12-04 18:00:29', '2024-12-04 18:00:29'),
+(42, 'GzV2q31JW2XplrfytIkDFTttABgFsyEcYRKiu8RF.png', '9 Tips Cerdas Membersihkan Rumah dan Dapur', '<p>Pekerjaan rumah tangga memang tak pernah ada hentinya dan tak pernah pula ada habisnya. Jika Anda ingin membersihkan rumah tetapi tidak memiliki banyak waktu untuk berbelanja berbagai macam pembersih, yuk, pelajari 9 cara praktis yang bisa mempersingkat dan memudahkan tugas kita di dalam rumah berikut ini :</p><ul><li><strong>Bubuk Kopi</strong></li></ul><p>Gunakan bubuk kopi untuk menghilangkan bau tidak sedap pada lemari pendingin atau lemari penyimpanan lainnya. Anda hanya perlu meletakkan beberapa sendok bubuk kopi, baik yang sudah digunakan atau masih baru, pada sebuah wadah lalu letakkan di daerah yang Anda inginkan. Ganti bubuk kopi tersebut setiap dua bulan sekali untuk menjaga kesegaran dan menghindari bau kafein mendominasi lemari Anda.</p><ul><li><strong>Selotip</strong></li></ul><p>Gunakan selotip untuk membersihkan pecahan beling tipis-tipis yang seringkali luput dari penglihatan pada permukaan lantai. Ambil selotip yang paling besar, lalu tempelkan ke tempat pecahan kaca tadi berada. Maka pecahan kaca bisa terangkat dengan sendirinya melalui selotip tersebut.</p><ul><li><strong>Blender</strong></li></ul><p>Blender merupakan alat rumah tangga yang cukup sulit dibersihkan karena bentuk yang bagian bawahnya memiliki pisau yang menyulitkan kita sehingga harus dibongkar dahulu. Namun kini ada yang lebih mudah yaitu dengan menuangkan sabun cuci piring beserta air panas kedalamnya. Selanjutnya nyalakan mesin blender beberapa menit dan cuci bersih serta bersihkan. Jadi tidak perlu repot melepas bagian-bagian dalam blender untuk hasil yang maksimal.</p><p>&nbsp;<strong>Wastafel yang Tersumbat</strong></p><p>Wastafel yang tersumbat pasti akan menyulitkan kita dalam membersihkannya seperti harus membongkarnya ataupun memanggil tukang yang lebih ahli. Padahal ada cara yang lebih mudah lho yaitu dengan mendidihkan terlebih dahulu campuran antara baking soda dengan cuka. Setelah tercampur, masukkan ke lubang wastafel dan tunggu beberapa menit. Coba alirkan kembali air ke lubang wastafel tersebut dan lihatlah wastafel kembali lancar.</p><ul><li><strong>Sepatu Basah</strong></li></ul><p>Musim hujan seperti ini seringkali menimbulkan permasalahan baru seperti sepatu yang kotor dan susah dikeringkan karena cuaca yang tidak mendukung. Untuk bisa mempercepat pengeringan, masukkan gulungan koran atau majalah dalam sepatu tersebut. kadar air dalam sepatu pun akan sedikit demi sedikit terserap dan mempercepat pengeringan.</p><ul><li><strong>Noda pada Karpet</strong></li></ul><p>Noda pada karpet sangatlah susah untuk dibersihkan. Nah ada cara yang lebih mudah untuk menghilangkannya yaitu dengan menyemprotkan larutan dari campuran 2 gelas air dengan 1 gelas cuka. Tutup noda dengan kain yang basah dan setrika sebentar. Sekitar 1 menit kemudian noda di karpet pun hilang.</p><ul><li><strong>Muntahan</strong></li></ul><p>Tak bisa dipungkiri, bagi kamu yang memiliki anak yang masih kecil akan merasakan yang namanya bekas muntahan di rumah seperti di karpet atau di tempat lainnya. Untuk membersihkannya, tuang baking soda yang dicampur dengan air pada muntahan sebelum dibersihkan. Cukup jeda semalaman, muntahan pun bisa dibersihkan dengan maksimal.</p><ul><li><strong>Spons dan Sikat Arang</strong></li></ul><p>Spon ataupun sikat arang sering digunakan setiap harinya pada peralatan makan seperti piring ataupun wajan. Kamu tahu gak kalau sebenarnya didalam spon tersebut terdapat bakteri yang saat ditempelkan pada piring, maka bakteri tersebut akan menempel dan masuk dalam tubuh kita. Untuk membersihkan spon ataupun sikat arang tersebut agar terhindar dari penyebaran bakteri, letakkan spon dalam microwave dan panaskan selama 2 menit guna menghilangkan 99% bakteri atau kuman di dalamnya.</p><ul><li><strong>Peralatan Berbahan Perak</strong></li></ul><p>Peralatan yang terbuat dari bahan perak seperti alat makan ataupun aksesoris dapur lainnya jika digunakan secara terus menerus akan menimbulkan warna yang lebih pudar dan tak secerah dahulu. Untuk solusinya, rendam peralatan tersebut dalam campuran air panas dan baking soda. Setalah beberapa saat, peralatan tersebut akan berubah seperti baru pertama beli.</p><p>&nbsp;</p><p>&nbsp;</p>', '2024-12-04 18:03:24', '2024-12-19 18:15:35'),
+(43, '9b2W0dcgn73YeO08rA791y77dvNuxj0zRkqSn7eg.png', '7 Ciri-ciri Anak Sehat', '<p>Anak yang sehat dengan pertumbuhan dan perkembangan yang normal tentu menjadi idaman semua orang tua. Ciri-ciri anak yang sehat tidak hanya dapat dilihat dari fisiknya, namun juga dari psikis dan sosialisasi terhadap lingkungan di sekitarnya. Seperti apa ciri-ciri anak sehat tersebut? Berikut ulasannya:</p><p><strong>1.Memiliki nafsu makan yang baik</strong></p><p>Anak yang memiliki nafsu makan yang&nbsp; baik tentu kebutuhan nutrisi dan asupan gizinya tercukupi.&nbsp; &nbsp;Anak yang sehat pun pasti pernah mengalami saat dimana mereka malas makan. Namun, jika nafsu makan anak tidak meningkat dalam jangka waktu cukup lama dan disertai dengan penurunan berat badan, ada baiknya Anda berkonsultasi ke dokter.</p><p><strong>2. Pernapasan tidak berbau</strong></p><p>Mayoritas penyebab kondisi nafas bau pada si buah hati disebabkan karena minimnya perawatan kebersihan mulut dan gigi mereka. Agar anak terhindar dari bau nafas, biasakan si kecil untuk merawat dan membersihkan gigi dan mulutnya melalui gosok gigi setidaknya dua kali sehari saat akan pergi tidur dan bangun pagi.</p><p><strong>3. Memiliki gigi cemerlang dan gusi berwarna merah muda</strong></p><p>Gigi anak yang cemerlang serta gusi merah muda berkilat menunjukkan anak memiliki kecukupan asupan niasin, asam folat, riboflavin, dan vitamin B 12.</p><p><strong>4. Kulit bersih dan apabila terluka mudah sembuh</strong></p><p>Kesehatan kulit juga merupakan ciri anak yang sehat. Kulit lembab dan tidak bersisik itu menandakan cukupnya asupan vitamin A, C, dan E.&nbsp;</p><p><strong>5. Suhu tubuh berada di antara 36,3oC – 37,7oC</strong></p><p>Suhu tubuh normal dapat berubah – ubah sepanjang hari. Suhu tubuh terendah terutama terjadi pada pagi hari, suhu tubuh dapat meningkat hingga 0,6 derajat Celcius pada sore hari.&nbsp;</p><p><strong>6. Rambut tidak kusam dan rontok</strong></p><p>Rambut dapat menjadi cerminan kondisi kesehatan secara keseluruhan. Asupan gizi yang cukup jelas akan memengaruhi tekstur rambut. Mereka yang asupan gizi-nya kurang biasanya rambutnya lebih tipis, kering, gampang patah dan rontok, serta cenderung berwarna kemerah-merahan.</p><p><strong>7. Antusias bermain</strong></p><p>Sejauh anak lincah dan ceria serta aktif bergerak dan bermain, berarti dia dalam keadaan sehat dan bugar. Karena balita sehat adalah balita lincah dan ceria serta aktif bergerak dan bermain.</p><p>Jadi, apakah si kecil kesayangan Anda termasuk anak yang sehat?</p>', '2024-12-04 18:06:22', '2024-12-18 23:13:32');
 
 -- --------------------------------------------------------
 
@@ -189,9 +188,19 @@ CREATE TABLE `password_reset_tokens` (
 CREATE TABLE `produk_barus` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `image` varchar(255) NOT NULL,
+  `description` text NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `produk_barus`
+--
+
+INSERT INTO `produk_barus` (`id`, `image`, `description`, `created_at`, `updated_at`) VALUES
+(9, 'GhsN7GfWsqYkeJ66z3HbKGUmHImAKx0VGCzsN1CJ.png', 'baby toilet', '2024-12-19 20:37:28', '2024-12-19 20:37:28'),
+(10, 'VGByH9FPCzn39q4xyXEdDwuH4CvLmPvcTFyJe1wD.png', 'Evanyacasaca', '2024-12-19 23:54:10', '2024-12-19 23:54:10'),
+(11, 'PPZedQM2o2tu90QTg8WmBbEgFLBjMBxW5TWsFcKo.png', 'Ligent Baby edit lagi', '2024-12-20 00:09:51', '2024-12-20 00:30:37');
 
 -- --------------------------------------------------------
 
@@ -213,8 +222,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('wZBKceFo6pOXXewYJWO9qddrjtnogRJq797032JP', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiaWt2Njc3cjN0QU9qeTBtdTN6a29RcDlRV3JTVEphM2c4SnV0ZmVEQyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1731978798),
-('X4gZ4E62tNdWR8keA64YkDTI3r5xVPSlYsrUzUPW', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia1M4UVNqc0ZmM0VnY3dQeHV3aU02NkptTks2T3RGQXJLamJIenVsTCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1731920648);
+('BO94YeHvQ2jKGBjZvC4LvrRiQCTTaAcEUm4iCiKR', 9, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoibWhHT0hXVllScnYyRW1yTkQ0bjl5YTVKMVZKUXB5RWxPNW1mMEZaZSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zdXBlcmFkbWluL2Rhc2hib2FyZCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjk7fQ==', 1734688651);
 
 -- --------------------------------------------------------
 
@@ -229,6 +237,7 @@ CREATE TABLE `users` (
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
+  `is_role` tinyint(4) NOT NULL DEFAULT 1 COMMENT 'Admin=1 ; SuperAdmin=2',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -237,10 +246,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@gmail.com', NULL, '$2y$12$ZKG26/wq5Gw44nRl.Ds7meRCBeCJeJ83knbZo3w7m5yG.N6FfsB/K', NULL, '2024-11-13 02:00:35', '2024-11-13 02:00:35'),
-(2, 'Admin2', 'admin2@gmail.com', NULL, '$2y$12$rJbyv/Aj83yOtutOxYZPMOrzSQ3/bWO9mFtkm1YVLqnf84GlCU3iW', NULL, '2024-11-13 02:12:28', '2024-11-13 02:12:28'),
-(3, 'Admin3', 'admin3@gmail.com', NULL, '$2y$12$SiIdRkD9D0KXGXXYWSMzG.Q5ggPsbK6ttKm76PnLQJTHi2ILAt36y', NULL, '2024-11-13 18:26:58', '2024-11-13 18:26:58');
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `is_role`, `created_at`, `updated_at`) VALUES
+(5, 'Budi Winarno', 'budiwinarno2@gmail.com', NULL, '$2y$12$SpRix5Fp7kOHhtAXLjFGW.sqgzC3KDA2/Bl7bm97Ca7ZYB5taIyRG', 'YC96a0suqR2CV06PJ76egwAAaFAElyYdoJ5Jw5Pp9VHLkXZD5qdrIQM5NZOI', 1, '2024-12-18 19:23:10', '2024-12-18 21:23:29'),
+(9, 'Super Admin Yuri', 'developeryuri2@gmail.com', NULL, '$2y$12$FurHo9GIo/ulv7VD8Kf.LuXuHCGXYdfHSvGtCshFtJDluP8l8JeZu', 'wZf71LNTX97mmxUHlkyW5Io8x7yLZRPdgfhHFiECvErKYNYO3D', 2, '2024-12-19 18:41:49', '2024-12-20 00:34:17');
 
 --
 -- Indexes for dumped tables
@@ -331,7 +339,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `artikels`
 --
 ALTER TABLE `artikels`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `blogs`
@@ -361,13 +369,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `produk_barus`
 --
 ALTER TABLE `produk_barus`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

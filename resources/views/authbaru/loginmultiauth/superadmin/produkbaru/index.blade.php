@@ -165,7 +165,6 @@
                                     <th scope="col" class="text-center">No</th>
                                     <th scope="col" class="text-center">Image</th>
                                     <th scope="col" class="text-center">Description</th>
-                                    <th scope="col" class="text-center">Slug</th>
                                     <th scope="col" class="text-center">Action</th>
                                 </tr>
                             </thead>
@@ -179,7 +178,6 @@
                                         </td>
 
                                         <td class="text-center">{{ $produks->description }}</td>
-                                        <td class="text-center">{{ $produks->slug }}</td>
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
