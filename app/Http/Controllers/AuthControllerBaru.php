@@ -38,7 +38,7 @@ class AuthControllerBaru extends Controller
         $user->remember_token = Str::random(50);
         $user->save();
 
-        return redirect('loginbaru')->with('success', 'Register successfully');
+        return redirect('login')->with('success', 'Register successfully');
     }
 
     public function loginbaru()
@@ -117,7 +117,7 @@ class AuthControllerBaru extends Controller
         $user->remember_token = Str::random(50);
         $user->save();
 
-        return redirect('loginbaru')->with('success', 'Successfully Password Reset');
+        return redirect('login')->with('success', 'Successfully Password Reset');
     }
 
     public function logout()

@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="signup-link">
-                    Sign In? <a href="{{ url('loginbaru') }}">Login</a>
+                    Sign In? <a href="{{ url('login') }}">Login</a>
                 </div>
 
             </form>
