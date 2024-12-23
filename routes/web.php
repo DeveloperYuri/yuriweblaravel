@@ -54,7 +54,7 @@ Route::get('/faq', [HomeController::class,'faq'])->name('index.faq');
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register/yuri', 'register')->name('register');
     Route::post('/registerstore', 'registerstore')->name('register.store');
-    Route::get('/login', 'login')->name('login');
+    Route::get('/loginbaru', 'login')->name('login');
     Route::post('/authenticate', 'authenticate')->name('authenticate');
     Route::get('/home', 'home')->name('home');
     Route::post('/logout', 'logout')->name('logout');
@@ -77,11 +77,11 @@ Route::get('/dashboard/{id}', [DashboardController::class,'show'])->name('dashbo
 // Login Multi Auth 
 
 // Registration
-Route::get('registrationbaru', [AuthControllerBaru::class, 'registrationbaru']);
+Route::get('registration', [AuthControllerBaru::class, 'registrationbaru']);
 Route::post('registration_post', [AuthControllerBaru::class, 'registration_post']);
 
 // Login
-Route::get('loginbaru', [AuthControllerBaru::class, 'loginbaru']);
+Route::get('login', [AuthControllerBaru::class, 'loginbaru']);
 Route::post('login_post', [AuthControllerBaru::class, 'login_post']);
 
 // Forgot Password

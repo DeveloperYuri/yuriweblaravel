@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\ProdukBaru;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -35,7 +36,10 @@ class HomeController extends Controller
     }
 
     public function produkBaru(){
-        return view('produkbaru.index');
+
+        $produkbaru = ProdukBaru::all();
+
+        return view('produkbaru.index', compact('produkbaru'));
     }
 
     public function kontak(){

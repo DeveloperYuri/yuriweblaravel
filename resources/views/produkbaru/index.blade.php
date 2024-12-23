@@ -81,18 +81,35 @@
             <h1 style="color: #005EB8;">Produk Baru</h1>
         </div>
         <div class="row mt-2">
-            <div class="col-lg-4 mt-4">
-                <img src="images/produbaruligent.png" alt="" width="100%" height="100%"
-                    style="border-radius: 4%;" />
-            </div>
-            <div class="col-lg-4 mt-4">
-                <img src="images/babydeepouchwashbaru.png" alt="" width="100%" height="100%"
-                    style="border-radius: 4%;" />
-            </div>
-            <div class="col-lg-4 mt-4">
-                <img src="images/babydeepouchwashbaru2.png" alt="" width="100%" height="100%"
-                    style="border-radius: 4%;" />
-            </div>
+
+            @forelse ($produkbaru as $produks)
+                <div class="col-lg-4 mt-4">
+                    <img src="{{ asset('/storage/produkbaru/' . $produks->image) }}" class="card-img-top" alt="..."
+                        width="450px" height="350px" style="border-radius: 4%;">
+                </div>
+
+            @empty
+                <div class="alert alert-danger">
+                    Data Products belum Tersedia.
+                </div>
+            @endforelse
+
+            <!--
+               
+
+                <div class="col-lg-4 mt-4">
+                    <img src="images/produbaruligent.png" alt="" width="100%" height="100%"
+                        style="border-radius: 4%;" />
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <img src="images/babydeepouchwashbaru.png" alt="" width="100%" height="100%"
+                        style="border-radius: 4%;" />
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <img src="images/babydeepouchwashbaru2.png" alt="" width="100%" height="100%"
+                        style="border-radius: 4%;" />
+                </div>
+            -->
         </div>
 
     </div>

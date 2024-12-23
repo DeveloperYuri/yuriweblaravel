@@ -102,7 +102,7 @@
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/infographicaganol-01.jpg" alt="" />
+            <img src="images/infografisproduk/yuri//aganol/infographicaganol-01.jpg" alt="" />
         </div>
 
         <div class="button-brand">
