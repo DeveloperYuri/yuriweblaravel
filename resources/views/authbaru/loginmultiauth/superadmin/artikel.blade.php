@@ -119,7 +119,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('users.index')}}" class="nav-link">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -184,9 +184,9 @@
                                                 action="{{ route('superadmindashboard.destroy', $artikel->id) }}"
                                                 method="POST">
                                                 <a href="{{ route('superadmindashboard.show', $artikel->id) }}"
-                                                    class="btn btn-sm btn-dark mt-2">SHOW</a>
+                                                    class="btn btn-sm btn-success mt-2">SHOW</a>
                                                 <a href="{{ route('superadmindashboard.edit', $artikel->id) }}"
-                                                    class="btn btn-sm btn-primary mt-2">EDIT</a>
+                                                    class="btn btn-sm btn-warning mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit"

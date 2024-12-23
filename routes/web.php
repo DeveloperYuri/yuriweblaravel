@@ -7,6 +7,7 @@ use App\Http\Controllers\MediaController;
 use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\ProdukBaruController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -111,6 +112,7 @@ Route::delete('/superadmin/dashboard/delete{id}', [DashboardControllerBaru::clas
 Route::put('/superadmin/dashboard/update{id}', [DashboardControllerBaru::class, 'update'])->name('superadmindashboard.update');
 Route::get('/superadmin/dashboard/{id}', [DashboardControllerBaru::class,'show'])->name('superadmindashboard.show');
 
+// Produk Baru
 Route::get('/superadmin/produkbaru', [ProdukBaruController::class,'index'])->name('produkbaru.index');
 Route::get('/superadmin/createprodukbaru', [ProdukBaruController::class,'create'])->name('produkbaru.create');
 Route::get('/superadmin/editprodukbaru/edit{id}', [ProdukBaruController::class,'edit'])->name('produkbaru.edit');
@@ -118,6 +120,19 @@ Route::post('/superadmin/postprodukbaru', [ProdukBaruController::class,'store'])
 Route::delete('/superadmin/deleteprodukbaru/delete{id}', [ProdukBaruController::class,'destroy'])->name('produkbaru.destroy');
 Route::put('/superadmin/produkbaru/update{id}', [ProdukBaruController::class, 'update'])->name('produkbaru.update');
 Route::get('/superadmin/showprodukbaru/{id}', [ProdukBaruController::class,'show'])->name('produkbaru.show');
+
+// User
+Route::get('/superadmin/users', [UserController::class,'index'])->name('users.index');
+Route::get('/superadmin/createusers', [UserController::class,'create'])->name('users.create');
+Route::get('/superadmin/editusers/edit{id}', [UserController::class,'edit'])->name('users.edit');
+Route::post('/superadmin/postusers', [UserController::class,'store'])->name('users.store');
+Route::delete('/superadmin/deleteusers/delete{id}', [UserController::class,'destroy'])->name('users.destroy');
+Route::put('/superadmin/users/update{id}', [UserController::class, 'update'])->name('users.update');
+Route::get('/superadmin/showusers/{id}', [ProdukBaruController::class,'show'])->name('users.show');
+
+// Forgot Password
+Route::get('/superadmin/users/forgot', [UserController::class, 'forgot'])->name('users.forgot');
+Route::post('/superadmin/users/forgot_post', [UserController::class, 'forgot_post'])->name('users.forgotpost');
 
 
 
