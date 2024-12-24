@@ -78,11 +78,11 @@
 @section('content')
     <div class="container">
         
-        <div class="captionyurimatic text-center">
+        <div class="caption text-center">
             <img src="images/infografisproduk/yuri/yurimatic/yurimaticlogo-8.png" alt="" width="250px">
         </div>
 
-        <div id="imagebrandaganol" class="row mt-3">
+        <div id="imagebrand" class="row mt-3">
             <div class="col-6">
                 <img class="aganol1" src="images/infografisproduk/yuri/yurimatic/infographicyurimatic-01.jpg" alt=""
                     width="100%" style="border-radius: 10%;">

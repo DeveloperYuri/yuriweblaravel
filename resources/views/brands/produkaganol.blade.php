@@ -82,7 +82,7 @@
             <img src="images/infografisproduk/yuri/aganol/logoaganol.png" alt="" width="150px">
         </div>
 
-        <div id="imagebrandaganol" class="row mt-3">
+        <div id="imagebrand" class="row mt-3">
             <div class="col-6">
                 <img class="aganol1" src="images/infografisproduk/yuri/aganol/infographicaganol-02.jpg" alt=""
                     width="100%" style="border-radius: 10%;">

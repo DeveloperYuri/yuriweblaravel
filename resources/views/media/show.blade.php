@@ -83,7 +83,7 @@
 
         <div class="tglshowproduk">
             <p class="fw-bold">Yuri-Artikel</p>
-            <p style="margin-top: -17px">Rabu, 20 November 2024</p>
+            <p style="margin-top: -17px">{{ $artikels->created_at->isoFormat('dddd, D MMMM Y') }}</p>
         </div>
 
         <!-- Banner Homepage-->

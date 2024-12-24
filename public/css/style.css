@@ -3,7 +3,7 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: none; }
 
-#imagebrandaganol{
+#imagebrand{
   margin-bottom: 20px;
 }
 
@@ -260,8 +260,8 @@ a:active { text-decoration: none; }
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
-  .captionyurimatic img{
-    width: 160px;
+  .caption img{
+    width: 150px;
   }
 
   #footerindexmedia{
