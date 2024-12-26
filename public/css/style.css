@@ -260,6 +260,24 @@ a:active { text-decoration: none; }
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+  .table tr th:nth-child(2)
+  {
+    display: none;
+  }
+
+  .table tr td:nth-child(2)
+  {
+    display: none;
+  }
+
+  #numbers{
+    visibility: hidden;
+  }
+
+  table, th{
+    visibility: hidden;
+  }
+
   .caption img{
     width: 150px;
   }
@@ -945,6 +963,15 @@ a:active { text-decoration: none; }
 
 /* Tablet Screen */
 @media only screen and (max-width: 800px) {
+
+  #footerindexmedia{
+    height: 50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
   .banner-produk-baru img {
     margin-top: 100px;
     width: 80%;

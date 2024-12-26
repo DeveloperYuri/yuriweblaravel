@@ -127,8 +127,8 @@
                 </h1>
             </div>
 
-            <div class="video text-center mb-5">
-                <video width="50%" height="50%" controls>
+            <div class="text-center mb-5" style="margin-bottom: 550px">
+                <video width="80%" height="80%" controls>
                     <source src="images/videoplayback.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -140,7 +140,7 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerindexmedia" class="card-footer text-body-secondary bg-dark" style="margin-top: 40px;">
+    <div id="footerindexmedia" class="card-footer text-body-secondary bg-dark" style="margin-top: 140px;">
         <div class="container">
             <div class="row" style="padding-top: 0px;">
                 <div id="footercopyright" class="col-md-8">

@@ -24,7 +24,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -119,7 +118,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('users.index')}}" class="nav-link">
+                            <a href="{{ route('users.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -160,7 +159,7 @@
                         <a href="{{ route('superadmindashboard.create') }}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
 
-                        <table class="table mb-3">
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col" class="text-center">No</th>
