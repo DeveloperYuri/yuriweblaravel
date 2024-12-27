@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Scout\Searchable;
 
 class Artikel extends Model
 {
-    use HasFactory;
+    use HasFactory, Searchable;
 
     /**
      * fillable
@@ -19,4 +20,12 @@ class Artikel extends Model
         'title',
         'description'
     ];
+
+    public function toSearchableArray()
+    {
+        return [
+            'title' => $this->title,
+            'description' => $this->description
+        ];
+    }
 }

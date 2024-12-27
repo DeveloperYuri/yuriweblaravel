@@ -119,7 +119,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('users.index')}}" class="nav-link">
+                            <a href="{{ route('users.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -159,6 +159,7 @@
 
                         <a href="{{ route('produkbaru.create') }}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Produk</a>
+                                
                         <table class="table mb-3">
                             <thead>
                                 <tr>
@@ -183,8 +184,10 @@
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                 action="{{ route('produkbaru.destroy', $produks->id) }}"
                                                 method="POST">
-                                                <a href="{{ route('produkbaru.show', $produks->id)}}" class="btn btn-sm btn-success mt-2">SHOW</a>
-                                                <a href="{{ route('produkbaru.edit', $produks->id)}}" class="btn btn-sm btn-warning mt-2">EDIT</a>
+                                                <a href="{{ route('produkbaru.show', $produks->id) }}"
+                                                    class="btn btn-sm btn-success mt-2">SHOW</a>
+                                                <a href="{{ route('produkbaru.edit', $produks->id) }}"
+                                                    class="btn btn-sm btn-warning mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit"

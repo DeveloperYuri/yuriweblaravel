@@ -14,11 +14,14 @@ class ProdukBaruController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $produkbaru = ProdukBaru::latest()->paginate(10);
+        $produkbarusearching = ProdukBaru::search($request->search ?? '')->get();
 
-        return view('authbaru.loginmultiauth.superadmin.produkbaru.index', compact('produkbaru'));
+        return view('authbaru.loginmultiauth.superadmin.produkbaru.index', compact('produkbaru', 'produkbarusearching'));
+
+        //return view('authbaru.loginmultiauth.superadmin.produkbaru.index', compact('produkbaru'));
     }
 
     /**
@@ -64,7 +67,6 @@ class ProdukBaruController extends Controller
 
         //render view with product
         return view('authbaru.loginmultiauth.superadmin.produkbaru.show', compact('produkbaru'));
-
     }
 
     /**
@@ -98,14 +100,13 @@ class ProdukBaruController extends Controller
             $image->storeAs('public/produkbaru', $image->hashName());
 
             //delete old image
-            Storage::delete('public/produkbaru/'.$produkbaru->image);
+            Storage::delete('public/produkbaru/' . $produkbaru->image);
 
             //update product with new image
             $produkbaru->update([
                 'image'         => $image->hashName(),
                 'description'   => $request->description
             ]);
-
         } else {
 
             //update product without image
@@ -124,7 +125,7 @@ class ProdukBaruController extends Controller
         $artikels = ProdukBaru::findOrFail($id);
 
         //delete image
-        Storage::delete('public/produkbaru/'. $artikels->image);
+        Storage::delete('public/produkbaru/' . $artikels->image);
 
         //delete product
         $artikels->delete();

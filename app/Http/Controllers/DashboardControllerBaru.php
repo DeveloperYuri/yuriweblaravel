@@ -18,7 +18,12 @@ class DashboardControllerBaru extends Controller
         if (Auth::user()->is_role == 2) {
             $data['getRecord'] = User::find(Auth::user()->id);
 
-            return view('authbaru.loginmultiauth.superadmin.dashboard', $data);
+            // Count Dashboard 
+            $totalartikels = Artikel::count();
+            $totalproduks = ProdukBaru::count();
+            $totalusers = User::count();
+
+            return view('authbaru.loginmultiauth.superadmin.dashboard')->with('data', $data)->with('totalartikels', $totalartikels)->with('totalproduks', $totalproduks)->with('totalusers', $totalusers);
         } else if (Auth::user()->is_role == 1) {
             $data['getRecord'] = User::find(Auth::user()->id);
             $artikels = Artikel::latest()->paginate(10);
@@ -27,9 +32,9 @@ class DashboardControllerBaru extends Controller
         }
     }
 
-    public function dashboardartikel(){
+    public function dashboardartikel(Request $request)
+    {
         $artikels = Artikel::latest()->paginate(10);
-
         return view('authbaru.loginmultiauth.superadmin.artikel', compact('artikels'));
     }
 
@@ -112,7 +117,7 @@ class DashboardControllerBaru extends Controller
             $image->storeAs('public/artikels', $image->hashName());
 
             //delete old image
-            Storage::delete('public/artikels/'.$artikels->image);
+            Storage::delete('public/artikels/' . $artikels->image);
 
             //update product with new image
             $artikels->update([
@@ -120,7 +125,6 @@ class DashboardControllerBaru extends Controller
                 'title'         => $request->title,
                 'description'   => $request->description
             ]);
-
         } else {
 
             //update product without image
@@ -143,7 +147,7 @@ class DashboardControllerBaru extends Controller
         $artikels = Artikel::findOrFail($id);
 
         //delete image
-        Storage::delete('public/artikels/'. $artikels->image);
+        Storage::delete('public/artikels/' . $artikels->image);
 
         //delete product
         $artikels->delete();
@@ -151,5 +155,4 @@ class DashboardControllerBaru extends Controller
         //redirect to index
         return redirect()->route('superadmindashboard.artikel')->with(['success' => 'Data Berhasil Dihapus!']);
     }
-    
 }

@@ -170,7 +170,7 @@
                             <!-- small box -->
                             <div class="small-box bg-info">
                                 <div class="inner">
-                                    <h3>3</h3>
+                                    <h3>{{ $totalartikels }}</h3>
 
                                     <p>Total Artikel</p>
                                 </div>
@@ -186,7 +186,7 @@
                             <!-- small box -->
                             <div class="small-box bg-success">
                                 <div class="inner">
-                                    <h3>3</h3>
+                                    <h3>{{ $totalproduks }}</h3>
 
                                     <p>Total Produk Baru</p>
                                 </div>
@@ -202,7 +202,7 @@
                             <!-- small box -->
                             <div class="small-box bg-warning">
                                 <div class="inner">
-                                    <h3>7</h3>
+                                    <h3>{{ $totalusers }}</h3>
 
                                     <p>Total User</p>
                                 </div>
