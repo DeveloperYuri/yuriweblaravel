@@ -40,7 +40,7 @@
             </ul>
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto" style="margin-right: 90px">
+            <ul class="navbar-nav ml-auto" style="margin-right: 10px">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -100,7 +100,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link ">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -109,7 +109,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
@@ -178,7 +178,7 @@
                         <div>
                             <a href="{{ route('superadmindashboard.edit', $artikels->id) }}"
                                 class="btn btn-sm btn-warning">Edit Artikel</a>
-                            <a href="{{ route('produkbaru.index') }}" class="btn btn-sm btn-success">Kembali Ke Daftar Artikel</a>
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="btn btn-sm btn-success">Kembali Ke Daftar Artikel</a>
                         </div>
 
                     </div>

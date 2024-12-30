@@ -38,7 +38,7 @@
             </ul>
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto" style="margin-right: 90px">
+            <ul class="navbar-nav ml-auto" style="margin-right: 60px">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
