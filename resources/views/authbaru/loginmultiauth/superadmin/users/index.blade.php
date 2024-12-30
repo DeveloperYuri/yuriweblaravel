@@ -160,17 +160,11 @@
                         <a href="{{ route('users.create')}}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Tambah User</a>
 
-                        <p>note role:</p>
-                        <p style="margin-top: -20px">1 = Admin</p>
-                        <p style="margin-top: -20px">2 = Super Admin</p>
-
                         <table class="table mb-3">
                             <thead>
                                 <tr>
                                     <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Name</th>
                                     <th scope="col" class="text-center">Email</th>
-                                    <th scope="col" class="text-center">Role</th>
                                     <th scope="col" class="text-center">Action</th>
                                 </tr>
                             </thead>
@@ -178,14 +172,14 @@
                                 @forelse ($users as $key => $user)
                                     <tr>
                                         <td class="text-center">{{ $users->firstItem() + $key }}</td>
-                                        <td class="text-center">{{ $user->name }}</td>
                                         <td class="text-center">{{ $user->email }}</td>
-                                        <td class="text-center">{{ $user->is_role }}</td>
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('users.destroy', $user->id)}}"
                                                 method="POST">
+                                                <!--
                                                 <a href="{{ url('forgot') }}" class="btn btn-sm btn-warning mt-2">RESET PASSWORD</a>
+                                                -->
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit"

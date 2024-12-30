@@ -174,7 +174,7 @@
                                         <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
                                         <td class="text-center">
                                             <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
+                                                class="rounded" style="width: 70px" height="70px">
                                         </td>
                                         <td class="text-center">{{ $artikel->title }}</td>
 
