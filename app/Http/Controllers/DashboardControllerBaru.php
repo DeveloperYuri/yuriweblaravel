@@ -27,10 +27,7 @@ class DashboardControllerBaru extends Controller
         } else if (Auth::user()->is_role == 1) {
             $data['getRecord'] = Artikel::getRecord($request);
 
-            //$artikels = Artikel::latest()->paginate(10);
-
             return view('authbaru.loginmultiauth.admin.dashboard', $data);
-            //->with('data', $data)->with('datu', $datu);
         }
     }
 
