@@ -162,11 +162,11 @@
 
                         <form method="get">
                             <div class="form-row text">
-                                <div class="col-10">
+                                <div class="col-9">
                                     <input type="text" class="form-control" value="{{ Request()->email }}"
                                         placeholder="Searching Email User" name="email">
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
                                     <button type="submit" class="btn btn-success mb-2">Search</button>
                                 </div>
 

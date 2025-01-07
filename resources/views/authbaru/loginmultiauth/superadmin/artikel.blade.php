@@ -161,10 +161,10 @@
 
                         <form method="get">
                             <div class="form-row text">
-                                <div class="col-10">
-                                    <input type="text" class="form-control" value="{{ Request()->title }}" placeholder="Searching Title" name="title">
+                                <div class="col-9">
+                                    <input id="searchingtitle" type="text" class="form-control" value="{{ Request()->title }}" placeholder="Searching Title" name="title" >
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
                                     <button type="submit" class="btn btn-success mb-2">Search</button>
                                 </div>
 
