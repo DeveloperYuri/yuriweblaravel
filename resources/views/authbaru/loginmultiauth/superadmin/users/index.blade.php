@@ -119,7 +119,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('users.index')}}" class="nav-link active">
+                            <a href="{{ route('users.index') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -157,8 +157,21 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('users.create')}}" class="btn btn-md btn-primary mb-3"><i
+                        <a href="{{ route('users.create') }}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Tambah User</a>
+
+                        <form method="get">
+                            <div class="form-row text">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" value="{{ Request()->email }}"
+                                        placeholder="Searching Email User" name="email">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success mb-2">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
 
                         <table class="table mb-3">
                             <thead>
@@ -169,14 +182,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse ($users as $key => $user)
+                                @forelse ($getRecord as $key => $user)
                                     <tr>
-                                        <td class="text-center">{{ $users->firstItem() + $key }}</td>
+                                        <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
                                         <td class="text-center">{{ $user->email }}</td>
 
                                         <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('users.destroy', $user->id)}}"
-                                                method="POST">
+                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                                                action="{{ route('users.destroy', $user->id) }}" method="POST">
                                                 <!--
                                                 <a href="{{ url('forgot') }}" class="btn btn-sm btn-warning mt-2">RESET PASSWORD</a>
                                                 -->
@@ -196,8 +209,10 @@
                             </tbody>
                         </table>
 
-                        {!! $users->withQueryString()->links('pagination::bootstrap-5') !!}
+                        <div style="padding: 10px; float: right;">
+                            {!! $getRecord->appends(Illuminate\Support\Facades\Request::except('page'))->links() !!}
 
+                        </div>
 
                     </div>
                 </div>

@@ -159,7 +159,20 @@
 
                         <a href="{{ route('produkbaru.create') }}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Produk</a>
-                                
+
+                        <form method="get">
+                            <div class="form-row text">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" value="{{ Request()->description }}"
+                                        placeholder="Searching Description" name="description">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success mb-2">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
+
                         <table class="table mb-3">
                             <thead>
                                 <tr>
@@ -170,9 +183,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse ($produkbaru as $key => $produks)
+                                @forelse ($getRecord as $key => $produks)
                                     <tr>
-                                        <td class="text-center">{{ $produkbaru->firstItem() + $key }}</td>
+                                        <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
                                         <td class="text-center">
                                             <img src="{{ asset('/storage/produkbaru/' . $produks->image) }}"
                                                 class="rounded" style="width: 100px" height="70px">
@@ -203,10 +216,10 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        <div style="padding: 10px; float: right;">
+                            {!! $getRecord->appends(Illuminate\Support\Facades\Request::except('page'))->links() !!}
 
-                        {!! $produkbaru->withQueryString()->links('pagination::bootstrap-5') !!}
-
-
+                        </div>
                     </div>
                 </div>
             </div>

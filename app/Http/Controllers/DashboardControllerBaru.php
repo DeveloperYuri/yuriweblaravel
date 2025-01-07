@@ -34,8 +34,8 @@ class DashboardControllerBaru extends Controller
 
     public function dashboardartikel(Request $request)
     {
-        $artikels = Artikel::latest()->paginate(10);
-        return view('authbaru.loginmultiauth.superadmin.artikel', compact('artikels'));
+        $data['getRecord'] = Artikel::getRecord($request);
+        return view('authbaru.loginmultiauth.superadmin.artikel', $data);
     }
 
     public function create()
@@ -154,5 +154,11 @@ class DashboardControllerBaru extends Controller
 
         //redirect to index
         return redirect()->route('superadmindashboard.artikel')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
+
+    public function dashboardartikelbarusearch(Request $request){
+        $data['getRecord'] = Artikel::getRecord($request);
+
+        return view('authbaru.loginmultiauth.superadmin.artikelbaru', $data);
     }
 }

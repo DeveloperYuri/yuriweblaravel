@@ -14,11 +14,11 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::latest()->paginate(10);
+        $data['getRecord'] = User::getRecord($request);
 
-        return view('authbaru.loginmultiauth.superadmin.users.index', compact('users'));
+        return view('authbaru.loginmultiauth.superadmin.users.index', $data);
     }
 
     /**

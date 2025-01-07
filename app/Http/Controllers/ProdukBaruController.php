@@ -16,12 +16,9 @@ class ProdukBaruController extends Controller
      */
     public function index(Request $request)
     {
-        $produkbaru = ProdukBaru::latest()->paginate(10);
-        $produkbarusearching = ProdukBaru::search($request->search ?? '')->get();
+        $data['getRecord'] = ProdukBaru::getRecord($request);
 
-        return view('authbaru.loginmultiauth.superadmin.produkbaru.index', compact('produkbaru', 'produkbarusearching'));
-
-        //return view('authbaru.loginmultiauth.superadmin.produkbaru.index', compact('produkbaru'));
+        return view('authbaru.loginmultiauth.superadmin.produkbaru.index', $data);
     }
 
     /**

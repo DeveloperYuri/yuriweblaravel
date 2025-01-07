@@ -140,7 +140,7 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Daftar Artikel</h1>
+                            <h1>Daftar Artikel Baru</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -159,6 +159,19 @@
                         <a href="{{ route('superadmindashboard.create') }}" class="btn btn-md btn-primary mb-3"><i
                                 class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
 
+                        <form method="get">
+                            <div class="form-row text">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" value="{{ Request()->title }}" placeholder="Searching Title" name="title">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success mb-2">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+
                         <table class="table">
                             <thead>
                                 <tr>
@@ -169,9 +182,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse ($artikels as $key => $artikel)
+                                @forelse ($getRecord as $key => $artikel)
                                     <tr>
-                                        <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
+                                        <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
                                         <td class="text-center">
                                             <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
                                                 class="rounded" style="width: 70px" height="70px">
@@ -201,9 +214,10 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        <div style="padding: 10px; float: right;">
+                            {!! $getRecord->appends(Illuminate\Support\Facades\Request::except('page'))->links() !!}
 
-                        {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
-
+                        </div>
                     </div>
                 </div>
             </div>
