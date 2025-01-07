@@ -89,19 +89,9 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <!--
-                        <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
-                    -->
-
+               
                         <li class="nav-item menu-open">
-                            <a href="{{ route('dashboard.artikel')}}" class="nav-link active">
+                            <a href="{{ url('admin/dashboard') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -139,7 +129,21 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3"><i class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
+                        <a href="{{ route('dashboard.create') }}" class="btn btn-md btn-primary mb-3"><i
+                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
+
+                        <form method="get">
+                            <div class="form-row text">
+                                <div class="col-9">
+                                    <input id="searchingtitle" type="text" class="form-control"
+                                        value="{{ Request()->title }}" placeholder="Searching Title" name="title">
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-success mb-2">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
 
                         <table class="table mb-3">
                             <thead>
@@ -151,39 +155,43 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse ($artikels as $key => $artikel)
+                                @forelse ($getRecord as $key => $artikel)
                                     <tr>
-                                        <td class="text-center">{{ $artikels->firstItem() + $key }}</td>
+                                        <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
                                         <td class="text-center">
                                             <img src="{{ asset('/storage/artikels/' . $artikel->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
+                                                class="rounded" style="width: 60px" height="60px">
                                         </td>
                                         <td class="text-center">{{ $artikel->title }}</td>
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('dashboard.destroy', $artikel->id) }}" method="POST">
+                                                action="{{ route('dashboard.destroy', $artikel->id) }}"
+                                                method="POST">
                                                 <a href="{{ route('dashboard.show', $artikel->id) }}"
                                                     class="btn btn-sm btn-dark mt-2">SHOW</a>
                                                 <a href="{{ route('dashboard.edit', $artikel->id) }}"
                                                     class="btn btn-sm btn-primary mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                                <button type="submit"
+                                                    class="btn btn-sm btn-danger mt-2">HAPUS</button>
                                             </form>
                                         </td>
 
                                     </tr>
                                 @empty
                                     <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                                        Data Artikel belum Tersedia.
                                     </div>
                                 @endforelse
                             </tbody>
                         </table>
 
-                        {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
+                        <div style="padding: 10px; float: right;">
+                            {!! $getRecord->appends(Illuminate\Support\Facades\Request::except('page'))->links() !!}
 
+                        </div>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ use Illuminate\View\View;
 
 class DashboardControllerBaru extends Controller
 {
-    public function dashboard()
+    public function dashboard(Request $request)
     {
         if (Auth::user()->is_role == 2) {
             $data['getRecord'] = User::find(Auth::user()->id);
@@ -25,10 +25,12 @@ class DashboardControllerBaru extends Controller
 
             return view('authbaru.loginmultiauth.superadmin.dashboard')->with('data', $data)->with('totalartikels', $totalartikels)->with('totalproduks', $totalproduks)->with('totalusers', $totalusers);
         } else if (Auth::user()->is_role == 1) {
-            $data['getRecord'] = User::find(Auth::user()->id);
-            $artikels = Artikel::latest()->paginate(10);
+            $data['getRecord'] = Artikel::getRecord($request);
 
-            return view('authbaru.loginmultiauth.admin.dashboard')->with('data', $data)->with('artikels', $artikels);
+            //$artikels = Artikel::latest()->paginate(10);
+
+            return view('authbaru.loginmultiauth.admin.dashboard', $data);
+            //->with('data', $data)->with('datu', $datu);
         }
     }
 
