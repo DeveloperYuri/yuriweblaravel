@@ -62,6 +62,7 @@ class DashboardControllerBaru extends Controller
         Artikel::create([
             'image'         => $image->hashName(),
             'title'         => $request->title,
+            'link'          => $request->link,
             'description'   => $request->description
         ]);
 
@@ -122,6 +123,7 @@ class DashboardControllerBaru extends Controller
             $artikels->update([
                 'image'         => $image->hashName(),
                 'title'         => $request->title,
+                'link'         => $request->link,
                 'description'   => $request->description
             ]);
         } else {
@@ -129,6 +131,7 @@ class DashboardControllerBaru extends Controller
             //update product without image
             $artikels->update([
                 'title'         => $request->title,
+                'link'         => $request->link,
                 'description'   => $request->description
             ]);
         }

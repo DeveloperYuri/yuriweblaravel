@@ -179,15 +179,15 @@
                 </h1>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 justify-content-center">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
                 @forelse ($artikels as $artikel)
                     <div class="col-md-4">
                         <div class="card h-100">
                             <img src="{{ asset('/storage/artikels/' . $artikel->image) }}" class="card-img-top"
                                 alt="..." width="400px" height="230px">
                             <div class="card-body">
-                                <a href="{{ route('media.show', $artikel->id) }}">
-                                    <h5 class="card-title" style="font-size: 17px;">{{ $artikel->title }}</h5>
+                                <a href="{{ $artikel->link }}" target="_blank">
+                                    <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
                                 </a>
                             </div>
 
