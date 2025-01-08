@@ -199,6 +199,20 @@
                             </div>
 
                             <div class="form-group mb-3">
+                                <label class="font-weight-bold">LINK</label>
+                                <input type="text" class="form-control @error('link') is-invalid @enderror"
+                                    name="link" value="{{ old('link', $artikels->link) }}"
+                                    placeholder="Masukkan Judul Artikel">
+
+                                <!-- error message untuk link -->
+                                @error('link')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
                                     rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikels->description) }}</textarea>

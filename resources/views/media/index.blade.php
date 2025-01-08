@@ -105,11 +105,10 @@
                 @endforelse
 
             </div>
+        </div>
 
+        <div class="mt-5">
             {!! $artikels->withQueryString()->links('pagination::bootstrap-5') !!}
-
-
-
         </div>
         <!-- End Content1-->
 
