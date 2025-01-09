@@ -67,6 +67,19 @@
                                 style="color: #005EB8">DISTRIBUTOR</a>
                         </li>
 
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pilih Bahasa
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
+                                </ul>
+                              </div>
+                        </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -114,16 +127,13 @@
         <!-- Content1 -->
         <div class="brand-content-satu" style="margin-top: 20px" data-aos="fade-up">
             <h4 class="text-center fw-bold" style="color: #005EB8">
-                YURI telah diakui sebagai merek terkemuka
-                <br class="mobile-break" />untuk perawatan rumah serta perawatan anak & pribadi
+                @lang('message.YURITELAH')
+                <br class="mobile-break" />@lang('message.YURITELAH2')
             </h4>
 
             <div class="tentangkamudesc" style="margin-top: 20px;">
                 <p style="text-align: justify">
-                    Menjadi grup bisnis yang dinamis dan beragam. Yuri berkomitment akan
-                    selalu meningkatkan layanan kami untuk lebih memenuhi kebutuhan
-                    konsumen dalam membuat hidup lebih baik bagi konsumen Indonesia
-                    dengan menyediakan kualitas produk tanpa komporomi </p>
+                    @lang('message.MENJADIGROUP') </p>
             </div>
         </div>
         <!-- End Content1-->
@@ -157,7 +167,7 @@
                 </div>
                 <div id="footercopyright2" class="col-md-4">
                     <a class="petanyaan-privasi" href="#"
-                        style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
+                        style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
                     <a class="footerfaq" href="{{ route('index.faq') }}" class=""
                         style="font-size: 14px; color: white; ">FAQ</a>
                 </div>

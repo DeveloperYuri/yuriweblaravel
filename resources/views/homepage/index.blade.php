@@ -14,23 +14,23 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index')}}"
-                                style="color: #005EB8">HOME</a>
+                                style="color: #005EB8">@lang('message.HOME')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
-                                style="color: #005EB8">TENTANG KAMI</a>
+                                style="color: #005EB8">@lang('message.TENTANGKAMI')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
-                                style="color: #005EB8">BRANDS</a>
+                                style="color: #005EB8">@lang('message.BRANDS')</a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                                ONLINE SHOP
+                                @lang('message.ONLINESHOP')
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop"
@@ -49,22 +49,34 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
-                                style="color: #005EB8">MEDIA</a>
+                                style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
-                                style="color: #005EB8">PRODUK BARU</a>
+                                style="color: #005EB8">@lang('message.PRODUKBARU')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
-                                style="color: #005EB8">KONTAK</a>
+                                style="color: #005EB8">@lang('message.KONTAK')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
-                                style="color: #005EB8">DISTRIBUTOR</a>
+                                style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pilih Bahasa
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
+                                </ul>
+                              </div>
                         </li>
 
                     </ul>
@@ -111,7 +123,7 @@
         <div class="content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1">
                 <h1 style="margin-bottom: 20px; color: #005EB8">
-                    Nilai & Keunggulan
+                    @lang('message.NILAIKEUNGGULAN')
                 </h1>
             </div>
 
@@ -135,13 +147,13 @@
         <div class="content-dua text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption2 mb-4">
                 <h1 style="margin-bottom: 20px; color: #005EB8">
-                    Brand Kami
+                    @lang('message.BRANDSKAMI')
                 </h1>
             </div>
 
             <p class="text-center" style="font-size: 20px;">
-                Kami berkomitmen untuk menghasilkan produk berkualitas internasional
-                <br class="mobile-break">yang terjangkau oleh semua lapisan masyarakat.
+                @lang('message.KAMIBERKOMITMENT')
+                <br class="mobile-break">@lang('message.KAMIBERKOMITMENT2')
             </p>
 
             <div id="brandsid" class="d-flex p-3 justify-content-center">
@@ -153,12 +165,12 @@
                             class="imagebrand3" src="images/bbd bulet-edited.png" alt="" /></a></div>
             </div>
 
-            <p class="text-center" style="font-size: 20px;">Telusuri product kami selengkapnya.</p>
+            <p class="text-center" style="font-size: 20px;">@lang('message.TELUSURIPRODUK')</p>
 
             <div class="button-brand">
                 <a href="{{ url('/brands') }}"><img src="images/bingkai klik-8.png" class="img-fluid"
                         alt="Responsive image" width="30%" height="20%">
-                    <div class="centered fw-bold">Brand Kami</div>
+                    <div class="centered fw-bold">@lang('message.BRANDKAMI')</div>
                 </a>
             </div>
 
@@ -203,7 +215,7 @@
             <div class="button-media">
                 <a href="{{ url('/media') }}"><img src="images/bingkai klik-8.png" class="img-fluid"
                         alt="Responsive image" width="30%" height="20%">
-                    <div class="centered-media fw-bold">Lihat Semua Media</div>
+                    <div class="centered-media fw-bold">@lang('message.LIHATSEMUAMEDIA')</div>
                 </a>
             </div>
 

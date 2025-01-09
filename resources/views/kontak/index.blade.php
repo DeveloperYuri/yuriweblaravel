@@ -14,23 +14,27 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index') }}"
-                                style="color: #005EB8">HOME</a>
+                                style="color: #005EB8">@lang('message.HOME')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
-                                style="color: #005EB8">TENTANG KAMI</a>
+                                style="color: #005EB8">@lang('message.TENTANGKAMI')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
-                                style="color: #005EB8">BRANDS</a>
+                                style="color: #005EB8">@lang('message.BRANDS')
+                            </a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                                ONLINE SHOP
+                                @lang('message.ONLINESHOP')
+
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop"
@@ -49,23 +53,39 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
-                                style="color: #005EB8">MEDIA</a>
+                                style="color: #005EB8">@lang('message.MEDIA')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
-                                style="color: #005EB8">PRODUK BARU</a>
+                                style="color: #005EB8">@lang('message.PRODUKBARU')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
-                                style="color: #005EB8">KONTAK</a>
+                                style="color: #005EB8">@lang('message.KONTAK')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
-                                style="color: #005EB8">DISTRIBUTOR</a>
+                                style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
+
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pilih Bahasa
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
+                                </ul>
+                              </div>
+                        </li>
+
 
                     </ul>
                 </div>
@@ -92,37 +112,36 @@
 
         <div class="row" data-aos="fade-up">
             <h5 class="fw-bold mt-4" style="margin-bottom: 20px; color: #005EB8; font-size: 28px;">
-                Terhubung Dengan Kami
+                @lang('message.TERHUBUNGDENGANKAMI')
             </h5>
             <p style="font-size: 16px;">
-                Apabila Anda memiliki pertanyaan mengenai produk Yuri, silahkan
-                mengisi formulir dibawah ini
+                @lang('message.APABILAANDA')
             </p>
 
             <div class="col-md-4">
                 <form style="font-size: 12px">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nama</label>
+                        <label for="exampleInputEmail1" class="form-label">@lang('message.NAMA')</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <label for="exampleInputPassword1" class="form-label">@lang('message.EMAIL')</label>
                         <input type="email" class="form-control" id="exampleInputPassword1">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Telepon</label>
+                        <label for="exampleInputEmail1" class="form-label">@lang('message.TELEPON')</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Subjek</label>
+                        <label for="exampleInputEmail1" class="form-label">@lang('message.SUBJEK')</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Pertanyaan</label>
+                        <label for="exampleInputEmail1" class="form-label">@lang('message.PERTANYAAN')</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <button type="submit" class="btn btn-primary">@lang('message.KIRIM')</button>
                 </form>
             </div>
         </div>
@@ -140,7 +159,7 @@
                 </div>
                 <div id="footercopyright2" class="col-md-4">
                     <a class="petanyaan-privasi" href="#"
-                        style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
+                        style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
                     <a class="footerfaq" href="{{ route('index.faq') }}" class=""
                         style="font-size: 14px; color: white; ">FAQ</a>
                 </div>

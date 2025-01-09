@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\DashboardControllerBaru;
+use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -133,6 +134,9 @@ Route::get('/superadmin/showusers/{id}', [ProdukBaruController::class,'show'])->
 // Forgot Password
 Route::get('/superadmin/users/forgot', [UserController::class, 'forgot'])->name('users.forgot');
 Route::post('/superadmin/users/forgot_post', [UserController::class, 'forgot_post'])->name('users.forgotpost');
+
+
+Route::get('locale/{lang}', [LocaleController::class, 'setLocale']);
 
 
 

@@ -68,6 +68,19 @@
                                 style="color: #005EB8">DISTRIBUTOR</a>
                         </li>
 
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pilih Bahasa
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
+                                </ul>
+                              </div>
+                        </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -96,7 +109,7 @@
                 </div>
                 <div id="footercopyright2" class="col-md-4">
                     <a class="petanyaan-privasi" href="#"
-                        style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
+                        style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
                     <a class="footerfaq" href="{{ route('index.faq') }}" class=""
                         style="font-size: 14px; color: white; ">FAQ</a>
                 </div>

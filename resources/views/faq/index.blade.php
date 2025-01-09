@@ -14,23 +14,27 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index') }}"
-                                style="color: #005EB8">HOME</a>
+                                style="color: #005EB8">@lang('message.HOME')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
-                                style="color: #005EB8">TENTANG KAMI</a>
+                                style="color: #005EB8">@lang('message.TENTANGKAMI')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
-                                style="color: #005EB8">BRANDS</a>
+                                style="color: #005EB8">@lang('message.BRANDS')
+                            </a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                                ONLINE SHOP
+                                @lang('message.ONLINESHOP')
+
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop"
@@ -49,22 +53,37 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
-                                style="color: #005EB8">MEDIA</a>
+                                style="color: #005EB8">@lang('message.MEDIA')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
-                                style="color: #005EB8">PRODUK BARU</a>
+                                style="color: #005EB8">@lang('message.PRODUKBARU')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
-                                style="color: #005EB8">KONTAK</a>
+                                style="color: #005EB8">@lang('message.KONTAK')
+                            </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
-                                style="color: #005EB8">DISTRIBUTOR</a>
+                                style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pilih Bahasa
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
+                                </ul>
+                              </div>
                         </li>
 
                     </ul>
@@ -83,9 +102,9 @@
         <div class="content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1">
                 <h1 style="margin-bottom: 20px; color: #005EB8">
-                    Pertanyaan Umum
+                    @lang('message.PERTANYAANUMUM')
                 </h1>
-                <h5 style="margin-bottom: 20px; color: #005EB8">Pertanyaan yang sering dicari</h5>
+                <h5 style="margin-bottom: 20px; color: #005EB8">@lang('message.PERTANYAANYANGSERINGDICARI')</h5>
             </div>
 
             <div class="accordion mb-3" id="accordionPanelsStayOpenExample">
@@ -94,15 +113,13 @@
                         <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                             aria-controls="panelsStayOpen-collapseOne" style="color: #748087">
-                            Bagaimana cara saya melakukan pemesanan produk?
+                            @lang('message.BAGAIMANACARA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Anda bisa melakukan pemesanan melalui website www.yurishop.co. Anda akan menerima email
-                                konfirmasi pesanan beserta nomor pemesanan Anda. Jika Anda ingin memesan melalui telepon,
-                                hubungi kami ke (021)460-2447</p>
+                            <p>@lang('message.ANDABISAMELAKUKAN')</p>
                         </div>
                     </div>
                 </div>
@@ -111,14 +128,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTwo" style="color: #748087">
-                            Kapan waktu operasional yurishop.co ?
+                            @lang('message.KAPANWAKTU')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Jam operasional kami dari hari Senin-Jumat pada pukul 09.00-17.00 WIB (kecuali hari libur).
-                                Apabila di luar waktu tersebut, akan diproses keesokan harinya</p>
+                            <p>@lang('message.JAMOPERASIONAL')</p>
                         </div>
                     </div>
                 </div>
@@ -127,14 +143,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseThree" style="color: #748087">
-                            Metode pembayaran apa saja yang dapat saya gunakan?
+                            @lang('message.METODEPEMBAYARAN')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Kami menerima pembayaran melalui Visa, MasterCard, Credit Card Installment, Mandiri Clickpay,
-                                BCA Klikpay, Bank Transfer, Virtual Account, Internet Banking, Doku Wallet</p>
+                            <p>@lang('message.KAMIMENERIMA')</p>
                         </div>
                     </div>
                 </div>
@@ -143,13 +158,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFour" style="color: #748087">
-                            Apakah saya dapat menerima pesanan di hari yang sama saya melakukan pemesanan?
+                            @lang('message.APAKAHSAYADAPAT')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Tidak, kami membutuhkan 2 – 3 hari kerja tergantung dari stok barang yang tersedia saat itu.
+                            <p>@lang('message.KAMIMEMBUTUHKAN')
                             </p>
                         </div>
                     </div>
@@ -159,15 +174,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFive" style="color: #748087">
-                            Kapan estimasi perkiraan pesanan dapat saya terima?
+                            @lang('message.KAPANESTIMASI')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Pesanan dengan pengiriman standar biasanya memerlukan waktu 3 – 5 hari. Waktu pengiriman
-                                tergantung pada jarak atau hal-hal lainnya. Pengiriman ke beberapa alamat terpencil
-                                memerlukan waktu hingga 2 hari tambahan</p>
+                            <p>@lang('message.PESANANDENGANPENGIRIMAN')</p>
                         </div>
                     </div>
                 </div>

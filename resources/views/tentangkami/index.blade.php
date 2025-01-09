@@ -23,7 +23,7 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('index') }}"
-                    style="color: #005EB8">HOME</a>
+                    style="color: #005EB8">@lang('message.HOME')</a>
                 </li>
 
                 <li class="nav-item">
@@ -31,7 +31,8 @@
                     class="nav-link active fw-bold"
                     aria-current="page"
                     href="{{ route('index.tentangkami') }}"
-                    style="color: #005EB8">TENTANG KAMI</a>
+                    style="color: #005EB8">@lang('message.TENTANGKAMI')
+                  </a>
                 </li>
 
                 <li class="nav-item">
@@ -39,12 +40,13 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('index.brands') }}"
-                    style="color: #005EB8">BRANDS</a>
+                    style="color: #005EB8">@lang('message.BRANDS')
+                  </a>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                    ONLINE SHOP
+                    @lang('message.ONLINESHOP')
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop" target="_blank">SHOPEE</a></li>
@@ -60,7 +62,8 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('media.index') }}"
-                    style="color: #005EB8">MEDIA</a>
+                    style="color: #005EB8">@lang('message.MEDIA')
+                  </a>
                 </li>
 
                 <li class="nav-item">
@@ -68,7 +71,8 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('index.produkbaru') }}"
-                    style="color: #005EB8">PRODUK BARU</a>
+                    style="color: #005EB8">@lang('message.PRODUKBARU')
+                  </a>
                 </li>
 
                 <li class="nav-item">
@@ -76,7 +80,8 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('index.kontak') }}"
-                    style="color: #005EB8">KONTAK</a>
+                    style="color: #005EB8">@lang('message.KONTAK')
+                  </a>
                 </li>
 
                 <li class="nav-item">
@@ -84,8 +89,21 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="{{ route('index.distributor') }}"
-                    style="color: #005EB8">DISTRIBUTOR</a>
+                    style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                 </li>
+
+                <li class="nav-item">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pilih Bahasa
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                        <li><a class="dropdown-item" href="locale/en">English</a></li>
+                      </ul>
+                    </div>
+              </li>
+
 
               </ul>
             </div>
@@ -106,14 +124,13 @@
     <!-- Content1 -->
     <div class="tentang-kami-content-satu" style="margin-top: 20px" data-aos="fade-up">
         <h4 class="text-center fw-bold" style="color: #005EB8">
-            YURI berkomitment membangun masa depan yang lebih sehat
-            <br />dengan menciptakan gaya hidup, bumi dan juga ekosistem yang
-            sehat
+            @lang('message.YURIBERKOMITMENT')
+            <br />@lang('message.YURIBERKOMITMENT2')
         </h4>
 
         <div class="tentangkamudesc" style="margin-top: 20px;">
             <p style="text-align: justify">
-                PT Joenoes Ikamulya merupakan sebuah perusahaan yang bergerak dalam pengembangan dan produksi barang konsumsi, mulai dari berbagai jenis deterjen hinggal perlengkapan mandi untuk segala usia, dengan tren dan waktu yang selalu berubah, PT Joenoes Ikamulya berupaya terus berinovasi untuk meningkatkan layanannya sehingga dapat memenuhi kebutuhan konsumen dengan lebih baik
+              @lang('message.PTJOENOESIKAMULYAMERUPAKAN')
             </p>
         </div>
     </div>
@@ -129,7 +146,7 @@
     <div class="tentang-kami-content-dua text-center" style="margin-top: 20px" data-aos="fade-up">
         <div class="caption1 mb-4">
             <h1 style="margin-bottom: 20px; color: #005EB8">
-                Komitment Kami
+                @lang('message.KOMITMENTKAMI')
             </h1>
         </div>
 
@@ -141,13 +158,7 @@
 
         <div class="berikutadalah" style="margin-top: 20px;">
             <p style="text-align: justify">
-                Berikut adalah tiga nilai inti yang ada di setiap produk Yuri.
-                Dipercaya oleh keluarga selama lebih dari tiga dekade. Kami
-                bertujuan untuk memberi anda produk berkualitas terbaik dengan nilai
-                terbaik. Dengan pengalaman lebih dari tiga dekade dan beberapa tim
-                penelitian dan pengmbangan di Indonesia dan Singapura. Kami selalu
-                berusaha untuk menciptakan produk yang lebih baik untuk memberikan
-                nilai yang lebih baik bagi anda dan lingkungan kita
+                @lang('message.BERIKUTADALAH')
             </p>
         </div>
     </div>
@@ -163,7 +174,7 @@
     <div class="tentang-kami-content-tiga text-center" style="margin-top: 20px" data-aos="fade-up">
         <div class="caption1 mb-4">
             <h1 style="margin-bottom: 20px; color: #005EB8">
-                Visi & Misi
+                @lang('message.VISIMISI')
             </h1>
         </div>
 
@@ -171,8 +182,8 @@
             <div class="d-flex p-3 justify-content-center">
                 <div class="p-2"><img src="images/visi.png" alt="" /></div>
                 <div class="p-2">
-                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">VISI</h4>
-                    <p style="text-align: justify; word-break: break-all;">Tekad telah menjadi landasan fundamental kami dalam proses pengambilan keputusan, mengatasi masalah, dan akhirnya mencapai tujuan jangka pendek dan jangka panjang </p>
+                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.VISI')</h4>
+                    <p style="text-align: justify; word-break: break-all;">@lang('message.TEKAD')</p>
 
                 </div>
             </div>
@@ -182,9 +193,8 @@
             <div class="d-flex p-3 justify-content-center">
                 <div class="p-2"><img src="images/misi.png" alt="" /></div>
                 <div class="p-2">
-                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">MISI</h4>
-                    <p style="text-align: justify; word-break: break-all;">ini adalah janji kami untuk bekerja secara konsisten dan memenuhi
-                        standar dan harapan anda
+                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.MISI')</h4>
+                    <p style="text-align: justify; word-break: break-all;">@lang('message.INIADALAH')
                     </p>
                 </div>
             </div>
@@ -220,7 +230,7 @@ style="margin-top: 40px;"
     <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
   </div>
   <div id="footercopyright2" class="col-md-4">
-      <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
+      <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
       <a class="footerfaq" href="{{ route('index.faq')}}" class="" style="font-size: 14px; color: white; ">FAQ</a>
   </div>
 </div>
