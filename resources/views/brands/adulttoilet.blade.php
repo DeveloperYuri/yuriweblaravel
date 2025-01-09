@@ -22,7 +22,7 @@
                         <a
                             class="nav-link fw-bold"
                             aria-current="page"
-                            href="{{ route('/') }}"
+                            href="{{ route('index') }}"
                             style="color: #005EB8">HOME</a>
                     </li>
 

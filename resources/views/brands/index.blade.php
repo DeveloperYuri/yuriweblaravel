@@ -82,17 +82,20 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/brandcarousel1.png" class="d-block w-100" alt="...">
+                        <img src="images/householdcleaner.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/brandcarousel2.png" class="d-block w-100" alt="...">
+                        <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" class="d-block w-100"
+                            alt="..." style="border-radius: 2%">
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/brandcarousel3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/brandcarousel4.png" class="d-block w-100" alt="...">
-                    </div>
+                    <!--
+                        <div class="carousel-item">
+                            <img src="images/adulttoiletresize.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/adulttoilet.png" class="d-block w-100" alt="..." width="300px" height="400px">
+                        </div>
+                    -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="prev">
@@ -126,16 +129,19 @@
         <!-- End Content1-->
 
         <div class="brand1 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.householdcleaner') }}"><img src="images/brand1.png" alt="" width="100%" /></a>
+            <a href="{{ route('brands.householdcleaner') }}"><img src="images/brand1.png" alt=""
+                    width="100%" /></a>
         </div>
         <div class="brand2 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.childrentoilet') }}"><img src="images/brand2.png" alt="" width="100%" /></a>
+            <a href="{{ route('brands.childrentoilet') }}"><img src="images/brand2.png" alt=""
+                    width="100%" /></a>
         </div>
         <div class="brand3 text-center" data-aos="fade-up">
             <a href="{{ route('brands.babytoilet') }}"><img src="images/brand3.png" alt="" width="100%" /></a>
         </div>
         <div class="brand4 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.adulttoilet') }}"><img src="images/brand4.png" alt="" width="100%" /></a>
+            <a href="{{ route('brands.adulttoilet') }}"><img src="images/brand4.png" alt=""
+                    width="100%" /></a>
         </div>
 
 
