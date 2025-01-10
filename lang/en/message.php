@@ -17,6 +17,8 @@ return [
     'TELUSURIPRODUK' => 'Explore our full range of products.',
     'BRANDKAMI' => 'Our Brand',
     'LIHATSEMUAMEDIA' => 'View All Media',
+    'BAHASA' => 'LANGUAGE',
+
 
     'PERTANYAANPRIVASI' => 'Privacy Questions',
 
@@ -114,5 +116,5 @@ b. Product damage caused by the shipping process.',
 'BATASRETUR' => 'Is there a time limit for submitting returns ?',
 'BATASWAKTUPENGAJUAN' => 'Yes. The deadline for submitting a return or refund is a maximum of 7x24 hours from your feedback to our Customer Service.',
 
-'BACASELENGKAPNYA' => 'Read More'
+'BACASELENGKAPNYA' => 'Read More',
 ];

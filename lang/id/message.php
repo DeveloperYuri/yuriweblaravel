@@ -16,8 +16,8 @@ return [
     'TELUSURIPRODUK' => 'Telusuri produk kami selengkapnya.',
     'BRANDKAMI' => 'Brand Kami',
     'LIHATSEMUAMEDIA' => 'Lihat Semua Media',
-
     'PERTANYAANPRIVASI' => 'Pertanyaan Privasi',
+    'BAHASA' => 'BAHASA',
 
     // Tentang Kami
     'YURIBERKOMITMENT' => 'YURI berkomitment membangun masa depan yang lebih sehat',
