@@ -34,6 +34,8 @@ PT Joenoes Ikamulya is a company engaged in the development and production of co
     'MISI' => 'Mission',
     'TEKAD' => 'Determination has become our fundamental basis in the process of making decisions, overcoming problems, and ultimately achieving short-term and long-term goals',
     'INIADALAH' => 'This is our promise to work consistently and meet your standards and expectations.',
+    'KAMISANGATPERCAYA' => 'We strongly believe in serving our customers with useful and reliable products. That is why we have developed a wide range of household products, from various types of detergents to toiletries for all ages.',
+    'DENGANBERBAGAIPERUBAHAN' => 'With various changes, we will continue to set new goals and continuously renew ourselves. With various new initiatives. We will always improve our services to better meet consumer needs. We will continue to stand by the beliefs and values ​​that have earned us the trust and loyalty of our customers.',
 
     // Brands
     'YURITELAH' => 'YURI has been recognized as a leading brand',

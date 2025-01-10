@@ -268,6 +268,105 @@ a:active {
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+    #ramahlingkungan img{
+        position: relative;
+        width: 115px;
+        height: 140px;
+    }
+
+    .textblockramahlingkungan{
+        position: absolute;
+        margin-top: -67px;
+        margin-left: 11px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 10px;
+
+    }
+
+    .textblockramahlingkungan1{
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 7px;
+        font-size: 8px;
+    }
+
+    #terjangkau img{
+        position: relative;
+        width: 115px;
+        height: 140px;
+        margin-left: -8px;
+    }
+
+    .textblockterjangkau{
+        position: absolute;
+        margin-top: -66px;
+        margin-left: 20px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 10px;
+
+    }
+
+    .textblockterjangkau1{
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 8px;
+        font-size: 8px;
+    }
+
+    #kamidisiniuntukanda img{
+        position: relative;
+        width: 115px;
+        height: 140px;
+        margin-left: -15px;
+    }
+
+    .textblockkamidisiniuntukanda{
+        position: absolute;
+        margin-top: -65px;
+        margin-left: -10px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 10px;
+
+    }
+
+    .textblockkamidisiniuntukanda1{
+        position: absolute;
+        margin-top: -40px;
+        margin-left: -10px;
+        font-size: 8px;
+    }
+
+    .textblock2{
+        visibility: hidden;
+    }
+
+    .tetangkamiptjoenoes{
+        font-size: 16px;
+    }
+
+    .tentang-kami-content-empat img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tentang-kami-content-empat {
+        position: relative;
+    }
+
+    .textblock {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        top: 40px;
+        color: rgb(2, 2, 2);
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 10px;
+    }
+
     #searchingtitle {
         width: 5px;
     }
@@ -550,6 +649,72 @@ a:active {
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+    #ramahlingkungan img{
+        position: relative;
+        width: 65%;
+        margin-left: 180px;
+    }
+
+    .textblockramahlingkungan{
+        position: absolute;
+        margin-top: -120px;
+        margin-left: 220px;
+        font-weight: bold;
+        color: #005EB8;
+    }
+
+    .textblockramahlingkungan1{
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 210px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    #terjangkau img{
+        position: relative;
+        width: 70%;
+    }
+
+    .textblockterjangkau{
+        position: absolute;
+        margin-top: -120px;
+        margin-left: 140px;
+        font-weight: bold;
+        color: #005EB8;
+    }
+
+    .textblockterjangkau1{
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 100px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    #kamidisiniuntukanda img{
+        position: relative;
+        width: 70%;
+        margin-left: -220px;
+    }
+
+    .textblockkamidisiniuntukanda{
+        position: absolute;
+        margin-top: -130px;
+        margin-left: -20px;
+        font-weight: bold;
+        color: #005EB8;
+    }
+
+    .textblockkamidisiniuntukanda1{
+        position: absolute;
+        margin-top: -85px;
+        margin-left: -20px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
     .aganolgeneral img {
         display: block;
         margin-left: auto;
@@ -609,8 +774,22 @@ a:active {
     }
 
     .tentang-kami-content-empat img {
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
+    }
+
+    .tentang-kami-content-empat {
+        position: relative;
+    }
+
+    .textblock {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        top: 90px;
+        color: rgb(2, 2, 2);
+        padding-left: 260px;
+        padding-right: 250px;
     }
 
     .tentangkamudesc p {
@@ -1046,6 +1225,98 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    #ramahlingkungan img{
+        position: relative;
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .textblockramahlingkungan{
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 80px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 14px;
+
+    }
+
+    .textblockramahlingkungan1{
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 60px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    #terjangkau img{
+        position: relative;
+        width: 95%;
+    }
+
+    .textblockterjangkau{
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 80px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 14px;
+
+    }
+
+    .textblockterjangkau1{
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 40px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    #kamidisiniuntukanda img{
+        position: relative;
+        width: 90%;
+        margin-left: -40px;
+    }
+
+    .textblockkamidisiniuntukanda{
+        position: absolute;
+        margin-top: -95px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #005EB8;
+        font-size: 14px;
+
+    }
+
+    .textblockkamidisiniuntukanda1{
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 3px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .tentang-kami-content-empat img {
+        width: 95%;
+        height: 95%;
+    }
+
+    .tentang-kami-content-empat {
+        position: relative;
+    }
+
+    .textblock {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        top: 50px;
+        color: rgb(2, 2, 2);
+        padding-left: 100px;
+        padding-right: 80px;
+        font-size: 16px;
+    }
+
     .aganolgeneral img {
         display: block;
         margin-left: auto;
@@ -1272,4 +1543,3 @@ a:active {
         width: 100%;
     }
 }
-

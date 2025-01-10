@@ -68,8 +68,8 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="color: #005EB8">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
                                 @lang('message.BAHASA')
                             </a>
                             <ul class="dropdown-menu">
@@ -125,11 +125,49 @@
                 </h1>
             </div>
 
-            <div class="d-flex p-3 justify-content-center">
-                <div class="p-2"><img src="images/ramah lingkungan.png" alt="" /></div>
-                <div class="p-2"><img src="images/terjangkau.png" alt="" /></div>
-                <div class="p-2"><img src="images/kami disini untuk anda.png" alt="" /></div>
+            <div class="row">
+                <div id="ramahlingkungan" class="col-4">
+                    <img src="images/satu.png" alt=""/>
+                    <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                    <p class="textblockramahlingkungan1">Kami menggunakan formula
+                        <br>biodegradable.
+                    </p>
+                </div>
+                <div id="terjangkau" class="col-4">
+                    <img src="images/dua.png" alt="" />
+                    <p class="textblockterjangkau">Terjangkau</p>
+                    <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                </div>
+                <div id="kamidisiniuntukanda" class="col-4">
+                    <img src="images/tiga.png" alt="" />
+                    <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                    <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan yang <br> terbaik untuk kebutuhan anda
+                    </p>
+                </div>
             </div>
+            
+            <!--
+            <div class="d-flex p-3 justify-content-center">
+                <div id="ramahlingkungan" class="p-2">
+                    <img src="images/satu.png" alt="" />
+                    <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                    <p class="textblockramahlingkungan1">Kami menggunakan formula
+                        <br>biodegradable.
+                    </p>
+                </div>
+                <div id="terjangkau" class="p-2">
+                    <img src="images/dua.png" alt="" />
+                    <p class="textblockterjangkau">Terjangkau</p>
+                    <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                </div>
+                <div id="kamidisiniuntukanda" class="p-2">
+                    <img src="images/tiga.png" alt="" />
+                    <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                    <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                    </p>
+                </div>
+            </div>
+        -->
 
         </div>
         <!-- End Content1-->

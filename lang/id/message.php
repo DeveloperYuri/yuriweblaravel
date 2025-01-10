@@ -30,6 +30,16 @@ return [
     'MISI' => 'Misi',
     'TEKAD' => 'Tekad telah menjadi landasan fundamental kami dalam proses pengambilan keputusan, mengatasi masalah, dan akhirnya mencapai tujuan jangka pendek dan jangka panjang',
     'INIADALAH' => 'ini adalah janji kami untuk bekerja secara konsisten dan memenuhi standar dan harapan anda',
+    'KAMISANGATPERCAYA' => 'Kami sangat percaya dalam melayani
+                            konsumen kami dengan produk yang berguna
+                            dan dapat diandalkan. Oleh karena itu, kami telah mengembangkan berbagai macam produk
+                            rumah tangga, mulai dari berbagai jenis deterjen hingga perlengkapan mandi untuk segala usia.',
+    'DENGANBERBAGAIPERUBAHAN' => 'Dengan berbagai perubahan, kami
+                            akan terus menetapkan tujuan baru dan terus-menerus
+                            memperbaharui diri kami.Dengan berbagai inisiatif baru. Kami akan selalu meningkatkan
+                            layanan kami untuk lebih memenuhi kebutuhan konsumen. Kami akan terus berdiri dengan
+                            keyakinan dan nilai-nilai yang telah menjadikan kami mendapatkan kepercayaan dan loyalitas
+                            dari pelanggan kami',
 
     // Brands
     'YURITELAH' => 'YURI telah diakui sebagai merek terkemuka',

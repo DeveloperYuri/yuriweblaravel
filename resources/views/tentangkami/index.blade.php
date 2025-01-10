@@ -188,7 +188,26 @@
         </div>
 
         <div class="tentang-kami-content-empat text-center" data-aos="fade-up">
-            <img src="images/dijoenoesikamulya.png" alt="" width="100%">
+            <img src="images/frame-8.png" alt="" width="100%">
+            <div class="textblock">
+                <h4 class="tetangkamiptjoenoes mb-3" style="color: white">PT. JOENOES IKAMULYA</h4>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <p class="textblock1" style="color: white; text-align:justify">
+                            @lang('message.KAMISANGATPERCAYA')
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <p class="textblock2" style="color: white; text-align:justify">
+                          @lang('message.DENGANBERBAGAIPERUBAHAN')
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
