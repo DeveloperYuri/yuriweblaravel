@@ -13,7 +13,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index')}}"
+                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index') }}"
                                 style="color: #005EB8">@lang('message.HOME')</a>
                         </li>
 
@@ -67,18 +67,16 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
-                        <li class="nav-item">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pilih Bahasa
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
-                                </ul>
-                              </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: #005EB8">
+                                BAHASA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="locale/en">English</a></li>
+                            </ul>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -226,23 +224,21 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerindex"
-      class="card-footer text-body-secondary bg-dark"
-      style="margin-top: 40px;"
-    >
-    <div class="container">
-      <div class="row" style="padding-top: 0px;">
-        <div id="footercopyright" class="col-md-8">
-          <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
+    <div id="footerindex" class="card-footer text-body-secondary bg-dark" style="margin-top: 40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 0px;">
+                <div id="footercopyright" class="col-md-8">
+                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
+                </div>
+                <div id="footercopyright2" class="col-md-4">
+                    <a class="petanyaan-privasi" href="#"
+                        style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
+                    <a class="footerfaq" href="{{ route('index.faq') }}" class=""
+                        style="font-size: 14px; color: white; ">FAQ</a>
+                </div>
+            </div>
         </div>
-        <div id="footercopyright2" class="col-md-4">
-            <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px; ">Pertanyaan privasi</a>
-            <a class="footerfaq" href="{{ route('index.faq')}}" class="" style="font-size: 14px; color: white; ">FAQ</a>
-        </div>
-      </div>
-    </div>
 
     </div>
     <!-- End Footer -->
-    
 @endsection

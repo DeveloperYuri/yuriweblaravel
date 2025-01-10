@@ -1,242 +1,218 @@
 @extends('layouts.master')
 
 @section('navbar')
-<!-- Navbar Menu -->
-<div class="menubar">
+    <!-- Navbar Menu -->
+    <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
-          <div class="container-fluid">
-            <img src="images/logo-8.png" width="100px" height="50px" />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('index') }}"
-                    style="color: #005EB8">@lang('message.HOME')</a>
-                </li>
+            <div class="container-fluid">
+                <img src="images/logo-8.png" width="100px" height="50px" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index') }}"
+                                style="color: #005EB8">@lang('message.HOME')</a>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link active fw-bold"
-                    aria-current="page"
-                    href="{{ route('index.tentangkami') }}"
-                    style="color: #005EB8">@lang('message.TENTANGKAMI')
-                  </a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
+                                style="color: #005EB8">@lang('message.TENTANGKAMI')
+                            </a>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('index.brands') }}"
-                    style="color: #005EB8">@lang('message.BRANDS')
-                  </a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
+                                style="color: #005EB8">@lang('message.BRANDS')
+                            </a>
+                        </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                    @lang('message.ONLINESHOP')
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop" target="_blank">SHOPEE</a></li>
-                    <li><a class="dropdown-item" href="https://www.tokopedia.com/yuri-official" target="_blank">TOKOPEDIA</a></li>
-                    <li><a class="dropdown-item" href="https://www.lazada.co.id/shop/yuri-official-store/?spm=a2o4j.pdp_revamp.seller.1.28fa76118mbGvu&itemId=1769620279&channelSource=pdp" target="_blank">LAZADA</a></li>
-                    <li><a class="dropdown-item" href="https://www.blibli.com/brand/yuri-official-store" target="_blank">BLIBLI</a></li>
-                    <li><a class="dropdown-item" href="https://www.yurishop.co/id/" target="_blank">YURI SHOP</a></li>
-                  </ul>
-                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
+                                @lang('message.ONLINESHOP')
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://shopee.co.id/yuriofficialshop"
+                                        target="_blank">SHOPEE</a></li>
+                                <li><a class="dropdown-item" href="https://www.tokopedia.com/yuri-official"
+                                        target="_blank">TOKOPEDIA</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.lazada.co.id/shop/yuri-official-store/?spm=a2o4j.pdp_revamp.seller.1.28fa76118mbGvu&itemId=1769620279&channelSource=pdp"
+                                        target="_blank">LAZADA</a></li>
+                                <li><a class="dropdown-item" href="https://www.blibli.com/brand/yuri-official-store"
+                                        target="_blank">BLIBLI</a></li>
+                                <li><a class="dropdown-item" href="https://www.yurishop.co/id/" target="_blank">YURI
+                                        SHOP</a></li>
+                            </ul>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('media.index') }}"
-                    style="color: #005EB8">@lang('message.MEDIA')
-                  </a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
+                                style="color: #005EB8">@lang('message.MEDIA')
+                            </a>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('index.produkbaru') }}"
-                    style="color: #005EB8">@lang('message.PRODUKBARU')
-                  </a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
+                                style="color: #005EB8">@lang('message.PRODUKBARU')
+                            </a>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('index.kontak') }}"
-                    style="color: #005EB8">@lang('message.KONTAK')
-                  </a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
+                                style="color: #005EB8">@lang('message.KONTAK')
+                            </a>
+                        </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link fw-bold"
-                    aria-current="page"
-                    href="{{ route('index.distributor') }}"
-                    style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
+                                style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
+                        </li>
 
-                <li class="nav-item">
-                  <div class="btn-group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Pilih Bahasa
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                        <li><a class="dropdown-item" href="locale/en">English</a></li>
-                      </ul>
-                    </div>
-              </li>
-
-
-              </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
+                                BAHASA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="locale/en">English</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
-      </div>
-      <!--End Navbar Menu-->
+    </div>
+    <!--End Navbar Menu-->
 @endsection
 
 @section('content')
-<div class="container">
-    <!-- Banner Homepage-->
-    <div class="banner-tentang-kami" data-aos="fade-up">
-        <img src="images/Banner-Tentang-Kami.png" class="img-fluid" alt="..." width="100%">
-    </div>
-    <!-- End Banner Homepage -->
-
-    <!-- Content1 -->
-    <div class="tentang-kami-content-satu" style="margin-top: 20px" data-aos="fade-up">
-        <h4 class="text-center fw-bold" style="color: #005EB8">
-            @lang('message.YURIBERKOMITMENT')
-            <br />@lang('message.YURIBERKOMITMENT2')
-        </h4>
-
-        <div class="tentangkamudesc" style="margin-top: 20px;">
-            <p style="text-align: justify">
-              @lang('message.PTJOENOESIKAMULYAMERUPAKAN')
-            </p>
+    <div class="container">
+        <!-- Banner Homepage-->
+        <div class="banner-tentang-kami" data-aos="fade-up">
+            <img src="images/Banner-Tentang-Kami.png" class="img-fluid" alt="..." width="100%">
         </div>
-    </div>
-    <!-- End Content1-->
+        <!-- End Banner Homepage -->
 
-    <div class="row mt-3">
-        <div class="col-12">
-            <img src="images/garis.png" alt="" width="100%" />
+        <!-- Content1 -->
+        <div class="tentang-kami-content-satu" style="margin-top: 20px" data-aos="fade-up">
+            <h4 class="text-center fw-bold" style="color: #005EB8">
+                @lang('message.YURIBERKOMITMENT')
+                <br />@lang('message.YURIBERKOMITMENT2')
+            </h4>
+
+            <div class="tentangkamudesc" style="margin-top: 20px;">
+                <p style="text-align: justify">
+                    @lang('message.PTJOENOESIKAMULYAMERUPAKAN')
+                </p>
+            </div>
         </div>
-    </div>
+        <!-- End Content1-->
 
-    <!-- Content2 -->
-    <div class="tentang-kami-content-dua text-center" style="margin-top: 20px" data-aos="fade-up">
-        <div class="caption1 mb-4">
-            <h1 style="margin-bottom: 20px; color: #005EB8">
-                @lang('message.KOMITMENTKAMI')
-            </h1>
+        <div class="row mt-3">
+            <div class="col-12">
+                <img src="images/garis.png" alt="" width="100%" />
+            </div>
         </div>
 
-        <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><img src="images/kualitas.png" alt="" /></div>
-            <div class="p-2"><img src="images/nilai.png" alt="" /></div>
-            <div class="p-2"><img src="images/keberlanjutan.png" alt="" /></div>
-        </div>
+        <!-- Content2 -->
+        <div class="tentang-kami-content-dua text-center" style="margin-top: 20px" data-aos="fade-up">
+            <div class="caption1 mb-4">
+                <h1 style="margin-bottom: 20px; color: #005EB8">
+                    @lang('message.KOMITMENTKAMI')
+                </h1>
+            </div>
 
-        <div class="berikutadalah" style="margin-top: 20px;">
-            <p style="text-align: justify">
-                @lang('message.BERIKUTADALAH')
-            </p>
-        </div>
-    </div>
-    <!-- End Content2-->
-
-    <div class="row mt-3" data-aos="fade-up">
-        <div class="col-12">
-            <img src="images/garis.png" alt="" width="100%" />
-        </div>
-    </div>
-
-    <!-- Content3 -->
-    <div class="tentang-kami-content-tiga text-center" style="margin-top: 20px" data-aos="fade-up">
-        <div class="caption1 mb-4">
-            <h1 style="margin-bottom: 20px; color: #005EB8">
-                @lang('message.VISIMISI')
-            </h1>
-        </div>
-
-        <div class="visi">
             <div class="d-flex p-3 justify-content-center">
-                <div class="p-2"><img src="images/visi.png" alt="" /></div>
-                <div class="p-2">
-                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.VISI')</h4>
-                    <p style="text-align: justify; word-break: break-all;">@lang('message.TEKAD')</p>
+                <div class="p-2"><img src="images/kualitas.png" alt="" /></div>
+                <div class="p-2"><img src="images/nilai.png" alt="" /></div>
+                <div class="p-2"><img src="images/keberlanjutan.png" alt="" /></div>
+            </div>
 
+            <div class="berikutadalah" style="margin-top: 20px;">
+                <p style="text-align: justify">
+                    @lang('message.BERIKUTADALAH')
+                </p>
+            </div>
+        </div>
+        <!-- End Content2-->
+
+        <div class="row mt-3" data-aos="fade-up">
+            <div class="col-12">
+                <img src="images/garis.png" alt="" width="100%" />
+            </div>
+        </div>
+
+        <!-- Content3 -->
+        <div class="tentang-kami-content-tiga text-center" style="margin-top: 20px" data-aos="fade-up">
+            <div class="caption1 mb-4">
+                <h1 style="margin-bottom: 20px; color: #005EB8">
+                    @lang('message.VISIMISI')
+                </h1>
+            </div>
+
+            <div class="visi">
+                <div class="d-flex p-3 justify-content-center">
+                    <div class="p-2"><img src="images/visi.png" alt="" /></div>
+                    <div class="p-2">
+                        <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.VISI')</h4>
+                        <p style="text-align: justify; word-break: break-all;">@lang('message.TEKAD')</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="misi">
+                <div class="d-flex p-3 justify-content-center">
+                    <div class="p-2"><img src="images/misi.png" alt="" /></div>
+                    <div class="p-2">
+                        <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.MISI')</h4>
+                        <p style="text-align: justify; word-break: break-all;">@lang('message.INIADALAH')
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Content3-->
+
+        <div class="row mt-3" data-aos="fade-up">
+            <div class="col-12">
+                <img src="images/garis.png" alt="" width="100%" />
+            </div>
+        </div>
+
+        <div class="tentang-kami-content-empat text-center" data-aos="fade-up">
+            <img src="images/dijoenoesikamulya.png" alt="" width="100%">
+        </div>
+
+
+    </div>
+    <!-- End Container -->
+    </div>
+
+
+    <!-- Start Footer -->
+    <div id="footerindex" class="card-footer text-body-secondary bg-dark" style="margin-top: 40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 0px;">
+                <div id="footercopyright" class="col-md-8">
+                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
+                </div>
+                <div id="footercopyright2" class="col-md-4">
+                    <a class="petanyaan-privasi" href="#"
+                        style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
+                    <a class="footerfaq" href="{{ route('index.faq') }}" class=""
+                        style="font-size: 14px; color: white; ">FAQ</a>
                 </div>
             </div>
         </div>
 
-        <div class="misi">
-            <div class="d-flex p-3 justify-content-center">
-                <div class="p-2"><img src="images/misi.png" alt="" /></div>
-                <div class="p-2">
-                    <h4 style="text-align: left; color: #005EB8; font-weight: bold;">@lang('message.MISI')</h4>
-                    <p style="text-align: justify; word-break: break-all;">@lang('message.INIADALAH')
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <!-- End Content3-->
-
-    <div class="row mt-3" data-aos="fade-up">
-        <div class="col-12">
-            <img src="images/garis.png" alt="" width="100%" />
-        </div>
-    </div>
-
-    <div class="tentang-kami-content-empat text-center" data-aos="fade-up">
-        <img src="images/dijoenoesikamulya.png" alt="" width="100%">
-    </div>
-
-
-</div>
-<!-- End Container -->
-</div>
-
-
-<!-- Start Footer -->
-<div id="footerindex"
-class="card-footer text-body-secondary bg-dark"
-style="margin-top: 40px;"
->
-<div class="container">
-<div class="row" style="padding-top: 0px;">
-  <div id="footercopyright" class="col-md-8">
-    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
-  </div>
-  <div id="footercopyright2" class="col-md-4">
-      <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
-      <a class="footerfaq" href="{{ route('index.faq')}}" class="" style="font-size: 14px; color: white; ">FAQ</a>
-  </div>
-</div>
-</div>
-
-</div>
-<!-- End Footer -->
-
+    <!-- End Footer -->
 @endsection

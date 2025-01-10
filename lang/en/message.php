@@ -72,6 +72,47 @@ We accept payments via Visa, MasterCard, Credit Card Installment, Mandiri Clickp
     'PESANANDENGANPENGIRIMAN' => 'Standard shipping orders usually take 3 – 5 days. Shipping time
 depends on distance and other factors. Shipping to some remote addresses
 may take up to 2 additional days',
+    'SIAPAYANGMENGIRIM' => 'Who will deliver the order ?',
+    'KAMIBEKERJASAMA' => '
+We work with shipping services such as JNE to send orders to all cities in Indonesia',
+    'BAGAIMANAJIKASAYA' => 'What if I want to order in large quantities ?',
+    'ANDADAPATMENGHUBUNGI' => 'You can contact us at (021)460-2447 or via email cs@yurishop.co or you can make repeat orders on our website',
+    'BAGAIMANASAYAMENGETAHUI' => 'How do I know if my order has been shipped ?',
+    'KAMIAKANMENGIRIMKAN' => 'We will send a confirmation message via email. You can also contact us at
+(021) 460-2447 or via email cs@yurishop.co.',
+    'BAGAIMANACARAUNTUK' => 'How do I check the delivery status of my order ?',
+    'ANDADAPATMELACAK' => 'You can track the shipping status on the Check Order menu available on the main page. We cannot guarantee that your order will arrive on time, but we can let you know if your order has been shipped or if there is a problem with the shipment.',
+    'APAKAHPENGIRIMAN' => 'Is shipping only valid for the Jabodetabek area?',
+    'SAATINIKAMI' => 'Currently we limit shipping to Jabodetabek only. To find out if the product you want is available in your city, contact cs@yurishop.co.',
+    'APAKAHHARGA' => 'Does the listed price include shipping costs ?',
+    'HARGAYANGTERTERA' => 'No. The product price listed on the website does not include shipping costs.',
+    'APAKAHYURISHOP' => 'Does yurishop.co provide free shipping?',
+    'PASTIKANANDA' => 'No. Make sure you always check the latest promos at yurishop.co to get free shipping from us.',
+    'BERAPABIAYA' => 'How much shipping cost should I pay ?',
+    'BIAYAPENGIRIMAN' => '
+Shipping costs are calculated flat based on the weight and volume of the product and the shipping location. Shipping costs will be automatically listed on the checkout page.',
+    'BAGAIMANACARA' => 'How do I change my shipping address? ',
+    'JIKAANDAINGIN' => 'If you want to change the shipping address after placing an order, you can
+contact us at (021)460-2447 or via email cs@yurishop.co as soon as possible while your order is still being processed. If the order has not been shipped, we will ship to the new address. If the order has been shipped, the shipping address cannot be changed again.',
+    'BAGAIMANAJIKA' => 'What if the ordered goods I receive are incorrect or incomplete ? ',
+    'ANDADAPATMENGHUBUNGI' => 'You can contact us at (021)460-2447 or via email cs@yurishop.co We will verify and confirm all items that do not match.',
+    'BAGAIMANACARA' => 'How do I return a product that is damaged when I receive it ?',
+    'HUBUNGIKAMI' => '
+    Contact us at (021)460-2447 or via email cs@yurishop.co along with the following information:
+1. Order number
+2. Reason for returning the item
+3. Include clear photos showing the damaged item
+4. Product details: quantity, name, variant, and size of the product you wish to return
+5. Your complete address and telephone number
+We will not process returns of items that have been shipped without our prior approval.
+    ',
+    'KETENTUANPRODUK' => 'Product provisions are damaged ?',
+    'PRODUKCACAT' => '
+a. The product is defective in production, and is not caused by incorrect use such as: falling, getting into water, being scratched, the product has been used, and so on which are caused by human error.',
+'PRODUKCACAT2' => '
+b. Product damage caused by the shipping process.',
+'BATASRETUR' => 'Is there a time limit for submitting returns ?',
+'BATASWAKTUPENGAJUAN' => 'Yes. The deadline for submitting a return or refund is a maximum of 7x24 hours from your feedback to our Customer Service.',
 
-
+'BACASELENGKAPNYA' => 'Read More'
 ];

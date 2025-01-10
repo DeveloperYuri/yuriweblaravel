@@ -74,19 +74,16 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
-                        <li class="nav-item">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pilih Bahasa
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
-                                </ul>
-                              </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: #005EB8">
+                                BAHASA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="locale/en">English</a></li>
+                            </ul>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -114,22 +111,6 @@
                 </div>
             @endforelse
 
-            <!--
-               
-
-                <div class="col-lg-4 mt-4">
-                    <img src="images/produbaruligent.png" alt="" width="100%" height="100%"
-                        style="border-radius: 4%;" />
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <img src="images/babydeepouchwashbaru.png" alt="" width="100%" height="100%"
-                        style="border-radius: 4%;" />
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <img src="images/babydeepouchwashbaru2.png" alt="" width="100%" height="100%"
-                        style="border-radius: 4%;" />
-                </div>
-            -->
         </div>
 
     </div>

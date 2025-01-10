@@ -74,16 +74,15 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
-                        <li class="nav-item">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pilih Bahasa
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                                  <li><a class="dropdown-item" href="locale/en">English</a></li>
-                                </ul>
-                              </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
+                                BAHASA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="locale/en">English</a></li>
+                            </ul>
                         </li>
 
                     </ul>
@@ -189,14 +188,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseSix" style="color: #748087">
-                            Siapa yang akan mengirimkan pesanan?
+                            @lang('message.SIAPAYANGMENGIRIM')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingSix">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Kami bekerjasama dengan jasa pengiriman seperti JNE untuk mengirimkan pesanan ke seluruh kota
-                                di Indonesia</p>
+                            <p>@lang('message.KAMIBEKERJASAMA')</p>
                         </div>
                     </div>
                 </div>
@@ -205,14 +203,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseSeven" style="color: #748087">
-                            Bagaimana jika saya ingin memesan dalam jumlah yang banyak?
+                        @lang('message.BAGAIMANAJIKASAYA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingSeven">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Anda dapat menghubungi kami di (021)460-2447 atau melalui email cs@yurishop.co atau Anda bisa
-                                melakukan pemesanan secara berulang-ulang pada website kami</p>
+                            <p>@lang('message.ANDADAPATMENGHUBUNGI')</p>
                         </div>
                     </div>
                 </div>
@@ -221,14 +218,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseEight" style="color: #748087">
-                            Bagaimana saya mengetahui bahwa pesanan saya sudah dikirim?
+                        @lang('message.BAGAIMANASAYAMENGETAHUI')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingEight">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Kami akan mengirimkan pesan konfirmasi melalui email. Anda juga dapat menghubungi kami di
-                                (021)460-2447 atau melalui email cs@yurishop.co.</p>
+                            <p>@lang('message.KAMIAKANMENGIRIMKAN')</p>
                         </div>
                     </div>
                 </div>
@@ -237,15 +233,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseNine" style="color: #748087">
-                            Bagaimana cara untuk cek status pengiriman pesanan saya?
+                            @lang('message.BAGAIMANACARAUNTUK')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingNine">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Anda dapat melacak status pengiriman pada menu Cek Order yang tersedia di halaman utama. Kami
-                                tidak dapat memastikan pesanan Anda tiba tepat waktu, tetapi kami dapat memberitahu Anda
-                                jika pesanan Anda telah dikirim atau jika terjadi masalah pada pengiriman tersebut</p>
+                            <p>@lang('message.ANDADAPATMELACAK')</p>
                         </div>
                     </div>
                 </div>
@@ -254,14 +248,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTen" style="color: #748087">
-                            Apakah pengiriman hanya berlaku untuk daerah Jabodetabek saja?
+                            @lang('message.APAKAHPENGIRIMAN')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Saat ini kami membatasi pengiriman hanya ke Jabodetabek saja. Untuk mengetahui apakah produk
-                                yang Anda inginkan tersedia di kota Anda,hubungi cs@yurishop.co.</p>
+                            <p>@lang('message.SAATINIKAMI')</p>
                         </div>
                     </div>
                 </div>
@@ -270,13 +263,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseEleven" style="color: #748087">
-                            Apakah harga yang tertera sudah termasuk biaya pengiriman?
+                            @lang('message.APAKAHHARGA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingEleven">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Tidak. Harga produk yang tertera pada website belum termasuk dengan biaya pengiriman.</p>
+                            <p>@lang('message.HARGAYANGTERTERA')</p>
                         </div>
                     </div>
                 </div>
@@ -285,14 +278,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTwelve" style="color: #748087">
-                            Apakah yurishop.co memberikan biaya pengiriman gratis?
+                            @lang('message.APAKAHYURISHOP')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwelve">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Tidak. Pastikan Anda untuk selalu cek promo terbaru di yurishop.co untuk mendapatkan
-                                pengiriman gratis dari kami.</p>
+                            <p>@lang('message.PASTIKANANDA')</p>
                         </div>
                     </div>
                 </div>
@@ -301,14 +293,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseThirteen" style="color: #748087">
-                            Berapa biaya pengiriman yang harus saya bayar?
+                            @lang('message.BERAPABIAYA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseThirteen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThirteen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Biaya pengiriman dihitung flat berdasarkan penghitungan berat serta volume produk dan lokasi
-                                pengiriman. Biaya pengiriman akan otomatis tertera pada halaman checkout.</p>
+                            <p>@lang('message.BIAYAPENGIRIMAN')</p>
                         </div>
                     </div>
                 </div>
@@ -317,16 +308,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFourteen" style="color: #748087">
-                            Bagaimana cara mengganti alamat pengiriman?
+                            @lang('message.BAGAIMANACARA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingFourteen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Jika Anda ingin mengganti alamat pengiriman setelah melakukan pemesanan, Anda dapat
-                                menghubungi kami di (021)460-2447 atau melalui email cs@yurishop.co sesegera mungkin selama
-                                pesanan Anda masih diproses. Jika pesanan belum dikirim, kami akan mengirimkan ke alamat
-                                yang baru. Jika pesanan sudah dikirim maka alamat pengiriman tidak dapat diganti lagi.</p>
+                            <p>@lang('message.JIKAANDAINGIN')</p>
                         </div>
                     </div>
                 </div>
@@ -335,14 +323,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFiveteen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFiveteen" style="color: #748087">
-                            Bagaimana jika barang pesanan yang saya terima tidak sesuai atau tidak lengkap?
+                            @lang('message.BAGAIMANAJIKA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFiveteen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingFiveteen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Anda dapat menghubungi kami di (021)460-2447 atau melalui email cs@yurishop.co Kami akan
-                                melakukan verifikasi dan konfirmasi semua barang yang tidak sesuai tersebut.</p>
+                            <p>@lang('message.ANDADAPATMENGHUBUNGI')</p>
                         </div>
                     </div>
                 </div>
@@ -351,20 +338,13 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseSixteen" style="color: #748087">
-                            Bagaimana cara mengembalikan produk yang rusak pada saat saya terima?
+                            @lang('message.BAGAIMANACARA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseSixteen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingSixteen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Hubungi kami di (021)460-2447 atau melalui email cs@yurishop.co beserta informasi berikut:
-                                1. Nomor order
-                                2. Alasan pengembalian barang
-                                3. Sertakan foto jelas yang menunjukkan kerusakan barang
-                                4. Detail produk: jumlah, nama, varian, dan ukuran produk yang ingin dikembalikan
-                                5. Alamat lengkap dan nomor telepon Anda
-                                Kami tidak akan memproses pengembalian barang yang telah dikirimkan tanpa persetujuan kami
-                                sebelumnya.
+                            <p>@lang('message.HUBUNGIKAMI')
                             </p>
                         </div>
                     </div>
@@ -374,16 +354,14 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseSeventeen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseSeventeen" style="color: #748087">
-                            Ketentuan produk rusak?
+                            @lang('message.KETENTUANPRODUK')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseSeventeen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingSeventeen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>a.Produk cacat produksi, dan bukan terjadi karena kesalahan penggunaan seperti halnya: jatuh,
-                                masuk air, tergores, produk sudah digunakan, dan lain sebagainya yang diakibatkan human
-                                error.
-                                <br>b.Kerusakan produk yang disebabkan karena proses pengiriman.
+                            <p>@lang('message.PRODUKCACAT')
+                                <br>@lang('message.PRODUKCACAT2')
                             </p>
                         </div>
                     </div>
@@ -393,23 +371,22 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseEightteen" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseEightteen" style="color: #748087">
-                            Apakah ada batas waktu pengajuan retur?
+                            @lang('message.BATASRETUR')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseEightteen" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingEightteen">
                         <div class="accordion-body" style="text-align: justify;">
-                            <p>Ya. Batas waktu pengajuan retur atau pengembalian barang maksimal 7x24 jam dari feedback Anda
-                                kepada Customer Service kami</p>
+                            <p>@lang('message.BATASWAKTUPENGAJUAN')</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="button-brand">
-                <a href={{ route('index') }} ><img src="images/bingkai klik-8.png" class="img-fluid"
+                <a href={{ route('index') }}><img src="images/bingkai klik-8.png" class="img-fluid"
                         alt="Responsive image" width="30%" height="10%">
-                    <div class="centered"><strong>Selengkapnya</strong></div>
+                    <div class="centered"><strong>@lang('message.BACASELENGKAPNYA')</strong></div>
                 </a>
             </div>
         </div>
