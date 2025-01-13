@@ -140,8 +140,8 @@
                 </div>
                 <div id="kamidisiniuntukanda" class="col-4">
                     <img src="images/tiga.png" alt="" />
-                    <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                    <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan yang <br> terbaik untuk kebutuhan anda
+                    <p class="textblockkamidisiniuntukanda">Kami <span class="disini">Disini</span> Untuk Anda</p>
+                    <p class="textblockkamidisiniuntukanda1">Kami memberikan yang <br> terbaik untuk anda
                     </p>
                 </div>
             </div>
