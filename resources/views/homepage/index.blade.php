@@ -6,8 +6,9 @@
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,16 +68,6 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #005EB8">
-                                @lang('message.BAHASA')
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                                <li><a class="dropdown-item" href="locale/en">English</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -88,6 +79,21 @@
 @section('content')
     <!-- Container -->
     <div class="container">
+
+        <!-- Start Button Language -->
+        <div class="language mb-2" style="display:flex; justify-content:flex-end;">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Language
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="locale/en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Button Language -->
 
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
@@ -127,7 +133,7 @@
 
             <div class="row">
                 <div id="ramahlingkungan" class="col-4">
-                    <img src="images/satu.png" alt=""/>
+                    <img src="images/satu.png" alt="" />
                     <p class="textblockramahlingkungan">Ramah Lingkungan</p>
                     <p class="textblockramahlingkungan1">Kami menggunakan formula
                         <br>biodegradable.
@@ -145,29 +151,29 @@
                     </p>
                 </div>
             </div>
-            
+
             <!--
-            <div class="d-flex p-3 justify-content-center">
-                <div id="ramahlingkungan" class="p-2">
-                    <img src="images/satu.png" alt="" />
-                    <p class="textblockramahlingkungan">Ramah Lingkungan</p>
-                    <p class="textblockramahlingkungan1">Kami menggunakan formula
-                        <br>biodegradable.
-                    </p>
-                </div>
-                <div id="terjangkau" class="p-2">
-                    <img src="images/dua.png" alt="" />
-                    <p class="textblockterjangkau">Terjangkau</p>
-                    <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
-                </div>
-                <div id="kamidisiniuntukanda" class="p-2">
-                    <img src="images/tiga.png" alt="" />
-                    <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                    <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
-                    </p>
-                </div>
-            </div>
-        -->
+                    <div class="d-flex p-3 justify-content-center">
+                        <div id="ramahlingkungan" class="p-2">
+                            <img src="images/satu.png" alt="" />
+                            <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                            <p class="textblockramahlingkungan1">Kami menggunakan formula
+                                <br>biodegradable.
+                            </p>
+                        </div>
+                        <div id="terjangkau" class="p-2">
+                            <img src="images/dua.png" alt="" />
+                            <p class="textblockterjangkau">Terjangkau</p>
+                            <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                        </div>
+                        <div id="kamidisiniuntukanda" class="p-2">
+                            <img src="images/tiga.png" alt="" />
+                            <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                            <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                            </p>
+                        </div>
+                    </div>
+                -->
 
         </div>
         <!-- End Content1-->

@@ -6,8 +6,9 @@
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -96,6 +97,21 @@
 @section('content')
     <!-- Container -->
     <div class="container">
+
+        <!-- Start Button Language -->
+        <div class="language mb-2" style="display:flex; justify-content:flex-end;">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Language
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="locale/en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Button Language -->
 
         <!-- Content1 -->
         <div class="content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
@@ -203,7 +219,7 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseSeven" style="color: #748087">
-                        @lang('message.BAGAIMANAJIKASAYA')
+                            @lang('message.BAGAIMANAJIKASAYA')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
@@ -218,7 +234,7 @@
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseEight" style="color: #748087">
-                        @lang('message.BAGAIMANASAYAMENGETAHUI')
+                            @lang('message.BAGAIMANASAYAMENGETAHUI')
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"

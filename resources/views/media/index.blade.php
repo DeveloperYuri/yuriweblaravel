@@ -5,8 +5,9 @@
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -72,17 +73,6 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="color: #005EB8">
-                                @lang('message.BAHASA')
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                                <li><a class="dropdown-item" href="locale/en">English</a></li>
-                            </ul>
-                        </li>
-
                     </ul>
                 </div>
             </div>
@@ -93,6 +83,22 @@
 
 @section('content')
     <div class="container">
+
+        <!-- Start Button Language -->
+        <div class="language mb-2" style="display:flex; justify-content:flex-end;">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Language
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="locale/en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Button Language -->
+
         <!-- Content1 -->
         <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1 mb-4">
