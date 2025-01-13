@@ -18,6 +18,9 @@ return [
     'BRANDKAMI' => 'Our Brand',
     'LIHATSEMUAMEDIA' => 'View All Media',
     'BAHASA' => 'LANGUAGE',
+    'RAMAHLINGKUNGAN' => 'ENVIRONMENTALLY FRIENDLY',
+    'KAMIMENGGUNAKAN' => 'We use a Formula',
+    'BIODEGRADABLE' => 'biodegradable',
 
 
     'PERTANYAANPRIVASI' => 'Privacy Questions',

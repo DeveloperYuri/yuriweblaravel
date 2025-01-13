@@ -18,6 +18,11 @@ return [
     'LIHATSEMUAMEDIA' => 'Lihat Semua Media',
     'PERTANYAANPRIVASI' => 'Pertanyaan Privasi',
     'BAHASA' => 'BAHASA',
+    'RAMAHLINGKUNGAN' => 'Ramah Lingkungan',
+    'KAMIMENGGUNAKAN' => 'Kami menggunakan formula',
+    'BIODEGRADABLE' => 'biodegradable.',
+
+
 
     // Tentang Kami
     'YURIBERKOMITMENT' => 'YURI berkomitment membangun masa depan yang lebih sehat',
