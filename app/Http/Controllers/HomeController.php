@@ -6,16 +6,33 @@ use App\Models\Artikel;
 use App\Models\ProdukBaru;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Stevebauman\Location\Facades\Location;
+
 
 class HomeController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        //get all products
-        $artikels = Artikel::latest()->paginate(3);
 
-        //render view with products
-        return view('homepage.index', compact('artikels'));
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        //dd($var_countryname);
+
+        if ($var_countryname == "Indonesia") {
+            //get all products
+            $artikels = Artikel::latest()->paginate(3);
+
+            //render view with products
+            return view('homepage.index', compact('artikels'));
+        } else {
+            //get all products
+            $artikels = Artikel::latest()->paginate(3);
+
+            //render view with products
+            return view('homepage.indexsg', compact('artikels'));
+        }
     }
 
     public function show(string $id): View
@@ -27,129 +44,216 @@ class HomeController extends Controller
         return view('homepage.show', compact('artikels'));
     }
 
-    public function tentangKami(){
-        return view('tentangkami.index');
+    public function tentangKami(Request $request)
+    {
+
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('tentangkami.index');
+        } else {
+            return view('tentangkami.indexsg');
+        }
     }
 
-    public function brands(){
-        return view('brands.index');
+    public function brands(Request $request)
+    {
+
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('brands.index');
+        } else {
+            return view('brands.indexsg');
+        }
     }
 
-    public function produkBaru(){
+    public function produkBaru(Request $request)
+    {
 
-        $produkbaru = ProdukBaru::all();
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
 
-        return view('produkbaru.index', compact('produkbaru'));
+        if ($var_countryname == "Indonesia") {
+            $produkbaru = ProdukBaru::all();
+
+            return view('produkbaru.index', compact('produkbaru'));
+        } else {
+            $produkbaru = ProdukBaru::all();
+
+            return view('produkbaru.indexsg', compact('produkbaru'));
+        }
     }
 
-    public function kontak(){
-        return view('kontak.index');
+    public function kontak(Request $request)
+    {
+
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('kontak.index');
+        } else {
+            return view('kontak.indexsg');
+        }
     }
 
-    public function distributor(){
-        return view('distributor.index');
+    public function distributor(Request $request)
+    {
+
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('distributor.index');
+        } else {
+            return view('distributor.indexsg');
+        }
     }
 
-    public function householdcleaner(){
+    public function householdcleaner()
+    {
         return view('brands.householdcleaner');
     }
 
-    public function childrentoilet(){
+    public function childrentoilet()
+    {
         return view('brands.childrentoilet');
     }
 
-    public function babytoilet(){
+    public function babytoilet()
+    {
         return view('brands.babytoilet');
     }
 
-    public function adulttoilet(){
+    public function adulttoilet()
+    {
         return view('brands.adulttoilet');
     }
 
-    public function aganolproduk(){
+    public function aganolproduk()
+    {
         return view('brands.produkaganol');
     }
 
-    public function babysoftproduk(){
+    public function babysoftproduk()
+    {
         return view('brands.produkbabysoft');
     }
 
-    public function biosoftdetergenproduk(){
+    public function biosoftdetergenproduk()
+    {
         return view('brands.produkbiosoftdetergen');
     }
 
-    public function biosoftproduk(){
+    public function biosoftproduk()
+    {
         return view('brands.produkbiosoft');
     }
 
-    public function bathroomcleanerproduk(){
+    public function bathroomcleanerproduk()
+    {
         return view('brands.produkbathroomcleaner');
     }
 
-    public function yuribleachproduk(){
+    public function yuribleachproduk()
+    {
         return view('brands.produkyuribleach');
     }
 
-    public function fabriccareproduk(){
+    public function fabriccareproduk()
+    {
         return view('brands.produkfabriccare');
     }
 
-    public function glasscleanerproduk(){
+    public function glasscleanerproduk()
+    {
         return view('brands.produkglasscleaner');
     }
 
-    public function handgelproduk(){
+    public function handgelproduk()
+    {
         return view('brands.produkhandgel');
     }
 
-    public function handsoapproduk(){
+    public function handsoapproduk()
+    {
         return view('brands.produkhandsoap');
     }
 
-    public function ligentproduk(){
+    public function ligentproduk()
+    {
         return view('brands.produkligent');
     }
 
-    public function lysorinproduk(){
+    public function lysorinproduk()
+    {
         return view('brands.produklysorin');
     }
 
-    public function yurisoftproduk(){
+    public function yurisoftproduk()
+    {
         return view('brands.produkyurisoft');
     }
 
-    public function porstexproduk(){
+    public function porstexproduk()
+    {
         return view('brands.produkporstex');
     }
 
-    public function yurisolproduk(){
+    public function yurisolproduk()
+    {
         return view('brands.produkyurisol');
     }
 
-    public function tafproduk(){
+    public function tafproduk()
+    {
         return view('brands.produktaf');
     }
 
-    public function yurimaticproduk(){
+    public function yurimaticproduk()
+    {
         return view('brands.produkyurimatic');
     }
 
-    public function trilproduk(){
+    public function trilproduk()
+    {
         return view('brands.produktril');
     }
 
-    public function laundrydisinfektantproduk(){
+    public function laundrydisinfektantproduk()
+    {
         return view('brands.produklaundrydisinfektant');
     }
-    public function disinfektantsprayproduk(){
+    public function disinfektantsprayproduk()
+    {
         return view('brands.produkdisinfektantspray');
     }
-    public function handmoisturizerproduk(){
+    public function handmoisturizerproduk()
+    {
         return view('brands.produkhandmoisturizer');
     }
-    
-    public function faq(){
+
+    public function faq(Request $request)
+    {
+
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('distributor.index');
+        } else {
+            return view('distributor.indexsg');
+        }
+
         return view('faq.index');
     }
-
 }

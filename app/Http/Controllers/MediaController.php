@@ -5,16 +5,31 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Stevebauman\Location\Facades\Location;
+
 
 class MediaController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        //get all products
-        $artikels = Artikel::latest()->paginate(9);
 
-        //render view with products
-        return view('media.index', compact('artikels'));
+        $ip = $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            //get all products
+            $artikels = Artikel::latest()->paginate(9);
+
+            //render view with products
+            return view('media.index', compact('artikels'));
+        } else {
+            //get all products
+            $artikels = Artikel::latest()->paginate(9);
+
+            //render view with products
+            return view('media.indexsg', compact('artikels'));
+        }
     }
 
     public function show(string $id): View
