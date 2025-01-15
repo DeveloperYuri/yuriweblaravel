@@ -13,7 +13,7 @@ class MediaController extends Controller
     public function index(Request $request): View
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 

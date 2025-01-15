@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index(Request $request): View
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -47,7 +47,7 @@ class HomeController extends Controller
     public function tentangKami(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -61,7 +61,7 @@ class HomeController extends Controller
     public function brands(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -75,7 +75,7 @@ class HomeController extends Controller
     public function produkBaru(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -93,7 +93,7 @@ class HomeController extends Controller
     public function kontak(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -107,7 +107,7 @@ class HomeController extends Controller
     public function distributor(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
@@ -244,16 +244,14 @@ class HomeController extends Controller
     public function faq(Request $request)
     {
 
-        $ip = $request->ip();
+        $ip = '116.50.29.50'; // $request->ip();
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
         if ($var_countryname == "Indonesia") {
-            return view('distributor.index');
+            return view('faq.index');
         } else {
-            return view('distributor.indexsg');
+            return view('faq.indexsg');
         }
-
-        return view('faq.index');
     }
 }

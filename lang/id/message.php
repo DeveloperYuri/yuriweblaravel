@@ -58,6 +58,9 @@ return [
     'PRODUKBARUJUDUL' => 'Produk Baru',
 
     //Kontak
+    'KONTAK' => 'KONTAK',
+    'HUBUNGIKAMIKONTAK' => 'Hubungi Kami',
+    'KAMIHADIR' => 'Kami hadir untuk anda',
     'TERHUBUNGDENGANKAMI' => 'Terhubung Dengan Kami',
     'APABILAANDA' => 'Apabila Anda memiliki pertanyaan mengenai produk Yuri, silahkan mengisi formulir dibawah ini',
     'NAMA' => 'Nama',

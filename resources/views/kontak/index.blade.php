@@ -101,11 +101,20 @@
         </div>
         <!-- End Button Language -->
 
+        <div class="text-center">
+            <h1 style="color: #005EB8">@lang('message.KONTAK')</h1>
+        </div>
+
         <!-- Banner Homepage-->
         <div class="banner-kontak" data-aos="fade-up">
             <img src="images/Banner-kontak.png" class="img-fluid" alt="..." width="100%">
         </div>
         <!-- End Banner Homepage -->
+
+        <div class="hubungikami">
+            <h1 style="color: white">@lang('message.HUBUNGIKAMIKONTAK')</h1>
+            <h3 style="color: white; font-wight: bold">@lang('message.KAMIHADIR')</h3>
+        </div>
 
         <div class="map">
             <iframe

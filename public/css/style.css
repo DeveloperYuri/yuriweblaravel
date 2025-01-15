@@ -268,6 +268,25 @@ a:active {
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+    .banner-kontak img{
+        position: relative;
+    }
+
+    .hubungikami{
+        position: absolute;
+        margin-top: -115px;
+        margin-left: 20px;
+    }
+
+    .hubungikami h1{
+        font-size: 13px;
+    }
+
+    .hubungikami h3{
+        font-size: 11px;
+        margin-top: -10px;
+    }
+
     .language{
         margin-top:-10px;
         margin-right: 5px;
@@ -654,6 +673,20 @@ a:active {
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+    .banner-kontak img{
+        position: relative;
+    }
+
+    .hubungikami{
+        position: absolute;
+        margin-top: -390px;
+        margin-left: 80px;
+    }
+
+    .hubungikami h1{
+        font-size: 50px;
+    }
 
     .language{
         margin-top:-15px;
@@ -1236,6 +1269,25 @@ a:active {
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+    .banner-kontak img{
+        position: relative;
+    }
+
+    .hubungikami{
+        position: absolute;
+        margin-top: -240px;
+        margin-left: 50px;
+    }
+
+    .hubungikami h1{
+        font-size: 30px;
+    }
+
+    .hubungikami h3{
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
     #ramahlingkungan img{
         position: relative;
         width: 90%;
@@ -1436,6 +1488,20 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+    .banner-kontak img{
+        position: relative;
+    }
+
+    .hubungikami{
+        position: absolute;
+        margin-top: -450px;
+        margin-left: 80px;
+    }
+
+    .hubungikami h1{
+        font-size: 50px;
+    }
 
     .language{
         margin-top:-15px;

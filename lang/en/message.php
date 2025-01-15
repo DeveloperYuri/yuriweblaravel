@@ -52,6 +52,9 @@ PT Joenoes Ikamulya is a company engaged in the development and production of co
     'PRODUKBARUJUDUL' => 'New Products',
 
     //Kontak
+    'KONTAK' => 'CONTACT',
+    'HUBUNGIKAMIKONTAK' => 'Contact Us',
+    'KAMIHADIR' => 'We are here for you',
     'TERHUBUNGDENGANKAMI' => 'Connect With Us',
     'APABILAANDA' => 'If you have any questions regarding Yuri products, please fill out the form below.',
     'NAMA' => 'Name',

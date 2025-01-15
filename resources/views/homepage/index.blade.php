@@ -95,6 +95,11 @@
         </div>
         <!-- End Button Language -->
 
+        <!--
+        <button onclick="myFunction()">Replace document</button>
+        -->
+
+
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -153,27 +158,27 @@
             </div>
 
             <!--
-                    <div class="d-flex p-3 justify-content-center">
-                        <div id="ramahlingkungan" class="p-2">
-                            <img src="images/satu.png" alt="" />
-                            <p class="textblockramahlingkungan">Ramah Lingkungan</p>
-                            <p class="textblockramahlingkungan1">Kami menggunakan formula
-                                <br>biodegradable.
-                            </p>
+                        <div class="d-flex p-3 justify-content-center">
+                            <div id="ramahlingkungan" class="p-2">
+                                <img src="images/satu.png" alt="" />
+                                <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                                <p class="textblockramahlingkungan1">Kami menggunakan formula
+                                    <br>biodegradable.
+                                </p>
+                            </div>
+                            <div id="terjangkau" class="p-2">
+                                <img src="images/dua.png" alt="" />
+                                <p class="textblockterjangkau">Terjangkau</p>
+                                <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                            </div>
+                            <div id="kamidisiniuntukanda" class="p-2">
+                                <img src="images/tiga.png" alt="" />
+                                <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                                <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                                </p>
+                            </div>
                         </div>
-                        <div id="terjangkau" class="p-2">
-                            <img src="images/dua.png" alt="" />
-                            <p class="textblockterjangkau">Terjangkau</p>
-                            <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
-                        </div>
-                        <div id="kamidisiniuntukanda" class="p-2">
-                            <img src="images/tiga.png" alt="" />
-                            <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                            <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
-                            </p>
-                        </div>
-                    </div>
-                -->
+                    -->
 
         </div>
         <!-- End Content1-->
@@ -285,4 +290,10 @@
 
     </div>
     <!-- End Footer -->
+
+    <script>
+        function myFunction() {
+            location.replace("locale/en")
+        }
+    </script>
 @endsection
