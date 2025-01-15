@@ -97,8 +97,8 @@
         <div class="language mb-2" style="display:flex; justify-content:flex-end;">
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Language
+                    aria-expanded="false" style="padding-top: 1px">
+                    <span style="font-size: 11px;">Language</span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>

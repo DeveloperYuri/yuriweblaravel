@@ -84,8 +84,8 @@
         <div class="language mb-2" style="display:flex; justify-content:flex-end;">
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Language
+                    aria-expanded="false" style="padding-top: 1px">
+                    <span style="font-size: 11px;">Language</span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
@@ -107,13 +107,13 @@
                             alt="..." style="border-radius: 2%">
                     </div>
                     <!--
-                                        <div class="carousel-item">
-                                            <img src="images/adulttoiletresize.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/adulttoilet.png" class="d-block w-100" alt="..." width="300px" height="400px">
-                                        </div>
-                                    -->
+                                                                    <div class="carousel-item">
+                                                                        <img src="images/adulttoiletresize.png" class="d-block w-100" alt="...">
+                                                                    </div>
+                                                                    <div class="carousel-item">
+                                                                        <img src="images/adulttoilet.png" class="d-block w-100" alt="..." width="300px" height="400px">
+                                                                    </div>
+                                                                -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="prev">
@@ -143,23 +143,69 @@
         </div>
         <!-- End Content1-->
 
-        <div class="brand1 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.householdcleaner') }}"><img src="images/brand1.png" alt=""
-                    width="100%" /></a>
-        </div>
-        <div class="brand2 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.childrentoilet') }}"><img src="images/brand2.png" alt=""
-                    width="100%" /></a>
-        </div>
-        <div class="brand3 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.babytoilet') }}"><img src="images/brand3.png" alt=""
-                    width="100%" /></a>
-        </div>
-        <div class="brand4 text-center" data-aos="fade-up">
-            <a href="{{ route('brands.adulttoilet') }}"><img src="images/brand4.png" alt=""
-                    width="100%" /></a>
+        <!-- Content Satu -->
+        <div class="row text-center">
+            <div id="gambarhousehold" class="col-4">
+                <img src="images/brands-satu.png" alt="">
+            </div>
+            <div id="logohousehold" class="col-4">
+                <img src="images/logo-8.png" alt="">
+            </div>
+            <div id="texthousehold" class="col-4">
+                <h5>Household Cleaner</h5>
+                <a href="{{ route('brands.householdcleaner') }}"><img src="images/bingkai klik-8.png" alt="">
+                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
+                </a>
+            </div>
         </div>
 
+        <!-- Content Dua -->
+        <div class="row text-center">
+            <div id="textdeedee" class="col-4">
+                <h5>Children Toiletries</h5>
+                <a href="{{ route('brands.childrentoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
+                </a>
+            </div>
+            <div id="logodeedee" class="col-4">
+                <img src="images/brands-dua-logo.png" alt="">
+            </div>
+            <div id="gambardeedee" class="col-4">
+                <img src="images/brands-dua.png" alt="">
+            </div>
+        </div>
+
+        <!-- Content Tiga -->
+        <div class="row text-center">
+            <div id="gambarbabydee" class="col-4">
+                <img src="images/brands-tiga.png" alt="">
+            </div>
+            <div id="logobabydee" class="col-4">
+                <img src="images/brands-tiga-logo.png" alt="">
+            </div>
+            <div id="textbabydee" class="col-4">
+                <h5>Baby Toiletries</h5>
+                <a href="{{ route('brands.babytoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content Empat -->
+        <div class="row text-center">
+            <div id="textevany" class="col-4">
+                <h5>Adult Toiletries</h5>
+                <a href="{{ route('brands.adulttoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
+                </a>
+            </div>
+            <div id="logoevany" class="col-4">
+                <img src="images/brands-empat-logo.png" alt="">
+            </div>
+            <div id="gambarevany" class="col-4">
+                <img src="images/brands-empat.png" alt="">
+            </div>
+        </div>
 
     </div>
     <!-- End Container -->

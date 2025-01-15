@@ -44,6 +44,8 @@ PT Joenoes Ikamulya is a company engaged in the development and production of co
     'YURITELAH' => 'YURI has been recognized as a leading brand',
     'YURITELAH2' => 'for home care as well as child & personal care.',
     'MENJADIGROUP' => 'Being a dynamic and diverse business group. Yuri is committed to always improving our services to better meet consumer needs in making life better for Indonesian consumers by providing quality products without compromise.',
+    'SELENGKAPNYA' => 'Read More',
+
 
     //Media
     'TVKOMERSIL' => 'Commercial TV',
