@@ -267,6 +267,15 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+
+    .babydeegeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
     #gambarevany {
         padding-left: 20px;
     }
@@ -822,6 +831,49 @@ a:active {
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
 
+    .babydeegeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
+    .box1 {
+        width: 212px;
+        height: 30px;
+        position: absolute;
+        margin-left: 202px;
+        margin-top: 140px;
+        display: inline-block;
+    }
+
+    .box2 {
+        margin-left: 210px;
+        margin-top: 180px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+
+    }
+
+    .box3 {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        margin-left: 520px;
+        margin-top: 140px;
+        display: inline-block;
+    }
+
+    .box4 {
+        margin-left: 470px;
+        margin-top: 180px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
     #footerprodukaganol {
         height: 50px;
         padding-top: 10px;
@@ -830,7 +882,6 @@ a:active {
         width: 100%;
     }
 
-    
     #gambarhousehold {
         padding-left: 150px;
     }
@@ -981,17 +1032,11 @@ a:active {
     }
 
     .textblockramahlingkungan {
-        position: absolute;
-        margin-top: -120px;
-        margin-left: 220px;
         font-weight: bold;
         color: #005eb8;
     }
 
     .textblockramahlingkungan1 {
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 210px;
         font-weight: bold;
         font-size: 13px;
     }
@@ -1002,17 +1047,11 @@ a:active {
     }
 
     .textblockterjangkau {
-        position: absolute;
-        margin-top: -120px;
-        margin-left: 140px;
         font-weight: bold;
         color: #005eb8;
     }
 
     .textblockterjangkau1 {
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 100px;
         font-weight: bold;
         font-size: 13px;
     }
@@ -1549,6 +1588,15 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    .babydeegeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
     #gambarevany {
         padding-left: 20px;
     }
@@ -1893,6 +1941,15 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+    .babydeegeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
     #footerprodukaganol {
         height: 50px;
         padding-top: 10px;

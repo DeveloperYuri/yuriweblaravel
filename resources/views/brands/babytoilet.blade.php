@@ -101,8 +101,12 @@
             </div>
         </div>
 
+        <div class="babydeegeneral">
+            <img src="images/infografisproduk/babydee/bbdinfographic-01.jpg" alt="" />
+        </div>
+
         <div class="button-brand">
-            <a href="https://www.yurishop.co/id/" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+            <a href="https://www.yurishop.co/id/category/baby" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
                     alt="Responsive image" width="30%" height="10%">
                 <div class="centered">Beli Sekarang</div>
             </a>

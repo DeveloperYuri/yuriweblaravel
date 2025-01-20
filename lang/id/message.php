@@ -19,9 +19,10 @@ return [
     'PERTANYAANPRIVASI' => 'Pertanyaan Privasi',
     'BAHASA' => 'BAHASA',
     'RAMAHLINGKUNGAN' => 'Ramah Lingkungan',
-    'KAMIMENGGUNAKAN' => 'Kami menggunakan formula',
-    'BIODEGRADABLE' => 'biodegradable.',
-
+    'KAMIMENGGUNAKAN' => 'Kami menggunakan formula biodegradable',
+    'TERJANGKAU' => 'Terjangkau',
+    'KAMIMEMBERIKANPRODUK' => 'Kami memberikan produk
+dengan harga terjangkau',
 
 
     // Tentang Kami

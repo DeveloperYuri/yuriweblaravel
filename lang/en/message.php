@@ -18,12 +18,14 @@ return [
     'BRANDKAMI' => 'Our Brand',
     'LIHATSEMUAMEDIA' => 'View All Media',
     'BAHASA' => 'LANGUAGE',
-    'RAMAHLINGKUNGAN' => 'ENVIRONMENTALLY FRIENDLY',
-    'KAMIMENGGUNAKAN' => 'We use a Formula',
+    'RAMAHLINGKUNGAN' => 'Environmentally Friendly',
+    'KAMIMENGGUNAKAN' => 'We use a Formula biodegradable',
     'BIODEGRADABLE' => 'biodegradable',
-
-
     'PERTANYAANPRIVASI' => 'Privacy Questions',
+    'TERJANGKAU' => 'Affordable',
+    'KAMIMEMBERIKANPRODUK' => 'We provide products at affordable prices',
+
+
 
     // Tentang Kami
     'YURIBERKOMITMENT' => 'YURI is committed to building a healthier future',
