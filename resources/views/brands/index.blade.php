@@ -111,14 +111,10 @@
                         <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" class="d-block w-100"
                             alt="..." style="border-radius: 2%">
                     </div>
-                    <!--
-                                                                <div class="carousel-item">
-                                                                    <img src="images/adulttoiletresize.png" class="d-block w-100" alt="...">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="images/adulttoilet.png" class="d-block w-100" alt="..." width="300px" height="400px">
-                                                                </div>
-                                                            -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/bannerbabydee.png" class="d-block w-100"
+                            alt="..." style="border-radius: 2%">
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="prev">
