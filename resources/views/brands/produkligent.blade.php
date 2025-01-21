@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('navbar')
-      <!-- Navbar Menu -->
-      <div class="menubar">
+    <!-- Navbar Menu -->
+    <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <img src="images/logo-8.png" width="100px" height="50px" />
@@ -77,30 +77,42 @@
 
 @section('content')
     <div class="container">
-        <div class="ligent-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkligent.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Ligent Dishwashing Detergent</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Ligent® Lime deterjen cair pencuci piring
-                                memiliki daya pembersih yang aktif dengan aroma jeruk nipis segar, melarutkan lemak-lemak
-                                secara
-                                tuntas dan menghilangkan bau tidak sedap. Cukup menggunakan sedikit cairan Ligent® dapat
-                                menjadikan perlengkapan dapur bersih kemilau tanpa meninggalkan lemak dan bau yang tak
-                                sedap.
-                            </p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Dishwashing-Detergent"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="caption text-center">
+            <img src="images/infografisproduk/yuri/ligentbio/logoligent.png" alt="" width="140px">
+        </div>
+
+        <div id="imagebrand" class="row mt-3">
+            <div class="col-6">
+                <img class="aganol1" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-01.jpg" alt=""
+                    width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6">
+                <img class="aganol2" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-02.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol3" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-03.jpg" alt=""
+                    width="100%" alt="" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol4" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-04.jpg" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>
+
+        <div class="aganolgeneral">
+            <img src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.jpg" alt="" />
+        </div>
+
+        <div class="button-brand">
+            <a href="https://www.yurishop.co/id/category/Household-Cleaners/Dishwashing-Detergent" target="_blank"><img
+                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                    height="10%">
+                <div class="centered"><strong>Beli Sekarang</strong></div>
+            </a>
+        </div>
+
     </div>
     <!-- End Container -->
 
