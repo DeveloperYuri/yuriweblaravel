@@ -94,6 +94,10 @@
         </div>
         <!-- End Button Language -->
 
+        <div class="text-center">
+            <h1 style="color: #005EB8">@lang('message.DISTRIBUTORKAMI')</h1>
+        </div>
+
         <!-- Banner Homepage-->
         <div class="banner-distributor text-center mt-3" data-aos="fade-up">
             <img src="images/PetaCabang.png" class="img-fluid" alt="..." width="100%" height="100%">

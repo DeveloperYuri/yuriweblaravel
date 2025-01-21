@@ -68,6 +68,9 @@ PT Joenoes Ikamulya is a company engaged in the development and production of co
     'PERTANYAAN' => 'Question',
     'KIRIM' => 'Send',
 
+    // Distributor
+    'DISTRIBUTORKAMI' => 'Our Distributors',
+
     //FAQ
     'PERTANYAANUMUM' => 'General Questions',
     'PERTANYAANYANGSERINGDICARI' => 'Frequently Ask Question',

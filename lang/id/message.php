@@ -72,6 +72,9 @@ dengan harga terjangkau',
     'PERTANYAAN' => 'Pertanyaan',
     'KIRIM' => 'Kirim',
 
+    // Distributor
+    'DISTRIBUTORKAMI' => 'Distributor Kami',
+
     //FAQ
     'PERTANYAANUMUM' => 'Pertanyaan Umum',
     'PERTANYAANYANGSERINGDICARI' => 'Pertanyaan yang sering dicari',
