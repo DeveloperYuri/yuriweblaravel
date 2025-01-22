@@ -2,36 +2,38 @@
 
 @section('head')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Home Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description"
+            content="Yuri  berkomitmen untuk menghasilkan produk berkualitas internasional
+yang terjangkau oleh semua lapisan masyarakat">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuri - Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+            rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-NKRW8V3SDC');
-    </script>
-</head>
-
+            gtag('config', 'G-NKRW8V3SDC');
+        </script>
+    </head>
 @endsection
 
 @section('navbar')
@@ -39,7 +41,8 @@
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" /></a>
+                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px"
+                        alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -130,8 +133,8 @@
         <!-- End Button Language -->
 
         <!--
-            <button onclick="myFunction()">Replace document</button>
-            -->
+                <button onclick="myFunction()">Replace document</button>
+                -->
 
 
         <!-- Banner Homepage-->
@@ -200,27 +203,27 @@
             </div>
 
             <!--
-                            <div class="d-flex p-3 justify-content-center">
-                                <div id="ramahlingkungan" class="p-2">
-                                    <img src="images/satu.png" alt="" />
-                                    <p class="textblockramahlingkungan">Ramah Lingkungan</p>
-                                    <p class="textblockramahlingkungan1">Kami menggunakan formula
-                                        <br>biodegradable.
-                                    </p>
+                                <div class="d-flex p-3 justify-content-center">
+                                    <div id="ramahlingkungan" class="p-2">
+                                        <img src="images/satu.png" alt="" />
+                                        <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                                        <p class="textblockramahlingkungan1">Kami menggunakan formula
+                                            <br>biodegradable.
+                                        </p>
+                                    </div>
+                                    <div id="terjangkau" class="p-2">
+                                        <img src="images/dua.png" alt="" />
+                                        <p class="textblockterjangkau">Terjangkau</p>
+                                        <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                                    </div>
+                                    <div id="kamidisiniuntukanda" class="p-2">
+                                        <img src="images/tiga.png" alt="" />
+                                        <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                                        <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                                        </p>
+                                    </div>
                                 </div>
-                                <div id="terjangkau" class="p-2">
-                                    <img src="images/dua.png" alt="" />
-                                    <p class="textblockterjangkau">Terjangkau</p>
-                                    <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
-                                </div>
-                                <div id="kamidisiniuntukanda" class="p-2">
-                                    <img src="images/tiga.png" alt="" />
-                                    <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                                    <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
-                                    </p>
-                                </div>
-                            </div>
-                        -->
+                            -->
 
         </div>
         <!-- End Content1-->
@@ -246,11 +249,11 @@
             </p>
 
             <div id="brandsid" class="d-flex p-3 justify-content-center">
-                <div class=""><a href="https://www.instagram.com/yurihousehold/" target="_blank"><img
+                <div class=""><a href="https://www.instagram.com/yurihousehold/" aria-label="Read more about yurihousehold" target="_blank"><img
                             class="imagebrand1" src="images/yuri bulet-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/" target="_blank"><img
+                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/" aria-label="Read more about yurideedee" target="_blank"><img
                             class="imagebrand2" src="images/dd bulet-8-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/" target="_blank"><img
+                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/" aria-label="Read more about yuribabydee"  target="_blank"><img
                             class="imagebrand3" src="images/bbd bulet-edited.png" alt="" /></a></div>
             </div>
 

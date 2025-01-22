@@ -4,6 +4,9 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="description"
+            content="Yuri  berkomitmen untuk menghasilkan produk berkualitas internasional
+yang terjangkau oleh semua lapisan masyarakat">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuri - Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,7 +42,7 @@
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" /></a>
+                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -228,11 +231,11 @@
             </p>
 
             <div id="brandsid" class="d-flex p-3 justify-content-center">
-                <div class=""><a href="https://www.instagram.com/yurihousehold/" target="_blank"><img
+                <div class=""><a href="https://www.instagram.com/yurihousehold/" aria-label="Read more about yurihousehold" target="_blank"><img
                             class="imagebrand1" src="images/yuri bulet-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/" target="_blank"><img
+                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/" aria-label="Read more about yurideedee" target="_blank"><img
                             class="imagebrand2" src="images/dd bulet-8-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/" target="_blank"><img
+                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/" aria-label="Read more about yuribabydee" target="_blank"><img
                             class="imagebrand3" src="images/bbd bulet-edited.png" alt="" /></a></div>
             </div>
 
