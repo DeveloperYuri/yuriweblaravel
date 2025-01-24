@@ -86,6 +86,12 @@ yang terjangkau oleh semua lapisan masyarakat">
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
+                                style="color: #005EB8">ARTIKEL
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
                                 style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
@@ -133,8 +139,8 @@ yang terjangkau oleh semua lapisan masyarakat">
         <!-- End Button Language -->
 
         <!--
-                <button onclick="myFunction()">Replace document</button>
-                -->
+                        <button onclick="myFunction()">Replace document</button>
+                        -->
 
 
         <!-- Banner Homepage-->
@@ -173,9 +179,10 @@ yang terjangkau oleh semua lapisan masyarakat">
                 </h1>
             </div>
 
+
             <div class="row">
                 <div id="ramahlingkungan" class="col-4">
-                    <img src="images/satu.png" alt="" />
+                    <img src="images/satu.png" alt="ramah lingkungan" />
                 </div>
                 <div class="box1">
                     <p class="textblockramahlingkungan">@lang('message.RAMAHLINGKUNGAN')</p>
@@ -184,46 +191,52 @@ yang terjangkau oleh semua lapisan masyarakat">
                     <p class="textblockramahlingkungan1">@lang('message.KAMIMENGGUNAKAN')
                     </p>
                 </div>
+
                 <div id="terjangkau" class="col-4">
-                    <img src="images/dua.png" alt="" />
+                    <img src="images/dua.png" alt="terjangkau" />
                 </div>
                 <div class="box3">
                     <p class="textblockterjangkau">@lang('message.TERJANGKAU')</p>
                 </div>
                 <div class="box4">
                     <p class="textblockterjangkau1">@lang('message.KAMIMEMBERIKANPRODUK')</p>
+                </div>
 
-                </div>
                 <div id="kamidisiniuntukanda" class="col-4">
-                    <img src="images/tiga.png" alt="" />
-                    <p class="textblockkamidisiniuntukanda">Kami <span class="disini">Disini</span> Untuk Anda</p>
-                    <p class="textblockkamidisiniuntukanda1">Kami memberikan yang <br> terbaik untuk anda
-                    </p>
+                    <img src="images/tiga.png" alt="kami disini untuk anda" />
                 </div>
+                <div class="box5">
+                    <p class="textblockterjangkau">@lang('message.KAMIDISINIUNTUKANDA')</p>
+                </div>
+                <div class="box6">
+                    <p class="textblockterjangkau1">@lang('message.KAMIMEMBERIKANYANGTERBAIK')</p>
+                </div>
+
             </div>
 
+
             <!--
-                                <div class="d-flex p-3 justify-content-center">
-                                    <div id="ramahlingkungan" class="p-2">
-                                        <img src="images/satu.png" alt="" />
-                                        <p class="textblockramahlingkungan">Ramah Lingkungan</p>
-                                        <p class="textblockramahlingkungan1">Kami menggunakan formula
-                                            <br>biodegradable.
-                                        </p>
-                                    </div>
-                                    <div id="terjangkau" class="p-2">
-                                        <img src="images/dua.png" alt="" />
-                                        <p class="textblockterjangkau">Terjangkau</p>
-                                        <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
-                                    </div>
-                                    <div id="kamidisiniuntukanda" class="p-2">
-                                        <img src="images/tiga.png" alt="" />
-                                        <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                                        <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
-                                        </p>
-                                    </div>
-                                </div>
-                            -->
+                                        <div class="d-flex p-3 justify-content-center">
+                                            <div id="ramahlingkungan" class="p-2">
+                                                <img src="images/satu.png" alt="" />
+                                                <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                                                <p class="textblockramahlingkungan1">Kami menggunakan formula
+                                                    <br>biodegradable.
+                                                </p>
+                                            </div>
+                                            <div id="terjangkau" class="p-2">
+                                                <img src="images/dua.png" alt="" />
+                                                <p class="textblockterjangkau">Terjangkau</p>
+                                                <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                                            </div>
+                                            <div id="kamidisiniuntukanda" class="p-2">
+                                                <img src="images/tiga.png" alt="" />
+                                                <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                                                <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                                                </p>
+                                            </div>
+                                        </div>
+                                    -->
 
         </div>
         <!-- End Content1-->
@@ -249,12 +262,15 @@ yang terjangkau oleh semua lapisan masyarakat">
             </p>
 
             <div id="brandsid" class="d-flex p-3 justify-content-center">
-                <div class=""><a href="https://www.instagram.com/yurihousehold/" aria-label="Read more about yurihousehold" target="_blank"><img
-                            class="imagebrand1" src="images/yuri bulet-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/" aria-label="Read more about yurideedee" target="_blank"><img
-                            class="imagebrand2" src="images/dd bulet-8-edited.png" alt="" /></a></div>
-                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/" aria-label="Read more about yuribabydee"  target="_blank"><img
-                            class="imagebrand3" src="images/bbd bulet-edited.png" alt="" /></a></div>
+                <div class=""><a href="https://www.instagram.com/yurihousehold/"
+                        aria-label="Read more about yurihousehold" target="_blank"><img class="imagebrand1"
+                            src="images/yuri bulet-edited.png" alt="" /></a></div>
+                <div class="p-2"><a href="https://www.instagram.com/yurideedee.official/"
+                        aria-label="Read more about yurideedee" target="_blank"><img class="imagebrand2"
+                            src="images/dd bulet-8-edited.png" alt="" /></a></div>
+                <div class="p-2"><a href="https://www.instagram.com/yuribabydee.official/"
+                        aria-label="Read more about yuribabydee" target="_blank"><img class="imagebrand3"
+                            src="images/bbd bulet-edited.png" alt="" /></a></div>
             </div>
 
             <p class="text-center" style="font-size: 20px;">@lang('message.TELUSURIPRODUK')</p>

@@ -106,7 +106,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadminartikelbaru.index') }}" class="nav-link">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -115,16 +115,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link">
-                                <i class="nav-icon fas fa-book"></i>
-                                <p>
-                                    Media
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
@@ -155,12 +146,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Upload Produk Baru</h1>
+                            <h1>Buat Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Upload Produk Baru</li>
+                                <li class="breadcrumb-item active">Buat Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -171,10 +162,10 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('produkbaru.index') }}" class="btn btn-success mb-3"><i
+                        <a href="{{ route('superadminartikelbaru.index') }}" class="btn btn-success mb-3"><i
                                 class="fas fa-undo"></i>&nbsp Kembali </a>
 
-                        <form action="{{ route('produkbaru.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('superadminartikelbaru.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group mb-3">
@@ -191,12 +182,25 @@
                             </div>
 
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">DESCRIPTION</label>
-                                <input type="text" class="form-control @error('description') is-invalid @enderror"
-                                    name="description" value="{{ old('description') }}" placeholder="Masukkan Description Produk">
+                                <label class="font-weight-bold">TITLE</label>
+                                <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
 
                                 <!-- error message untuk title -->
                                 @error('title')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
+
+                                <!-- error message untuk description -->
+                                @error('description')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

@@ -267,6 +267,55 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+    .box1 {
+        width: 115px;
+        height: 20px;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 70px;
+        display: inline-block;
+    }
+
+    .box2 {
+        margin-left: 10px;
+        margin-top: 100px;
+        width: 120px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box3 {
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        margin-left: 140px;
+        margin-top: 70px;
+        display: inline-block;
+    }
+
+    .box4 {
+        margin-left: 130px;
+        margin-top: 100px;
+        width: 120px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box5 {
+        margin-left: 247px;
+        margin-top: 67px;
+        width: 105px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box6 {
+        margin-left: 245px;
+        margin-top: 103px;
+        width: 120px;
+        height: 30px;
+        position: absolute;
+    }
 
     #footerprodukhandgel {
         height: 50px;
@@ -467,18 +516,12 @@ a:active {
     }
 
     .textblockramahlingkungan {
-        position: absolute;
-        margin-top: -67px;
-        margin-left: 11px;
         font-weight: bold;
         color: #005eb8;
         font-size: 10px;
     }
 
     .textblockramahlingkungan1 {
-        position: absolute;
-        margin-top: -40px;
-        margin-left: 7px;
         font-size: 8px;
     }
 
@@ -490,18 +533,12 @@ a:active {
     }
 
     .textblockterjangkau {
-        position: absolute;
-        margin-top: -66px;
-        margin-left: 20px;
         font-weight: bold;
         color: #005eb8;
         font-size: 10px;
     }
 
     .textblockterjangkau1 {
-        position: absolute;
-        margin-top: -40px;
-        margin-left: 8px;
         font-size: 8px;
     }
 
@@ -513,18 +550,12 @@ a:active {
     }
 
     .textblockkamidisiniuntukanda {
-        position: absolute;
-        margin-top: -65px;
-        margin-left: -3px;
         font-weight: bold;
         color: #005eb8;
         font-size: 9px;
     }
 
     .textblockkamidisiniuntukanda1 {
-        position: absolute;
-        margin-top: -40px;
-        margin-left: 5px;
         font-size: 8px;
     }
 
@@ -838,7 +869,6 @@ a:active {
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
-
     #footerprodukhandgel {
         height: 50px;
         padding-top: 10px;
@@ -870,7 +900,6 @@ a:active {
         width: 200px;
         height: 30px;
         position: absolute;
-
     }
 
     .box3 {
@@ -885,6 +914,22 @@ a:active {
     .box4 {
         margin-left: 470px;
         margin-top: 180px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box5 {
+        margin-left: 740px;
+        margin-top: 140px;
+        width: 205px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box6 {
+        margin-left: 740px;
+        margin-top: 190px;
         width: 200px;
         height: 30px;
         position: absolute;
@@ -1604,6 +1649,55 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+    .box1 {
+        width: 212px;
+        height: 30px;
+        position: absolute;
+        margin-left: 45px;
+        margin-top: 115px;
+        display: inline-block;
+    }
+
+    .box2 {
+        margin-left: 50px;
+        margin-top: 150px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box3 {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        margin-left: 310px;
+        margin-top: 115px;
+        display: inline-block;
+    }
+
+    .box4 {
+        margin-left: 260px;
+        margin-top: 150px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box5 {
+        margin-left: 480px;
+        margin-top: 115px;
+        width: 205px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box6 {
+        margin-left: 485px;
+        margin-top: 150px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
 
     #footerprodukhandgel {
         height: 50px;
@@ -1775,18 +1869,12 @@ a:active {
     }
 
     .textblockramahlingkungan {
-        position: absolute;
-        margin-top: -100px;
-        margin-left: 80px;
         font-weight: bold;
         color: #005eb8;
         font-size: 14px;
     }
 
     .textblockramahlingkungan1 {
-        position: absolute;
-        margin-top: -70px;
-        margin-left: 60px;
         font-weight: bold;
         font-size: 12px;
     }
@@ -1797,18 +1885,12 @@ a:active {
     }
 
     .textblockterjangkau {
-        position: absolute;
-        margin-top: -100px;
-        margin-left: 80px;
         font-weight: bold;
         color: #005eb8;
         font-size: 14px;
     }
 
     .textblockterjangkau1 {
-        position: absolute;
-        margin-top: -70px;
-        margin-left: 40px;
         font-weight: bold;
         font-size: 12px;
     }
@@ -1820,18 +1902,12 @@ a:active {
     }
 
     .textblockkamidisiniuntukanda {
-        position: absolute;
-        margin-top: -95px;
-        margin-left: 10px;
         font-weight: bold;
         color: #005eb8;
         font-size: 14px;
     }
 
     .textblockkamidisiniuntukanda1 {
-        position: absolute;
-        margin-top: -60px;
-        margin-left: 18px;
         font-weight: bold;
         font-size: 12px;
     }
@@ -1965,6 +2041,55 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+    .box1 {
+        width: 212px;
+        height: 30px;
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 160px;
+        display: inline-block;
+    }
+
+    .box2 {
+        margin-left: 225px;
+        margin-top: 210px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box3 {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        margin-left: 620px;
+        margin-top: 160px;
+        display: inline-block;
+    }
+
+    .box4 {
+        margin-left: 570px;
+        margin-top: 210px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box5 {
+        margin-left: 890px;
+        margin-top: 160px;
+        width: 205px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box6 {
+        margin-left: 890px;
+        margin-top: 210px;
+        width: 200px;
+        height: 30px;
+        position: absolute;
+    }
 
     .babydeegeneral img {
         display: block;
@@ -2135,69 +2260,15 @@ a:active {
         margin-right: 50px;
     }
 
-    #ramahlingkungan img {
-        position: relative;
-        width: 65%;
-        margin-left: 180px;
-    }
-
-    .textblockramahlingkungan {
-        position: absolute;
-        margin-top: -120px;
-        margin-left: 250px;
-        font-weight: bold;
-        color: #005eb8;
-    }
-
-    .textblockramahlingkungan1 {
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 240px;
-        font-weight: bold;
-        font-size: 13px;
-    }
-
     #terjangkau img {
         position: relative;
         width: 70%;
-    }
-
-    .textblockterjangkau {
-        position: absolute;
-        margin-top: -120px;
-        margin-left: 170px;
-        font-weight: bold;
-        color: #005eb8;
-    }
-
-    .textblockterjangkau1 {
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 130px;
-        font-weight: bold;
-        font-size: 13px;
     }
 
     #kamidisiniuntukanda img {
         position: relative;
         width: 70%;
         margin-left: -220px;
-    }
-
-    .textblockkamidisiniuntukanda {
-        position: absolute;
-        margin-top: -130px;
-        margin-left: 10px;
-        font-weight: bold;
-        color: #005eb8;
-    }
-
-    .textblockkamidisiniuntukanda1 {
-        position: absolute;
-        margin-top: -85px;
-        margin-left: 20px;
-        font-weight: bold;
-        font-size: 13px;
     }
 
     #footerindexmedia {

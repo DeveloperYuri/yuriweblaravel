@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Yuri Fabric Care Produk">
+    <meta name="description"
+            content="Yuri  berkomitmen untuk menghasilkan produk berkualitas internasional
+yang terjangkau oleh semua lapisan masyarakat">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Fabric Care</title>
+    <title>Yuri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
@@ -36,13 +38,13 @@
 @endsection
 
 @section('navbar')
-      <!-- Navbar Menu -->
-      <div class="menubar">
+    <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <img src="images/logo-8.png" width="100px" height="50px" alt="logo"/>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="{{ asset('images/logo-8.png') }}" width="100px" height="50px" alt="logo"/>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,7 +60,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index.brands') }}"
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
                                 style="color: #005EB8">BRANDS</a>
                         </li>
 
@@ -83,7 +85,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
+                            <a class="nav-link active fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
                                 style="color: #005EB8">ARTIKEL
                             </a>
                         </li>
@@ -118,41 +120,24 @@
 
 @section('content')
     <div class="container">
-        <div class="fabriccare-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkfabriccare.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Yuri-soft Fabric Softener And Freshener</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Hanya dengan setengah tutup botol
-                                pelembut
-                                pakaian konsentrat Yuri-Soft Romantic Blue saja dapat memberikan Anda kelembutan ekstra dan
-                                kesegaran yang tahan lama. Cairannya yang dapat mengurangi busa pada cucian membuat Anda
-                                lebih
-                                hemat karena tidak perlu menghabiskan banyak air ketika membilas. Kelembutannya akan
-                                memberikan
-                                kenyamanan pada keluarga Anda.</p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Container -->
 
-    <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
-        style="margin-top: 30px; height: 40px; padding-top: 5px;">
-        <div style="margin-top: 5px;">
-            <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
+        <div class="article1">
+            <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikelbaru->title }}</h4>
+        </div>
+        
+        <!-- Banner Homepage-->
+        <div class="banner-article1 text-center" data-aos="fade-up">
+            <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid" alt="...">
+        </div>
+        <!-- End Banner Homepage -->
+
+        <!-- Content1 -->
+        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+
+            {!! $artikelbaru->description !!}
+
         </div>
 
     </div>
-    <!-- End Footer -->
+
 @endsection

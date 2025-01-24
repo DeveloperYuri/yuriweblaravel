@@ -23,6 +23,8 @@ return [
     'TERJANGKAU' => 'Terjangkau',
     'KAMIMEMBERIKANPRODUK' => 'Kami memberikan produk
 dengan harga terjangkau',
+    'KAMIDISINIUNTUKANDA' => 'Kami Disini Untuk Anda',
+    'KAMIMEMBERIKANYANGTERBAIK' => 'Kami memberikan yang terbaik untuk anda',
 
 
     // Tentang Kami

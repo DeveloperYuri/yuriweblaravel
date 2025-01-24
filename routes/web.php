@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ArtikelBaru;
+use App\Http\Controllers\ArtikelBaruController;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -137,6 +139,18 @@ Route::post('/superadmin/users/forgot_post', [UserController::class, 'forgot_pos
 
 
 Route::get('locale/{lang}', [LocaleController::class, 'setLocale']);
+
+// Artikel baru
+Route::get('/artikel', [ArtikelBaruController::class,'index'])->name('artikelbaru.index');
+Route::get('/superadmin/artikelbaru', [ArtikelBaruController::class,'indexdashboard'])->name('superadminartikelbaru.index');
+Route::get('/superadmin/createartikelbaru', [ArtikelBaruController::class,'create'])->name('superadminartikelbaru.create');
+Route::get('/superadmin/editartikelbaru/edit{id}', [ArtikelBaruController::class,'edit'])->name('superadminartikelbaru.edit');
+Route::post('/superadmin/postartikelbaru', [ArtikelBaruController::class,'store'])->name('superadminartikelbaru.store');
+Route::delete('/superadmin/deleteartikelbaru/delete{id}', [ArtikelBaruController::class,'destroy'])->name('superadminartikelbaru.destroy');
+Route::put('/superadmin/artikelbaru/update{id}', [ArtikelBaruController::class, 'update'])->name('superadminartikelbaru.update');
+Route::get('/superadmin/showartikelbaru/{id}', [ArtikelBaruController::class,'show'])->name('superadminartikelbaru.show');
+Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class,'showindex'])->name('indexartikelbaru.show');
+
 
 
 

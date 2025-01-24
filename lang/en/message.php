@@ -24,6 +24,8 @@ return [
     'PERTANYAANPRIVASI' => 'Privacy Questions',
     'TERJANGKAU' => 'Affordable',
     'KAMIMEMBERIKANPRODUK' => 'We provide products at affordable prices',
+    'KAMIDISINIUNTUKANDA' => 'We Are Here For You',
+    'KAMIMEMBERIKANYANGTERBAIK' => 'We give the best for you',
 
 
 

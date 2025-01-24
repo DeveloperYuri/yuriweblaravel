@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | Buat Artikel</title>
+    <title>Dashboard | Edit Artikel</title>
 
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
 
@@ -115,7 +115,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Media
@@ -124,7 +124,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
@@ -155,12 +155,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Upload Produk Baru</h1>
+                            <h1>Edit Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Upload Produk Baru</li>
+                                <li class="breadcrumb-item active">Edit Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -171,16 +171,19 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('produkbaru.index') }}" class="btn btn-success mb-3"><i
+                        <a href="{{ route('superadminartikelbaru.index') }}" class="btn btn-success mb-3"><i
                                 class="fas fa-undo"></i>&nbsp Kembali </a>
 
-                        <form action="{{ route('produkbaru.store') }}" method="POST" enctype="multipart/form-data">
+
+                        <form action="{{ route('superadminartikelbaru.update', $artikelbaru->id) }}" method="POST"
+                            enctype="multipart/form-data">
                             @csrf
+                            @method('PUT')
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">IMAGE</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror"
-                                    name="image">
+                                    name="image" value="{{ old('title', $artikelbaru->image) }}">
 
                                 <!-- error message untuk image -->
                                 @error('image')
@@ -191,9 +194,10 @@
                             </div>
 
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">DESCRIPTION</label>
-                                <input type="text" class="form-control @error('description') is-invalid @enderror"
-                                    name="description" value="{{ old('description') }}" placeholder="Masukkan Description Produk">
+                                <label class="font-weight-bold">TITLE</label>
+                                <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    name="title" value="{{ old('title', $artikelbaru->title) }}"
+                                    placeholder="Masukkan Judul Artikel">
 
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -203,8 +207,21 @@
                                 @enderror
                             </div>
 
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikelbaru->description) }}</textarea>
+
+                                <!-- error message untuk description -->
+                                @error('description')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
                             <button type="submit" class="btn btn-md btn-primary me-3"><i
-                                    class="fas fa-save"></i>&nbsp Save</button>
+                                    class="fas fa-save"></i>&nbsp Update</button>
 
                         </form>
 
@@ -256,6 +273,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
 
 
     <script>

@@ -85,6 +85,12 @@ yang terjangkau oleh semua lapisan masyarakat">
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
+                                style="color: #005EB8">ARTIKEL
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
                                 style="color: #005EB8">MEDIA</a>
                         </li>

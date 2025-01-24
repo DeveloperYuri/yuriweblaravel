@@ -100,10 +100,19 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
+                            <a href="{{ route('superadminartikelbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>
+                                    Media
                                 </p>
                             </a>
                         </li>
@@ -140,7 +149,7 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Daftar Artikel Baru</h1>
+                            <h1>Daftar Media Partner Baru</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -157,7 +166,7 @@
                     <div class="card-body">
 
                         <a href="{{ route('superadmindashboard.create') }}" class="btn btn-md btn-primary mb-3"><i
-                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
+                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Media Baru</a>
 
                         <form method="get">
                             <div class="form-row text">
