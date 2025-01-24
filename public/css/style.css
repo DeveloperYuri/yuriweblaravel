@@ -1473,6 +1473,7 @@ a:active {
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+    
     #footerprodukhandgel {
         height: 50px;
         padding-top: 10px;

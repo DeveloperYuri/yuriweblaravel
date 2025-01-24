@@ -14,6 +14,11 @@ class ArtikelBaruController extends Controller
      */
     public function index()
     {
+
+        $artikelbaru = ArtikelBaru::latest()->paginate(9);
+
+        //render view with products
+        return view('artikelbaru.index', compact('artikelbaru'));
         $artikelbaru = ArtikelBaru::all();
 
         return view('artikelbaru.index', compact('artikelbaru'));
