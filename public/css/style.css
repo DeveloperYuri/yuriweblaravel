@@ -302,7 +302,7 @@ a:active {
     }
 
     .box5 {
-        margin-left: 247px;
+        margin-left: 250px;
         margin-top: 67px;
         width: 105px;
         height: 30px;
@@ -310,7 +310,7 @@ a:active {
     }
 
     .box6 {
-        margin-left: 245px;
+        margin-left: 250px;
         margin-top: 103px;
         width: 120px;
         height: 30px;
@@ -866,6 +866,610 @@ a:active {
         background-color: #005eb8;
     }
 }
+
+/* Mobile Phone Iphone*/
+@media only screen and (min-width: 410px) and (max-width: 600px) { 
+    .box1 {
+        width: 115px;
+        height: 20px;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 70px;
+        display: inline-block;
+    }
+
+    .box2 {
+        margin-left: 15px;
+        margin-top: 100px;
+        width: 120px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box3 {
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        margin-left: 158px;
+        margin-top: 75px;
+        display: inline-block;
+    }
+
+    .box4 {
+        margin-left: 145px;
+        margin-top: 100px;
+        width: 120px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box5 {
+        margin-left: 300px;
+        margin-top: 67px;
+        width: 90px;
+        height: 30px;
+        position: absolute;
+    }
+
+    .box6 {
+        margin-left: 290px;
+        margin-top: 103px;
+        width: 110px;
+        height: 30px;
+        position: absolute;
+    }
+
+    #footerprodukhandgel {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .babydeegeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
+    #gambarevany {
+        padding-left: 20px;
+    }
+
+    #gambarevany img {
+        width: 120%;
+        padding-right: 30px;
+    }
+
+    #logoevany img {
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 90%;
+    }
+
+    #textevany h5 {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    #textevany img {
+        position: relative;
+        margin-left: 0px;
+        width: 110%;
+    }
+
+    #textevany p {
+        position: absolute;
+        margin-top: -24px;
+        margin-left: 20px;
+        font-size: 9px;
+    }
+
+    #textevany a :hover {
+        text-shadow: 2px 2px 5px rgb(82, 73, 73);
+    }
+
+    #gambardeedee {
+        padding-left: 20px;
+    }
+
+    #gambardeedee img {
+        width: 120%;
+        padding-right: 30px;
+    }
+
+    #logodeedee img {
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 90%;
+    }
+
+    #textdeedee h5 {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    #textdeedee img {
+        position: relative;
+        margin-left: 0px;
+        width: 110%;
+    }
+
+    #textdeedee p {
+        position: absolute;
+        margin-top: -24px;
+        margin-left: 30px;
+        font-size: 9px;
+    }
+
+    #textdeedee a :hover {
+        text-shadow: 2px 2px 5px rgb(82, 73, 73);
+    }
+
+    #gambarbabydee {
+        padding-left: 20px;
+    }
+
+    #gambarbabydee img {
+        width: 120%;
+        padding-left: 10px;
+    }
+
+    #logobabydee img {
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 90%;
+    }
+
+    #textbabydee h5 {
+        margin-left: -30px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    #textbabydee img {
+        position: relative;
+        margin-left: -30px;
+        width: 110%;
+    }
+
+    #textbabydee p {
+        position: absolute;
+        margin-top: -23px;
+        margin-left: 5px;
+        font-size: 9px;
+    }
+
+    #textbabydee a :hover {
+        text-shadow: 2px 2px 5px rgb(82, 73, 73);
+    }
+
+    #gambarhousehold {
+        padding-left: 0px;
+    }
+
+    #gambarhousehold img {
+        width: 130%;
+        padding-left: 10px;
+    }
+
+    #logohousehold img {
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 80%;
+    }
+
+    #texthousehold h5 {
+        margin-left: -30px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    #texthousehold img {
+        position: relative;
+        margin-left: -30px;
+        width: 110%;
+    }
+
+    #texthousehold p {
+        position: absolute;
+        margin-top: -22px;
+        margin-left: 5px;
+        font-size: 9px;
+    }
+
+    .banner-kontak img {
+        position: relative;
+    }
+
+    .hubungikami {
+        position: absolute;
+        margin-top: -115px;
+        margin-left: 20px;
+    }
+
+    .hubungikami h1 {
+        font-size: 13px;
+    }
+
+    .hubungikami h3 {
+        font-size: 11px;
+        margin-top: -10px;
+    }
+
+    .language {
+        margin-top: -10px;
+        margin-right: 5px;
+    }
+
+    #ramahlingkungan img {
+        position: relative;
+        width: 115px;
+        height: 140px;
+    }
+
+    .textblockramahlingkungan {
+        font-weight: bold;
+        color: #005eb8;
+        font-size: 10px;
+    }
+
+    .textblockramahlingkungan1 {
+        font-size: 8px;
+    }
+
+    #terjangkau img {
+        position: relative;
+        width: 120px;
+        height: 140px;
+        margin-left: -8px;
+    }
+
+    .textblockterjangkau {
+        font-weight: bold;
+        color: #005eb8;
+        font-size: 10px;
+    }
+
+    .textblockterjangkau1 {
+        font-size: 8px;
+    }
+
+    #kamidisiniuntukanda img {
+        position: relative;
+        width: 115px;
+        height: 140px;
+        margin-left: -10px;
+    }
+
+    .textblockkamidisiniuntukanda {
+        font-weight: bold;
+        color: #005eb8;
+        font-size: 9px;
+    }
+
+    .textblockkamidisiniuntukanda1 {
+        font-size: 8px;
+    }
+
+    .textblock2 {
+        visibility: hidden;
+    }
+
+    .tetangkamiptjoenoes {
+        font-size: 16px;
+    }
+
+    .tentang-kami-content-empat img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tentang-kami-content-empat {
+        position: relative;
+    }
+
+    .textblock {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        top: 40px;
+        color: rgb(2, 2, 2);
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 10px;
+    }
+
+    #searchingtitle {
+        width: 5px;
+    }
+
+    .table tr th:nth-child(2) {
+        display: none;
+    }
+
+    .table tr td:nth-child(2) {
+        display: none;
+    }
+
+    #numbers {
+        visibility: hidden;
+    }
+
+    table,
+    th {
+        visibility: hidden;
+    }
+
+    .caption img {
+        width: 150px;
+    }
+
+    #footerindexmedia {
+        padding-top: 10px;
+    }
+
+    #footercopyright p {
+        text-align: center;
+    }
+
+    #footercopyright2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .aganolgeneral img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10%;
+    }
+
+    .button-brand {
+        margin-bottom: 50px;
+    }
+
+    .yurimatic-produk img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .aganol-produk img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #footerindexdistributor {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerindexprodukbaru {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerindex {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    #footerindex {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    #footerprodukbabytoilet {
+        bottom: 0;
+    }
+
+    #footerbrand {
+        margin-top: 20px;
+    }
+
+    #imagebrandbabydee {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .content-satu img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .content-dua img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .content-dua p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .content-dua a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-brand a img {
+        width: 50%;
+        height: auto;
+    }
+
+    .content-tiga a img {
+        margin-top: 15px;
+        width: 50%;
+        height: 50px;
+    }
+
+    .content-dua br {
+        display: none;
+    }
+
+    .brand-content-satu h4 {
+        font-size: 12px;
+    }
+
+    .brand-content-satu p {
+        display: none;
+    }
+
+    .content-dua p {
+        font-size: 14px;
+    }
+
+    .tentang-kami-content-satu p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .tentang-kami-content-dua p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .tentang-kami-content-tiga p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .tentang-kami-content-tiga img {
+        margin-top: 40px;
+    }
+
+    .tentang-kami-content-dua h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .tentang-kami-content-tiga h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .tentang-kami-content-tiga h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .content-satu h1 {
+        font-size: 24px;
+    }
+
+    .banner-produk-baru img {
+        margin-top: 70px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .content-household img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-household {
+        margin-top: 20px;
+    }
+
+    .content-childrentoilet a img {
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #footer-childrentoilet {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content-babytoilet a img {
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #footer-babytoilet {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content-adulttoilet a img {
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #footer-adulttoilet {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .d-flex {
+        margin-top: -20px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: myFirstFont;
+        font-size: 16px;
+    }
+
+    .centered-media {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: myFirstFont;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    #brandsid .imagebrand1 {
+        margin-top: 10px;
+    }
+
+    #brandsid .imagebrand2 {
+        margin-left: 10px;
+    }
+
+    #brandsid .imagebrand3 {
+        margin-left: 5px;
+    }
+
+    #imagebrandbabydee .babydee3 img {
+        padding-bottom: 20px;
+        background-color: #005eb8;
+    }
+}
+
+
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
