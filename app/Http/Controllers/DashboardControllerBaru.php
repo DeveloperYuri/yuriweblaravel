@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\ArtikelBaru;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -22,8 +23,9 @@ class DashboardControllerBaru extends Controller
             $totalartikels = Artikel::count();
             $totalproduks = ProdukBaru::count();
             $totalusers = User::count();
+            $totalartikelbaru = ArtikelBaru::count();
 
-            return view('authbaru.loginmultiauth.superadmin.dashboard')->with('data', $data)->with('totalartikels', $totalartikels)->with('totalproduks', $totalproduks)->with('totalusers', $totalusers);
+            return view('authbaru.loginmultiauth.superadmin.dashboard')->with('data', $data)->with('totalartikels', $totalartikels)->with('totalproduks', $totalproduks)->with('totalusers', $totalusers)->with('totalartikelbaru', $totalartikelbaru);
         } else if (Auth::user()->is_role == 1) {
             $data['getRecord'] = Artikel::getRecord($request);
 

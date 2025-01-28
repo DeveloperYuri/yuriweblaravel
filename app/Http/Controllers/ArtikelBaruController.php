@@ -19,9 +19,6 @@ class ArtikelBaruController extends Controller
 
         //render view with products
         return view('artikelbaru.index', compact('artikelbaru'));
-        $artikelbaru = ArtikelBaru::all();
-
-        return view('artikelbaru.index', compact('artikelbaru'));
     }
 
     public function indexdashboard(Request $request)

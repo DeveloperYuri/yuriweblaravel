@@ -219,7 +219,7 @@
                                     </tr>
                                 @empty
                                     <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                                        Data artikel baru belum tersedia.
                                     </div>
                                 @endforelse
                             </tbody>
