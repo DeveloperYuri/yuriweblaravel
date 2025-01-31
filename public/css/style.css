@@ -267,6 +267,15 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+
+    #footerproduklaundrydisinfektant{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
     .box1 {
         width: 115px;
         height: 20px;
@@ -315,6 +324,14 @@ a:active {
         width: 120px;
         height: 30px;
         position: absolute;
+    }
+
+    #footerprodukdisinfektantspray{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
     #footerprodukhandgel {
@@ -2254,6 +2271,23 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    #footerprodukdisinfektantspray{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduklaundrydisinfektant{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
     .box1 {
         width: 212px;
         height: 30px;
