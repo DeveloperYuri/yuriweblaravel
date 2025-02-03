@@ -2,47 +2,47 @@
 
 @section('head')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Yuri Biosoft Produk">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Biosoft</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Yuri Biosoft Produk">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuri - Biosoft</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+            rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-NKRW8V3SDC');
-    </script>
-</head>
-
+            gtag('config', 'G-NKRW8V3SDC');
+        </script>
+    </head>
 @endsection
 
 @section('navbar')
-      <!-- Navbar Menu -->
-      <div class="menubar">
+    <!-- Navbar Menu -->
+    <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <img src="images/logo-8.png" width="100px" height="50px" alt="logo"/>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/logo-8.png" width="100px" height="50px" alt="logo" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -118,28 +118,35 @@
 
 @section('content')
     <div class="container">
-        <div class="biosofthijab-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkbiosofthijabdetergen.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">Biosoft Hijab Detergent + Softener</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Hanya dengan 1/2 tutup botol Biosoft®
-                                Hijab
-                                Detergent + Softener Anda akan mendapatkan hasil mencuci yang bersih menakjubkan, kotoran
-                                dan
-                                noda pada hijab dibersihkan secara tuntas dalam proses pencucian. Tak hanya membersihkan,
-                                produk
-                                ini juga dapat melembutkan hijab dan ramah lingkungan.</p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Laundry"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="caption text-center">
+            <img src="images/infografisproduk/yuri/biosofthijab/logobiosofthijab.png" alt="" width="250px">
+        </div>
+
+        <div id="imagebrand" class="row mt-3">
+            <div class="col-6">
+                <img class="aganol1" src="images/infografisproduk/yuri/biosofthijab/biosoft-02.jpg"
+                    alt="" width="100%" style="border-radius: 10%;">
             </div>
+            <div class="col-6">
+                <img class="aganol2" src="images/infografisproduk/yuri/biosofthijab/biosoft-03.jpg"
+                    alt="" width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol3" src="images/infografisproduk/yuri/biosofthijab/biosoft-04.jpg"
+                    alt="" width="100%" alt="" width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6 mt-3">
+                <img class="aganol4" src="images/infografisproduk/yuri/biosofthijab/biosoft-05.jpg"
+                    alt="" width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+        </div>
+
+        <div class="button-brand">
+            <a href="https://www.yurishop.co/id/product/Biosoft-Hijab-Detergent-Softener-900-Ml" target="_blank"><img
+                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                    height="10%">
+                <div class="centered"><strong>Beli Sekarang</strong></div>
+            </a>
         </div>
     </div>
     <!-- End Container -->
