@@ -106,7 +106,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadminartikelbaru.index') }}" class="nav-link">
+                            <a href="{{ route('superadminartikelbaru.index') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Artikel
@@ -115,7 +115,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link active">
+                            <a href="{{ route('superadmindashboard.artikel') }}" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Media

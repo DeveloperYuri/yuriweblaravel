@@ -169,6 +169,10 @@
                             <h4 class="mb-4 mt-5 text-center" style="color: #005EB8;">{{ $artikelbaru->title }}</h4>
                         </div>
 
+                        <div class="daysarticle text-center" style="font-size: 12px">
+                            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
+                        </div>
+
                         <!-- Banner Homepage-->
                         <div class="banner-article1 text-center" data-aos="fade-up">
                             <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid"
