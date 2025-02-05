@@ -127,7 +127,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('users.index')}}" class="nav-link">
+                            <a href="{{ route('users.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -170,7 +170,8 @@
                         </div>
 
                         <div class="daysarticle text-center" style="font-size: 12px">
-                            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
+                            <p><strong>Yuri Artikel</strong> -
+                                {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
                         </div>
 
                         <!-- Banner Homepage-->
@@ -191,7 +192,8 @@
                         <div>
                             <a href="{{ route('superadminartikelbaru.edit', $artikelbaru->id) }}"
                                 class="btn btn-sm btn-warning">Edit Artikel</a>
-                            <a href="{{ route('superadminartikelbaru.index') }}" class="btn btn-sm btn-success">Kembali Ke Daftar Artikel</a>
+                            <a href="{{ route('superadminartikelbaru.index') }}"
+                                class="btn btn-sm btn-success">Kembali Ke Daftar Artikel</a>
                         </div>
 
                     </div>
