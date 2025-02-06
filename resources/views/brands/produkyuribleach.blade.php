@@ -2,47 +2,47 @@
 
 @section('head')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Yuri Yuribleach Produk">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Yuri Bleach</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Yuri Yuribleach Produk">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuri - Yuri Bleach</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+            rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-NKRW8V3SDC');
-    </script>
-</head>
-
+            gtag('config', 'G-NKRW8V3SDC');
+        </script>
+    </head>
 @endsection
 
 @section('navbar')
-      <!-- Navbar Menu -->
-      <div class="menubar">
+    <!-- Navbar Menu -->
+    <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <img src="images/logo-8.png" width="100px" height="50px" alt="logo"/>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/logo-8.png" width="100px" height="50px" alt="logo" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -118,32 +118,28 @@
 
 @section('content')
     <div class="container">
-        <div class="yuribleach-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkyuribleach.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Yuri Bleach Morning Fresh</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Yuri Bleach cairan pemutih pakaian
-                                digunakan
-                                untuk memutihkan dan menghilangkan noda pada pakaian dan kain. Yuri Bleach mengandung
-                                disinfektan yang membunuh 99.9% kuman dan bakteri pada pakaian Anda.</p>
-                            <a href="https://www.yurishop.co/id/product/Biosoft-Hijab-Detergent-Softener-900-Ml"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="caption text-center mb-4">
+            <img src="images/infografisproduk/yuri/bleach/logoyuribleach.png" alt="logo yuri bleach" width="150px">
         </div>
+
+        <div class="aganolgeneral">
+            <img src="images/infografisproduk/yuri/bleach/bleach-02.jpg" alt="yuri bleach" />
+        </div>
+
+        <div class="button-brand">
+            <a href="https://www.yurishop.co/id/product/Yuri-Bleach-Morning-Fresh-1000-ml" target="_blank"><img
+                    src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                    height="10%">
+                <div class="centered"><strong>Beli Sekarang</strong></div>
+            </a>
+        </div>
+
     </div>
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukyuribleach" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
