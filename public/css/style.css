@@ -267,6 +267,21 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+    #footerprodukyurisol{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduklysorin{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
     #footerprodukhandsoap{
         height: 50px;
@@ -2311,6 +2326,22 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    #footerprodukyurisol{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduklysorin{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
     #footerprodukhandsoap{
         height: 50px;

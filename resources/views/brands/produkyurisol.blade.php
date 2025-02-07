@@ -117,36 +117,29 @@
 @endsection
 
 @section('content')
-    <div class="container">
-        <div class="yurisol-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkyurisol.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Yuri-sol Natural Pine Disinfectant</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Yuri-sol® Natural Pine didesain khusus
-                                untuk
-                                menggabungkan pembersih higienis dengan wewangian cemara serta pembasmi kuman pada permukaan
-                                lantai. Mengandung formula pine oil alami yang bersifat disinfektan dan menghasilkan aroma
-                                menyegarkan. Selain untuk membersihkan lantai, Yuri-sol® Natural Pine juga cocok digunakan
-                                untuk
-                                membersihkan toilet, rumah sakit, dan berbagai area di rumah Anda.</p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Floor-Cleaner"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container">
+
+    <div class="caption text-center mb-4">
+        <img src="images/infografisproduk/yuri/yurisol/logoyurisol.png" alt="" width="150px">
     </div>
-    <!-- End Container -->
+
+    <div class="aganolgeneral">
+        <img src="images/infografisproduk/yuri/yurisol/yurisol.jpg" alt="" />
+    </div>
+
+    <div class="button-brand">
+        <a href="https://www.yurishop.co/id/product/Yuri-sol-Natural-Pine-Disinfectant-1000-ml" target="_blank"><img
+                src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                height="10%">
+            <div class="centered"><strong>Beli Sekarang</strong></div>
+        </a>
+    </div>
+
+</div>
+<!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukyurisol" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
