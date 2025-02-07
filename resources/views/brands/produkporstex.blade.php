@@ -117,36 +117,43 @@
 @endsection
 
 @section('content')
-    <div class="container">
-        <div class="porstex-produk mt-4" data-aos="fade-up">
-            <div class="card mb-3 mx-auto" style="max-width: 900px;">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/produkporstex.png" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #005EB8;">
-                                Porstex Porcelain Ceramic Cleaner</h5>
-                            <p class="card-text mt-3" style="text-align: justify;">Porstex® cairan pembersih kuat secara
-                                efektif
-                                mampu menghilangkan noda membandel sekaligus kuman dari permukaan porselen dan keramik .
-                                Hanya
-                                dalam beberapa menit, permukaan porselen dan keramik menjadi bersih seperti baru. Dapat
-                                digunakan untuk membersihkan dapur, kamar mandi, dan lainnya. Jangan digunakan pada terraso,
-                                marmer, granit, dan parkit. Kenakan sarung tangan ketika menggunakan.</p>
-                            <a href="https://www.yurishop.co/id/category/Pembersih-Rumah/Surface-Cleaner"
-                                class="btn btn-primary fw-bold" role="button" target="_blank">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+
+    <div class="caption text-center">
+        <img src="images/infografisproduk/yuri/porstex/logoporstex.png" alt="" width="150px">
+    </div>
+
+    <div id="imagebrand" class="row mt-3">
+        <div class="col-6">
+            <img class="aganol1" src="images/infografisproduk/yuri/porstex/porstex-01.jpg" alt=""
+                width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6">
+            <img class="aganol2" src="images/infografisproduk/yuri/porstex/porstex-02.jpg" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol3" src="images/infografisproduk/yuri/porstex/porstex-03.jpg" alt=""
+                width="100%" alt="" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/yuri/porstex/porstexkloset-01.jpg" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
         </div>
     </div>
-    <!-- End Container -->
+
+    <div class="button-brand">
+        <a href="https://www.yurishop.co/id/product/Porstex-Porcelain-Ceramic-Cleaner-Blue-WL-500-ml" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+                alt="Responsive image" width="30%" height="10%">
+            <div class="centered"><strong>Beli Sekarang</strong></div>
+        </a>
+    </div>
+
+</div>
+<!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukporstex" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
