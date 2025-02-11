@@ -166,7 +166,7 @@
         <div class="container">
             <div class="row" style="padding-top: 0px;">
                 <div id="footercopyright" class="col-md-8">
-                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © 2024 PT Joenoes Ikamulya.</p>
+                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>
                 </div>
                 <div id="footercopyright2" class="col-md-4">
                     <a class="petanyaan-privasi" href="#"

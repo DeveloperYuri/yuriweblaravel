@@ -160,7 +160,7 @@
     <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
-            <p style="font-size: 12px; color: white">Copyright © 2024 PT Joenoes Ikamulya.</p>
+            <p style="font-size: 12px; color: white">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>
         </div>
     </div>
     <!-- End Footer -->
