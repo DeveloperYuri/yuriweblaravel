@@ -267,6 +267,20 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
+
+    #footer-childrentoilet{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .deegeneral img{
+        width: 90%;
+        border-radius: 10px
+    }
+
     #footerprodukbiosoftdetergen{
         height: 50px;
         padding-top: 10px;
@@ -1553,6 +1567,19 @@ a:active {
 
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
+
+    #footer-childrentoilet{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .deegeneral img{
+        width: 70%;
+        border-radius: 10px
+    }
     
     #footerprodukhandgel {
         height: 50px;
@@ -2335,6 +2362,19 @@ a:active {
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+    #footer-childrentoilet{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .deegeneral img{
+        width: 100%;
+        border-radius: 10px
+    }
+
     #footerprodukbiosoftdetergen{
         height: 50px;
         padding-top: 10px;
@@ -2799,6 +2839,20 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+    #footer-childrentoilet{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .deegeneral img{
+        width: 70%;
+        border-radius: 10px
+    }
+
     .box1 {
         width: 212px;
         height: 30px;

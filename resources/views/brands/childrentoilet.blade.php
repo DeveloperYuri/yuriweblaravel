@@ -140,21 +140,20 @@
 <!-- Container -->
 <div class="container">
 
-    <h3 class="text-center fw-bold mt-3 mb-3" style="color: #005EB8">
-        Children Toiletries
-    </h3>
-
-    <!-- Banner Homepage-->
-    <div class="banner-tentang-kami" data-aos="fade-up">
-        <img src="images/childrentoilet.png" class="img-fluid" alt="..." width="100%">
+    <div class="caption text-center mb-4">
+        <img src="images/infografisproduk/deedee/logodeedee.png" alt="" width="150px">
     </div>
-    <!-- End Banner Homepage -->
 
-    <!-- Content -->
-    <div class="content-childrentoilet text-center">
-        <a href="https://www.yurishop.co/id/category/Anak-anak" target="_blank"><img src="images/childrentoilet1.png" class="img-fluid" alt="..."></a>
+    <div class="deegeneral text-center">
+        <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" alt="" />
     </div>
-    <!-- End Content-->
+
+    <div class="button-brand">
+        <a href="https://www.yurishop.co/id/category/Children/Body-Wash" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+                alt="Responsive image" width="30%" height="10%">
+            <div class="centered"><strong>Beli Sekarang</strong></div>
+        </a>
+    </div>
 
 </div>
 <!-- End Container -->
