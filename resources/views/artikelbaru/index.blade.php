@@ -183,7 +183,7 @@
                             <div class="col-md-4">
                                 <div class="card h-100">
                                     <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}"
-                                        class="card-img-top" alt="..." width="400px" height="170px">
+                                        class="card-img-top" alt="..." width="400px" height="170px" style="object-fit:cover">
                                     <div class="card-body">
                                         <a href="{{ route('indexartikelbaru.show', $artikel->id) }}">
                                             <h5 class="card-title" style="font-size: 15px;">{{ $artikel->title }}</h5>

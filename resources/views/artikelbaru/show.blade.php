@@ -135,7 +135,7 @@ yang terjangkau oleh semua lapisan masyarakat">
         <!-- End Banner Homepage -->
 
         <!-- Content1 -->
-        <div class="artikel-content-satu" style="margin-top: 20px" data-aos="fade-up">
+        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
 
             {!! $artikelbaru->description !!}
 
