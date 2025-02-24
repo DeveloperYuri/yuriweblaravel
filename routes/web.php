@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\DashboardControllerBaru;
+use App\Http\Controllers\HomeControllerUpdate;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
@@ -53,16 +54,6 @@ Route::get('/handmoisturizer', [HomeController::class,'handmoisturizerproduk'])-
 //FAQ
 Route::get('/faq', [HomeController::class,'faq'])->name('index.faq');
 
-//Login & Register
-Route::controller(LoginRegisterController::class)->group(function() {
-    Route::get('/register/yuri', 'register')->name('register');
-    Route::post('/registerstore', 'registerstore')->name('register.store');
-    Route::get('/loginbaru', 'login')->name('login');
-    Route::post('/authenticate', 'authenticate')->name('authenticate');
-    Route::get('/home', 'home')->name('home');
-    Route::post('/logout', 'logout')->name('logout');
-});
-
 //Media
 Route::get('/media', [MediaController::class,'index'])->name('media.index');
 Route::get('/media/{id}', [MediaController::class,'show'])->name('media.show');
@@ -96,14 +87,16 @@ Route::get('reset/{token}', [AuthControllerBaru::class, 'getReset']);
 Route::post('reset_post/{token}', [AuthControllerBaru::class, 'postReset']);
 
 // Logout
-Route::get('logoutbaru', [AuthControllerBaru::class, 'logout']);
+Route::post('/logout', [AuthControllerBaru::class, 'logout'])->name('logout');;
 
 Route::group(['middleware' => 'superadmin'], function () {
     Route::get('superadmin/dashboard', [DashboardControllerBaru::class, 'dashboard'])->name('superadmindashboard.dashboard');
+    // Route::post('logout', [DashboardControllerBaru::class, 'logout'])->name('superadmindashboard.logout');
 });
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin/dashboard', [DashboardControllerBaru::class, 'dashboard']);
+    // Route::post('logout', [DashboardControllerBaru::class, 'logout']);
 });
 
 // Dashboard Baru
@@ -150,6 +143,17 @@ Route::delete('/superadmin/deleteartikelbaru/delete{id}', [ArtikelBaruController
 Route::put('/superadmin/artikelbaru/update{id}', [ArtikelBaruController::class, 'update'])->name('superadminartikelbaru.update');
 Route::get('/superadmin/showartikelbaru/{id}', [ArtikelBaruController::class,'show'])->name('superadminartikelbaru.show');
 Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class,'showindex'])->name('indexartikelbaru.show');
+
+
+// Update
+Route::get('/homepageupdate', [HomeControllerUpdate::class,'index'])->name('indexupdate');
+Route::get('/tentangkamiupdate', [HomeControllerUpdate::class,'tentangKami'])->name('tentangkamiupdate');
+Route::get('/brandsupdate', [HomeControllerUpdate::class,'brands'])->name('brandsupdate');
+Route::get('/artikelupdate', [HomeControllerUpdate::class,'artikel'])->name('artikelupdate');
+Route::get('/mediaupdate', [HomeControllerUpdate::class,'media'])->name('mediaupdate');
+Route::get('/produkbaruupdate', [HomeControllerUpdate::class,'produkbaru'])->name('produkbaruupdate');
+Route::get('/kontakupdate', [HomeControllerUpdate::class,'kontak'])->name('kontakupdate');
+Route::get('/distributorupdate', [HomeControllerUpdate::class,'distributor'])->name('distributorupdate');
 
 
 

@@ -165,4 +165,13 @@ class DashboardControllerBaru extends Controller
 
         return view('authbaru.loginmultiauth.superadmin.artikelbaru', $data);
     }
+
+    public function logout(Request $request): RedirectResponse
+    {
+        Auth::logout();
+        // $request->session()->invalidate();
+        // $request->session()->regenerateToken();
+        return redirect()->route('index')
+            ->withSuccess('You have logged out successfully!');
+    }
 }
