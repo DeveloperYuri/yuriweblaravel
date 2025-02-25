@@ -14,6 +14,7 @@ use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\MediaUpdateController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\v2\DashboardController as V2DashboardController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -188,6 +189,10 @@ Route::get('/handmoisturizerupdate', [HomeControllerUpdate::class,'handmoisturiz
 
 //FAQ Update
 Route::get('/faqupdate', [HomeControllerUpdate::class,'faq'])->name('faqupdate');
+
+// Dashboard Update
+Route::get('/dashboardupdate', [V2DashboardController::class,'index'])->name('indexdashboard');
+
 
 
 

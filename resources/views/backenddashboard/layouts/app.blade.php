@@ -42,13 +42,13 @@
 
 <body>
 
-    @include('layouts._header')
+    @include('backenddashboard.layouts._header')
 
-    @include('layouts._sidebar')
+    @include('backenddashboard.layouts._sidebar')
 
     @yield('content')
-    
-    @include('layouts._footer')
+
+    @include('backenddashboard.layouts._footer')
 
 </body>
 
