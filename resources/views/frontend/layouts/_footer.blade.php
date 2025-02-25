@@ -9,7 +9,7 @@
              <div id="footercopyright2" class="col-md-4">
                  <a class="petanyaan-privasi" href="#"
                      style="display: inline; color: white; font-size: 14px; ">@lang('message.PERTANYAANPRIVASI')</a>
-                 <a class="footerfaq" href="{{ route('index.faq') }}" class=""
+                 <a class="footerfaq" href="{{ route('faqupdate') }}" class=""
                      style="font-size: 14px; color: white; ">FAQ</a>
              </div>
          </div>

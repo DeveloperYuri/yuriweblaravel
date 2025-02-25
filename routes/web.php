@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArtikelBaru;
 use App\Http\Controllers\ArtikelBaruController;
+use App\Http\Controllers\ArtikelUpdateController;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\HomeControllerUpdate;
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\MediaUpdateController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -145,15 +147,47 @@ Route::get('/superadmin/showartikelbaru/{id}', [ArtikelBaruController::class,'sh
 Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class,'showindex'])->name('indexartikelbaru.show');
 
 
-// Update
+// Update semua 
 Route::get('/homepageupdate', [HomeControllerUpdate::class,'index'])->name('indexupdate');
 Route::get('/tentangkamiupdate', [HomeControllerUpdate::class,'tentangKami'])->name('tentangkamiupdate');
 Route::get('/brandsupdate', [HomeControllerUpdate::class,'brands'])->name('brandsupdate');
-Route::get('/artikelupdate', [HomeControllerUpdate::class,'artikel'])->name('artikelupdate');
-Route::get('/mediaupdate', [HomeControllerUpdate::class,'media'])->name('mediaupdate');
+Route::get('/artikelupdate', [ArtikelUpdateController::class,'index'])->name('artikelupdate');
+Route::get('/mediaupdate', [MediaUpdateController::class,'index'])->name('mediaupdate');
 Route::get('/produkbaruupdate', [HomeControllerUpdate::class,'produkbaru'])->name('produkbaruupdate');
 Route::get('/kontakupdate', [HomeControllerUpdate::class,'kontak'])->name('kontakupdate');
 Route::get('/distributorupdate', [HomeControllerUpdate::class,'distributor'])->name('distributorupdate');
+
+//Brand Update
+Route::get('/householdcleanerupdate', [HomeControllerUpdate::class,'householdcleaner'])->name('householdcleanerupdate');
+Route::get('/childrentoiletupdate', [HomeControllerUpdate::class,'childrentoilet'])->name('childrentoiletupdate');
+Route::get('/babytoiletupdate', [HomeControllerUpdate::class,'babytoilet'])->name('babytoiletupdate');
+Route::get('/adulttoiletupdate', [HomeControllerUpdate::class,'adulttoilet'])->name('adulttoiletupdate');
+
+//Produk Update
+Route::get('/aganolupdate', [HomeControllerUpdate::class,'aganolproduk'])->name('aganolupdate');
+Route::get('/babysoftupdate', [HomeControllerUpdate::class,'babysoftproduk'])->name('babysoftupdate');
+Route::get('/biosoftdetergenupdate', [HomeControllerUpdate::class,'biosoftdetergenproduk'])->name('biosoftdetergenupdate');
+Route::get('/biosoftupdate', [HomeControllerUpdate::class,'biosoftproduk'])->name('biosoftupdate');
+Route::get('/bathroomcleanerupdate', [HomeControllerUpdate::class,'bathroomcleanerproduk'])->name('bathroomcleanerupdate');
+Route::get('/yuribleachupdate', [HomeControllerUpdate::class,'yuribleachproduk'])->name('yuribleachupdate');
+Route::get('/fabriccareupdate', [HomeControllerUpdate::class,'fabriccareproduk'])->name('fabriccareupdate');
+Route::get('/glasscleanerupdate', [HomeControllerUpdate::class,'glasscleanerproduk'])->name('glasscleanerupdate');
+Route::get('/handgelupdate', [HomeControllerUpdate::class,'handgelproduk'])->name('handgelupdate');
+Route::get('/handsoapupdate', [HomeControllerUpdate::class,'handsoapproduk'])->name('handsoapupdate');
+Route::get('/ligentupdate', [HomeControllerUpdate::class,'ligentproduk'])->name('ligentupdate');
+Route::get('/lysorinupdate', [HomeControllerUpdate::class,'lysorinproduk'])->name('lysorinupdate');
+Route::get('/yurisoftupdate', [HomeControllerUpdate::class,'yurisoftproduk'])->name('yurisoftupdate');
+Route::get('/porstexupdate', [HomeControllerUpdate::class,'porstexproduk'])->name('porstexupdate');
+Route::get('/yurisolupdate', [HomeControllerUpdate::class,'yurisolproduk'])->name('yurisolupdate');
+Route::get('/tafupdate', [HomeControllerUpdate::class,'tafproduk'])->name('tafupdate');
+Route::get('/yurimaticupdate', [HomeControllerUpdate::class,'yurimaticproduk'])->name('yurimaticupdate');
+Route::get('/trilupdate', [HomeControllerUpdate::class,'trilproduk'])->name('trilupdate');
+Route::get('/laundrydisinfektantupdate', [HomeControllerUpdate::class,'laundrydisinfektantproduk'])->name('laundrydisinfektantupdate');
+Route::get('/disinfektantsprayupdate', [HomeControllerUpdate::class,'disinfektantsprayproduk'])->name('disinfektantsprayupdate');
+Route::get('/handmoisturizerupdate', [HomeControllerUpdate::class,'handmoisturizerproduk'])->name('handmoisturizerupdate');
+
+//FAQ Update
+Route::get('/faqupdate', [HomeControllerUpdate::class,'faq'])->name('faqupdate');
 
 
 

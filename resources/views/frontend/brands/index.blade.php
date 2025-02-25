@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
 
+@section('title', 'Brands')
+
 @section('content')
     <div class="container">
 
@@ -57,7 +59,7 @@
             </div>
             <div id="texthousehold" class="col-4">
                 <h5>Household Cleaner</h5>
-                <a href="{{ route('brands.householdcleaner') }}"><img src="images/bingkai klik-8.png" alt="">
+                <a href="{{ route('householdcleanerupdate') }}"><img src="images/bingkai klik-8.png" alt="">
                     <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
                 </a>
             </div>
@@ -67,7 +69,7 @@
         <div class="row text-center">
             <div id="textdeedee" class="col-4">
                 <h5>Children Toiletries</h5>
-                <a href="{{ route('brands.childrentoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                <a href="{{ route('childrentoiletupdate') }}"><img src="images/bingkai klik-8.png" alt="">
                     <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
                 </a>
             </div>
@@ -89,7 +91,7 @@
             </div>
             <div id="textbabydee" class="col-4">
                 <h5>Baby Toiletries</h5>
-                <a href="{{ route('brands.babytoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                <a href="{{ route('babytoiletupdate') }}"><img src="images/bingkai klik-8.png" alt="">
                     <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
                 </a>
             </div>
@@ -99,7 +101,7 @@
         <div class="row text-center">
             <div id="textevany" class="col-4">
                 <h5>Adult Toiletries</h5>
-                <a href="{{ route('brands.adulttoilet') }}"><img src="images/bingkai klik-8.png" alt="">
+                <a href="{{ route('adulttoiletupdate') }}"><img src="images/bingkai klik-8.png" alt="">
                     <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
                 </a>
             </div>

@@ -107,4 +107,142 @@ class HomeControllerUpdate extends Controller
             return view('frontend.distributor.indexsg');
         }
     }
+
+    public function householdcleaner()
+    {
+        return view('frontend.brands.householdcleaner');
+    }
+
+    public function childrentoilet()
+    {
+        return view('frontend.brands.childrentoilet');
+    }
+
+    public function babytoilet()
+    {
+        return view('frontend.brands.babytoilet');
+    }
+
+    public function adulttoilet()
+    {
+        return view('frontend.brands.adulttoilet');
+    }
+
+    public function aganolproduk()
+    {
+        return view('frontend.brands.produkaganol');
+    }
+
+    public function babysoftproduk()
+    {
+        return view('frontend.brands.produkbabysoft');
+    }
+
+    public function biosoftdetergenproduk()
+    {
+        return view('frontend.brands.produkbiosoftdetergen');
+    }
+
+    public function biosoftproduk()
+    {
+        return view('frontend.brands.produkbiosoft');
+    }
+
+    public function bathroomcleanerproduk()
+    {
+        return view('frontend.brands.produkbathroomcleaner');
+    }
+
+    public function yuribleachproduk()
+    {
+        return view('frontend.brands.produkyuribleach');
+    }
+
+    public function fabriccareproduk()
+    {
+        return view('frontend.brands.produkfabriccare');
+    }
+
+    public function glasscleanerproduk()
+    {
+        return view('frontend.brands.produkglasscleaner');
+    }
+
+    public function handgelproduk()
+    {
+        return view('frontend.brands.produkhandgel');
+    }
+
+    public function handsoapproduk()
+    {
+        return view('frontend.brands.produkhandsoap');
+    }
+
+    public function ligentproduk()
+    {
+        return view('frontend.brands.produkligent');
+    }
+
+    public function lysorinproduk()
+    {
+        return view('frontend.brands.produklysorin');
+    }
+
+    public function yurisoftproduk()
+    {
+        return view('frontend.brands.produkyurisoft');
+    }
+
+    public function porstexproduk()
+    {
+        return view('frontend.brands.produkporstex');
+    }
+
+    public function yurisolproduk()
+    {
+        return view('frontend.brands.produkyurisol');
+    }
+
+    public function tafproduk()
+    {
+        return view('frontend.brands.produktaf');
+    }
+
+    public function yurimaticproduk()
+    {
+        return view('frontend.brands.produkyurimatic');
+    }
+
+    public function trilproduk()
+    {
+        return view('frontend.brands.produktril');
+    }
+
+    public function laundrydisinfektantproduk()
+    {
+        return view('frontend.brands.produklaundrydisinfektant');
+    }
+    public function disinfektantsprayproduk()
+    {
+        return view('frontend.brands.produkdisinfektantspray');
+    }
+    public function handmoisturizerproduk()
+    {
+        return view('frontend.brands.produkhandmoisturizer');
+    }
+
+    public function faq(Request $request)
+    {
+
+        $ip = '116.50.29.50'; // $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            return view('frontend.faq.index');
+        } else {
+            return view('frontend.faq.indexsg');
+        }
+    }
+
 }

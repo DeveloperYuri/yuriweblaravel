@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
 
+@section('title', 'Kontak')
+
 @section('content')
     <div class="container">
         
@@ -25,7 +27,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <div class="row mb-3" data-aos="fade-up">
             <h5 class="fw-bold mt-4" style="margin-bottom: 20px; color: #005EB8; font-size: 28px;">
                 @lang('message.TERHUBUNGDENGANKAMI')
             </h5>

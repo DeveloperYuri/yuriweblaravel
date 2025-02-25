@@ -1,11 +1,11 @@
 @extends('frontend.layouts.app')
 
 @section('title', 'Home Page')
-    
+
 @section('content')
     <!-- Container -->
     <div class="container">
-        
+
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -168,4 +168,5 @@
 
         </div>
         <!-- End Container -->
-    @endsection
+    </div>
+@endsection

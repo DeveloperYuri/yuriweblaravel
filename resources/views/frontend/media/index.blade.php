@@ -1,23 +1,10 @@
 @extends('frontend.layouts.app')
 
+@section('title', 'Media')
+
 @section('content')
     <div class="container">
-
-        <!-- Start Button Language -->
-        <div class="language mb-2" style="display:flex; justify-content:flex-end;">
-            <div class="btn-group">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="padding-top: 1px">
-                    <span style="font-size: 11px;">Language</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
-                    <li><a class="dropdown-item" href="locale/en">English</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Button Language -->
-
+        
         <!-- Content1 -->
         <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1 mb-4">

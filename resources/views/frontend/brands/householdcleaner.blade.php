@@ -153,45 +153,45 @@
     <!-- Content -->
     <div class="content-household">
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.aganol') }}" ><img src="images/household1.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.babysoft') }}" ><img src="images/household2.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.biosoftdetergen') }}" ><img src="images/household3.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('aganolupdate') }}" ><img src="images/household1.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('babysoftupdate') }}" ><img src="images/household2.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('biosoftdetergenupdate') }}" ><img src="images/household3.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.biosoft') }}" ><img src="images/household4.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.bathroomcleaner') }}" ><img src="images/household5.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.yuribleach') }}" ><img src="images/household6.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('biosoftupdate') }}" ><img src="images/household4.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('bathroomcleanerupdate') }}" ><img src="images/household5.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('yuribleachupdate') }}" ><img src="images/household6.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.fabriccare') }}" ><img src="images/household7.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.glasscleaner') }}" ><img src="images/household8.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.handgel') }}" ><img src="images/household9.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('fabriccareupdate') }}" ><img src="images/household7.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('glasscleanerupdate') }}" ><img src="images/household8.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('handgelupdate') }}" ><img src="images/household9.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.handsoap') }}" ><img src="images/household10.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.ligent') }}" ><img src="images/household11.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.lysorin') }}" ><img src="images/household12.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('handsoapupdate') }}" ><img src="images/household10.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('ligentupdate') }}" ><img src="images/household11.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('lysorinupdate') }}" ><img src="images/household12.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.yurisoft') }}" ><img src="images/household13.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.porstex') }}" ><img src="images/household14.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.yurisol') }}" ><img src="images/household15.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('yurisoftupdate') }}" ><img src="images/household13.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('porstexupdate') }}" ><img src="images/household14.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('yurisolupdate') }}" ><img src="images/household15.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.taf') }}" ><img src="images/household16.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.yurimatic') }}" ><img src="images/household17.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.tril') }}" ><img src="images/household18.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('tafupdate') }}" ><img src="images/household16.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('yurimaticupdate') }}" ><img src="images/household17.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('trilupdate') }}" ><img src="images/household18.png" alt="" /></a></div>
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.laundrydisinfektant') }}" ><img src="images/household19.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.disinfektantspray') }}" ><img src="images/household20.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.handmoisturizer') }}" ><img src="images/household21.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('laundrydisinfektantupdate') }}" ><img src="images/household19.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('disinfektantsprayupdate') }}" ><img src="images/household20.png" alt="" /></a></div>
+            <div class="p-2"><a href="{{ route('handmoisturizerupdate') }}" ><img src="images/household21.png" alt="" /></a></div>
         </div>
     </div>
     <!-- End Content-->

@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
 
+@section('title', 'New Produk')
+
 @section('content')
     <div class="container mb-5">
         
