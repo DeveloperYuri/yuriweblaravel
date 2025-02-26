@@ -15,6 +15,8 @@ use App\Http\Controllers\MediaUpdateController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\v2\DashboardController as V2DashboardController;
+use App\Http\Controllers\v2\ArtikelController as V2ArticleController;
+use App\Http\Controllers\v2\CategoryController as V2CategoryController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
@@ -192,6 +194,25 @@ Route::get('/faqupdate', [HomeControllerUpdate::class,'faq'])->name('faqupdate')
 
 // Dashboard Update
 Route::get('/dashboardupdate', [V2DashboardController::class,'index'])->name('indexdashboard');
+Route::get('/myprofile', [UserController::class,'myprofile'])->name('myprofile');
+Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
+Route::get('logout', [V2DashboardController::class, 'logout']);
+Route::get('/artikel', [V2ArticleController::class,'index'])->name('indexarticle');
+
+Route::get('/category', [V2CategoryController::class,'indexcategory'])->name('indexcategory');
+Route::get('/addcategory', [V2CategoryController::class,'addcategory'])->name('addcategory');
+Route::get('/editcategory', [V2CategoryController::class,'editcategory'])->name('editcategory');
+Route::post('/postcategory', [V2CategoryController::class,'postcategory'])->name('postcategory');
+Route::post('/updatecategory', [V2CategoryController::class,'updatecategory'])->name('updatecategory');
+
+
+Route::get('/media', [V2CategoryController::class,'indexmedia'])->name('indexmedia');
+
+
+Route::get('/produkbaru', [V2CategoryController::class,'indexprodukbaru'])->name('indexprodukbaru');
+
+
+
 
 
 

@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Auth;
+
 
 
 class UserController extends Controller
@@ -84,5 +86,34 @@ class UserController extends Controller
         //redirect to index
         return redirect()->route('users.index')->with(['success' => 'Data Berhasil Dihapus!']);
     }
+
+    public function myprofile(){
+        $data['getUser'] = User::getSingle(Auth::user()->id);
+        return view('backenddashboard.profile.index', $data);
+    }
+
+    public function UpdateAccountSetting(Request $request){
+        $getUser = User::getSingle(Auth::user()->id);
+        $getUser->name = $request->name;
+        
+        if (!empty($request->file('profile_pic'))) {
+
+            if (!empty($getUser->profile_pic) && file_exists('storage/profile/'.$getUser->profile_pic)) {
+                unlink('storage/profile/'.$getUser->profile_pic);
+            }
+
+            $ext = $request->file('profile_pic')->getClientOriginalExtension();
+            $file = $request->file('profile_pic');
+            $filename = Str::random(20) . '.' . $ext;
+            $file->move('storage/profile/', $filename);
+            $getUser->profile_pic = $filename;
+        }
+
+        $getUser->save();
+
+        return redirect()->back()->with('success', "Account setting successfully updated");
+        
+    }
+   
 
 }

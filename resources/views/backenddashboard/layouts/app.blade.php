@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <title>Yuri - Dashboard</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('v2/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('images/logo-8.png')}}" rel="icon">
     <link href="{{ asset('v2/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -44,9 +44,12 @@
 
     @include('backenddashboard.layouts._header')
 
-    @include('backenddashboard.layouts._sidebar')
 
-    @yield('content')
+    <main id="main" class="main" style="min-height: 100vh">
+        @yield('content')
+    </main>
+
+    @include('backenddashboard.layouts._sidebar')
 
     @include('backenddashboard.layouts._footer')
 

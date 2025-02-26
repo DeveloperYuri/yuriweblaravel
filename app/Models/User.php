@@ -60,4 +60,18 @@ class User extends Authenticatable
         $return = $return->paginate(10);
         return $return;
     }
+
+    static public function getSingle($id){
+        return self::find($id);
+    }
+
+    public function getProfile(){
+        if (!empty($this->profile_pic) && file_exists('storage/profile/'.$this->profile_pic)) {
+            return url('storage/profile/'.$this->profile_pic);
+        }
+        else {
+            return url('assets/img/profile-img.jpg');
+        }
+    }
+
 }
