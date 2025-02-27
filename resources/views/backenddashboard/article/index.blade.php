@@ -27,7 +27,7 @@
                             <th scope="row">{{ $article->id }}</th>
                             <td>{{ $article->title }}</td>
                             <td>{{ $article->title }}</td>
-                            <td>{{ $article->name }}</td>
+                            <td>{{ $article->category_name }}</td>
                             @if (Auth::user()->is_admin == 1)
                                 <td>{{ $value->user_name }}</td>
                             @endif
