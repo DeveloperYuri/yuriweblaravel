@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Article Post
-                <a href="{{ url('panel/blog/add') }}" class="btn btn-primary" style="float: right; margin-top:-12px">Add
+                <a href="{{ url('addarticle') }}" class="btn btn-primary" style="float: right; margin-top:-12px">Add
                     New</a>
             </h5>
 
@@ -26,11 +26,23 @@
                         <tr>
                             <th scope="row">{{ $article->id }}</th>
                             <td>{{ $article->title }}</td>
-                            <td>{{ $article->description }}</td>
-                            <td>28</td>
+                            <td>{{ $article->title }}</td>
+                            <td>{{ $article->name }}</td>
+                            @if (Auth::user()->is_admin == 1)
+                                <td>{{ $value->user_name }}</td>
+                            @endif
                             <td>2016-05-25</td>
                             <td>2016-05-25</td>
-                            <td>2016-05-25</td>
+                            <td>
+                                <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                                    action="" method="POST">
+                                    <a href=""
+                                        class="btn btn-sm btn-warning mt-2">EDIT</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                </form>
+                            </td>
                         </tr>
                     @empty
                         Data Not Found

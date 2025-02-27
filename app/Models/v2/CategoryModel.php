@@ -19,7 +19,7 @@ class CategoryModel extends Model
     static public function getRecord($request)
     {
         $return = self::select('category_models.*')
-            //->where('status', '=', 'active')
+            // ->where('status', '=', '1')
             ->orderBy('id', 'desc');
 
             if (!empty(Request::get('title'))) {
@@ -29,4 +29,15 @@ class CategoryModel extends Model
         $return = $return->paginate(10);
         return $return;
     }
+
+    static public function getSingle($id){
+        return CategoryModel::find($id);
+    }
+
+    static public function getCategory(){
+        return self::select('category_models.*')
+        ->where('status', '=', 1)
+        ->get();
+    }
+
 }

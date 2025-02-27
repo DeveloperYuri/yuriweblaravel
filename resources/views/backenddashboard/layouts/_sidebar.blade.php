@@ -11,7 +11,7 @@
          </li><!-- End Dashboard Nav -->
 
          <li class="nav-item">
-             <a class="nav-link @if (Request::segment(1) != 'artikel') collapsed @endif" href="{{ url('/artikel')}}">
+             <a class="nav-link @if (Request::segment(1) != 'artikelupdate') collapsed @endif" href="{{ url('/artikelupdate')}}">
                  <i class="bi bi-person"></i>
                  <span>Artikel</span>
              </a>

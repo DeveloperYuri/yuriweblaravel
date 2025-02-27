@@ -30,4 +30,29 @@ class CategoryController extends Controller
 
         return redirect('/category')->with('success', "Category Succesfully Created");
     }
+
+    public function editcategory($id){
+        $data['getRecord'] = CategoryModel::getSingle($id);
+        return view('backenddashboard.category.editcategory', $data);
+    }
+
+    public function updatecategory($id, Request $request){
+        $save = CategoryModel::getSingle($id);
+        $save->name = trim($request->name);
+        $save->slug = trim(Str::slug($request->name));
+        $save->status = trim($request->status);
+        $save->title = trim($request->title);
+        $save->save();
+
+        return redirect('/category')->with('success', "Category Succesfully Updated");
+    }
+
+    public function deletecategory($id){
+        $data = CategoryModel::getSingle($id);
+        $data->delete();
+
+        return redirect('/category')->with('error', "Category Succesfully Delete");
+
+    }
+
 }

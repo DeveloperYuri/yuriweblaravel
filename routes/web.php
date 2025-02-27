@@ -197,19 +197,26 @@ Route::get('/dashboardupdate', [V2DashboardController::class,'index'])->name('in
 Route::get('/myprofile', [UserController::class,'myprofile'])->name('myprofile');
 Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 Route::get('logout', [V2DashboardController::class, 'logout']);
-Route::get('/artikel', [V2ArticleController::class,'index'])->name('indexarticle');
+
+Route::get('/artikelupdate', [V2ArticleController::class,'index'])->name('indexarticle');
+Route::get('/addarticle', [V2ArticleController::class,'addarticle'])->name('addarticle');
+Route::get('/editarticle/{id}', [V2ArticleController::class,'editarticle'])->name('editarticle');
+Route::post('/postarticle', [V2ArticleController::class,'postarticle'])->name('postarticle');
+Route::post('/updatearticle/{id}', [V2ArticleController::class,'updatearticle'])->name('updatearticle');
+Route::delete('/deletearticle/{id}', [V2ArticleController::class,'deletearticle'])->name('deletearticle');
 
 Route::get('/category', [V2CategoryController::class,'indexcategory'])->name('indexcategory');
 Route::get('/addcategory', [V2CategoryController::class,'addcategory'])->name('addcategory');
-Route::get('/editcategory', [V2CategoryController::class,'editcategory'])->name('editcategory');
+Route::get('/editcategory/{id}', [V2CategoryController::class,'editcategory'])->name('editcategory');
 Route::post('/postcategory', [V2CategoryController::class,'postcategory'])->name('postcategory');
-Route::post('/updatecategory', [V2CategoryController::class,'updatecategory'])->name('updatecategory');
+Route::post('/updatecategory/{id}', [V2CategoryController::class,'updatecategory'])->name('updatecategory');
+Route::delete('/deletecategory/{id}', [V2CategoryController::class,'deletecategory'])->name('deletecategory');
 
 
-Route::get('/media', [V2CategoryController::class,'indexmedia'])->name('indexmedia');
+Route::get('/mediaupdate', [V2CategoryController::class,'indexmedia'])->name('indexmedia');
 
 
-Route::get('/produkbaru', [V2CategoryController::class,'indexprodukbaru'])->name('indexprodukbaru');
+Route::get('/produkbaruupdate', [V2CategoryController::class,'indexprodukbaru'])->name('indexprodukbaru');
 
 
 

@@ -8,6 +8,7 @@
                     New</a>
             </h5>
 
+            @include('_message')
             <!-- Default Table -->
             <table class="table">
                 <thead>
@@ -30,10 +31,14 @@
                             <td>{{ !empty($article->status) ? 'Active' : 'InActive' }}</td>
                             <td>2016-05-25</td>
                             <td>
-                                <a href="" class="btn btn-sm btn-warning mt-2">EDIT</a>
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                                    action="{{ route('deletecategory', $article->id) }}" method="POST">
+                                    <a href="{{ url('editcategory/' . $article->id) }}"
+                                        class="btn btn-sm btn-warning mt-2">EDIT</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger mt-2">HAPUS</button>
+                                </form>
                             </td>
                         </tr>
                     @empty
