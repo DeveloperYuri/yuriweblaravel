@@ -22,9 +22,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($getRecord as $article)
+                    @forelse ($getRecord as $key => $article)
                         <tr>
-                            <th scope="row">{{ $article->id }}</th>
+                            <th scope="row">{{ $getRecord->firstItem() + $key }}</th>
                             <td>{{ $article->title }}</td>
                             <td>{{ $article->title }}</td>
                             <td>{{ $article->category_name }}</td>

@@ -17,6 +17,8 @@
              </a>
          </li><!-- End Profile Page Nav -->
 
+         @if (Auth::user()->is_admin == 1)
+
          <li class="nav-item">
              <a class="nav-link @if (Request::segment(1) != 'category') collapsed @endif" href="{{ url('/category')}}">
                  <i class="bi bi-question-circle"></i>
@@ -25,19 +27,21 @@
          </li><!-- End F.A.Q Page Nav -->
 
          <li class="nav-item">
-             <a class="nav-link collapsed" href="pages-contact.html">
-                 <i class="bi bi-envelope"></i>
-                 <span>Media</span>
-             </a>
-         </li><!-- End Contact Page Nav -->
+            <a class="nav-link collapsed" href="pages-contact.html">
+                <i class="bi bi-envelope"></i>
+                <span>Media</span>
+            </a>
+        </li><!-- End Contact Page Nav -->
 
-         <li class="nav-item">
-             <a class="nav-link collapsed" href="pages-register.html">
-                 <i class="bi bi-card-list"></i>
-                 <span>Produk Baru</span>
-             </a>
-         </li><!-- End Register Page Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="pages-register.html">
+                <i class="bi bi-card-list"></i>
+                <span>Produk Baru</span>
+            </a>
+        </li><!-- End Register Page Nav -->
 
+         @endif
+        
          <li class="nav-item">
              <a class="nav-link @if (Request::segment(1) != 'myprofile') collapsed @endif" href="{{ url('/myprofile') }}">
                      <i class="bi bi-box-arrow-in-right"></i>

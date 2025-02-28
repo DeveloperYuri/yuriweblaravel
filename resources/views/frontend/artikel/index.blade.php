@@ -71,11 +71,12 @@
                 <div class="col-lg-4 mb-3">
                     <h5>Category</h5>
                     <ul class="list-group">
+
+                        @foreach ($getCategory as $category)
+                            
+                        @endforeach
                         <li class="list-group-item active" aria-current="true"><a href=""
-                                style="color: white; font-weight:bold">Pembersih Rumah Tangga</a></li>
-                        <li class="list-group-item"><a href=""
-                                style="color: #005EB8; font-weight:bold">Anak-Anak</a></li>
-                        <li class="list-group-item"><a href="" style="color: #005EB8; font-weight:bold">Bayi</a>
+                                style="color: white; font-weight:bold">{{ $category->name}}</a></li>
                         </li>
                     </ul>
                 </div>

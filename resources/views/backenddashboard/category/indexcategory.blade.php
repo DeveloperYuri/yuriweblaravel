@@ -23,17 +23,17 @@
                 </thead>
                 <tbody>
                     {{-- $getRecord as $key => $artikelbaru --}}
-                    @forelse ($getRecord as $key => $article)
+                    @forelse ($getRecord as $key => $category)
                         <tr>
                             <th scope="row">{{ $getRecord->firstItem() + $key }}</th>
-                            <td>{{ $article->name }}</td>
-                            <td>{{ $article->slug }}</td>
-                            <td>{{ !empty($article->status) ? 'Active' : 'InActive' }}</td>
+                            <td>{{ $category->name }}</td>
+                            <td>{{ $category->slug }}</td>
+                            <td>{{ !empty($category->status) ? 'Active' : 'InActive' }}</td>
                             <td>2016-05-25</td>
                             <td>
                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                    action="{{ route('deletecategory', $article->id) }}" method="POST">
-                                    <a href="{{ url('editcategory/' . $article->id) }}"
+                                    action="{{ route('deletecategory', $category->id) }}" method="POST">
+                                    <a href="{{ url('editcategory/' . $category->id) }}"
                                         class="btn btn-sm btn-warning mt-2">EDIT</a>
                                     @csrf
                                     @method('DELETE')

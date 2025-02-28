@@ -32,25 +32,25 @@ class ArticleModel extends Model
             ->join('category_models', 'category_models.id', '=', 'article_models.category_id')
             ->orderBy('id', 'desc');
 
-        if (!empty(Auth::check()) && Auth::user()->is_admin != 1) {
-            $return = $return->where('article_models.user_id', '=', Auth::user()->id);
-        }
+        // if (!empty(Auth::check()) && Auth::user()->is_admin != 1) {
+        //     $return = $return->where('article_models.user_id', '=', Auth::user()->id);
+        // }
 
-        if (!empty(Request::get('id'))) {
-            $return = $return->where('article_models.id', '=', Request::get('id'));
-        }
+        // if (!empty(Request::get('id'))) {
+        //     $return = $return->where('article_models.id', '=', Request::get('id'));
+        // }
 
-        if (!empty(Request::get('username'))) {
-            $return = $return->where('article_models.name', 'like', '%' . Request::get('username') . '%');
-        }
+        // if (!empty(Request::get('username'))) {
+        //     $return = $return->where('article_models.name', 'like', '%' . Request::get('username') . '%');
+        // }
 
-        if (!empty(Request::get('title'))) {
-            $return = $return->where('article_models.title', 'like', '%' . Request::get('title') . '%');
-        }
+        // if (!empty(Request::get('title'))) {
+        //     $return = $return->where('article_models.title', 'like', '%' . Request::get('title') . '%');
+        // }
 
-        if (!empty(Request::get('category'))) {
-            $return = $return->where('category_models.name', 'like', '%' . Request::get('category') . '%');
-        }
+        // if (!empty(Request::get('category'))) {
+        //     $return = $return->where('category_models.name', 'like', '%' . Request::get('category') . '%');
+        // }
 
         $return = $return->paginate(10);
         return $return;

@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Auth;
 class ArtikelController extends Controller
 {
     public function index(Request $request){
+        $data['getCategory'] = CategoryModel::getCategory();
         $data['getRecord'] = ArticleModel::getRecord($request);
+        
         return view('backenddashboard.article.index', $data);
     }
 
@@ -35,6 +37,10 @@ class ArtikelController extends Controller
         $save->save();
 
         return redirect('/artikelupdate')->with('success', "Category Succesfully Created");
+    }
+
+    public function getarticlecategory(){
+        $data['getCategory'] = CategoryModel::getCategory();
     }
 
     // public function editcategory($id){

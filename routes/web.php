@@ -199,6 +199,7 @@ Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 Route::get('logout', [V2DashboardController::class, 'logout']);
 
 Route::get('/artikelupdate', [V2ArticleController::class,'index'])->name('indexarticle');
+Route::get('/artikeldetail/{slug}', [V2ArticleController::class,'index'])->name('indexarticledetail');
 Route::get('/addarticle', [V2ArticleController::class,'addarticle'])->name('addarticle');
 Route::get('/editarticle/{id}', [V2ArticleController::class,'editarticle'])->name('editarticle');
 Route::post('/postarticle', [V2ArticleController::class,'postarticle'])->name('postarticle');
