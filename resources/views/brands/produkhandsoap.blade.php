@@ -125,27 +125,11 @@
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-02.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/yuri/handsoap/handsoapFOAMINGinfograph-01.jpg" alt=""
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-03.jpg" alt=""
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-04.jpg" alt=""
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-05.jpg" alt=""
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-06.jpg" alt=""
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-01.jpg" alt=""
+                <img class="aganol2" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-01.jpg" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>

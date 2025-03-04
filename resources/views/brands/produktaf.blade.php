@@ -132,14 +132,6 @@
                 <img class="aganol2" src="images/infografisproduk/yuri/taf/tafinfograph-02.jpg" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/taf/tafinfograph-03.jpg" alt=""
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/taf/tafinfograph-04.jpg" alt=""
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
         </div>
 
         <div class="button-brand">

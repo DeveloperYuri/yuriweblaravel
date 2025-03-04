@@ -268,6 +268,30 @@ a:active {
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+    #footerproduktril{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduktaf{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerprodukhandsoap{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
     #footer-childrentoilet{
         height: 50px;
         padding-top: 10px;
@@ -2362,6 +2386,30 @@ a:active {
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+    #footerproduktril{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduktaf{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerprodukhandsoap{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
     #footer-childrentoilet{
         height: 50px;
         padding-top: 10px;
@@ -2839,6 +2887,14 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+    #footerprodukhandsoap{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
     #footer-childrentoilet{
         height: 50px;
