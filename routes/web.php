@@ -48,6 +48,8 @@ Route::get('/ligent', [HomeController::class,'ligentproduk'])->name('brands.lige
 Route::get('/lysorin', [HomeController::class,'lysorinproduk'])->name('brands.lysorin');
 Route::get('/yurisoft', [HomeController::class,'yurisoftproduk'])->name('brands.yurisoft');
 Route::get('/porstex', [HomeController::class,'porstexproduk'])->name('brands.porstex');
+Route::get('/porstexreguler', [HomeController::class,'porstexregulerproduk'])->name('brands.porstexreguler');
+Route::get('/porstexkloset', [HomeController::class,'porstexklosetproduk'])->name('brands.porstexkloset');
 Route::get('/yurisol', [HomeController::class,'yurisolproduk'])->name('brands.yurisol');
 Route::get('/taf', [HomeController::class,'tafproduk'])->name('brands.taf');
 Route::get('/yurimatic', [HomeController::class,'yurimaticproduk'])->name('brands.yurimatic');

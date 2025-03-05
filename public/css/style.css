@@ -268,6 +268,23 @@ a:active {
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+    #yurisolbrands{
+        width: 102px;
+        margin-left: -85px;
+    }
+
+    #yurisoftbrands{
+        width: 102px;
+    }
+
+    #footerprodukporstex{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
+
     #footerproduktril{
         height: 50px;
         padding-top: 10px;
@@ -987,6 +1004,16 @@ a:active {
 
 /* Mobile Phone Iphone*/
 @media only screen and (min-width: 410px) and (max-width: 600px) { 
+
+    #yurisolbrands{
+        width: 110px;
+        margin-left: -85px;
+    }
+
+    #yurisoftbrands{
+        width: 110px;
+    }
+
     .box1 {
         width: 115px;
         height: 20px;
@@ -2385,6 +2412,14 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    #footerprodukporstex{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
 
     #footerproduktril{
         height: 50px;

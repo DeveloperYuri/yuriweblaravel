@@ -208,6 +208,16 @@ class HomeController extends Controller
         return view('brands.produkporstex');
     }
 
+    public function porstexregulerproduk()
+    {
+        return view('brands.produkporstexreguler');
+    }
+
+    public function porstexklosetproduk()
+    {
+        return view('brands.produkporstexkloset');
+    }
+
     public function yurisolproduk()
     {
         return view('brands.produkyurisol');

@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Yuri Trill Produk">
+    <meta name="description" content="Yuri Porstex Produk">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Trill</title>
+    <title>Yuri - Porstex</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
@@ -120,17 +120,16 @@
 <div class="container">
 
     <div class="caption text-center">
-        <img src="images/infografisproduk/yuri/tril/logoyuritril.png" alt="" width="150px">
+        <img src="images/infografisproduk/yuri/porstex/logoporstex.png" alt="" width="150px">
     </div>
 
     <div class="aganolgeneral">
-        <img src="images/infografisproduk/yuri/tril/trilinfograph-01.jpg" alt="" />
+        <img src="images/infografisproduk/yuri/porstex/porstexKLOSET-01.jpg" alt="" />
     </div>
 
     <div class="button-brand">
-        <a href="https://www.yurishop.co/id/product/Tril-Ironing-Starch-Lavender-500-ml" target="_blank"><img
-                src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
-                height="10%">
+        <a href="https://www.yurishop.co/id/product/Porstex-Kloset-500-ml" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+                alt="Responsive image" width="30%" height="10%">
             <div class="centered"><strong>Beli Sekarang</strong></div>
         </a>
     </div>
@@ -139,7 +138,7 @@
 <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerproduktril" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukporstex" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>

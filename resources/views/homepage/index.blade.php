@@ -314,8 +314,8 @@ yang terjangkau oleh semua lapisan masyarakat">
                         </div>
                     </div>
                 @empty
-                    <div class="alert alert-danger">
-                        Data Products belum Tersedia.
+                    <div class="alert alert-danger" style="text-align: center">
+                        Data Media belum Tersedia.
                     </div>
                 @endforelse
             </div>
