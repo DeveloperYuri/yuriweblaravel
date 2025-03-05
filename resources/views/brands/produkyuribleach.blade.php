@@ -124,7 +124,7 @@
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/bleach/bleach-02.jpg" alt="yuri bleach" />
+            <img src="images/infografisproduk/yuri/bleach/bleach.jpg" alt="yuri bleach" />
         </div>
 
         <div class="button-brand">

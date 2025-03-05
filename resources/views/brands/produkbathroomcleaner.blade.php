@@ -124,7 +124,7 @@
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/bathroomcleaner/BATHROOMCLEANER-01.jpg" alt="yuri bathroom cleaner" />
+            <img src="images/infografisproduk/yuri/bathroomcleaner/Bathroomcleaner.jpg" alt="yuri bathroom cleaner" />
         </div>
 
         <div class="button-brand">
