@@ -277,6 +277,14 @@ a:active {
         width: 102px;
     }
 
+    #footerprodukyurisoft{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
+
     #footerprodukporstex{
         height: 50px;
         padding-top: 10px;
@@ -2412,6 +2420,14 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
+
+    #footerprodukyurisoft{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
 
     #footerprodukporstex{
         height: 50px;
