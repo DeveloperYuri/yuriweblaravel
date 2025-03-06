@@ -124,7 +124,7 @@
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/biosoftdetergen/biosoftdetergentsoftenerinfograph-01.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/biosoftdetergen/biosoft-01.jpg" alt="" />
         </div>
 
         <div class="button-brand">

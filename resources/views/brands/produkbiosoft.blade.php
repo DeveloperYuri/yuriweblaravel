@@ -124,19 +124,19 @@
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/biosofthijab/biosoft-02.jpg"
+                <img class="aganol1" src="images/infografisproduk/yuri/biosofthijab/biosofthijab1.jpg"
                     alt="" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/biosofthijab/biosoft-03.jpg"
+                <img class="aganol2" src="images/infografisproduk/yuri/biosofthijab/biosofthijab2.jpg"
                     alt="" width="100%" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/biosofthijab/biosoft-04.jpg"
+                <img class="aganol3" src="images/infografisproduk/yuri/biosofthijab/biosofthijab3.jpg"
                     alt="" width="100%" alt="" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/biosofthijab/biosoft-05.jpg"
+                <img class="aganol4" src="images/infografisproduk/yuri/biosofthijab/biosofthijab.jpg"
                     alt="" width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>

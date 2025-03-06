@@ -165,7 +165,8 @@
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div class="p-2"><a href="{{ route('brands.fabriccare') }}" ><img src="images/household7.png" alt="" /></a></div>
+            {{-- <div class="p-2"><a href="{{ route('brands.fabriccare') }}" ><img src="images/household7.png" alt="" /></a></div> --}}
+            <div class="p-2"><a href="{{ route('brands.yurisol') }}" ><img src="images/household15.png" alt="" /></a></div>
             <div class="p-2"><a href="{{ route('brands.glasscleaner') }}" ><img src="images/household8.png" alt="" /></a></div>
             <div class="p-2"><a href="{{ route('brands.handgel') }}" ><img src="images/household9.png" alt="" /></a></div>
         </div>
@@ -195,9 +196,8 @@
         </div>
 
         <div class="d-flex p-3 justify-content-center">
-            <div id="yurisolbrands" class="p-2"><a href="{{ route('brands.yurisol') }}" ><img src="images/household15.png" alt="" /></a></div>
             <div id="yurisoftbrands" class="p-2"><a href="{{ route('brands.yurisoft') }}" ><img src="images/household13.png" alt="" /></a></div>
-            <div class="p-2"><a href="{{ route('brands.yurisoft') }}" ><img src="images/" alt="" /></a></div>
+            {{-- <div class="p-2"><a href="{{ route('brands.yurisoft') }}" ><img src="images/" alt="" /></a></div> --}}
         </div>
     </div>
     <!-- End Content-->
