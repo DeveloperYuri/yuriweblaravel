@@ -120,11 +120,11 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/biosoftdetergen/logobiosoftdetergent.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/biosoftdetergen/logobiosoftdetergent.webp" alt="logobiosoftdetergen" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/biosoftdetergen/biosoft-01.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/biosoftdetergen/biosoft-01.webp" alt="infografisbiosoftdetergen" />
         </div>
 
         <div class="button-brand">

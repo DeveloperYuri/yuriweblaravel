@@ -120,11 +120,11 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/bleach/logoyuribleach.png" alt="logo yuri bleach" width="150px">
+            <img src="images/infografisproduk/yuri/bleach/logoyuribleach.webp" alt="logo yuri bleach" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/bleach/bleach.jpg" alt="yuri bleach" />
+            <img src="images/infografisproduk/yuri/bleach/bleach.webp" alt="yuri bleach" />
         </div>
 
         <div class="button-brand">

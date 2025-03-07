@@ -120,16 +120,16 @@
     <div class="container">
 
         <div class="caption text-center">
-            <img src="images/infografisproduk/yuri/taf/logotaf.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/taf/logotaf.webp" alt="logo taf" width="150px">
         </div>
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/taf/tafinfograph-01.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/yuri/taf/tafinfograph-01.webp" alt="infografis taf 1"
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/taf/tafinfograph-02.jpg" alt=""
+                <img class="aganol2" src="images/infografisproduk/yuri/taf/tafinfograph-02.webp" alt="infografis taf 2"
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>

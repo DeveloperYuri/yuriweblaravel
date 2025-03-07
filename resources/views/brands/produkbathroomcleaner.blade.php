@@ -120,11 +120,11 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/bathroomcleaner/logoyuribathroomcleaner.png" alt="logo yuri bathroom cleaner" width="150px">
+            <img src="images/infografisproduk/yuri/bathroomcleaner/logoyuribathroomcleaner.webp" alt="logo yuri bathroom cleaner" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/bathroomcleaner/Bathroomcleaner.jpg" alt="yuri bathroom cleaner" />
+            <img src="images/infografisproduk/yuri/bathroomcleaner/Bathroomcleaner.webp" alt="yuri bathroom cleaner" />
         </div>
 
         <div class="button-brand">

@@ -120,11 +120,11 @@
 <div class="container">
 
     <div class="caption text-center">
-        <img src="images/infografisproduk/yuri/porstex/logoporstex.png" alt="" width="150px">
+        <img src="images/infografisproduk/yuri/porstex/logoporstex.webp" alt="logo porstex reguler" width="150px">
     </div>
 
     <div class="aganolgeneral">
-        <img src="images/infografisproduk/yuri/porstex/porstex-02.jpg" alt="" />
+        <img src="images/infografisproduk/yuri/porstex/porstex-02.webp" alt="infografis porstex reguler" />
     </div>
 
     <div class="button-brand">

@@ -120,11 +120,11 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/babysoft/logobabysoft.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/babysoft/logobabysoft.webp" alt="logobabysoft" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/babysoft/babysoft-01.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/babysoft/babysoft-01.webp" alt="infografisbabysoft" />
         </div>
 
         <div class="button-brand">
