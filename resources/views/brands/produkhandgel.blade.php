@@ -120,11 +120,11 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/handgel/logohandgel.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/handgel/logohandgel.webp" alt="" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/handgel/HANDGELINFOGRAPH-01-01.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/handgel/handgel.webp" alt="" />
         </div>
 
         <div class="button-brand">

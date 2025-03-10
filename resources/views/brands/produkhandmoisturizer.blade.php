@@ -119,11 +119,11 @@
 @section('content')
     <div class="container">
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/yurimoisturizer/logoyurimoisturizer.png" alt="" width="150px">
+            <img src="images/infografisproduk/yuri/yurimoisturizer/logoyurimoisturizer.webp" alt="" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/yurimoisturizer/yurimoisturizerinfograph.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/yurimoisturizer/2in1mousturizer.webp" alt="" />
         </div>
 
         <div class="button-brand">

@@ -120,12 +120,12 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/laundrydisinfectant/logolaundrydisinfektant.png" alt=""
+            <img src="images/infografisproduk/yuri/laundrydisinfectant/logolaundrydisinfektant.webp" alt=""
                 width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/laundrydisinfectant/laundrydisinfectant.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/laundrydisinfectant/laundrydisinfectant.webp" alt="" />
         </div>
 
         <div class="button-brand">

@@ -120,12 +120,12 @@
     <div class="container">
 
         <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/disinfectantspray/logodisinfektantspray.png" alt=""
+            <img src="images/infografisproduk/yuri/disinfectantspray/logodisinfektantspray.webp" alt=""
                 width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/disinfectantspray/disinfectantspray.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/disinfectantspray/disinfectantspray.webp" alt="" />
         </div>
 
         <div class="button-brand">
