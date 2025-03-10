@@ -120,24 +120,16 @@
     <div class="container">
 
         <div class="caption text-center">
-            <img src="images/infografisproduk/yuri/ligentbio/logoligent.png" alt="" width="140px">
+            <img src="images/infografisproduk/yuri/ligentbio/logoligent.webp" alt="" width="140px">
         </div>
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-01.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/yuri/ligentbio/ligentbio-01.webp" alt=""
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-02.jpg" alt=""
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-03.jpg" alt=""
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/ligentbio/ligentbioINFOGRAPHIC-04.jpg" alt=""
+                <img class="aganol2" src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.webp" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>
@@ -158,7 +150,7 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukligent" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>
