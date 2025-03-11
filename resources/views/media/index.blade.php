@@ -156,7 +156,8 @@
                                 alt="..." width="400px" height="230px">
                             <div class="card-body">
                                 <a href="{{ $artikel->link }}" target="_blank">
-                                    <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
+                                    {{-- <h1 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h1> --}}
+                                <p class="card-title" style="font-size: 20px; font-weight:bold;">{{ $artikel->title }}</p>
                                 </a>
                             </div>
 

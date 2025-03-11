@@ -307,7 +307,7 @@ yang terjangkau oleh semua lapisan masyarakat">
                                 alt="..." width="400px" height="230px">
                             <div class="card-body">
                                 <a href="{{ $artikel->link }}" target="_blank">
-                                    <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
+                                    <p class="card-title" style="font-size: 20px; font-weight:bold;">{{ $artikel->title }}</p>
                                 </a>
                             </div>
 
