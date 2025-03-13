@@ -26,8 +26,7 @@ return [
     'KAMIMEMBERIKANPRODUK' => 'We provide products at affordable prices',
     'KAMIDISINIUNTUKANDA' => 'We Are Here For You',
     'KAMIMEMBERIKANYANGTERBAIK' => 'We give the best for you',
-
-
+    'ARTIKEL' => 'ARTICLE',
 
     // Tentang Kami
     'YURIBERKOMITMENT' => 'YURI is committed to building a healthier future',

@@ -25,6 +25,7 @@ return [
 dengan harga terjangkau',
     'KAMIDISINIUNTUKANDA' => 'Kami Disini Untuk Anda',
     'KAMIMEMBERIKANYANGTERBAIK' => 'Kami memberikan yang terbaik untuk anda',
+    'ARTIKEL' => 'ARTIKEL',
 
 
     // Tentang Kami

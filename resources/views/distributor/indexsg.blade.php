@@ -50,17 +50,17 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index') }}"
-                                style="color: #005EB8">HOME</a>
+                                style="color: #005EB8">@lang('message.HOME')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.tentangkami') }}"
-                                style="color: #005EB8">TENTANG KAMI</a>
+                                style="color: #005EB8">@lang('message.TENTANGKAMI')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.brands') }}"
-                                style="color: #005EB8">BRANDS</a>
+                                style="color: #005EB8">@lang('message.BRANDS')</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -85,28 +85,28 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
-                                style="color: #005EB8">ARTIKEL
+                                style="color: #005EB8">@lang('message.ARTIKEL')
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('media.index') }}"
-                                style="color: #005EB8">MEDIA</a>
+                                style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.produkbaru') }}"
-                                style="color: #005EB8">PRODUK BARU</a>
+                                style="color: #005EB8">@lang('message.PRODUKBARU')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.kontak') }}"
-                                style="color: #005EB8">KONTAK</a>
+                                style="color: #005EB8">@lang('message.KONTAK')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active fw-bold" aria-current="page" href="{{ route('index.distributor') }}"
-                                style="color: #005EB8">DISTRIBUTOR</a>
+                                style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
                     </ul>
                 </div>

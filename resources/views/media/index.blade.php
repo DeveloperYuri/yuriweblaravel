@@ -87,7 +87,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
-                                style="color: #005EB8">ARTIKEL
+                                style="color: #005EB8">@lang('message.ARTIKEL')
                             </a>
                         </li>
 
@@ -156,7 +156,6 @@
                                 alt="..." width="400px" height="230px">
                             <div class="card-body">
                                 <a href="{{ $artikel->link }}" target="_blank">
-                                    {{-- <h1 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h1> --}}
                                 <p class="card-title" style="font-size: 20px; font-weight:bold;">{{ $artikel->title }}</p>
                                 </a>
                             </div>

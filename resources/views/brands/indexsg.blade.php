@@ -83,7 +83,7 @@
                         
                         <li class="nav-item">
                             <a class="nav-link fw-bold" aria-current="page" href="{{ route('artikelbaru.index') }}"
-                                style="color: #005EB8">ARTIKEL
+                                style="color: #005EB8">@lang('message.ARTIKEL')
                             </a>
                         </li>
 
