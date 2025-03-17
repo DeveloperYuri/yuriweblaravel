@@ -14,7 +14,8 @@ class ArtikelBaru extends Model
     protected $fillable = [
         'image',
         'title',
-        'description'
+        'description',
+        'viewer'
     ];
 
     static public function getRecord($request)

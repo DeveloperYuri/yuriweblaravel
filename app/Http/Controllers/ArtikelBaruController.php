@@ -64,6 +64,8 @@ class ArtikelBaruController extends Controller
     {
         $artikelbaru = ArtikelBaru::findOrFail($id);
 
+        $artikelbaru->increment('viewer');
+
         //render view with product
         return view('authbaru.loginmultiauth.superadmin.artikelbaru.show', compact('artikelbaru'));
     }
@@ -71,6 +73,8 @@ class ArtikelBaruController extends Controller
     public function showindex(string $id)
     {
         $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        $artikelbaru->increment('viewer');
 
         //render view with product
         return view('artikelbaru.show', compact('artikelbaru'));

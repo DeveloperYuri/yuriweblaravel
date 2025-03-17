@@ -125,7 +125,7 @@ yang terjangkau oleh semua lapisan masyarakat">
         </div>
 
         <div class="daysarticle text-center" style="font-size: 12px">
-            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
+            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }} | <img src="{{ asset('images/eye-view-icon-png.webp')}}" alt="" width="34px" height="34px"><span style="margin-left:-1px">{{ $artikelbaru->viewer }}</span></p>
         </div>
 
         <!-- Banner Homepage-->
