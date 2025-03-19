@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Yuri Yurimatic Produk">
+    <meta name="keywords" content="yuri matic">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuri - Yuri Matic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"

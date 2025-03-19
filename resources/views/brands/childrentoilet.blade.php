@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Yuri Children Toiletries Produk">
+    <meta name="keywords" content="children toiletries, yuri children toiletries">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuri - Children Toiletries</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"

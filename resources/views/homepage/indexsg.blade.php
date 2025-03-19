@@ -7,6 +7,7 @@
     <meta name="description"
             content="Yuri  berkomitmen untuk menghasilkan produk berkualitas internasional
 yang terjangkau oleh semua lapisan masyarakat">
+    <meta name="keywords" content="yuri, yuri indonesia">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yuri - Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
