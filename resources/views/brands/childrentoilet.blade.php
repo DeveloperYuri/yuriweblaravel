@@ -142,15 +142,46 @@
 <div class="container">
 
     <div class="caption text-center mb-4">
-        <img src="images/infografisproduk/deedee/logodeedee.png" alt="" width="150px">
+        <img src="images/infografisproduk/deedee/logodeedee.webp" alt="" width="150px">
     </div>
 
-    <div class="deegeneral text-center">
-        <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" alt="" />
+    <div id="imagebrand" class="row mt-3">
+        <div class="col-6">
+            <img class="aganol1" src="images/infografisproduk/deedee/ddinfograph-01.webp" alt=""
+                width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6">
+            <img class="aganol2" src="images/infografisproduk/deedee/ddinfograph-02.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol3" src="images/infografisproduk/deedee/ddinfograph-03.webp" alt=""
+                width="100%" alt="" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/deedee/ddinfograph-04.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/deedee/ddinfograph-05.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/deedee/ddinfograph-06.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/deedee/ddinfograph-07.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
+        <div class="col-6 mt-3">
+            <img class="aganol4" src="images/infografisproduk/deedee/infographicdeedeefcial-01.webp" alt=""
+                width="100%" width="100%" style="border-radius: 10%;">
+        </div>
     </div>
 
     <div class="button-brand">
-        <a href="https://www.yurishop.co/id/category/Children/Body-Wash" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+        <a href="https://www.yurishop.co/id/category/Children" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
                 alt="Responsive image" width="30%" height="10%">
             <div class="centered"><strong>Beli Sekarang</strong></div>
         </a>
