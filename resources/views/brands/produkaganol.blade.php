@@ -124,26 +124,7 @@
             <img src="images/infografisproduk/yuri/aganol/logoaganol.webp" alt="logoaganol" width="150px">
         </div>
 
-        <div id="imagebrand" class="row mt-3">
-            <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/aganol/infographicaganol-02.webp" alt="infografisaganol1"
-                    width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/aganol/infographicaganol-03.webp" alt="infografisaganol2"
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/aganol/infographicaganol-04.webp" alt="infografisaganol3"
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/aganol/infographicaganol-05.webp" alt="infografisaganol4"
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-        </div>
-
-        <div class="aganolgeneral">
+        <div class="aganolgeneral mt-3">
             <img src="images/infografisproduk/yuri/aganol/infographicaganol-01.webp" alt="infografisaganol5" />
         </div>
 

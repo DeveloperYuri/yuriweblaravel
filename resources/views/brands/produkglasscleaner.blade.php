@@ -120,26 +120,11 @@
 @section('content')
     <div class="container">
         <div class="caption text-center">
-            <img src="images/infografisproduk/yuri/glasscleaner/logo.png" alt="" width="250px">
+            <img src="images/infografisproduk/yuri/glasscleaner/logo.webp" alt="" width="250px">
         </div>
 
-        <div id="imagebrand" class="row mt-3">
-            <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/glasscleaner/infographicglasscleaner-01.jpg" alt=""
-                    width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/yuri/glasscleaner/infographicglasscleaner-02.jpg" alt=""
-                    width="100%" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/yuri/glasscleaner/infographicglasscleaner-03.jpg" alt=""
-                    width="100%" alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/yuri/glasscleaner/infographicglasscleaner-04.jpg"
-                    alt="" width="100%" width="100%" style="border-radius: 10%;">
-            </div>
+        <div class="aganolgeneral">
+            <img src="images/infografisproduk/yuri/glasscleaner/infographicglasscleaner-01.webp" alt="infografisbiosoftdetergen" />
         </div>
 
         <div class="button-brand">
