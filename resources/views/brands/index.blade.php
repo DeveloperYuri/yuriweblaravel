@@ -147,14 +147,14 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/householdcleaner.png" class="d-block w-100" alt="...">
+                        <img src="images/householdcleaner.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" class="d-block w-100"
+                        <img src="images/infografisproduk/deedee/infographicdeedee-03.webp" class="d-block w-100"
                             alt="..." style="border-radius: 2%">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/bannerbabydee.png" class="d-block w-100"
+                        <img src="images/bannerbabydee.webp" class="d-block w-100"
                             alt="..." style="border-radius: 2%">
                     </div>
                 </div>
