@@ -121,30 +121,30 @@
     <div class="container">
 
         <div class="caption text-center">
-            <img src="images/infografisproduk/evany/logoevany.png" alt="" width="150px">
+            <img src="images/infografisproduk/evany/logoevany.webp" alt="" width="150px">
         </div>
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/evany/evanyinfograph-01.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/evany/evanyinfograph-01.webp" alt=""
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">
-                <img class="aganol2" src="images/infografisproduk/evany/evanyinfograph-02.jpg" alt=""
+                <img class="aganol2" src="images/infografisproduk/evany/evanyinfograph-02.webp" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol3" src="images/infografisproduk/evany/evanyinfograph-03.jpg" alt=""
+                <img class="aganol3" src="images/infografisproduk/evany/evanyinfograph-03.webp" alt=""
                     width="100%" alt="" width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6 mt-3">
-                <img class="aganol4" src="images/infografisproduk/evany/evanyinfograph-04.jpg" alt=""
+                <img class="aganol4" src="images/infografisproduk/evany/evanyinfograph-04.webp" alt=""
                     width="100%" width="100%" style="border-radius: 10%;">
             </div>
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/evany/evanyinfograph-05.jpg" alt="" />
+            <img src="images/infografisproduk/evany/evanyinfograph-05.webp" alt="" />
         </div>
 
         <div class="button-brand">
