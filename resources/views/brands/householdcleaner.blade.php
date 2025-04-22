@@ -147,7 +147,7 @@
 
     <!-- Banner Homepage-->
     <div class="banner-tentang-kami" data-aos="fade-up">
-        <img src="images/householdcleaner.png" class="img-fluid" alt="..." width="100%">
+        <img src="images/householdcleaner.webp" class="img-fluid" alt="..." width="100%">
     </div>
     <!-- End Banner Homepage -->
 
