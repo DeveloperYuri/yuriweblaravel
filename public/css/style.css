@@ -268,6 +268,48 @@ a:active {
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
 
+    #ramahlingkungan{
+        color: #005eb8 !important;
+        margin-top: 10px !important;
+        font-size: 8px !important;
+        width: 100px;
+    }
+
+    #kamimenggunakan{
+        color: #005eb8 !important;
+        margin-top: 30px !important;
+        font-size: 8px;
+        width: 100px;
+    }
+
+    #terjangkau{
+        color: #005eb8 !important;
+        margin-top: 10px !important;
+        font-size: 8px !important;
+    }
+
+    #kamimemberikaproduk{
+        color: #005eb8 !important;
+        margin-top: 30px !important;
+        font-size: 8px;
+        width: 100px;
+    }
+
+    #kamidisini{
+        color: #005eb8 !important;
+        margin-top: 10px !important;
+        font-size: 8px !important;
+        width: 100px;
+    }
+
+    #kamimemberikan{
+        color: #005eb8 !important;
+        margin-top: 30px !important;
+        font-size: 8px;
+        width: 100px;
+    }
+    
+
     #footerprodukaganol{
          height: 50px;
         padding-top: 10px;
@@ -1643,6 +1685,44 @@ a:active {
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
 
+    #ramahlingkungan{
+        color: #005eb8 !important;
+        margin-top: 25px !important;
+        font-size: 18px;
+    }
+
+    #kamimenggunakan{
+        color: #005eb8 !important;
+        margin-top: 100px !important;
+        font-size: 16px;
+    }
+
+    #terjangkau{
+        color: #005eb8 !important;
+        margin-top: 35px !important;
+        font-size: 18px;
+    }
+
+    #kamimemberikaproduk{
+        color: #005eb8 !important;
+        margin-top: 110px !important;
+        font-size: 16px;
+        width: 300px;
+    }
+
+    #kamidisini{
+        color: #005eb8 !important;
+        margin-top: 35px !important;
+        font-size: 18px;
+    }
+
+    #kamimemberikan{
+        color: #005eb8 !important;
+        margin-top: 110px !important;
+        font-size: 16px;
+        width: 200px;
+    }
+
     #footer-childrentoilet{
         height: 50px;
         padding-top: 10px;
@@ -2437,6 +2517,47 @@ a:active {
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
 
+    #ramahlingkungan{
+        color: #005eb8 !important;
+        margin-top: 20px !important;
+        font-size: 14px !important;
+        width: 150px;
+    }
+
+    #kamimenggunakan{
+        color: #005eb8 !important;
+        margin-top: 70px !important;
+        font-size: 12px;
+        width: 150px;
+    }
+
+    #terjangkau{
+        color: #005eb8 !important;
+        margin-top: 25px !important;
+        font-size: 14px !important;
+    }
+
+    #kamimemberikaproduk{
+        color: #005eb8 !important;
+        margin-top: 70px !important;
+        font-size: 12px;
+        width: 150px;
+    }
+
+    #kamidisini{
+        color: #005eb8 !important;
+        margin-top: 25px !important;
+        font-size: 14px !important;
+        width: 150px;
+    }
+
+    #kamimemberikan{
+        color: #005eb8 !important;
+        margin-top: 75px !important;
+        font-size: 12px;
+        width: 200px;
+    }
+
     #footerprodukaganol{
         height: 50px;
        padding-top: 10px;
@@ -2970,6 +3091,44 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
+
+    #ramahlingkungan{
+        color: #005eb8 !important;
+        margin-top: 25px !important;
+        font-size: 18px;
+    }
+
+    #kamimenggunakan{
+        color: #005eb8 !important;
+        margin-top: 100px !important;
+        font-size: 16px;
+    }
+
+    #terjangkau{
+        color: #005eb8 !important;
+        margin-top: 35px !important;
+        font-size: 18px;
+    }
+
+    #kamimemberikaproduk{
+        color: #005eb8 !important;
+        margin-top: 110px !important;
+        font-size: 16px;
+        width: 300px;
+    }
+
+    #kamidisini{
+        color: #005eb8 !important;
+        margin-top: 35px !important;
+        font-size: 18px;
+    }
+
+    #kamimemberikan{
+        color: #005eb8 !important;
+        margin-top: 110px !important;
+        font-size: 16px;
+        width: 200px;
+    }
 
     #footerprodukhandsoap{
         height: 50px;
