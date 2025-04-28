@@ -170,7 +170,54 @@ yang terjangkau oleh semua lapisan masyarakat">
                 </h1>
             </div>
 
-            <div class="row">
+            <div class="row text-center">
+                <!-- Gambar 1 -->
+                <div class="col-4">
+                    <div class="position-relative w-100">
+                        <img src="images/satu.png" class="img-fluid w-100" alt="Gambar 1">
+                        <p id="ramahlingkungan"
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold
+                        fs-lg-3 fs-md-4 fs-sm-5 fs-6 m-0">
+                            @lang('message.RAMAHLINGKUNGAN')</p>
+                        <p id="kamimenggunakan"
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold m-0 w-90 text-center mt-5">
+                            @lang('message.KAMIMENGGUNAKAN')
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gambar 2 -->
+                <div class="col-4">
+                    <div class="position-relative w-100">
+                        <img src="images/dua.png" class="img-fluid w-100" alt="Gambar 2">
+                        <p id="terjangkau" 
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold
+                        fs-lg-3 fs-md-4 fs-sm-5 fs-6 m-0">
+                            @lang('message.TERJANGKAU')</p>
+                        <p id="kamimemberikaproduk"  
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold m-0 w-95 text-center mt-5">
+                            @lang('message.KAMIMEMBERIKANPRODUK')
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gambar 3 -->
+                <div class="col-4">
+                    <div class="position-relative w-100">
+                        <img src="images/tiga.png" class="img-fluid w-100" alt="Gambar 3">
+                        <p id="kamidisini" 
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold
+                        fs-lg-3 fs-md-4 fs-sm-5 fs-6 m-0">
+                        @lang('message.KAMIDISINIUNTUKANDA')</p>
+                        <p id="kamimemberikan" 
+                            class="position-absolute top-50 start-50 translate-middle text-dark fw-bold m-0 w-90 text-center mt-5">
+                            @lang('message.KAMIMEMBERIKANYANGTERBAIK')
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="row">
                 <div id="ramahlingkungan" class="col-4">
                     <img src="images/satu.png" alt="" />
                     <p class="textblockramahlingkungan">Ramah Lingkungan</p>
@@ -189,7 +236,7 @@ yang terjangkau oleh semua lapisan masyarakat">
                     <p class="textblockkamidisiniuntukanda1">Kami memberikan yang <br> terbaik untuk anda
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <!-- End Content1-->
 
