@@ -2,38 +2,37 @@
 
 @section('head')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Yuri Brands">
-    <meta name="keywords" content="yuri brands">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Brands</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Yuri Brands">
+        <meta name="keywords" content="yuri brands">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuri - Brands</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+            rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-NKRW8V3SDC');
-    </script>
-</head>
-
+            gtag('config', 'G-NKRW8V3SDC');
+        </script>
+    </head>
 @endsection
 
 @section('navbar')
@@ -41,7 +40,8 @@
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px" alt="logo"/></a>
+                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px"
+                        alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -154,8 +154,8 @@
                             alt="..." style="border-radius: 2%">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/bannerbabydee.webp" class="d-block w-100"
-                            alt="..." style="border-radius: 2%">
+                        <img src="images/bannerbabydee.webp" class="d-block w-100" alt="..."
+                            style="border-radius: 2%">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -186,8 +186,104 @@
         </div>
         <!-- End Content1-->
 
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/householdcleaner.webp" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Household Cleaner</h4>
+                        <a href="{{ route('brands.householdcleaner') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+             color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/deebrand.png" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">dee-dee</h4>
+                        <a href="{{ route('brands.childrentoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                 color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/babydeebrand.png" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">baby-dee</h4>
+                        <a href="{{ route('brands.babytoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+             color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/evanybaru.png" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">EVANY</h4>
+                        <a href="{{ route('brands.adulttoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+             color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Content Satu -->
-        <div class="row text-center">
+        {{-- <div class="row text-center">
             <div id="gambarhousehold" class="col-4">
                 <img src="images/brands-satu.png" alt="">
             </div>
@@ -248,8 +344,8 @@
             <div id="gambarevany" class="col-4">
                 <img src="images/brands-empat.png" alt="">
             </div>
-        </div>
-        
+        </div> --}}
+
     </div>
     <!-- End Container -->
 
@@ -258,7 +354,8 @@
         <div class="container">
             <div class="row" style="padding-top: 0px;">
                 <div id="footercopyright" class="col-md-8">
-                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>
+                    <p style="font-size: 12px; color: white; padding-top: 5px;">Copyright © {{ date('Y') }} PT Joenoes
+                        Ikamulya.</p>
                 </div>
                 <div id="footercopyright2" class="col-md-4">
                     <a class="petanyaan-privasi" href="#"

@@ -53,7 +53,7 @@ dengan harga terjangkau',
     // Brands
     'YURITELAH' => 'YURI telah diakui sebagai merek terkemuka',
     'YURITELAH2' => 'untuk perawatan rumah serta perawatan anak & pribadi',
-    'MENJADIGROUP' => 'Menjadi grup bisnis yang dinamis dan beragam. Yuri berkomitment akan selalu meningkatkan layanan kami untuk lebih memenuhi kebutuhan konsumen dalam membuat hidup lebih baik bagi konsumen Indonesia dengan menyediakan kualitas produk tanpa komporomi',
+    'MENJADIGROUP' => 'Menjadi grup bisnis yang dinamis dan beragam. Yuri berkomitment akan selalu meningkatkan layanan kami untuk lebih memenuhi kebutuhan konsumen dalam membuat hidup lebih baik bagi konsumen Indonesia dengan menyediakan kualitas produk tanpa kompromi',
     'SELENGKAPNYA' => 'Selengkapnya',
 
     //Media
