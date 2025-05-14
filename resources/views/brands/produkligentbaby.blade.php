@@ -121,11 +121,11 @@
     <div class="container">
 
         <div class="caption text-center mb-3">
-            <img src="images/infografisproduk/yuri/ligentbio/logoligentbio.webp" alt="" width="140px">
+            <img src="images/infografisproduk/yuri/ligentbaby/logoligentbaby.webp" alt="" width="140px">
         </div>
 
          <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/ligentbio/ligentbio-01.webp" alt="yuri bathroom cleaner" />
+            <img src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.webp" alt="yuri bathroom cleaner" />
         </div>
 
         {{-- <div id="imagebrand" class="row mt-3">

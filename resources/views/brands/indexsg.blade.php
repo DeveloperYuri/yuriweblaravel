@@ -239,7 +239,42 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 position-relative">
+                    <div style="position: relative;">
+                        <img src="images/evanybaru.png" class="card-img-top" alt="..."
+                            style="height: 100%; width: 100%; object-fit: cover;">
+
+                        <!-- Box Coming Soon -->
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; 
+                    transform: translate(-50%, -50%);
+                    background-color: rgba(0, 0, 0, 0.6); 
+                    color: white; padding: 10px 20px; 
+                    border-radius: 8px; font-weight: bold; 
+                    font-size: 18px; z-index: 10;">
+                            Coming Soon
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Adult Toiletries</h4>
+                        <a href="{{ route('brands.adulttoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                       color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                {{-- <div class="card h-100">
                     <img src="images/evanybaru.png" class="card-img-top" alt="..."
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
@@ -259,7 +294,7 @@
                             </span>
                         </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 

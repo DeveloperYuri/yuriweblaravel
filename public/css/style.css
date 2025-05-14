@@ -3092,6 +3092,15 @@ a:active {
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
 
+
+    #footerprodukligent{
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
+    
     #ramahlingkungan{
         color: #005eb8 !important;
         margin-top: 25px !important;

@@ -45,6 +45,7 @@ Route::get('/glasscleaner', [HomeController::class,'glasscleanerproduk'])->name(
 Route::get('/handgel', [HomeController::class,'handgelproduk'])->name('brands.handgel');
 Route::get('/handsoap', [HomeController::class,'handsoapproduk'])->name('brands.handsoap');
 Route::get('/ligent', [HomeController::class,'ligentproduk'])->name('brands.ligent');
+Route::get('/ligentbaby', [HomeController::class,'ligentbabyproduk'])->name('brands.ligentbaby');
 Route::get('/lysorin', [HomeController::class,'lysorinproduk'])->name('brands.lysorin');
 Route::get('/yurisoft', [HomeController::class,'yurisoftproduk'])->name('brands.yurisoft');
 Route::get('/porstex', [HomeController::class,'porstexproduk'])->name('brands.porstex');

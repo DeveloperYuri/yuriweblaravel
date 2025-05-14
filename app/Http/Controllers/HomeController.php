@@ -193,6 +193,11 @@ class HomeController extends Controller
         return view('brands.produkligent');
     }
 
+    public function ligentbabyproduk()
+    {
+        return view('brands.produkligentbaby');
+    }
+
     public function lysorinproduk()
     {
         return view('brands.produklysorin');
