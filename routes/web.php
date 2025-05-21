@@ -33,7 +33,7 @@ Route::get('/childrentoilet', [HomeController::class,'childrentoilet'])->name('b
 Route::get('/babytoilet', [HomeController::class,'babytoilet'])->name('brands.babytoilet');
 Route::get('/adulttoilet', [HomeController::class,'adulttoilet'])->name('brands.adulttoilet');
 
-//Produk
+//Produk Household Cleaner
 Route::get('/aganol', [HomeController::class,'aganolproduk'])->name('brands.aganol');
 Route::get('/babysoft', [HomeController::class,'babysoftproduk'])->name('brands.babysoft');
 Route::get('/biosoftdetergen', [HomeController::class,'biosoftdetergenproduk'])->name('brands.biosoftdetergen');
@@ -58,6 +58,17 @@ Route::get('/tril', [HomeController::class,'trilproduk'])->name('brands.tril');
 Route::get('/laundrydisinfektant', [HomeController::class,'laundrydisinfektantproduk'])->name('brands.laundrydisinfektant');
 Route::get('/disinfektantspray', [HomeController::class,'disinfektantsprayproduk'])->name('brands.disinfektantspray');
 Route::get('/handmoisturizer', [HomeController::class,'handmoisturizerproduk'])->name('brands.handmoisturizer');
+
+//Produk dee dee
+Route::get('/childrenshairshampoo', [HomeController::class,'childrenshairshampoo'])->name('brands.childrenshairshampoo');
+Route::get('/childrensbodywash', [HomeController::class,'childrensbodywash'])->name('brands.childrensbodywash');
+Route::get('/mosquitoreppellentlotion', [HomeController::class,'mosquitoreppellentlotion'])->name('brands.mosquitoreppellentlotion');
+Route::get('/childrensshowerfoaming', [HomeController::class,'childrensshowerfoaming'])->name('brands.childrensshowerfoaming');
+Route::get('/childrenstalcumpowder', [HomeController::class,'childrenstalcumpowder'])->name('brands.childrenstalcumpowder');
+Route::get('/childrenstoothpasta', [HomeController::class,'childrenstoothpasta'])->name('brands.childrenstoothpasta');
+Route::get('/shampoolonghair', [HomeController::class,'shampoolonghair'])->name('brands.shampoolonghair');
+Route::get('/childrensfacialwash', [HomeController::class,'childrensfacialwash'])->name('brands.childrensfacialwash');
+
 
 //FAQ
 Route::get('/faq', [HomeController::class,'faq'])->name('index.faq');

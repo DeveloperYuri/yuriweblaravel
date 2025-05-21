@@ -197,7 +197,7 @@
                     <img src="images/deebrand.png" class="card-img-top" alt="..."
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
-                        <h4 class="card-title fw-bold" style="color: #005EB8">dee-dee</h4>
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Children Toiletries</h4>
                         <a href="{{ route('brands.childrentoilet') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
@@ -220,7 +220,7 @@
                     <img src="images/babydeebrand.png" class="card-img-top" alt="..."
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
-                        <h4 class="card-title fw-bold" style="color: #005EB8">baby-dee</h4>
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Baby Toiletries</h4>
                         <a href="{{ route('brands.babytoilet') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"

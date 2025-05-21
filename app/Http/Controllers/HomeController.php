@@ -256,6 +256,42 @@ class HomeController extends Controller
         return view('brands.produkhandmoisturizer');
     }
 
+    // Produk dee dee
+    public function childrenshairshampoo()
+    {
+        return view('brands.produkdee.childrenshairshampoo');
+    }
+
+    public function childrensbodywash()
+    {
+        return view('brands.produkdee.childrensbodywash');
+    }
+
+    public function mosquitoreppellentlotion()
+    {
+        return view('brands.produkdee.mosquitoreppellentlotion');
+    }
+    public function childrensshowerfoaming()
+    {
+        return view('brands.produkdee.childrensshowerfoaming');
+    }
+    public function childrenstalcumpowder()
+    {
+        return view('brands.produkdee.childrenstalcumpowder');
+    }
+    public function childrenstoothpasta()
+    {
+        return view('brands.produkdee.childrenstoothpasta');
+    }
+    public function shampoolonghair()
+    {
+        return view('brands.produkdee.shampoolonghair');
+    }
+    public function childrensfacialwash()
+    {
+        return view('brands.produkdee.childrensfacialwash');
+    }
+
     public function faq(Request $request)
     {
 

@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Yuri Baby Toiletries Produk">
-    <meta name="keywords" content="baby toiletries, yuri baby toiletries">
+    <meta name="description" content="Yuri Aganol Produk">
+    <meta name="keywords" content="aganol, yuri aganol">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuri - Baby Toiletries</title>
+    <title>Yuri - Aganol</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
@@ -118,39 +118,20 @@
 @endsection
 
 @section('content')
-    <!-- Container -->
     <div class="container">
-        {{-- <div class="caption text-center mt-3">
-            <img src="images/logobabydee.png" alt="">
+
+        {{-- <div class="caption text-center">
+            <img src="images/infografisproduk/yuri/aganol/logoaganol.webp" alt="logoaganol" width="150px">
         </div> --}}
 
-         <div class="babydeegeneral">
-            <img src="images/infografisproduk/babydee/bbdinfographic-01.jpg" alt="" />
-        </div>
-
-        <div id="imagebrandbabydee" class="row mt-3">
-            <div class="col-6">
-                <img class="babydee1" src="images/infografisproduk/babydee/testbrandimage.png" alt="" width="100%"
-                    style="border-radius: 10%;">
-            </div>
-            <div class="col-6">
-                <img class="babydee2" src="images/infografisproduk/babydee/testbrandimagebabylotion.png" alt=""
-                    width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6">
-                <img class="babydee3 mt-3 " src="images/infografisproduk/babydee/testbrandimagebabypowder.png"
-                    alt="" width="100%" style="border-radius: 10%;">
-            </div>
-            <div class="col-6">
-                <img class="babydee4 mt-3 " src="images/infografisproduk/babydee/testbrandimagediaper.png" alt=""
-                    width="100%" style="border-radius: 10%;">
-            </div>
+        <div class="aganolgeneral mt-3">
+            <img src="images/infografisproduk/deedee/ddinfograph-05.webp" alt="infografisaganol5" />
         </div>
 
         <div class="button-brand">
-            <a href="https://www.yurishop.co/id/category/baby" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
+            <a href="https://www.yurishop.co/id/category/Children/Talcum-Powder" target="_blank"><img src="images/bingkai klik-8.png" class="img-fluid"
                     alt="Responsive image" width="30%" height="10%">
-                <div class="centered">Beli Sekarang</div>
+                <div class="centered"><strong>Beli Sekarang</strong></div>
             </a>
         </div>
 
@@ -158,12 +139,11 @@
     <!-- End Container -->
 
     <!-- Start Footer -->
-    <div id="footer-babytoilet" class="card-footer text-body-secondary bg-dark text-center"
+    <div id="footerprodukaganol" class="card-footer text-body-secondary bg-dark text-center"
         style="margin-top: 30px; height: 40px; padding-top: 5px;">
         <div style="margin-top: 5px;">
             <p style="font-size: 12px; color: white">Copyright © {{ date('Y')}} PT Joenoes Ikamulya.</p>
         </div>
-
     </div>
     <!-- End Footer -->
 @endsection
