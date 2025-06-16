@@ -116,6 +116,12 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.event') }}"
+                                style="color: #005EB8">EVENT</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>

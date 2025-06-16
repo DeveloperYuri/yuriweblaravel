@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | Produk Baru</title>
+    <title>Dashboard | Buat Artikel</title>
 
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
 
@@ -26,6 +26,12 @@
 
 
 </head>
+
+<style>
+    .ck-editor__editable {
+        min-height: 300px;
+    }
+</style>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -71,7 +77,6 @@
 
             <!-- Sidebar -->
             <div class="sidebar">
-
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
                     <div class="input-group" data-widget="sidebar-search">
@@ -119,7 +124,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
@@ -128,7 +133,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('listevent') }}" class="nav-link">
+                            <a href="{{ route('listevent') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Event
@@ -159,12 +164,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Daftar Produk Baru</h1>
+                            <h1>Edit Event Baru</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Produk Baru</li>
+                                <li class="breadcrumb-item active">Event</li>
                             </ol>
                         </div>
                     </div>
@@ -175,69 +180,51 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('produkbaru.create') }}" class="btn btn-md btn-primary mb-3"><i
-                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Produk</a>
+                        <a href="{{ route('listevent') }}" class="btn btn-success mb-3"><i
+                                class="fas fa-undo"></i>&nbsp Kembali </a>
 
-                        <form method="get">
-                            <div class="form-row text">
-                                <div class="col-9">
-                                    <input type="text" class="form-control" value="{{ Request()->description }}"
-                                        placeholder="Searching Description" name="description">
-                                </div>
-                                <div class="col-2">
-                                    <button type="submit" class="btn btn-success mb-2">Search</button>
-                                </div>
+                        <form action="{{ route('editeventpost', $events->id) }}" method="POST" enctype="multipart/form-data">
+                            @method('PUT')
+                            @csrf
 
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">IMAGE</label>
+                                <br>
+
+                                <img src="{{ asset('storage/event/' . $events->image) }}"
+                                    alt="{{ $events->image }}" width="60px">
+
+
+                                <input type="file" class="form-control @error('image') is-invalid @enderror mt-2"
+                                    name="image" value="{{ old('image', $events->image) }}">
+
+                                <!-- error message untuk image -->
+                                @error('image')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
+
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <input type="text" class="form-control @error('description') is-invalid @enderror"
+                                    name="description" value="{{ old('description', $events->description) }}"
+                                    placeholder="Masukkan Description Event">
+
+                                <!-- error message untuk title -->
+                                @error('title')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <button type="submit" class="btn btn-md btn-primary me-3"><i
+                                    class="fas fa-save"></i>&nbsp Save</button>
+
                         </form>
 
-                        <table class="table mb-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Image</th>
-                                    <th scope="col" class="text-center">Description</th>
-                                    <th scope="col" class="text-center">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @forelse ($getRecord as $key => $produks)
-                                    <tr>
-                                        <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
-                                        <td class="text-center">
-                                            <img src="{{ asset('/storage/produkbaru/' . $produks->image) }}"
-                                                class="rounded" style="width: 100px" height="70px">
-                                        </td>
-
-                                        <td class="text-center">{{ $produks->description }}</td>
-
-                                        <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('produkbaru.destroy', $produks->id) }}"
-                                                method="POST">
-                                                <a href="{{ route('produkbaru.show', $produks->id) }}"
-                                                    class="btn btn-sm btn-success mt-2">SHOW</a>
-                                                <a href="{{ route('produkbaru.edit', $produks->id) }}"
-                                                    class="btn btn-sm btn-warning mt-2">EDIT</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit"
-                                                    class="btn btn-sm btn-danger mt-2">HAPUS</button>
-                                            </form>
-                                        </td>
-
-                                    </tr>
-                                @empty
-                                    <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
-                                    </div>
-                                @endforelse
-                            </tbody>
-                        </table>
-                        <div style="padding: 10px; float: right;">
-                            {!! $getRecord->appends(Illuminate\Support\Facades\Request::except('page'))->links() !!}
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -283,6 +270,45 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('template/dist/js/demo.js') }}"></script>
     <!-- Page specific script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+
+    <script>
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('textarea'))
+
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+            })
+            .catch(error => {
+                console.error('Error during initialization of the editor', error);
+            });
+    </script>
+
+    <script>
+        //message with sweetalert
+        @if (session('success'))
+            Swal.fire({
+                icon: "success",
+                title: "BERHASIL",
+                text: "{{ session('success') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @elseif (session('error'))
+            Swal.fire({
+                icon: "error",
+                title: "GAGAL!",
+                text: "{{ session('error') }}",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        @endif
+    </script>
+
     <script>
         $(function() {
             $("#example1").DataTable({

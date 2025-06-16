@@ -5,8 +5,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="description"
-            content="Yuri  berkomitmen untuk menghasilkan produk berkualitas internasional
-yang terjangkau oleh semua lapisan masyarakat">
+            content="Kenali brand YURI, Produk Kebersihan Keluarga dan Rumah Tangga dari PT Joenoes Ikamulya. Kunjungi situs resmi kami!">
+
         <meta name="keywords" content="yuri, yuri indonesia">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Yuri - Home Page</title>
@@ -21,6 +21,34 @@ yang terjangkau oleh semua lapisan masyarakat">
         <link
             href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Itim&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
             rel="stylesheet">
+
+        <link rel="canonical" href="https://www.yuri-indonesia.co.id" />
+        <meta property="og:title"
+            content="YURI | Produk Kebersihan Keluarga dan Rumah Tangga dari PT Joenoes Ikamulya" />
+        <meta property="og:description"
+            content="Produk Kebersihan Keluarga dan Rumah Tangga dari PT Joenoes Ikamulya. Cek semua produk YURI sekarang!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.yuri-indonesia.co.id" />
+        <meta property="og:image" content="https://www.yuri-indonesia.co.id/images/logo-8.png" />
+
+        <!-- Schema Markup -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "YURI",
+                "url": "https://www.yuri-indonesia.co.id",
+                "logo": "https://www.yuri-indonesia.co.id/images/logo-8.png",
+                "sameAs": [
+                 "https://www.instagram.com/yurihousehold/"
+             ],
+                "contactPoint": {
+                 "@type": "ContactPoint",
+                 "telephone": "+62-21 460 2447",
+                 "contactType": "customer service"
+                }
+            }
+         </script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKRW8V3SDC"></script>
@@ -112,6 +140,11 @@ yang terjangkau oleh semua lapisan masyarakat">
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="{{ route('index.event') }}"
+                                style="color: #005EB8">EVENT</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -140,8 +173,8 @@ yang terjangkau oleh semua lapisan masyarakat">
         <!-- End Button Language -->
 
         <!--
-                                        <button onclick="myFunction()">Replace document</button>
-                                        -->
+                                                        <button onclick="myFunction()">Replace document</button>
+                                                        -->
 
 
         <!-- Banner Homepage-->
@@ -179,7 +212,7 @@ yang terjangkau oleh semua lapisan masyarakat">
                     @lang('message.NILAIKEUNGGULAN')
                 </h1>
             </div>
-            
+
 
             <div class="row text-center">
                 <!-- Gambar 1 -->
@@ -201,11 +234,11 @@ yang terjangkau oleh semua lapisan masyarakat">
                 <div class="col-4">
                     <div class="position-relative w-100">
                         <img src="images/dua.png" class="img-fluid w-100" alt="Gambar 2">
-                        <p id="terjangkau" 
+                        <p id="terjangkau"
                             class="position-absolute top-50 start-50 translate-middle text-dark fw-bold
                         fs-lg-3 fs-md-4 fs-sm-5 fs-6 m-0">
                             @lang('message.TERJANGKAU')</p>
-                        <p id="kamimemberikaproduk"  
+                        <p id="kamimemberikaproduk"
                             class="position-absolute top-50 start-50 translate-middle text-dark fw-bold m-0 w-95 text-center mt-5">
                             @lang('message.KAMIMEMBERIKANPRODUK')
                         </p>
@@ -216,11 +249,11 @@ yang terjangkau oleh semua lapisan masyarakat">
                 <div class="col-4">
                     <div class="position-relative w-100">
                         <img src="images/tiga.png" class="img-fluid w-100" alt="Gambar 3">
-                        <p id="kamidisini" 
+                        <p id="kamidisini"
                             class="position-absolute top-50 start-50 translate-middle text-dark fw-bold
                         fs-lg-3 fs-md-4 fs-sm-5 fs-6 m-0">
-                        @lang('message.KAMIDISINIUNTUKANDA')</p>
-                        <p id="kamimemberikan" 
+                            @lang('message.KAMIDISINIUNTUKANDA')</p>
+                        <p id="kamimemberikan"
                             class="position-absolute top-50 start-50 translate-middle text-dark fw-bold m-0 w-90 text-center mt-5">
                             @lang('message.KAMIMEMBERIKANYANGTERBAIK')
                         </p>
@@ -264,27 +297,27 @@ yang terjangkau oleh semua lapisan masyarakat">
 
 
             <!--
-                                                        <div class="d-flex p-3 justify-content-center">
-                                                            <div id="ramahlingkungan" class="p-2">
-                                                                <img src="images/satu.png" alt="" />
-                                                                <p class="textblockramahlingkungan">Ramah Lingkungan</p>
-                                                                <p class="textblockramahlingkungan1">Kami menggunakan formula
-                                                                    <br>biodegradable.
-                                                                </p>
-                                                            </div>
-                                                            <div id="terjangkau" class="p-2">
-                                                                <img src="images/dua.png" alt="" />
-                                                                <p class="textblockterjangkau">Terjangkau</p>
-                                                                <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
-                                                            </div>
-                                                            <div id="kamidisiniuntukanda" class="p-2">
-                                                                <img src="images/tiga.png" alt="" />
-                                                                <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
-                                                                <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    -->
+                                                                        <div class="d-flex p-3 justify-content-center">
+                                                                            <div id="ramahlingkungan" class="p-2">
+                                                                                <img src="images/satu.png" alt="" />
+                                                                                <p class="textblockramahlingkungan">Ramah Lingkungan</p>
+                                                                                <p class="textblockramahlingkungan1">Kami menggunakan formula
+                                                                                    <br>biodegradable.
+                                                                                </p>
+                                                                            </div>
+                                                                            <div id="terjangkau" class="p-2">
+                                                                                <img src="images/dua.png" alt="" />
+                                                                                <p class="textblockterjangkau">Terjangkau</p>
+                                                                                <p class="textblockterjangkau1">Kami memberikan produk <br>dengan harga terjangkau</p>
+                                                                            </div>
+                                                                            <div id="kamidisiniuntukanda" class="p-2">
+                                                                                <img src="images/tiga.png" alt="" />
+                                                                                <p class="textblockkamidisiniuntukanda">Kami Disini Untuk Anda</p>
+                                                                                <p class="textblockkamidisiniuntukanda1">Kami selalu memberikan <br> yang terbaik untuk kebutuhan anda
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    -->
 
         </div>
         <!-- End Content1-->

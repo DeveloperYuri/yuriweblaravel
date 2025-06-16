@@ -119,7 +119,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Produk Baru
@@ -128,7 +128,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('listevent') }}" class="nav-link">
+                            <a href="{{ route('produkbaru.index') }}" class="nav-link active">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Event
@@ -159,12 +159,12 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Daftar Produk Baru</h1>
+                            <h1>Daftar Event</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Produk Baru</li>
+                                <li class="breadcrumb-item active">Event</li>
                             </ol>
                         </div>
                     </div>
@@ -175,8 +175,8 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <a href="{{ route('produkbaru.create') }}" class="btn btn-md btn-primary mb-3"><i
-                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Produk</a>
+                        <a href="{{ route('createevent') }}" class="btn btn-md btn-primary mb-3"><i
+                                class="nav-icon fas fa-pencil-alt "></i>&nbsp Upload Event</a>
 
                         <form method="get">
                             <div class="form-row text">
@@ -205,7 +205,7 @@
                                     <tr>
                                         <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
                                         <td class="text-center">
-                                            <img src="{{ asset('/storage/produkbaru/' . $produks->image) }}"
+                                            <img src="{{ asset('/storage/event/' . $produks->image) }}"
                                                 class="rounded" style="width: 100px" height="70px">
                                         </td>
 
@@ -213,11 +213,11 @@
 
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('produkbaru.destroy', $produks->id) }}"
+                                                action="{{ route('deleteevent', $produks->id) }}"
                                                 method="POST">
-                                                <a href="{{ route('produkbaru.show', $produks->id) }}"
+                                                <a href="{{ route('showevent', $produks->id) }}"
                                                     class="btn btn-sm btn-success mt-2">SHOW</a>
-                                                <a href="{{ route('produkbaru.edit', $produks->id) }}"
+                                                <a href="{{ route('editevent', $produks->id) }}"
                                                     class="btn btn-sm btn-warning mt-2">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
@@ -228,8 +228,8 @@
 
                                     </tr>
                                 @empty
-                                    <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                                    <div class="alert alert-danger text-center">
+                                        Tidak Ada Event
                                     </div>
                                 @endforelse
                             </tbody>
