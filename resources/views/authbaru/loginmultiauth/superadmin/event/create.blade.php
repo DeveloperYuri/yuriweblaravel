@@ -205,7 +205,33 @@
                                     name="description" value="{{ old('description') }}" placeholder="Masukkan Description Event">
 
                                 <!-- error message untuk title -->
-                                @error('title')
+                                @error('description')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Link Instagram</label>
+                                <input type="text" class="form-control @error('link_instagram') is-invalid @enderror"
+                                    name="link_instagram" value="{{ old('link_instagram') }}" placeholder="Masukkan Link Instagram Event">
+
+                                <!-- error message untuk title -->
+                                @error('link_instagram')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Link Daftar Event</label>
+                                <input type="text" class="form-control @error('link_daftar') is-invalid @enderror"
+                                    name="link_daftar" value="{{ old('link_daftar') }}" placeholder="Masukkan Daftar Event">
+
+                                <!-- error message untuk title -->
+                                @error('link_daftar')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

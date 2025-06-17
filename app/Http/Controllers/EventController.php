@@ -43,7 +43,9 @@ class EventController extends Controller
         //validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:20048',
-            'description'   => 'required|min:1'
+            'description'   => 'required|min:1',
+            'link_instagram'   => 'required|min:1',
+            'link_daftar'   => 'required|min:1'
         ]);
 
         //upload image
@@ -54,13 +56,15 @@ class EventController extends Controller
         EventModel::create([
             'image'         => $image->hashName(),
             'description'   => $request->description,
+            'link_instagram'   => $request->link_instagram,
+            'link_daftar'   => $request->link_daftar,
         ]);
 
         //redirect to index
         return redirect()->route('listevent')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 
-     public function editevent(string $id)
+    public function editevent(string $id)
     {
         $events = EventModel::findOrFail($id);
         return view('authbaru.loginmultiauth.superadmin.event.edit', compact('events'));
@@ -71,7 +75,9 @@ class EventController extends Controller
         //validate form
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
-            'description'   => 'required|min:5'
+            'description'   => 'required|min:5',
+            'link_instagram'   => 'required|min:1',
+            'link_daftar'   => 'required|min:1'
         ]);
 
         //get product by ID
@@ -90,13 +96,17 @@ class EventController extends Controller
             //update product with new image
             $events->update([
                 'image'         => $image->hashName(),
-                'description'   => $request->description
+                'description'   => $request->description,
+                'link_instagram'   => $request->link_instagram,
+                'link_daftar'   => $request->link_daftar
             ]);
         } else {
 
             //update product without image
             $events->update([
                 'description'   => $request->description,
+                'link_instagram'   => $request->link_instagram,
+                'link_daftar'   => $request->link_daftar
             ]);
         }
 

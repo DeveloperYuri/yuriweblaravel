@@ -33,6 +33,18 @@
             gtag('config', 'G-NKRW8V3SDC');
         </script>
     </head>
+    
+    <style>
+        .img-hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 4%;
+        }
+
+        .img-hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 @endsection
 
 @section('navbar')
@@ -152,36 +164,27 @@
         <div class="text-center mt-2 mb-3">
             <h1 style="color: #005EB8;">DAFTAR EVENT</h1>
         </div>
-        <div class="row mt-2">
+       <div class="row mt-2">
 
-            <!-- Banner Homepage-->
-            <div class="banner-home" data-aos="fade-up">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        @forelse ($events as $e)
-                            <div class="carousel-item active text-center" data-bs-interval="10000">
-                                <img src="{{ asset('/storage/event/' . $e->image) }}" class="card-img-top "
-                                    alt="..." style="border-radius: 4%; width: 70%; height: 70%;">
-                            </div>
-                        @empty
-                            <div class="alert alert-danger">
-                                Data Products belum Tersedia.
-                            </div>
-                        @endforelse
+            @forelse ($events as $e)
+                <div class="col-lg-4 mt-4">
+
+                    <a href="{{ $e->link_instagram }}" target="_blank">
+                        <img src="{{ asset('/storage/event/' . $e->image) }}" class="card-img-top img-hover-lift"
+                            alt="..." width="450px" height="370px">
+                    </a>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="{{ $e->link_daftar }}" class="btn btn-primary mt-3 text-center fw-bold"
+                            target="_blank">Daftar Disini</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
-            <!-- End Banner Homepage -->
+
+            @empty
+                <div class="alert alert-danger">
+                    Tidak Ada Event
+                </div>
+            @endforelse
 
         </div>
 

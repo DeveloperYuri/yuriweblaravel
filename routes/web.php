@@ -127,7 +127,7 @@ Route::group(['middleware' => 'admin'], function () {
     // Route::post('logout', [DashboardControllerBaru::class, 'logout']);
 });
 
-// Dashboard Baru
+// Dashboard Media
 Route::get('/superadmin/artikel', [DashboardControllerBaru::class, 'dashboardartikel'])->name('superadmindashboard.artikel');
 Route::get('/superadmin/create', [DashboardControllerBaru::class, 'create'])->name('superadmindashboard.create');
 Route::post('/superadmin/store', [DashboardControllerBaru::class, 'store'])->name('superadmindashboard.store');

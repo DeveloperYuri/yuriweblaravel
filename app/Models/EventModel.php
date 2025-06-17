@@ -14,7 +14,9 @@ class EventModel extends Model
 
     protected $fillable = [
         'image',
-        'description'
+        'description',
+        'link_instagram',
+        'link_daftar'
     ];
 
     static public function getRecord($request)

@@ -1,0 +1,7 @@
+-- Budi 16-06-2025 --
+CREATE TABLE event (
+    id int AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(255),
+    description TEXT,
+    created_at 
+);
