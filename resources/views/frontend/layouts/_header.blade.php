@@ -70,19 +70,19 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->is('artikelupdate') ? 'active' : '' }}"
-                                aria-current="page" href="{{ route('artikelupdate') }}" style="color: #005EB8">ARTIKEL
+                                aria-current="page" href="{{ route('artikelupdate')}}" style="color: #005EB8">ARTIKEL
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->is('mediaupdate') ? 'active' : '' }}"
-                                aria-current="page" href="{{ route('mediaupdate') }}"
+                                aria-current="page" href="#"
                                 style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->is('produkbaruupdate') ? 'active' : '' }}"
-                                aria-current="page" href="{{ route('produkbaruupdate') }}"
+                                aria-current="page" href="#"
                                 style="color: #005EB8">@lang('message.PRODUKBARU')</a>
                         </li>
 

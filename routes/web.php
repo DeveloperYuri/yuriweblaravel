@@ -174,11 +174,13 @@ Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class, 'showindex'])
 
 
 // Update semua 
+
+// Frontend Website
 Route::get('/homepageupdate', [HomeControllerUpdate::class, 'index'])->name('indexupdate');
 Route::get('/tentangkamiupdate', [HomeControllerUpdate::class, 'tentangKami'])->name('tentangkamiupdate');
 Route::get('/brandsupdate', [HomeControllerUpdate::class, 'brands'])->name('brandsupdate');
-Route::get('/artikelupdate', [ArtikelUpdateController::class, 'index'])->name('artikelupdate');
-Route::get('/mediaupdate', [MediaUpdateController::class, 'index'])->name('mediaupdate');
+Route::get('/artikelupdate', [HomeControllerUpdate::class, 'artikel'])->name('artikelupdate');
+Route::get('/mediaupdate', [HomeControllerUpdate::class, 'media'])->name('mediaupdate');
 Route::get('/produkbaruupdate', [HomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
 Route::get('/kontakupdate', [HomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
 Route::get('/distributorupdate', [HomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
@@ -221,7 +223,7 @@ Route::get('/myprofile', [UserController::class, 'myprofile'])->name('myprofile'
 Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 Route::get('logout', [V2DashboardController::class, 'logout']);
 
-Route::get('/artikelupdate', [V2ArticleController::class, 'index'])->name('indexarticle');
+// Route::get('/artikelupdate', [V2ArticleController::class, 'index'])->name('indexarticle');
 Route::get('/artikeldetail/{slug}', [V2ArticleController::class, 'index'])->name('indexarticledetail');
 Route::get('/addarticle', [V2ArticleController::class, 'addarticle'])->name('addarticle');
 Route::get('/editarticle/{id}', [V2ArticleController::class, 'editarticle'])->name('editarticle');
@@ -237,7 +239,7 @@ Route::post('/updatecategory/{id}', [V2CategoryController::class, 'updatecategor
 Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecategory'])->name('deletecategory');
 
 
-Route::get('/mediaupdate', [V2CategoryController::class, 'indexmedia'])->name('indexmedia');
+// Route::get('/mediaupdate', [V2CategoryController::class, 'indexmedia'])->name('indexmedia');
 
 
 Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');

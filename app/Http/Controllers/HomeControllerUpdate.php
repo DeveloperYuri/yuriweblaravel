@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\ArtikelBaru;
+use App\Models\MediaModel;
 use App\Models\ProdukBaru;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -62,6 +64,43 @@ class HomeControllerUpdate extends Controller
         }
     }
 
+    public function artikel(Request $request)
+    {
+
+        $ip = '116.50.29.50'; // $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+            $artikelbaru = ArtikelBaru::latest()->paginate(9);
+            return view('frontend.artikel.index', compact('artikelbaru'));
+        } else {
+            $artikelbaru = ArtikelBaru::latest()->paginate(9);
+            return view('artikelbaru.index', compact('artikelbaru'));
+            return view('frontend.artikel.indexsg');
+        }
+    }
+
+    public function media(Request $request)
+    {
+
+        $ip = '116.50.29.50'; // $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+
+            $media = MediaModel::latest()->paginate(9);
+            return view('frontend.media.index', compact('media'));
+
+        } else {
+
+            $media = MediaModel::latest()->paginate(9);
+            return view('frontend.media.index', compact('media'));
+
+        }
+    }
+
     public function produkBaru(Request $request)
     {
 
@@ -108,6 +147,8 @@ class HomeControllerUpdate extends Controller
         }
     }
 
+
+    // Brands 
     public function householdcleaner()
     {
         return view('frontend.brands.householdcleaner');
@@ -244,5 +285,4 @@ class HomeControllerUpdate extends Controller
             return view('frontend.faq.indexsg');
         }
     }
-
 }

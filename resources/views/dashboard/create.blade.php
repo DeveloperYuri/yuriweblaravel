@@ -25,11 +25,11 @@
 
 </head>
 
-<style>
+{{-- <style>
     .ck-editor__editable {
         min-height: 300px;
     }
-</style>
+</style> --}}
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -178,7 +178,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
-                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description"
+                                <textarea id="description" class="form-control tinymce-editor @error('description') is-invalid @enderror" name="description"
                                     rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
 
                                 <!-- error message untuk description -->
@@ -241,7 +241,10 @@
     <!-- Page specific script -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
 
 
     <script>
@@ -255,7 +258,7 @@
             .catch(error => {
                 console.error('Error during initialization of the editor', error);
             });
-    </script>
+    </script> --}}
 
     <script>
         //message with sweetalert

@@ -34,6 +34,25 @@ yang terjangkau oleh semua lapisan masyarakat">
             gtag('config', 'G-NKRW8V3SDC');
         </script>
     </head>
+
+    <style>
+        .artikel-content-satu img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            /* opsional: biar center */
+        }
+
+        .banner-img {
+            max-width: 600px;
+            /* Ukuran maksimum gambar */
+            width: 100%;
+            /* Supaya tetap responsif */
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 @endsection
 
 @section('navbar')
@@ -125,17 +144,25 @@ yang terjangkau oleh semua lapisan masyarakat">
         </div>
 
         <div class="daysarticle text-center" style="font-size: 12px">
-            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }} | <img src="{{ asset('images/eye-view-icon-png.webp')}}" alt="" width="34px" height="34px"><span style="margin-left:-1px">{{ $artikelbaru->viewer }}</span></p>
+            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }} | <img
+                    src="{{ asset('images/eye-view-icon-png.webp') }}" alt="" width="34px"
+                    height="34px"><span style="margin-left:-1px">{{ $artikelbaru->viewer }}</span></p>
         </div>
 
         <!-- Banner Homepage-->
-        <div class="banner-article1 text-center" data-aos="fade-up">
-            <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid" alt="...">
+
+        <div class="text-center" data-aos="fade-up">
+            <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid banner-img"
+                alt="...">
         </div>
+
+        {{-- <div class="text-center" data-aos="fade-up">
+            <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid" alt="...">
+        </div> --}}
         <!-- End Banner Homepage -->
 
-        <!-- Content1 -->
-        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
+        <!-- Content1 --> 
+        <div class="artikel-content-satu " style="margin-top: 20px; text-align:justify" data-aos="fade-up">
 
             {!! $artikelbaru->description !!}
 

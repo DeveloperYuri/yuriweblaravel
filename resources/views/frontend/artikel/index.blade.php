@@ -1,9 +1,27 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Artikel')
+@section('title', 'Home Page')
+
+@section('content')
 
 @section('content')
     <div class="container">
+
+        <!-- Start Button Language -->
+        <div class="language mb-2" style="display:flex; justify-content:flex-end;">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="padding-top: 1px">
+                    <span style="font-size: 11px;">Language</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="locale/en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Button Language -->
+
         <!-- Content1 -->
         <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1 mb-5">
@@ -71,17 +89,15 @@
                 <div class="col-lg-4 mb-3">
                     <h5>Category</h5>
                     <ul class="list-group">
-
-                        @foreach ($getCategory as $category)
-                            
-                        @endforeach
                         <li class="list-group-item active" aria-current="true"><a href=""
-                                style="color: white; font-weight:bold">{{ $category->name}}</a></li>
+                                style="color: white; font-weight:bold">Pembersih Rumah Tangga</a></li>
+                        <li class="list-group-item"><a href=""
+                                style="color: #005EB8; font-weight:bold">Anak-Anak</a></li>
+                        <li class="list-group-item"><a href="" style="color: #005EB8; font-weight:bold">Bayi</a>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- End Content1-->
 
