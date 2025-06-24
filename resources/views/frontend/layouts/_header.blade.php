@@ -76,13 +76,13 @@
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->is('mediaupdate') ? 'active' : '' }}"
-                                aria-current="page" href="#"
+                                aria-current="page" href="{{ route('mediaupdate')}}"
                                 style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->is('produkbaruupdate') ? 'active' : '' }}"
-                                aria-current="page" href="#"
+                                aria-current="page" href="{{ route('produkbaruupdate')}}"
                                 style="color: #005EB8">@lang('message.PRODUKBARU')</a>
                         </li>
 
@@ -98,6 +98,12 @@
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold {{ request()->is('eventupdate') ? 'active' : '' }}"
+                                aria-current="page" href="{{ route('eventupdate') }}"
+                                style="color: #005EB8">EVENT</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -106,7 +112,7 @@
     <!--End Navbar Menu-->
 
      <!-- Start Button Language -->
-     <div class="language" style="display:flex; justify-content:flex-end; margin-top:-9px">
+     <div class="language mt-1" style="display:flex; justify-content:flex-end; margin-top:-9px">
         <div class="btn-group">
             <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" style="padding-top: 1px">

@@ -1,17 +1,28 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Ligent')
+@section('title', 'Ligent Baby')
 
 @section('content')
     <div class="container">
 
         <div class="caption text-center mb-3">
-            <img src="images/infografisproduk/yuri/ligentbio/logoligentbio.webp" alt="" width="140px">
+            <img src="images/infografisproduk/yuri/ligentbaby/logoligentbaby.webp" alt="" width="140px">
         </div>
 
          <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/ligentbio/ligentbio-01.webp" alt="yuri bathroom cleaner" />
+            <img src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.webp" alt="yuri bathroom cleaner" />
         </div>
+
+        {{-- <div id="imagebrand" class="row mt-3">
+            <div class="col-6">
+                <img class="aganol1" src="images/infografisproduk/yuri/ligentbio/ligentbio-01.webp" alt=""
+                    width="100%" style="border-radius: 10%;">
+            </div>
+            <div class="col-6">
+                <img class="aganol2" src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.webp" alt=""
+                    width="100%" width="100%" style="border-radius: 10%;">
+            </div>
+        </div> --}}
 
         <div class="aganolgeneral">
             <img src="images/infografisproduk/yuri/ligentbaby/ligentbabyinfograph-01.jpg" alt="" />
@@ -27,5 +38,4 @@
 
     </div>
     <!-- End Container -->
-
 @endsection

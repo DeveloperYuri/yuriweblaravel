@@ -182,7 +182,7 @@
                 </div>
 
             @empty
-                <div class="alert alert-danger">
+                <div class="alert alert-danger text-center">
                     Tidak Ada Event
                 </div>
             @endforelse

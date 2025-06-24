@@ -4,21 +4,21 @@
 
 @section('content')
     <div class="container">
-
+        
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/householdcleaner.png" class="d-block w-100" alt="...">
+                        <img src="images/householdcleaner.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/infografisproduk/deedee/infographicdeedee-03.jpg" class="d-block w-100"
+                        <img src="images/infografisproduk/deedee/infographicdeedee-03.webp" class="d-block w-100"
                             alt="..." style="border-radius: 2%">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/bannerbabydee.png" class="d-block w-100"
-                            alt="..." style="border-radius: 2%">
+                        <img src="images/bannerbabydee.webp" class="d-block w-100" alt="..."
+                            style="border-radius: 2%">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -49,67 +49,113 @@
         </div>
         <!-- End Content1-->
 
-        <!-- Content Satu -->
-        <div class="row text-center">
-            <div id="gambarhousehold" class="col-4">
-                <img src="images/brands-satu.png" alt="">
-            </div>
-            <div id="logohousehold" class="col-4">
-                <img src="images/logo-8.png" alt="">
-            </div>
-            <div id="texthousehold" class="col-4">
-                <h5>Household Cleaner</h5>
-                <a href="{{ route('brands.householdcleaner') }}"><img src="images/bingkai klik-8.png" alt="">
-                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
-                </a>
-            </div>
-        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/householdcleaner.webp" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Household Cleaner</h4>
+                        <a href="{{ route('brands.householdcleaner') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
 
-        <!-- Content Dua -->
-        <div class="row text-center">
-            <div id="textdeedee" class="col-4">
-                <h5>Children Toiletries</h5>
-                <a href="{{ route('brands.childrentoilet') }}"><img src="images/bingkai klik-8.png" alt="">
-                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
-                </a>
-            </div>
-            <div id="logodeedee" class="col-4">
-                <img src="images/brands-dua-logo.png" alt="">
-            </div>
-            <div id="gambardeedee" class="col-4">
-                <img src="images/brands-dua.png" alt="">
-            </div>
-        </div>
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
 
-        <!-- Content Tiga -->
-        <div class="row text-center">
-            <div id="gambarbabydee" class="col-4">
-                <img src="images/brands-tiga.png" alt="">
-            </div>
-            <div id="logobabydee" class="col-4">
-                <img src="images/brands-tiga-logo.png" alt="">
-            </div>
-            <div id="textbabydee" class="col-4">
-                <h5>Baby Toiletries</h5>
-                <a href="{{ route('brands.babytoilet') }}"><img src="images/bingkai klik-8.png" alt="">
-                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
-                </a>
-            </div>
-        </div>
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+             color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
 
-        <!-- Content Empat -->
-        <div class="row text-center">
-            <div id="textevany" class="col-4">
-                <h5>Adult Toiletries</h5>
-                <a href="{{ route('brands.adulttoilet') }}"><img src="images/bingkai klik-8.png" alt="">
-                    <p style="color: white; font-weight: bold">@lang('message.SELENGKAPNYA')</p>
-                </a>
+                    </div>
+                </div>
             </div>
-            <div id="logoevany" class="col-4">
-                <img src="images/brands-empat-logo.png" alt="">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/deebrand.png" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Children Toiletries</h4>
+                        <a href="{{ route('brands.childrentoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                 color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="gambarevany" class="col-4">
-                <img src="images/brands-empat.png" alt="">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/babydeebrand.png" class="card-img-top" alt="..."
+                        style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Baby Toiletries</h4>
+                        <a href="{{ route('brands.babytoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+             color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 position-relative">
+                    <div style="position: relative;">
+                        <img src="images/evanybaru.png" class="card-img-top" alt="..."
+                            style="height: 100%; width: 100%; object-fit: cover;">
+
+                        <!-- Box Coming Soon -->
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; 
+                    transform: translate(-50%, -50%);
+                    background-color: rgba(0, 0, 0, 0.6); 
+                    color: white; padding: 10px 20px; 
+                    border-radius: 8px; font-weight: bold; 
+                    font-size: 18px; z-index: 10;">
+                            Coming Soon
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold" style="color: #005EB8">Adult Toiletries</h4>
+                        <a href="{{ route('brands.adulttoilet') }}"
+                            style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
+                            onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
+                            onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
+
+                            <img src="images/bingkai klik-8.png" alt="Selengkapnya"
+                                style="width: 110%; height: 110%; object-fit: cover; display: block; transition: 0.3s;">
+                            <span
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                       color: white; font-weight: bold; font-size: 14px; pointer-events: none;">
+                                @lang('message.SELENGKAPNYA')
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
 

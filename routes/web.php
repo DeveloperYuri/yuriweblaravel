@@ -184,6 +184,7 @@ Route::get('/mediaupdate', [HomeControllerUpdate::class, 'media'])->name('mediau
 Route::get('/produkbaruupdate', [HomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
 Route::get('/kontakupdate', [HomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
 Route::get('/distributorupdate', [HomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
+Route::get('/eventupdate', [HomeControllerUpdate::class, 'event'])->name('eventupdate');
 
 //Brand Update
 Route::get('/householdcleanerupdate', [HomeControllerUpdate::class, 'householdcleaner'])->name('householdcleanerupdate');
@@ -213,6 +214,9 @@ Route::get('/trilupdate', [HomeControllerUpdate::class, 'trilproduk'])->name('tr
 Route::get('/laundrydisinfektantupdate', [HomeControllerUpdate::class, 'laundrydisinfektantproduk'])->name('laundrydisinfektantupdate');
 Route::get('/disinfektantsprayupdate', [HomeControllerUpdate::class, 'disinfektantsprayproduk'])->name('disinfektantsprayupdate');
 Route::get('/handmoisturizerupdate', [HomeControllerUpdate::class, 'handmoisturizerproduk'])->name('handmoisturizerupdate');
+Route::get('/ligentbabyupdate', [HomeControllerUpdate::class, 'ligentbabyproduk'])->name('ligentbabyupdate');
+Route::get('/porstexregulerupdate', [HomeControllerUpdate::class, 'porstexregulerproduk'])->name('porstexregulerupdate');
+Route::get('/porstexklosetupdate', [HomeControllerUpdate::class, 'porstexklosetproduk'])->name('porstexklosetupdate');
 
 //FAQ Update
 Route::get('/faqupdate', [HomeControllerUpdate::class, 'faq'])->name('faqupdate');
@@ -242,7 +246,7 @@ Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecateg
 // Route::get('/mediaupdate', [V2CategoryController::class, 'indexmedia'])->name('indexmedia');
 
 
-Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');
+// Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');
 
 // Event
 Route::get('/event', [EventController::class, 'index'])->name('index.event');

@@ -4,27 +4,44 @@
 
 @section('content')
     <div class="container">
-
-        <div class="article1">
-            <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">{{ $artikelbaru->title }}</h4>
-        </div>
-
-        <div class="daysarticle text-center" style="font-size: 12px">
-            <p><strong>Yuri Artikel</strong> - {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
-        </div>
-
-        <!-- Banner Homepage-->
-        <div class="banner-article1 text-center" data-aos="fade-up">
-            <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" class="img-fluid" alt="...">
-        </div>
-        <!-- End Banner Homepage -->
-
+        
         <!-- Content1 -->
-        <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify" data-aos="fade-up">
+        <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
+            <div class="caption1 mb-5">
+                <h1 style="margin-bottom: 20px; color: #005EB8">
+                    ARTIKEL
+                </h1>
+            </div>
 
-            {!! $artikelbaru->description !!}
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                @forelse ($artikelbaru as $artikel)
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}" class="card-img-top"
+                                alt="..." width="400px" height="230px" >
+                            <div class="card-body">
+                                <a href="{{ route('indexartikelbaru.show', $artikel->id)}}">
+                                    <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
+                                </a>
+                            </div>
 
+                        </div>
+                    </div>
+                @empty
+                    <div class="alert alert-danger">
+                        Data artikel belum tersedia.
+                    </div>
+                @endforelse
+
+            </div>
+
+            <div class="mt-5 mb-5">
+                {!! $artikelbaru->withQueryString()->links('pagination::bootstrap-5') !!}
+            </div>
         </div>
+        <!-- End Content1-->
 
     </div>
+    <!-- End Container -->
+    
 @endsection

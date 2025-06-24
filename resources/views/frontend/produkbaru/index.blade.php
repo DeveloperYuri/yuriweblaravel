@@ -17,8 +17,8 @@
                 </div>
 
             @empty
-                <div class="alert alert-danger">
-                    Data Products belum Tersedia.
+                <div class="alert alert-danger text-center">
+                    Tidak Ada Produk Baru
                 </div>
             @endforelse
 

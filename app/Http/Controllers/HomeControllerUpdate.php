@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Artikel;
 use App\Models\ArtikelBaru;
+use App\Models\EventModel;
 use App\Models\MediaModel;
 use App\Models\ProdukBaru;
+use App\Models\ProdukbaruModel;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Stevebauman\Location\Facades\Location;
@@ -109,11 +111,11 @@ class HomeControllerUpdate extends Controller
         $var_countryname = $currentUserInfo->countryName;
 
         if ($var_countryname == "Indonesia") {
-            $produkbaru = ProdukBaru::all();
+            $produkbaru = ProdukbaruModel::all();
 
             return view('frontend.produkbaru.index', compact('produkbaru'));
         } else {
-            $produkbaru = ProdukBaru::all();
+            $produkbaru = ProdukbaruModel::all();
 
             return view('frontend.produkbaru.indexsg', compact('produkbaru'));
         }
@@ -144,6 +146,25 @@ class HomeControllerUpdate extends Controller
             return view('frontend.distributor.index');
         } else {
             return view('frontend.distributor.indexsg');
+        }
+    }
+
+    public function event(Request $request)
+    {
+        $ip = '116.50.29.50'; // $request->ip();
+        $currentUserInfo = Location::get($ip);
+        $var_countryname = $currentUserInfo->countryName;
+
+        if ($var_countryname == "Indonesia") {
+
+            $events = EventModel::all();
+            return view('frontend.event.index', compact('events'));
+
+        } else {
+
+            $events = EventModel::all();
+            return view('frontend.event.index', compact('events'));
+
         }
     }
 
@@ -224,6 +245,11 @@ class HomeControllerUpdate extends Controller
         return view('frontend.brands.produkligent');
     }
 
+    public function ligentbabyproduk()
+    {
+        return view('frontend.brands.produkligentbaby');
+    }
+
     public function lysorinproduk()
     {
         return view('frontend.brands.produklysorin');
@@ -237,6 +263,16 @@ class HomeControllerUpdate extends Controller
     public function porstexproduk()
     {
         return view('frontend.brands.produkporstex');
+    }
+
+     public function porstexregulerproduk()
+    {
+        return view('frontend.brands.produkporstexreguler');
+    }
+
+    public function porstexklosetproduk()
+    {
+        return view('frontend.brands.produkporstexkloset');
     }
 
     public function yurisolproduk()

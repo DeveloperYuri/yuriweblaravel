@@ -1,20 +1,20 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Yuri Sol')
+@section('title', 'Porstex Kloset')
 
 @section('content')
     <div class="container">
 
-        <div class="caption text-center mb-4">
-            <img src="images/infografisproduk/yuri/yurisol/logoyurisol.png" alt="" width="150px">
+        <div class="caption text-center">
+            <img src="images/infografisproduk/yuri/porstex/logoporstex.webp" alt="logo porstex kloset" width="150px">
         </div>
 
         <div class="aganolgeneral">
-            <img src="images/infografisproduk/yuri/yurisol/yurisol.jpg" alt="" />
+            <img src="images/infografisproduk/yuri/porstex/porstexKLOSET-01.webp" alt="infografis porstex kloset" />
         </div>
 
         <div class="button-brand">
-            <a href="https://www.yurishop.co/id/product/Yuri-sol-Natural-Pine-Disinfectant-1000-ml" target="_blank"><img
+            <a href="https://www.yurishop.co/id/product/Porstex-Kloset-500-ml" target="_blank"><img
                     src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%" height="10%">
                 <div class="centered"><strong>Beli Sekarang</strong></div>
             </a>
@@ -22,4 +22,5 @@
 
     </div>
     <!-- End Container -->
+
 @endsection

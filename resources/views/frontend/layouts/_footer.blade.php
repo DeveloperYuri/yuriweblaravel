@@ -1,4 +1,28 @@
  <!-- Start Footer -->
+ <div id="footerindex" class="card-footer text-body-secondary bg-dark"
+     style="margin-top: auto; background-color: #212529; color: white;">
+     <div class="container">
+         <div class="row" style="padding-top: 0px;">
+             <div class="col-md-8">
+                 <p style="font-size: 12px; color: white; padding-top: 5px;">
+                     Copyright © {{ date('Y') }} PT Joenoes Ikamulya.
+                 </p>
+             </div>
+             <div class="col-md-4" style="text-align: right;">
+                 <a class="petanyaan-privasi" href="#" style="display: inline; color: white; font-size: 14px;">
+                     @lang('message.PERTANYAANPRIVASI')
+                 </a>
+                 <a class="footerfaq" href="{{ route('faqupdate') }}"
+                     style="font-size: 14px; color: white; margin-left: 10px;">
+                     FAQ
+                 </a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- End Footer -->
+
+ {{-- <!-- Start Footer -->
  <div id="footerindex" class="card-footer text-body-secondary bg-dark" style="margin-top: auto;">
      <div class="container">
          <div class="row" style="padding-top: 0px;">
@@ -15,7 +39,7 @@
          </div>
      </div>
  </div>
- <!-- End Footer -->
+ <!-- End Footer --> --}}
 
  <script>
      function myFunction() {

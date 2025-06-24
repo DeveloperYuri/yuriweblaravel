@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
     <meta charset="utf-8" />
@@ -11,7 +11,9 @@ yang terjangkau oleh semua lapisan masyarakat">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/styleupdate.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/styleupdate.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +45,7 @@ yang terjangkau oleh semua lapisan masyarakat">
     }
 </style>
 
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100%; margin: 0;">
 
     @include('frontend.layouts._header')
 
@@ -52,4 +54,5 @@ yang terjangkau oleh semua lapisan masyarakat">
     @include('frontend.layouts._footer')
 
 </body>
+
 </html>
