@@ -27,7 +27,6 @@ class ArtikelBaruController extends Controller
 
         $data['getRecord'] = ArtikelBaru::getRecord($request);
         return view('authbaru.loginmultiauth.superadmin.artikelbaru.index', $data);
-
     }
 
     /**
@@ -55,6 +54,38 @@ class ArtikelBaruController extends Controller
 
         //redirect to index
         return redirect()->route('superadminartikelbaru.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+
+    public function upload(Request $request)
+    {
+        try {
+            if ($request->hasFile('upload')) {
+                $file = $request->file('upload');
+                $fileName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)
+                    . '_' . time() . '.' . $file->getClientOriginalExtension();
+
+                // Simpan via Laravel Storage
+                $file->storeAs('public/ckeditorartikel', $fileName);
+
+                $url = asset('storage/ckeditorartikel/' . $fileName);
+
+                return response()->json([
+                    'fileName' => $fileName,
+                    'uploaded' => 1,
+                    'url' => $url
+                ]);
+            } else {
+                return response()->json([
+                    'uploaded' => 0,
+                    'error' => ['message' => 'No file uploaded.']
+                ]);
+            }
+        } catch (\Exception $e) {
+            return response()->json([
+                'uploaded' => 0,
+                'error' => ['message' => $e->getMessage()]
+            ]);
+        }
     }
 
     /**

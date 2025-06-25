@@ -24,14 +24,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+
+    <style type="text/css">
+        .ck-editor__editable_inline {
+            height: 500px;
+        }
+    </style>
 
 </head>
 
-<style>
+{{-- <style>
     .ck-editor__editable {
         min-height: 300px;
     }
-</style>
+</style> --}}
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -133,7 +140,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('users.index')}}" class="nav-link">
+                            <a href="{{ route('users.index') }}" class="nav-link">
                                 <i class="nav-icon fas fa-user-circle"></i>
                                 <p>
                                     User
@@ -209,7 +216,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
-                                <textarea id="description" class="form-control tinymce-editor @error('description') is-invalid @enderror" name="description"
+                                <textarea id="editor" class="form-control @error('description') is-invalid @enderror" name="description"
                                     rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikelbaru->description) }}</textarea>
 
                                 <!-- error message untuk description -->
@@ -272,8 +279,18 @@
     <!-- Page specific script -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                ckfinder: {
+                    uploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token()]) }}",
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 
     {{-- <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
 

@@ -171,7 +171,7 @@ Route::delete('/superadmin/deleteartikelbaru/delete{id}', [ArtikelBaruController
 Route::put('/superadmin/artikelbaru/update{id}', [ArtikelBaruController::class, 'update'])->name('superadminartikelbaru.update');
 Route::get('/superadmin/showartikelbaru/{id}', [ArtikelBaruController::class, 'show'])->name('superadminartikelbaru.show');
 Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class, 'showindex'])->name('indexartikelbaru.show');
-
+Route::post('ckeditor/upload', [ArtikelBaruController::class, 'upload'])->name('ckeditor.upload');
 
 // Update semua 
 
