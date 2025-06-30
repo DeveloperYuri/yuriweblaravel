@@ -227,6 +227,15 @@ Route::get('/ligentbabyupdate', [BaruHomeControllerUpdate::class, 'ligentbabypro
 Route::get('/porstexregulerupdate', [BaruHomeControllerUpdate::class, 'porstexregulerproduk'])->name('porstexregulerupdate');
 Route::get('/porstexklosetupdate', [BaruHomeControllerUpdate::class, 'porstexklosetproduk'])->name('porstexklosetupdate');
 
+Route::get('/childrenshairshampooupdate', [BaruHomeControllerUpdate::class, 'childrenshairshampoo'])->name('childrenshairshampooupdate');
+Route::get('/childrensbodywashupdate', [BaruHomeControllerUpdate::class, 'childrensbodywash'])->name('childrensbodywashupdate');
+Route::get('/mosquitoreppellentlotionupdate', [BaruHomeControllerUpdate::class, 'mosquitoreppellentlotion'])->name('mosquitoreppellentlotionupdate');
+Route::get('/childrensshowerfoamingupdate', [BaruHomeControllerUpdate::class, 'childrensshowerfoaming'])->name('childrensshowerfoamingupdate');
+Route::get('/childrenstalcumpowderupdate', [BaruHomeControllerUpdate::class, 'childrenstalcumpowder'])->name('childrenstalcumpowderupdate');
+Route::get('/childrenstoothpastaupdate', [BaruHomeControllerUpdate::class, 'childrenstoothpasta'])->name('childrenstoothpastaupdate');
+Route::get('/shampoolonghairupdate', [BaruHomeControllerUpdate::class, 'shampoolonghair'])->name('shampoolonghairupdate');
+Route::get('/childrensfacialwashupdate', [BaruHomeControllerUpdate::class, 'childrensfacialwash'])->name('childrensfacialwashupdate');
+
 //FAQ Update
 Route::get('/faqupdate', [BaruHomeControllerUpdate::class, 'faq'])->name('faqupdate');
 

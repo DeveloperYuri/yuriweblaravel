@@ -56,7 +56,7 @@
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
                         <h4 class="card-title fw-bold" style="color: #005EB8">Household Cleaner</h4>
-                        <a href="{{ route('brands.householdcleaner') }}"
+                        <a href="{{ route('householdcleanerupdate') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
                             onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
@@ -80,7 +80,7 @@
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
                         <h4 class="card-title fw-bold" style="color: #005EB8">Children Toiletries</h4>
-                        <a href="{{ route('brands.childrentoilet') }}"
+                        <a href="{{ route('childrentoiletupdate') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
                             onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
@@ -103,7 +103,7 @@
                         style="height: 100%; width: 100%; object-fit: cover;">
                     <div class="card-body">
                         <h4 class="card-title fw-bold" style="color: #005EB8">Baby Toiletries</h4>
-                        <a href="{{ route('brands.babytoilet') }}"
+                        <a href="{{ route('babytoiletupdate') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
                             onmouseout="this.querySelector('img').style.filter='brightness(100%)';">
@@ -140,7 +140,7 @@
 
                     <div class="card-body">
                         <h4 class="card-title fw-bold" style="color: #005EB8">Adult Toiletries</h4>
-                        <a href="{{ route('brands.adulttoilet') }}"
+                        <a href="{{ route('adulttoiletupdate') }}"
                             style="position: relative; display: inline-block; width: 150px; height: 45px; text-align: center; text-decoration: none;"
                             onmouseover="this.querySelector('img').style.filter='brightness(80%)';"
                             onmouseout="this.querySelector('img').style.filter='brightness(100%)';">

@@ -76,11 +76,11 @@ class HomeControllerUpdate extends Controller
 
         if ($var_countryname == "Indonesia") {
             $artikelbaru = ArtikelBaru::latest()->paginate(9);
-            return view('frontend.artikel.index', compact('artikelbaru'));
+            return view('baru.frontend.artikel.index', compact('artikelbaru'));
         } else {
             $artikelbaru = ArtikelBaru::latest()->paginate(9);
             return view('artikelbaru.index', compact('artikelbaru'));
-            return view('frontend.artikel.indexsg');
+            return view('baru.frontend.artikel.indexsg');
         }
     }
 
@@ -94,12 +94,12 @@ class HomeControllerUpdate extends Controller
         if ($var_countryname == "Indonesia") {
 
             $media = MediaModel::latest()->paginate(9);
-            return view('frontend.media.index', compact('media'));
+            return view('baru.frontend.media.index', compact('media'));
 
         } else {
 
             $media = MediaModel::latest()->paginate(9);
-            return view('frontend.media.index', compact('media'));
+            return view('baru.frontend.media.index', compact('media'));
 
         }
     }
@@ -114,11 +114,11 @@ class HomeControllerUpdate extends Controller
         if ($var_countryname == "Indonesia") {
             $produkbaru = ProdukbaruModel::all();
 
-            return view('frontend.produkbaru.index', compact('produkbaru'));
+            return view('baru.frontend.produkbaru.index', compact('produkbaru'));
         } else {
             $produkbaru = ProdukbaruModel::all();
 
-            return view('frontend.produkbaru.indexsg', compact('produkbaru'));
+            return view('baru.frontend.produkbaru.indexsg', compact('produkbaru'));
         }
     }
 
@@ -130,9 +130,9 @@ class HomeControllerUpdate extends Controller
         $var_countryname = $currentUserInfo->countryName;
 
         if ($var_countryname == "Indonesia") {
-            return view('frontend.kontak.index');
+            return view('baru.frontend.kontak.index');
         } else {
-            return view('frontend.kontak.indexsg');
+            return view('baru.frontend.kontak.indexsg');
         }
     }
 
@@ -144,9 +144,9 @@ class HomeControllerUpdate extends Controller
         $var_countryname = $currentUserInfo->countryName;
 
         if ($var_countryname == "Indonesia") {
-            return view('frontend.distributor.index');
+            return view('baru.frontend.distributor.index');
         } else {
-            return view('frontend.distributor.indexsg');
+            return view('baru.frontend.distributor.indexsg');
         }
     }
 
@@ -159,12 +159,12 @@ class HomeControllerUpdate extends Controller
         if ($var_countryname == "Indonesia") {
 
             $events = EventModel::all();
-            return view('frontend.event.index', compact('events'));
+            return view('baru.frontend.event.index', compact('events'));
 
         } else {
 
             $events = EventModel::all();
-            return view('frontend.event.index', compact('events'));
+            return view('baru.frontend.event.index', compact('events'));
 
         }
     }
@@ -173,140 +173,176 @@ class HomeControllerUpdate extends Controller
     // Brands 
     public function householdcleaner()
     {
-        return view('frontend.brands.householdcleaner');
+        return view('baru.frontend.brands.householdcleaner');
     }
 
     public function childrentoilet()
     {
-        return view('frontend.brands.childrentoilet');
+        return view('baru.frontend.brands.childrentoilet');
     }
 
     public function babytoilet()
     {
-        return view('frontend.brands.babytoilet');
+        return view('baru.frontend.brands.babytoilet');
     }
 
     public function adulttoilet()
     {
-        return view('frontend.brands.adulttoilet');
+        return view('baru.frontend.brands.adulttoilet');
     }
 
     public function aganolproduk()
     {
-        return view('frontend.brands.produkaganol');
+        return view('baru.frontend.brands.produkaganol');
     }
 
     public function babysoftproduk()
     {
-        return view('frontend.brands.produkbabysoft');
+        return view('baru.frontend.brands.produkbabysoft');
     }
 
     public function biosoftdetergenproduk()
     {
-        return view('frontend.brands.produkbiosoftdetergen');
+        return view('baru.frontend.brands.produkbiosoftdetergen');
     }
 
     public function biosoftproduk()
     {
-        return view('frontend.brands.produkbiosoft');
+        return view('baru.frontend.brands.produkbiosoft');
     }
 
     public function bathroomcleanerproduk()
     {
-        return view('frontend.brands.produkbathroomcleaner');
+        return view('baru.frontend.brands.produkbathroomcleaner');
     }
 
     public function yuribleachproduk()
     {
-        return view('frontend.brands.produkyuribleach');
+        return view('baru.frontend.brands.produkyuribleach');
     }
 
     public function fabriccareproduk()
     {
-        return view('frontend.brands.produkfabriccare');
+        return view('baru.frontend.brands.produkfabriccare');
     }
 
     public function glasscleanerproduk()
     {
-        return view('frontend.brands.produkglasscleaner');
+        return view('baru.frontend.brands.produkglasscleaner');
     }
 
     public function handgelproduk()
     {
-        return view('frontend.brands.produkhandgel');
+        return view('baru.frontend.brands.produkhandgel');
     }
 
     public function handsoapproduk()
     {
-        return view('frontend.brands.produkhandsoap');
+        return view('baru.frontend.brands.produkhandsoap');
     }
 
     public function ligentproduk()
     {
-        return view('frontend.brands.produkligent');
+        return view('baru.frontend.brands.produkligent');
     }
 
     public function ligentbabyproduk()
     {
-        return view('frontend.brands.produkligentbaby');
+        return view('baru.frontend.brands.produkligentbaby');
     }
 
     public function lysorinproduk()
     {
-        return view('frontend.brands.produklysorin');
+        return view('baru.frontend.brands.produklysorin');
     }
 
     public function yurisoftproduk()
     {
-        return view('frontend.brands.produkyurisoft');
+        return view('baru.frontend.brands.produkyurisoft');
     }
 
     public function porstexproduk()
     {
-        return view('frontend.brands.produkporstex');
+        return view('baru.frontend.brands.produkporstex');
     }
 
      public function porstexregulerproduk()
     {
-        return view('frontend.brands.produkporstexreguler');
+        return view('baru.frontend.brands.produkporstexreguler');
     }
 
     public function porstexklosetproduk()
     {
-        return view('frontend.brands.produkporstexkloset');
+        return view('baru.frontend.brands.produkporstexkloset');
     }
 
     public function yurisolproduk()
     {
-        return view('frontend.brands.produkyurisol');
+        return view('baru.frontend.brands.produkyurisol');
     }
 
     public function tafproduk()
     {
-        return view('frontend.brands.produktaf');
+        return view('baru.frontend.brands.produktaf');
     }
 
     public function yurimaticproduk()
     {
-        return view('frontend.brands.produkyurimatic');
+        return view('baru.frontend.brands.produkyurimatic');
     }
 
     public function trilproduk()
     {
-        return view('frontend.brands.produktril');
+        return view('baru.frontend.brands.produktril');
     }
 
     public function laundrydisinfektantproduk()
     {
-        return view('frontend.brands.produklaundrydisinfektant');
+        return view('baru.frontend.brands.produklaundrydisinfektant');
     }
     public function disinfektantsprayproduk()
     {
-        return view('frontend.brands.produkdisinfektantspray');
+        return view('baru.frontend.brands.produkdisinfektantspray');
     }
     public function handmoisturizerproduk()
     {
-        return view('frontend.brands.produkhandmoisturizer');
+        return view('baru.frontend.brands.produkhandmoisturizer');
+    }
+
+    // Produk dee dee
+    public function childrenshairshampoo()
+    {
+        return view('baru.frontend.brands.produkdee.childrenshairshampoo');
+    }
+
+    public function childrensbodywash()
+    {
+        return view('baru.frontend.brands.produkdee.childrensbodywash');
+    }
+
+    public function mosquitoreppellentlotion()
+    {
+        return view('baru.frontend.brands.produkdee.mosquitoreppellentlotion');
+    }
+    public function childrensshowerfoaming()
+    {
+        return view('baru.frontend.brands.produkdee.childrensshowerfoaming');
+    }
+    public function childrenstalcumpowder()
+    {
+        return view('baru.frontend.brands.produkdee.childrenstalcumpowder');
+    }
+    public function childrenstoothpasta()
+    {
+        return view('baru.frontend.brands.produkdee.childrenstoothpasta');
+    }
+    public function shampoolonghair()
+    {
+        return view('baru.frontend.brands.produkdee.shampoolonghair');
+    }
+    public function childrensfacialwash()
+    {
+        return view('baru.frontend.brands.produkdee.childrensfacialwash');
     }
 
     public function faq(Request $request)
@@ -317,9 +353,9 @@ class HomeControllerUpdate extends Controller
         $var_countryname = $currentUserInfo->countryName;
 
         if ($var_countryname == "Indonesia") {
-            return view('frontend.faq.index');
+            return view('baru.frontend.faq.index');
         } else {
-            return view('frontend.faq.indexsg');
+            return view('baru.frontend.faq.indexsg');
         }
     }
 }

@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+@extends('baru.frontend.layouts.app')
 
 @section('title', 'Glass Cleaner')
 
