@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ArtikelBaru;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -172,5 +173,18 @@ class ArtikelBaruController extends Controller
 
         //redirect to index
         return redirect()->route('superadminartikelbaru.index')->with(['success' => 'Data Berhasil di Delete!']);
+    }
+
+    // Update baru
+    
+    public function indexupdate(Request $request)
+    {
+        $user = Auth::user();
+
+        $data['user'] = $user;
+        $data['getRecord'] = ArtikelBaru::getRecord($request);
+
+        //render view with products
+        return view('backenddashboardupdate.artikel.index', $data);
     }
 }

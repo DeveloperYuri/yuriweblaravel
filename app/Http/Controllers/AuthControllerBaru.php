@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ResetPassword;
 use App\Mail\ForgotPasswordMail;
+use App\Models\ArtikelBaru;
+use App\Models\MediaModel;
+use App\Models\ProdukBaru;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,6 +16,26 @@ use Illuminate\Support\Facades\Mail;
 
 class AuthControllerBaru extends Controller
 {
+
+    public function dashboardupdate()
+    {
+
+        $user = Auth::user();
+        $totalmedia = MediaModel::count();
+        $totalprodukbaru = ProdukBaru::count();
+        $totalusers = User::count();
+        $totalartikelbaru = ArtikelBaru::count();
+
+        return view('backenddashboardupdate.dashboard', compact(
+            'user',
+            'totalmedia',
+            'totalprodukbaru',
+            'totalusers',
+            'totalartikelbaru'
+        ));
+
+    }
+
     public function registrationbaru()
     {
         return view('authbaru.registration');
@@ -48,20 +71,29 @@ class AuthControllerBaru extends Controller
 
     public function login_post(Request $request)
     {
-        //dd($request->all());
-
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password], true)) {
-            if (Auth::user()->is_role == 2) {
-                return redirect()->intended('superadmin/dashboard');
-            } else if (Auth::user()->is_role == 1) {
-                return redirect()->intended('admin/dashboard');
-            } else {
-                return redirect('login')->with('error', 'No Available Email.. Please Check');
-            }
+            return redirect()->route('dashboardupdate');
         } else {
             return redirect()->back()->with('error', 'Please enter the correct credentials');
         }
     }
+
+    // public function login_post(Request $request)
+    // {
+    //     //dd($request->all());
+
+    //     if (Auth::attempt(['email' => $request->email, 'password' => $request->password], true)) {
+    //         if (Auth::user()->is_role == 2) {
+    //             return redirect()->intended('superadmin/dashboard');
+    //         } else if (Auth::user()->is_role == 1) {
+    //             return redirect()->intended('admin/dashboard');
+    //         } else {
+    //             return redirect('login')->with('error', 'No Available Email.. Please Check');
+    //         }
+    //     } else {
+    //         return redirect()->back()->with('error', 'Please enter the correct credentials');
+    //     }
+    // }
 
     public function forgot()
     {

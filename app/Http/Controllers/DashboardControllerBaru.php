@@ -27,7 +27,7 @@ class DashboardControllerBaru extends Controller
 
             return view('authbaru.loginmultiauth.superadmin.dashboard')->with('data', $data)->with('totalartikels', $totalartikels)->with('totalproduks', $totalproduks)->with('totalusers', $totalusers)->with('totalartikelbaru', $totalartikelbaru);
         } else if (Auth::user()->is_role == 1) {
-            $data['getRecord'] = Artikel::getRecord($request);
+            $data['getRecord'] = ArtikelBaru::getRecord($request);
 
             return view('authbaru.loginmultiauth.admin.dashboard', $data);
         }

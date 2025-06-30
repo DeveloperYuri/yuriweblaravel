@@ -176,7 +176,7 @@
                                     </tr>
                                 @empty
                                     <div class="alert alert-danger">
-                                        Data Products belum Tersedia.
+                                        Data Artikel belum Tersedia test.
                                     </div>
                                 @endforelse
                             </tbody>
