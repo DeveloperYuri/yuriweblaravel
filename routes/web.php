@@ -114,8 +114,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardupdate', [AuthControllerBaru::class, 'dashboardupdate'])->name('dashboardupdate');
 
     // Artikel Menu
-    Route::get('/artikeldashboardupdate', [ArtikelBaruController::class, 'indexupdate'])->name('artikeldasboardupdate.index');
-
+    Route::get('/artikelindexupdate', [ArtikelBaruController::class, 'indexupdate'])->name('artikelindexupdate');
+    Route::get('/createartikel', [ArtikelBaruController::class, 'createupdate'])->name('createartikel');
+    Route::post('/createartikelpost', [ArtikelBaruController::class, 'storeupdate'])->name('postartikel');
+    Route::post('ckeditor/upload', [ArtikelBaruController::class, 'uploadckeditorupdate'])->name('ckeditoruploadupdate');
+    Route::delete('/artikeldelete/{id}', [ArtikelBaruController::class, 'destroyupdate'])->name('artikeldeleteupdate');
+    Route::get('/artikeleditupdate/{id}', [ArtikelBaruController::class, 'editupdate'])->name('artikeleditupdate');
+    Route::put('/artikeleditupdate/post/{id}', [ArtikelBaruController::class, 'editpostupdate'])->name('artikeleditpostupdate');
+    Route::get('/artikelshowupdate/{id}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
 });
 
 Route::group(['middleware' => 'superadmin'], function () {

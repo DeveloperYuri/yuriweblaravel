@@ -1,4 +1,4 @@
-@extends('backenddashboardupdate.layouts.main')
+@extends('baru.backenddashboardupdate.layouts.main')
 
 @section('content')
     <!-- Content Wrapper. Contains page content -->

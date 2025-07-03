@@ -1,19 +1,18 @@
 @extends('baru.backenddashboardupdate.layouts.main')
 
 @section('content')
-<!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+ <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Edit Artikel</h1>
+                            <h1>Buat Artikel</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Edit Artikel</li>
+                                <li class="breadcrumb-item active">Buat Artikel</li>
                             </ol>
                         </div>
                     </div>
@@ -27,16 +26,14 @@
                         <a href="{{ route('artikelindexupdate') }}" class="btn btn-success mb-3"><i
                                 class="fas fa-undo"></i>&nbsp Kembali </a>
 
-
-                        <form action="{{ route('artikeleditpostupdate', $artikelbaru->id) }}" method="POST"
+                        <form action="{{ route('postartikel') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
-                            @method('PUT')
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">IMAGE</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror"
-                                    name="image" value="{{ old('title', $artikelbaru->image) }}">
+                                    name="image">
 
                                 <!-- error message untuk image -->
                                 @error('image')
@@ -49,8 +46,7 @@
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">TITLE</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror"
-                                    name="title" value="{{ old('title', $artikelbaru->title) }}"
-                                    placeholder="Masukkan Judul Artikel">
+                                    name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Artikel">
 
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -63,7 +59,7 @@
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <textarea id="editor" class="form-control @error('description') is-invalid @enderror" name="description"
-                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description', $artikelbaru->description) }}</textarea>
+                                    rows="5" placeholder="Masukkan Description Artikel">{{ old('description') }}</textarea>
 
                                 <!-- error message untuk description -->
                                 @error('description')
@@ -74,7 +70,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-md btn-primary me-3"><i
-                                    class="fas fa-save"></i>&nbsp Update</button>
+                                    class="fas fa-save"></i>&nbsp Save</button>
 
                         </form>
 

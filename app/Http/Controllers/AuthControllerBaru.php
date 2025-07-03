@@ -26,7 +26,7 @@ class AuthControllerBaru extends Controller
         $totalusers = User::count();
         $totalartikelbaru = ArtikelBaru::count();
 
-        return view('backenddashboardupdate.dashboard', compact(
+        return view('baru.backenddashboardupdate.dashboard', compact(
             'user',
             'totalmedia',
             'totalprodukbaru',

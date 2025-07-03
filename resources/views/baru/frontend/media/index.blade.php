@@ -27,21 +27,11 @@
                                 </p>
                             </a>
                         </div>
-
-                        {{-- <a href="{{ $e->link_instagram }}" target="_blank">
-                            <img src="{{ asset('/storage/event/' . $e->image) }}" class="card-img-top img-hover-lift"
-                                alt="..." width="450px" height="370px">
-                        </a> --}}
-
-                        {{-- <div class="d-flex justify-content-center">
-                            <a href="{{ $e->link_daftar }}" class="btn btn-primary mt-3 text-center fw-bold"
-                                target="_blank">Daftar Disini</a>
-                        </div> --}}
                     </div>
 
                 @empty
                     <div class="alert alert-danger text-center">
-                        Data Media Tidak Ada.
+                        Tidak Ada Media.
                     </div>
                 @endforelse
 

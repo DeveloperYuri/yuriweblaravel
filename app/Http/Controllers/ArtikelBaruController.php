@@ -176,7 +176,7 @@ class ArtikelBaruController extends Controller
     }
 
     // Update baru
-    
+
     public function indexupdate(Request $request)
     {
         $user = Auth::user();
@@ -185,6 +185,137 @@ class ArtikelBaruController extends Controller
         $data['getRecord'] = ArtikelBaru::getRecord($request);
 
         //render view with products
-        return view('backenddashboardupdate.artikel.index', $data);
+        return view('baru.backenddashboardupdate.artikel.index', $data);
+    }
+
+    public function createupdate()
+    {
+        $user = Auth::user();
+
+        $data['user'] = $user;
+        return view('baru.backenddashboardupdate.artikel.create', $data);
+    }
+
+    public function storeupdate(Request $request)
+    {
+        $image = $request->file('image');
+        $image->storeAs('public/artikelbaru', $image->hashName());
+
+        //create product
+        ArtikelBaru::create([
+            'image'         => $image->hashName(),
+            'title'   => $request->title,
+            'description'   => $request->description,
+        ]);
+
+        //redirect to index
+        return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+
+    public function ckeditoruploadupdate(Request $request)
+    {
+        try {
+            if ($request->hasFile('upload')) {
+                $file = $request->file('upload');
+                $fileName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)
+                    . '_' . time() . '.' . $file->getClientOriginalExtension();
+
+                // Simpan via Laravel Storage
+                $file->storeAs('public/ckeditorartikel', $fileName);
+
+                $url = asset('storage/ckeditorartikel/' . $fileName);
+
+                return response()->json([
+                    'fileName' => $fileName,
+                    'uploaded' => 1,
+                    'url' => $url
+                ]);
+            } else {
+                return response()->json([
+                    'uploaded' => 0,
+                    'error' => ['message' => 'No file uploaded.']
+                ]);
+            }
+        } catch (\Exception $e) {
+            return response()->json([
+                'uploaded' => 0,
+                'error' => ['message' => $e->getMessage()]
+            ]);
+        }
+    }
+
+    public function editupdate(string $id)
+    {
+        $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        $user = Auth::user();
+        $data['user'] = $user;
+        $data['artikelbaru'] = $artikelbaru;
+
+
+        return view('baru.backenddashboardupdate.artikel.edit', $data);
+    }
+
+    public function editpostupdate(Request $request, string $id)
+    {
+        //get product by ID
+        $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        //check if image is uploaded
+        if ($request->hasFile('image')) {
+
+            //upload new image
+            $image = $request->file('image');
+            $image->storeAs('public/artikelbaru', $image->hashName());
+
+            //delete old image
+            Storage::delete('public/artikelbaru/' . $artikelbaru->image);
+
+            //update product with new image
+            $artikelbaru->update([
+                'image'         => $image->hashName(),
+                'title'   => $request->title,
+                'description'   => $request->description
+            ]);
+        } else {
+
+            //update product without image
+            $artikelbaru->update([
+                'title'   => $request->title,
+                'description'   => $request->description,
+            ]);
+        }
+
+        //redirect to index
+        return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil di Edit!']);
+    }
+
+    public function showupdate(string $id)
+    {
+        $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        $artikelbaru->increment('viewer');
+
+        $user = Auth::user();
+        $data['user'] = $user;
+        $data['artikelbaru'] = $artikelbaru;
+
+        //render view with product
+        return view('baru.backenddashboardupdate.artikel.show', $data);
+    }
+
+
+    public function destroyupdate(string $id)
+    {
+        $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        //delete image
+        Storage::delete('public/artikelbaru/' . $artikelbaru->image);
+
+        //delete product
+        $artikelbaru->delete();
+
+        //redirect to index
+        return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil di Delete!']);
     }
 }

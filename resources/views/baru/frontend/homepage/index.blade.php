@@ -143,48 +143,49 @@
         </div>
 
         <!-- Content3-->
-        <div class="content-tiga text-center" style="margin-top: 20px" data-aos="fade-up">
-            <div class="caption3 mb-4">
-                <h1 style="margin-bottom: 20px; color: #005EB8">
-                    Media
-                </h1>
+        <div class="content-tiga" style="margin-top: 20px" data-aos="fade-up">
+            <div class="caption3 mb-4 text-center">
+                <h1 style="margin-bottom: 20px; color: #005EB8">Media</h1>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
-                @forelse ($artikels as $artikel)
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="{{ asset('/storage/artikels/' . $artikel->image) }}" class="card-img-top"
-                                alt="..." width="400px" height="230px">
-                            <div class="card-body">
-                                <a href="{{ $artikel->link }}" target="_blank">
-                                    <p class="card-title" style="font-size: 20px; font-weight:bold;">
-                                        {{ $artikel->title }}</p>
-                                </a>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                    @forelse ($artikels as $artikel)
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="{{ asset('/storage/artikels/' . $artikel->image) }}" class="card-img-top"
+                                    alt="..." style="height: 230px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <a href="{{ $artikel->link }}" target="_blank" style="text-decoration: none;"
+                                        onmouseover="this.style.textDecoration='underline'"
+                                        onmouseout="this.style.textDecoration='none'">
+                                        <p class="card-title" style="font-size: 20px; font-weight:bold;">
+                                            {{ $artikel->title }}
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
-
                         </div>
-                    </div>
-                @empty
-                    <div class="alert alert-danger" style="text-align: center">
-                        Data Media belum Tersedia.
-                    </div>
-                @endforelse
+                    @empty
+                        <div class="alert alert-danger text-center w-100" style="max-width: 100%;">
+                            Tidak Ada Media
+                        </div>
+                    @endforelse
+
+                </div>
             </div>
 
-            <div class="button-media">
-                <a href="{{ url('/media') }}"><img src="images/bingkai klik-8.png" class="img-fluid"
-                        alt="Responsive image" width="30%" height="20%">
+            <div class="button-media text-center mt-4">
+                <a href="{{ url('/media') }}">
+                    <img src="images/bingkai klik-8.png" class="img-fluid" alt="Responsive image" width="30%"
+                        height="20%">
                     <div class="centered-media fw-bold">@lang('message.LIHATSEMUAMEDIA')</div>
                 </a>
             </div>
-
         </div>
-        <!-- End Content3-->
-
     </div>
     <!-- End Container -->
-    
+
     <script>
         function myFunction() {
             location.replace("locale/en")

@@ -37,7 +37,8 @@
                  {{-- Dashboard --}}
                  @if ($user->is_role == 2)
                      <li class="nav-item {{ request()->routeIs('dashboardupdate') ? 'menu-open' : '' }}">
-                         <a href="{{ route('dashboardupdate') }}" class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}">
+                         <a href="{{ route('dashboardupdate') }}"
+                             class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}">
                              <i class="nav-icon fas fa-tachometer-alt"></i>
                              <p>Dashboard</p>
                          </a>
@@ -45,13 +46,22 @@
                  @endif
 
                  {{-- Artikel --}}
-                 <li class="nav-item {{ request()->routeIs('artikeldasboardupdate.index') ? 'menu-open' : '' }}">
-                     <a href="{{ route('artikeldasboardupdate.index') }}"
-                         class="nav-link {{ request()->routeIs('artikeldasboardupdate.index') ? 'active' : '' }}">
+                 <li
+                     class="nav-item {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'menu-open' : '' }}">
+                     <a href="{{ route('artikelindexupdate') }}"
+                         class="nav-link {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'active' : '' }}">
                          <i class="nav-icon fas fa-edit"></i>
                          <p>Artikel</p>
                      </a>
                  </li>
+
+                 {{-- <li class="nav-item {{ request()->routeIs('artikelindexupdate') ? 'menu-open' : '' }}">
+                     <a href="{{ route('artikelindexupdate') }}"
+                         class="nav-link {{ request()->routeIs('artikelindexupdate') ? 'active' : '' }}">
+                         <i class="nav-icon fas fa-edit"></i>
+                         <p>Artikel</p>
+                     </a>
+                 </li> --}}
 
                  <li class="nav-item menu-open">
                      <a href="#" class="nav-link">

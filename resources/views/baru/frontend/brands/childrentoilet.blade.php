@@ -8,8 +8,8 @@
 
         <!-- Banner Homepage-->
         <div class="banner-tentang-kami" data-aos="fade-up">
-            <img src="images/infografisproduk/deedee/infographicdeedee-03.webp" class="img-fluid" alt="..."
-                width="100%" style="border-radius: 2%">
+            <img src="images/infografisproduk/deedee/infographicdeedee-03.webp" class="img-fluid" alt="..." width="100%"
+                style="border-radius: 2%">
         </div>
         <!-- End Banner Homepage -->
 
@@ -38,9 +38,9 @@
                             src="images/infografisproduk/deedee/shampoolonghair.webp" alt="" /></a></div>
                 <div class="p-2"><a href="{{ route('childrensfacialwashupdate') }}"><img
                             src="images/infografisproduk/deedee/facialwash.webp" alt="" /></a></div>
-                {{-- <div class="p-2"><a href="{{ route('brands.aganol') }}"><img
-                            src="images/infografisproduk/deedee/hairshampoo.webp" alt="" /></a></div> --}}
             </div>
         </div>
         <!-- End Content-->
+
+    </div>
 @endsection
