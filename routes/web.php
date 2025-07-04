@@ -9,10 +9,13 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\baru\HomeControllerUpdate as BaruHomeControllerUpdate;
+use App\Http\Controllers\baru\MediaControllerUpdate as BaruMediaControllerUpdate;
+use App\Http\Controllers\baru\ProdukBaruControllerUpdate;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeControllerUpdate;
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\MediaControllerUpdate;
 use App\Http\Controllers\MediaUpdateController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\UserController;
@@ -22,62 +25,62 @@ use App\Http\Controllers\v2\CategoryController as V2CategoryController;
 use Illuminate\Support\Facades\Route;
 
 //Navbar
-Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/tentangkami', [HomeController::class, 'tentangKami'])->name('index.tentangkami');
-Route::get('/brands', [HomeController::class, 'brands'])->name('index.brands');
-Route::get('/produkbaru', [HomeController::class, 'produkBaru'])->name('index.produkbaru');
-Route::get('/kontak', [HomeController::class, 'kontak'])->name('index.kontak');
-Route::get('/distributor', [HomeController::class, 'distributor'])->name('index.distributor');
+// Route::get('/', [HomeController::class, 'index'])->name('index');
+// Route::get('/tentangkami', [HomeController::class, 'tentangKami'])->name('index.tentangkami');
+// Route::get('/brands', [HomeController::class, 'brands'])->name('index.brands');
+// Route::get('/produkbaru', [HomeController::class, 'produkBaru'])->name('index.produkbaru');
+// Route::get('/kontak', [HomeController::class, 'kontak'])->name('index.kontak');
+// Route::get('/distributor', [HomeController::class, 'distributor'])->name('index.distributor');
 
-//Brand
-Route::get('/householdcleaner', [HomeController::class, 'householdcleaner'])->name('brands.householdcleaner');
-Route::get('/childrentoilet', [HomeController::class, 'childrentoilet'])->name('brands.childrentoilet');
-Route::get('/babytoilet', [HomeController::class, 'babytoilet'])->name('brands.babytoilet');
-Route::get('/adulttoilet', [HomeController::class, 'adulttoilet'])->name('brands.adulttoilet');
+// //Brand
+// Route::get('/householdcleaner', [HomeController::class, 'householdcleaner'])->name('brands.householdcleaner');
+// Route::get('/childrentoilet', [HomeController::class, 'childrentoilet'])->name('brands.childrentoilet');
+// Route::get('/babytoilet', [HomeController::class, 'babytoilet'])->name('brands.babytoilet');
+// Route::get('/adulttoilet', [HomeController::class, 'adulttoilet'])->name('brands.adulttoilet');
 
-//Produk Household Cleaner
-Route::get('/aganol', [HomeController::class, 'aganolproduk'])->name('brands.aganol');
-Route::get('/babysoft', [HomeController::class, 'babysoftproduk'])->name('brands.babysoft');
-Route::get('/biosoftdetergen', [HomeController::class, 'biosoftdetergenproduk'])->name('brands.biosoftdetergen');
-Route::get('/biosoft', [HomeController::class, 'biosoftproduk'])->name('brands.biosoft');
-Route::get('/bathroomcleaner', [HomeController::class, 'bathroomcleanerproduk'])->name('brands.bathroomcleaner');
-Route::get('/yuribleach', [HomeController::class, 'yuribleachproduk'])->name('brands.yuribleach');
-Route::get('/fabriccare', [HomeController::class, 'fabriccareproduk'])->name('brands.fabriccare');
-Route::get('/glasscleaner', [HomeController::class, 'glasscleanerproduk'])->name('brands.glasscleaner');
-Route::get('/handgel', [HomeController::class, 'handgelproduk'])->name('brands.handgel');
-Route::get('/handsoap', [HomeController::class, 'handsoapproduk'])->name('brands.handsoap');
-Route::get('/ligent', [HomeController::class, 'ligentproduk'])->name('brands.ligent');
-Route::get('/ligentbaby', [HomeController::class, 'ligentbabyproduk'])->name('brands.ligentbaby');
-Route::get('/lysorin', [HomeController::class, 'lysorinproduk'])->name('brands.lysorin');
-Route::get('/yurisoft', [HomeController::class, 'yurisoftproduk'])->name('brands.yurisoft');
-Route::get('/porstex', [HomeController::class, 'porstexproduk'])->name('brands.porstex');
-Route::get('/porstexreguler', [HomeController::class, 'porstexregulerproduk'])->name('brands.porstexreguler');
-Route::get('/porstexkloset', [HomeController::class, 'porstexklosetproduk'])->name('brands.porstexkloset');
-Route::get('/yurisol', [HomeController::class, 'yurisolproduk'])->name('brands.yurisol');
-Route::get('/taf', [HomeController::class, 'tafproduk'])->name('brands.taf');
-Route::get('/yurimatic', [HomeController::class, 'yurimaticproduk'])->name('brands.yurimatic');
-Route::get('/tril', [HomeController::class, 'trilproduk'])->name('brands.tril');
-Route::get('/laundrydisinfektant', [HomeController::class, 'laundrydisinfektantproduk'])->name('brands.laundrydisinfektant');
-Route::get('/disinfektantspray', [HomeController::class, 'disinfektantsprayproduk'])->name('brands.disinfektantspray');
-Route::get('/handmoisturizer', [HomeController::class, 'handmoisturizerproduk'])->name('brands.handmoisturizer');
+// //Produk Household Cleaner
+// Route::get('/aganol', [HomeController::class, 'aganolproduk'])->name('brands.aganol');
+// Route::get('/babysoft', [HomeController::class, 'babysoftproduk'])->name('brands.babysoft');
+// Route::get('/biosoftdetergen', [HomeController::class, 'biosoftdetergenproduk'])->name('brands.biosoftdetergen');
+// Route::get('/biosoft', [HomeController::class, 'biosoftproduk'])->name('brands.biosoft');
+// Route::get('/bathroomcleaner', [HomeController::class, 'bathroomcleanerproduk'])->name('brands.bathroomcleaner');
+// Route::get('/yuribleach', [HomeController::class, 'yuribleachproduk'])->name('brands.yuribleach');
+// Route::get('/fabriccare', [HomeController::class, 'fabriccareproduk'])->name('brands.fabriccare');
+// Route::get('/glasscleaner', [HomeController::class, 'glasscleanerproduk'])->name('brands.glasscleaner');
+// Route::get('/handgel', [HomeController::class, 'handgelproduk'])->name('brands.handgel');
+// Route::get('/handsoap', [HomeController::class, 'handsoapproduk'])->name('brands.handsoap');
+// Route::get('/ligent', [HomeController::class, 'ligentproduk'])->name('brands.ligent');
+// Route::get('/ligentbaby', [HomeController::class, 'ligentbabyproduk'])->name('brands.ligentbaby');
+// Route::get('/lysorin', [HomeController::class, 'lysorinproduk'])->name('brands.lysorin');
+// Route::get('/yurisoft', [HomeController::class, 'yurisoftproduk'])->name('brands.yurisoft');
+// Route::get('/porstex', [HomeController::class, 'porstexproduk'])->name('brands.porstex');
+// Route::get('/porstexreguler', [HomeController::class, 'porstexregulerproduk'])->name('brands.porstexreguler');
+// Route::get('/porstexkloset', [HomeController::class, 'porstexklosetproduk'])->name('brands.porstexkloset');
+// Route::get('/yurisol', [HomeController::class, 'yurisolproduk'])->name('brands.yurisol');
+// Route::get('/taf', [HomeController::class, 'tafproduk'])->name('brands.taf');
+// Route::get('/yurimatic', [HomeController::class, 'yurimaticproduk'])->name('brands.yurimatic');
+// Route::get('/tril', [HomeController::class, 'trilproduk'])->name('brands.tril');
+// Route::get('/laundrydisinfektant', [HomeController::class, 'laundrydisinfektantproduk'])->name('brands.laundrydisinfektant');
+// Route::get('/disinfektantspray', [HomeController::class, 'disinfektantsprayproduk'])->name('brands.disinfektantspray');
+// Route::get('/handmoisturizer', [HomeController::class, 'handmoisturizerproduk'])->name('brands.handmoisturizer');
 
-//Produk dee dee
-Route::get('/childrenshairshampoo', [HomeController::class, 'childrenshairshampoo'])->name('brands.childrenshairshampoo');
-Route::get('/childrensbodywash', [HomeController::class, 'childrensbodywash'])->name('brands.childrensbodywash');
-Route::get('/mosquitoreppellentlotion', [HomeController::class, 'mosquitoreppellentlotion'])->name('brands.mosquitoreppellentlotion');
-Route::get('/childrensshowerfoaming', [HomeController::class, 'childrensshowerfoaming'])->name('brands.childrensshowerfoaming');
-Route::get('/childrenstalcumpowder', [HomeController::class, 'childrenstalcumpowder'])->name('brands.childrenstalcumpowder');
-Route::get('/childrenstoothpasta', [HomeController::class, 'childrenstoothpasta'])->name('brands.childrenstoothpasta');
-Route::get('/shampoolonghair', [HomeController::class, 'shampoolonghair'])->name('brands.shampoolonghair');
-Route::get('/childrensfacialwash', [HomeController::class, 'childrensfacialwash'])->name('brands.childrensfacialwash');
+// //Produk dee dee
+// Route::get('/childrenshairshampoo', [HomeController::class, 'childrenshairshampoo'])->name('brands.childrenshairshampoo');
+// Route::get('/childrensbodywash', [HomeController::class, 'childrensbodywash'])->name('brands.childrensbodywash');
+// Route::get('/mosquitoreppellentlotion', [HomeController::class, 'mosquitoreppellentlotion'])->name('brands.mosquitoreppellentlotion');
+// Route::get('/childrensshowerfoaming', [HomeController::class, 'childrensshowerfoaming'])->name('brands.childrensshowerfoaming');
+// Route::get('/childrenstalcumpowder', [HomeController::class, 'childrenstalcumpowder'])->name('brands.childrenstalcumpowder');
+// Route::get('/childrenstoothpasta', [HomeController::class, 'childrenstoothpasta'])->name('brands.childrenstoothpasta');
+// Route::get('/shampoolonghair', [HomeController::class, 'shampoolonghair'])->name('brands.shampoolonghair');
+// Route::get('/childrensfacialwash', [HomeController::class, 'childrensfacialwash'])->name('brands.childrensfacialwash');
 
 
-//FAQ
-Route::get('/faq', [HomeController::class, 'faq'])->name('index.faq');
+// //FAQ
+// Route::get('/faq', [HomeController::class, 'faq'])->name('index.faq');
 
 //Media
-Route::get('/media', [MediaController::class, 'index'])->name('media.index');
-Route::get('/media/{id}', [MediaController::class, 'show'])->name('media.show');
+// Route::get('/media', [MediaController::class, 'index'])->name('media.index');
+// Route::get('/media/{id}', [MediaController::class, 'show'])->name('media.show');
 
 //Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
@@ -122,6 +125,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/artikeleditupdate/{id}', [ArtikelBaruController::class, 'editupdate'])->name('artikeleditupdate');
     Route::put('/artikeleditupdate/post/{id}', [ArtikelBaruController::class, 'editpostupdate'])->name('artikeleditpostupdate');
     Route::get('/artikelshowupdate/{id}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
+
+    // Media Menu
+    Route::get('/media', [BaruMediaControllerUpdate::class, 'index'])->name('mediaindex');
+    Route::get('/createmedia', [BaruMediaControllerUpdate::class, 'create'])->name('createmedia');
+    Route::post('/createmediapost', [BaruMediaControllerUpdate::class, 'store'])->name('postmedia');
+    Route::delete('/mediadelete/{id}', [BaruMediaControllerUpdate::class, 'destroy'])->name('deletemedia');
+    Route::get('/mediaedit/{id}', [BaruMediaControllerUpdate::class, 'edit'])->name('editmedia');
+    Route::put('/mediaeditupdate/post/{id}', [BaruMediaControllerUpdate::class, 'update'])->name('updatemedia');
+
+    // Produk Baru Menu
+    Route::get('/produkbaru', [ProdukBaruControllerUpdate::class, 'index'])->name('produkbaruindex');
+    Route::get('/createprodukbaru', [ProdukBaruControllerUpdate::class, 'create'])->name('createprodukbaru');
+    Route::post('/createprodukbarupost', [ProdukBaruControllerUpdate::class, 'store'])->name('postprodukbaru');
+    Route::delete('/produkbarudelete/{id}', [ProdukBaruControllerUpdate::class, 'destroy'])->name('deleteprodukbaru');
+    Route::get('/produkbaruedit/{id}', [ProdukBaruControllerUpdate::class, 'edit'])->name('editprodukbaru');
+    Route::put('/produkbarueditupdate/post/{id}', [ProdukBaruControllerUpdate::class, 'update'])->name('updateprodukbaru');
+    
 });
 
 Route::group(['middleware' => 'superadmin'], function () {
@@ -191,15 +211,15 @@ Route::post('ckeditor/upload', [ArtikelBaruController::class, 'upload'])->name('
 // Update semua 
 
 // Frontend Website
-Route::get('/homepageupdate', [BaruHomeControllerUpdate::class, 'index'])->name('indexupdate');
-Route::get('/tentangkamiupdate', [BaruHomeControllerUpdate::class, 'tentangKami'])->name('tentangkamiupdate');
-Route::get('/brandsupdate', [BaruHomeControllerUpdate::class, 'brands'])->name('brandsupdate');
-Route::get('/artikelupdate', [BaruHomeControllerUpdate::class, 'artikel'])->name('artikelupdate');
+Route::get('/', [BaruHomeControllerUpdate::class, 'index'])->name('indexupdate');
+Route::get('/tentangkami', [BaruHomeControllerUpdate::class, 'tentangKami'])->name('tentangkamiupdate');
+Route::get('/brands', [BaruHomeControllerUpdate::class, 'brands'])->name('brandsupdate');
+Route::get('/artikel', [BaruHomeControllerUpdate::class, 'artikel'])->name('artikelupdate');
 Route::get('/mediaupdate', [BaruHomeControllerUpdate::class, 'media'])->name('mediaupdate');
 Route::get('/produkbaruupdate', [BaruHomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
-Route::get('/kontakupdate', [BaruHomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
-Route::get('/distributorupdate', [BaruHomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
-Route::get('/eventupdate', [BaruHomeControllerUpdate::class, 'event'])->name('eventupdate');
+Route::get('/kontak', [BaruHomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
+Route::get('/distributor', [BaruHomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
+Route::get('/event', [BaruHomeControllerUpdate::class, 'event'])->name('eventupdate');
 
 //Brand Update
 Route::get('/householdcleanerupdate', [BaruHomeControllerUpdate::class, 'householdcleaner'])->name('householdcleanerupdate');
@@ -261,12 +281,12 @@ Route::get('logout', [V2DashboardController::class, 'logout']);
 // Route::post('/updatearticle/{id}', [V2ArticleController::class, 'updatearticle'])->name('updatearticle');
 // Route::delete('/deletearticle/{id}', [V2ArticleController::class, 'deletearticle'])->name('deletearticle');
 
-Route::get('/category', [V2CategoryController::class, 'indexcategory'])->name('indexcategory');
-Route::get('/addcategory', [V2CategoryController::class, 'addcategory'])->name('addcategory');
-Route::get('/editcategory/{id}', [V2CategoryController::class, 'editcategory'])->name('editcategory');
-Route::post('/postcategory', [V2CategoryController::class, 'postcategory'])->name('postcategory');
-Route::post('/updatecategory/{id}', [V2CategoryController::class, 'updatecategory'])->name('updatecategory');
-Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecategory'])->name('deletecategory');
+// Route::get('/category', [V2CategoryController::class, 'indexcategory'])->name('indexcategory');
+// Route::get('/addcategory', [V2CategoryController::class, 'addcategory'])->name('addcategory');
+// Route::get('/editcategory/{id}', [V2CategoryController::class, 'editcategory'])->name('editcategory');
+// Route::post('/postcategory', [V2CategoryController::class, 'postcategory'])->name('postcategory');
+// Route::post('/updatecategory/{id}', [V2CategoryController::class, 'updatecategory'])->name('updatecategory');
+// Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecategory'])->name('deletecategory');
 
 
 // Route::get('/mediaupdate', [V2CategoryController::class, 'indexmedia'])->name('indexmedia');
@@ -275,4 +295,4 @@ Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecateg
 // Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');
 
 // Event
-Route::get('/event', [EventController::class, 'index'])->name('index.event');
+Route::get('/eventdashboard', [EventController::class, 'index'])->name('index.event');

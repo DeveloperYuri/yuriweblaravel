@@ -55,24 +55,29 @@
                      </a>
                  </li>
 
-                 {{-- <li class="nav-item {{ request()->routeIs('artikelindexupdate') ? 'menu-open' : '' }}">
-                     <a href="{{ route('artikelindexupdate') }}"
-                         class="nav-link {{ request()->routeIs('artikelindexupdate') ? 'active' : '' }}">
-                         <i class="nav-icon fas fa-edit"></i>
-                         <p>Artikel</p>
-                     </a>
-                 </li> --}}
-
-                 <li class="nav-item menu-open">
-                     <a href="#" class="nav-link">
+                 {{-- Media --}}
+                 <li
+                     class="nav-item {{ request()->routeIs('mediaindex', 'createmedia', 'editmedia*') ? 'menu-open' : '' }}">
+                     <a href="{{ route('mediaindex') }}"
+                         class="nav-link {{ request()->routeIs('mediaindex', 'createmedia', 'editmedia*') ? 'active' : '' }}">
                          <i class="nav-icon fas fa-book"></i>
-                         <p>
-                             Media
-                         </p>
+                         <p>Media</p>
                      </a>
                  </li>
 
+                 {{-- Produk Baru --}}
                  @if ($user->is_role == 2)
+                 <li
+                     class="nav-item {{ request()->routeIs('produkbaruindex', 'createmedia', 'editmedia*') ? 'menu-open' : '' }}">
+                     <a href="{{ route('produkbaruindex') }}"
+                         class="nav-link {{ request()->routeIs('produkbaruindex', 'createmedia', 'editmedia*') ? 'active' : '' }}">
+                         <i class="nav-icon fab fa-product-hunt"></i>
+                         <p>Produk Baru</p>
+                     </a>
+                 </li>
+                  @endif
+
+                 {{-- @if ($user->is_role == 2)
                      <li class="nav-item menu-open">
                          <a href="#" class="nav-link">
                              <i class="nav-icon fab fa-product-hunt"></i>
@@ -81,7 +86,7 @@
                              </p>
                          </a>
                      </li>
-                 @endif
+                 @endif --}}
 
                  @if ($user->is_role == 2)
                      <li class="nav-item menu-open">

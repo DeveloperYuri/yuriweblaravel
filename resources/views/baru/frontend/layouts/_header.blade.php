@@ -2,7 +2,7 @@
     <!-- Sosmed -->
     <div class="sosmed d-flex justify-content-between align-items-center" style="margin-top: 10px">
         <ul class="d-flex align-items-center mb-0 ms-auto" style="list-style: none; padding-left: 0; margin-bottom: 0;">
-            <li><a href="{{ route('index.kontak') }}"><img src="{{ asset('images/kontak-small.png') }}"
+            <li><a href="{{ route('kontakupdate') }}"><img src="{{ asset('images/kontak-small.png') }}"
                         alt="kontak"></a></a>
             </li>
             <li><a href="https://www.youtube.com/@YuriDee2" target="_blank"><img
@@ -97,7 +97,7 @@
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <a href="{{ route('index') }}"><img src="images/logo-8.png" width="100px" height="50px"
+                <a href="{{ route('indexupdate') }}"><img src="images/logo-8.png" width="100px" height="50px"
                         alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -107,19 +107,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('homepageupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('indexupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('indexupdate') }}"
                                 style="color: #005EB8">@lang('message.HOME')</a>
                         </li>
 
+
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('tentangkamiupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('tentangkamiupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('tentangkamiupdate') }}"
                                 style="color: #005EB8">@lang('message.TENTANGKAMI')</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('brandsupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('brandsupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('brandsupdate') }}"
                                 style="color: #005EB8">@lang('message.BRANDS')</a>
                         </li>
@@ -139,37 +140,37 @@
                                         target="_blank">LAZADA</a></li>
                                 <li><a class="dropdown-item" href="https://www.blibli.com/brand/yuri-official-store"
                                         target="_blank">BLIBLI</a></li>
-                                <li><a class="dropdown-item" href="https://www.yurishop.co/id/" target="_blank">YURI
+                                <li><a class="dropdown-item" href="https://www.yurrouteIshop.co/id/" target="_blank">YURI
                                         SHOP</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('artikelupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('artikelupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('artikelupdate') }}" style="color: #005EB8">ARTIKEL
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('mediaupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('mediaupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('mediaupdate') }}"
                                 style="color: #005EB8">@lang('message.MEDIA')</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('produkbaruupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('produkbaruupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('produkbaruupdate') }}"
                                 style="color: #005EB8">@lang('message.PRODUKBARU')</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('kontakupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('kontakupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('kontakupdate') }}"
                                 style="color: #005EB8">@lang('message.KONTAK')</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('distributorupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('distributorupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('distributorupdate') }}"
                                 style="color: #005EB8">@lang('message.DISTRIBUTOR')</a>
                         </li>

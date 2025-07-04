@@ -21,14 +21,7 @@ class ProdukBaru extends Model
         'image',
         'description'
     ];
-
-    public function toSearchableArray()
-    {
-        return [
-            'description' => $this->description
-        ];
-    }
-
+    
     static public function getRecord($request)
     {
         $return = self::select('produk_barus.*')
