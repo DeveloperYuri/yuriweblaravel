@@ -111,7 +111,7 @@ Route::get('reset/{token}', [AuthControllerBaru::class, 'getReset']);
 Route::post('reset_post/{token}', [AuthControllerBaru::class, 'postReset']);
 
 // Logout
-Route::post('/logout', [AuthControllerBaru::class, 'logout'])->name('logout');
+Route::get('/logout', [AuthControllerBaru::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardupdate', [AuthControllerBaru::class, 'dashboardupdate'])->name('dashboardupdate');
@@ -141,7 +141,21 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/produkbarudelete/{id}', [ProdukBaruControllerUpdate::class, 'destroy'])->name('deleteprodukbaru');
     Route::get('/produkbaruedit/{id}', [ProdukBaruControllerUpdate::class, 'edit'])->name('editprodukbaru');
     Route::put('/produkbarueditupdate/post/{id}', [ProdukBaruControllerUpdate::class, 'update'])->name('updateprodukbaru');
-    
+
+    // Event Menu
+    Route::get('/eventupdate', [EventController::class, 'listeventupdate'])->name('eventdashboardupdate');
+    Route::get('/createeventupdate', [EventController::class, 'createeventupdate'])->name('createeventupdate');
+    Route::post('/createeventpost', [EventController::class, 'createeventpostupdate'])->name('createeventpostupdate');
+    Route::get('/editevent/{id}', [EventController::class, 'editeventupdate'])->name('editeventupdate');
+    Route::put('/editeventpost/{id}', [EventController::class, 'editeventpostupdate'])->name('editeventpostupdate');
+    Route::delete('/deleteevent/{id}', [EventController::class, 'deleteeventupdate'])->name('deleteeventupdate');
+
+    // User Menu
+    Route::get('/usersupdate', [UserController::class, 'indexupdate'])->name('usersupdate');
+    Route::get('/createusersupdate', [UserController::class, 'createupdate'])->name('createusersupdate');
+    Route::post('/postusersupdate', [UserController::class, 'storeupdate'])->name('createuserspostupdate');
+    Route::delete('/deleteusersupdate/{id}', [UserController::class, 'destroyupdate'])->name('usersdeleteupdate');
+
 });
 
 Route::group(['middleware' => 'superadmin'], function () {
@@ -271,7 +285,7 @@ Route::get('/faqupdate', [BaruHomeControllerUpdate::class, 'faq'])->name('faqupd
 // Route::get('/dashboardupdate', [V2DashboardController::class, 'index'])->name('indexdashboard');
 Route::get('/myprofile', [UserController::class, 'myprofile'])->name('myprofile');
 Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
-Route::get('logout', [V2DashboardController::class, 'logout']);
+// Route::get('logout', [V2DashboardController::class, 'logout']);
 
 // Route::get('/artikelupdate', [V2ArticleController::class, 'index'])->name('indexarticle');
 // Route::get('/artikeldetail/{slug}', [V2ArticleController::class, 'index'])->name('indexarticledetail');
@@ -295,4 +309,4 @@ Route::get('logout', [V2DashboardController::class, 'logout']);
 // Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');
 
 // Event
-Route::get('/eventdashboard', [EventController::class, 'index'])->name('index.event');
+// Route::get('/eventdashboard', [EventController::class, 'index'])->name('index.event');

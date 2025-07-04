@@ -114,6 +114,65 @@ class UserController extends Controller
         return redirect()->back()->with('success', "Account setting successfully updated");
         
     }
-   
+
+    // update users
+
+   public function indexupdate(Request $request)
+    {
+
+        $user = Auth::user();
+
+        $data['user'] = $user;
+        $data['getRecord'] = User::getRecord($request);
+
+        return view('baru.backenddashboardupdate.user.index', $data);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function createupdate()
+    {
+        $user = Auth::user();
+
+        $data['user'] = $user;
+        return view('baru.backenddashboardupdate.user.create', $data);
+
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function storeupdate(Request $request): RedirectResponse
+    {
+        $user = request()->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users',
+            'password' => 'required|min:6',
+            'confirm_password' => 'required_with:password|same:password|min:6',
+            'is_role' => 'required'
+        ]);
+
+        $user = new User;
+        $user->name = trim($request->name);
+        $user->email = trim($request->email);
+        $user->password = Hash::make($request->password);
+        $user->is_role = trim($request->is_role);
+        $user->remember_token = Str::random(50);
+        $user->save();
+
+        return redirect()->route('usersupdate')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+
+    public function destroyupdate(string $id)
+    {
+        $users = User::findOrFail($id);
+
+        //delete product
+        $users->delete();
+
+        //redirect to index
+        return redirect()->route('usersupdate')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
 
 }
