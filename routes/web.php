@@ -117,7 +117,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardupdate', [AuthControllerBaru::class, 'dashboardupdate'])->name('dashboardupdate');
 
     // Artikel Menu
-    Route::get('/artikelindexupdate', [ArtikelBaruController::class, 'indexupdate'])->name('artikelindexupdate');
+    Route::get('/dashboardartikel', [ArtikelBaruController::class, 'indexupdate'])->name('artikelindexupdate');
     Route::get('/createartikel', [ArtikelBaruController::class, 'createupdate'])->name('createartikel');
     Route::post('/createartikelpost', [ArtikelBaruController::class, 'storeupdate'])->name('postartikel');
     Route::post('ckeditor/upload', [ArtikelBaruController::class, 'uploadckeditorupdate'])->name('ckeditoruploadupdate');
@@ -127,7 +127,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/artikelshowupdate/{id}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
 
     // Media Menu
-    Route::get('/media', [BaruMediaControllerUpdate::class, 'index'])->name('mediaindex');
+    Route::get('/dashboardmedia', [BaruMediaControllerUpdate::class, 'index'])->name('mediaindex');
     Route::get('/createmedia', [BaruMediaControllerUpdate::class, 'create'])->name('createmedia');
     Route::post('/createmediapost', [BaruMediaControllerUpdate::class, 'store'])->name('postmedia');
     Route::delete('/mediadelete/{id}', [BaruMediaControllerUpdate::class, 'destroy'])->name('deletemedia');
@@ -135,7 +135,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/mediaeditupdate/post/{id}', [BaruMediaControllerUpdate::class, 'update'])->name('updatemedia');
 
     // Produk Baru Menu
-    Route::get('/produkbaru', [ProdukBaruControllerUpdate::class, 'index'])->name('produkbaruindex');
+    Route::get('/dashboardprodukbaru', [ProdukBaruControllerUpdate::class, 'index'])->name('produkbaruindex');
     Route::get('/createprodukbaru', [ProdukBaruControllerUpdate::class, 'create'])->name('createprodukbaru');
     Route::post('/createprodukbarupost', [ProdukBaruControllerUpdate::class, 'store'])->name('postprodukbaru');
     Route::delete('/produkbarudelete/{id}', [ProdukBaruControllerUpdate::class, 'destroy'])->name('deleteprodukbaru');
@@ -143,7 +143,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/produkbarueditupdate/post/{id}', [ProdukBaruControllerUpdate::class, 'update'])->name('updateprodukbaru');
 
     // Event Menu
-    Route::get('/eventupdate', [EventController::class, 'listeventupdate'])->name('eventdashboardupdate');
+    Route::get('/dashboardevent', [EventController::class, 'listeventupdate'])->name('eventdashboardupdate');
     Route::get('/createeventupdate', [EventController::class, 'createeventupdate'])->name('createeventupdate');
     Route::post('/createeventpost', [EventController::class, 'createeventpostupdate'])->name('createeventpostupdate');
     Route::get('/editevent/{id}', [EventController::class, 'editeventupdate'])->name('editeventupdate');
@@ -151,7 +151,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/deleteevent/{id}', [EventController::class, 'deleteeventupdate'])->name('deleteeventupdate');
 
     // User Menu
-    Route::get('/usersupdate', [UserController::class, 'indexupdate'])->name('usersupdate');
+    Route::get('/dashboardusers', [UserController::class, 'indexupdate'])->name('usersupdate');
     Route::get('/createusersupdate', [UserController::class, 'createupdate'])->name('createusersupdate');
     Route::post('/postusersupdate', [UserController::class, 'storeupdate'])->name('createuserspostupdate');
     Route::delete('/deleteusersupdate/{id}', [UserController::class, 'destroyupdate'])->name('usersdeleteupdate');
@@ -229,8 +229,8 @@ Route::get('/', [BaruHomeControllerUpdate::class, 'index'])->name('indexupdate')
 Route::get('/tentangkami', [BaruHomeControllerUpdate::class, 'tentangKami'])->name('tentangkamiupdate');
 Route::get('/brands', [BaruHomeControllerUpdate::class, 'brands'])->name('brandsupdate');
 Route::get('/artikel', [BaruHomeControllerUpdate::class, 'artikel'])->name('artikelupdate');
-Route::get('/mediaupdate', [BaruHomeControllerUpdate::class, 'media'])->name('mediaupdate');
-Route::get('/produkbaruupdate', [BaruHomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
+Route::get('/media', [BaruHomeControllerUpdate::class, 'media'])->name('mediaupdate');
+Route::get('/produkbaru', [BaruHomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
 Route::get('/kontak', [BaruHomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
 Route::get('/distributor', [BaruHomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
 Route::get('/event', [BaruHomeControllerUpdate::class, 'event'])->name('eventupdate');

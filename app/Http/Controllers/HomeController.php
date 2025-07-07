@@ -18,21 +18,21 @@ class HomeController extends Controller
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
-        //dd($var_countryname);
+        dd($var_countryname);
 
-        if ($var_countryname == "Indonesia") {
-            //get all products
-            $artikels = Artikel::latest()->paginate(3);
+        // if ($var_countryname == "Indonesia") {
+        //     //get all products
+        //     $artikels = Artikel::latest()->paginate(3);
 
-            //render view with products
-            return view('homepage.index', compact('artikels'));
-        } else {
-            //get all products
-            $artikels = Artikel::latest()->paginate(3);
+        //     //render view with products
+        //     return view('homepage.index', compact('artikels'));
+        // } else {
+        //     //get all products
+        //     $artikels = Artikel::latest()->paginate(3);
 
-            //render view with products
-            return view('homepage.indexsg', compact('artikels'));
-        }
+        //     //render view with products
+        //     return view('homepage.indexsg', compact('artikels'));
+        // }
     }
 
     public function show(string $id): View

@@ -22,7 +22,7 @@ class HomeControllerUpdate extends Controller
         $currentUserInfo = Location::get($ip);
         $var_countryname = $currentUserInfo->countryName;
 
-        //dd($var_countryname);
+        // dd($var_countryname);
 
         if ($var_countryname == "Indonesia") {
             //get all products

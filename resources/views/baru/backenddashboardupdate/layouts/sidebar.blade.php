@@ -92,28 +92,14 @@
                  {{-- User --}}
                   @if ($user->is_role == 2)
                      <li
-                         class="nav-item {{ request()->routeIs('usersupdate', 'createeventupdate', 'editeventupdate*') ? 'menu-open' : '' }}">
+                         class="nav-item {{ request()->routeIs('usersupdate', 'createusersupdate*') ? 'menu-open' : '' }}">
                          <a href="{{ route('usersupdate') }}"
-                             class="nav-link {{ request()->routeIs('usersupdate', 'createeventupdate', 'editeventupdate*') ? 'active' : '' }}">
+                             class="nav-link {{ request()->routeIs('usersupdate', 'createusersupdate*') ? 'active' : '' }}">
                              <i class="nav-icon fas fa-user-circle"></i>
                              <p>User</p>
                          </a>
                      </li>
                  @endif
-
-                 {{-- @if ($user->is_role == 2)
-                     <li class="nav-item menu-open">
-                         <a href="#" class="nav-link">
-                             <i class="nav-icon fas fa-user-circle"></i>
-                             <p>
-                                 User
-                             </p>
-                         </a>
-                     </li>
-                 @endif --}}
-
-                 
-
 
                  {{-- <li class="nav-item menu-open">
                      <a href="#" class="nav-link">
