@@ -44,6 +44,19 @@
                             </div>
 
                             <div class="form-group mb-3">
+                                <label class="font-weight-bold">Periode</label>
+                                <input type="text" class="form-control @error('periode') is-invalid @enderror"
+                                    name="periode" value="{{ old('periode') }}" placeholder="Masukkan Description Event">
+
+                                <!-- error message untuk title -->
+                                @error('periode')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
                                 <input type="text" class="form-control @error('description') is-invalid @enderror"
                                     name="description" value="{{ old('description') }}" placeholder="Masukkan Description Event">

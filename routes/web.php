@@ -11,6 +11,7 @@ use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\baru\HomeControllerUpdate as BaruHomeControllerUpdate;
 use App\Http\Controllers\baru\MediaControllerUpdate as BaruMediaControllerUpdate;
 use App\Http\Controllers\baru\ProdukBaruControllerUpdate;
+use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeControllerUpdate;
@@ -162,6 +163,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardregistrationform/show/{id}', [RegistrationEventController::class, 'show'])->name('registrationeventshow');
     Route::get('/export-registration-event', [RegistrationEventController::class, 'export'])->name('export');
 
+    // Configuration
+    Route::get('/configuration', [ConfigurationController::class, 'index'])->name('configindex');
 });
 
 // Route::group(['middleware' => 'superadmin'], function () {

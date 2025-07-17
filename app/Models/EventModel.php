@@ -16,7 +16,8 @@ class EventModel extends Model
         'image',
         'description',
         'link_instagram',
-        'link_daftar'
+        'link_daftar',
+        'periode'
     ];
 
     static public function getRecord($request)

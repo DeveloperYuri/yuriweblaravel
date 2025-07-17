@@ -31,9 +31,14 @@ class HomeControllerUpdate extends Controller
         if ($var_countryname == "Indonesia") {
             //get all products
             $artikels = Artikel::latest()->paginate(3);
+            $events = EventModel::all();
 
             //render view with products
-            return view('baru.frontend.homepage.index', compact('artikels'));
+            return view('baru.frontend.homepage.index', [
+                'artikels' => $artikels,
+                'events' => $events
+            ]);
+            // return view('baru.frontend.homepage.index', compact('artikels'));
         } else {
             //get all products
             $artikels = Artikel::latest()->paginate(3);

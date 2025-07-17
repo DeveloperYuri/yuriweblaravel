@@ -44,6 +44,7 @@ class EventController extends Controller
         //validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:20048',
+            'periode'   => 'required|min:1',
             'description'   => 'required|min:1',
             'link_instagram'   => 'required|min:1',
             'link_daftar'   => 'required|min:1'
@@ -56,6 +57,7 @@ class EventController extends Controller
         //create product
         EventModel::create([
             'image'         => $image->hashName(),
+            'periode'   => $request->periode,
             'description'   => $request->description,
             'link_instagram'   => $request->link_instagram,
             'link_daftar'   => $request->link_daftar,
@@ -76,6 +78,7 @@ class EventController extends Controller
         //validate form
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
+            'periode'   => 'required|min:1',
             'description'   => 'required|min:5',
             'link_instagram'   => 'required|min:1',
             'link_daftar'   => 'required|min:1'
@@ -97,6 +100,7 @@ class EventController extends Controller
             //update product with new image
             $events->update([
                 'image'         => $image->hashName(),
+                'periode'   => $request->periode,
                 'description'   => $request->description,
                 'link_instagram'   => $request->link_instagram,
                 'link_daftar'   => $request->link_daftar
@@ -105,6 +109,7 @@ class EventController extends Controller
 
             //update product without image
             $events->update([
+                'periode'   => $request->periode,
                 'description'   => $request->description,
                 'link_instagram'   => $request->link_instagram,
                 'link_daftar'   => $request->link_daftar
@@ -162,9 +167,12 @@ class EventController extends Controller
 
     public function createeventpostupdate(Request $request)
     {
-        //validate form
+
+        // dd($request->all());
+        // validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:20048',
+            'periode'   => 'required|min:1',
             'description'   => 'required|min:1',
             'link_instagram'   => 'required|min:1',
             'link_daftar'   => 'required|min:1'
@@ -177,6 +185,7 @@ class EventController extends Controller
         //create product
         EventModel::create([
             'image'         => $image->hashName(),
+            'periode'   => $request->periode,
             'description'   => $request->description,
             'link_instagram'   => $request->link_instagram,
             'link_daftar'   => $request->link_daftar,
@@ -203,6 +212,7 @@ class EventController extends Controller
         //validate form
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
+            'periode'   => 'required|min:1',
             'description'   => 'required|min:5',
             'link_instagram'   => 'required|min:1',
             'link_daftar'   => 'required|min:1'
@@ -224,6 +234,7 @@ class EventController extends Controller
             //update product with new image
             $events->update([
                 'image'         => $image->hashName(),
+                'periode'   => $request->periode,
                 'description'   => $request->description,
                 'link_instagram'   => $request->link_instagram,
                 'link_daftar'   => $request->link_daftar
@@ -232,6 +243,7 @@ class EventController extends Controller
 
             //update product without image
             $events->update([
+                'periode'   => $request->periode,
                 'description'   => $request->description,
                 'link_instagram'   => $request->link_instagram,
                 'link_daftar'   => $request->link_daftar

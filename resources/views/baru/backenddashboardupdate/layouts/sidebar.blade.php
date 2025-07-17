@@ -101,7 +101,7 @@
                      </li>
                  @endif
 
-                 {{-- User --}}
+                 {{-- Registrasi Form --}}
                  <li
                      class="nav-item {{ request()->routeIs('registrationeventindex', 'registrationeventshow*') ? 'menu-open' : '' }}">
                      <a href="{{ route('registrationeventindex') }}"
@@ -110,6 +110,18 @@
                          <p>Registrasi Form</p>
                      </a>
                  </li>
+
+                 {{-- Configuration --}}
+                 {{-- @if ($user->is_role == 2)
+                     <li
+                         class="nav-item {{ request()->routeIs('configindex', 'createusersupdate*') ? 'menu-open' : '' }}">
+                         <a href="{{ route('configindex') }}"
+                             class="nav-link {{ request()->routeIs('configindex', 'createusersupdate*') ? 'active' : '' }}">
+                             <i class="nav-icon fas fa-user-circle"></i>
+                             <p>Configuration</p>
+                         </a>
+                     </li>
+                 @endif --}}
 
 
                  {{-- <li class="nav-item menu-open">
