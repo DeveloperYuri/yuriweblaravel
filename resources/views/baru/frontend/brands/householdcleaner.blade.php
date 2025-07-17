@@ -73,8 +73,8 @@
             </div>
 
             <div class="d-flex p-3 justify-content-center">
-                <div class="p-2"><a href="{{ route('laundrydisinfektantupdate') }}"><img
-                            src="images/household19.png" alt="" /></a></div>
+                <div class="p-2"><a href="{{ route('laundrydisinfektantupdate') }}"><img src="images/household19.png"
+                            alt="" /></a></div>
                 <div class="p-2"><a href="{{ route('disinfektantsprayupdate') }}"><img src="images/household20.png"
                             alt="" /></a></div>
                 <div class="p-2"><a href="{{ route('handmoisturizerupdate') }}"><img src="images/household21.png"
@@ -82,13 +82,22 @@
             </div>
 
             <div class="d-flex p-3 justify-content-center">
+                <div class="p-2"><a href="{{ route('yurisoftupdate') }}"><img src="images/household13.png"
+                            alt="" /></a></div>
+                <div class="p-2"><a href="{{ route('lysorinupdate') }}"><img src="images/household12.png"
+                            alt="" /></a></div>
+                <div class="p-2"><a href="{{ route('yurisolupdate') }}"><img src="images/household15.png"
+                            alt="" /></a></div>
+            </div>
+
+            {{-- <div class="d-flex p-3 justify-content-center">
                 <div id="yurisoftbrands" class="p-2"><a href="{{ route('yurisoftupdate') }}"><img
                             src="images/household13.png" alt="" /></a></div>
                 <div class="p-2"><a href="{{ route('lysorinupdate') }}"><img src="images/household12.png"
                             alt="" /></a></div>
-                <div class="p-2"><a href="#"></a></div>
-
-            </div>
+                <div class="p-2"><a href="{{ route('yurisolupdate') }}"><img src="images/household15.png"
+                            alt="" /></a></div>
+            </div> --}}
         </div>
         <!-- End Content-->
 

@@ -68,9 +68,9 @@
                  {{-- Produk Baru --}}
                  @if ($user->is_role == 2)
                      <li
-                         class="nav-item {{ request()->routeIs('produkbaruindex', 'createmedia', 'editmedia*') ? 'menu-open' : '' }}">
+                         class="nav-item {{ request()->routeIs('produkbaruindex', 'createprodukbaru', 'editprodukbaru*') ? 'menu-open' : '' }}">
                          <a href="{{ route('produkbaruindex') }}"
-                             class="nav-link {{ request()->routeIs('produkbaruindex', 'createmedia', 'editmedia*') ? 'active' : '' }}">
+                             class="nav-link {{ request()->routeIs('produkbaruindex', 'createprodukbaru', 'editprodukbaru*') ? 'active' : '' }}">
                              <i class="nav-icon fab fa-product-hunt"></i>
                              <p>Produk Baru</p>
                          </a>
@@ -78,7 +78,7 @@
                  @endif
 
                  {{-- Event --}}
-                  @if ($user->is_role == 2)
+                 @if ($user->is_role == 2)
                      <li
                          class="nav-item {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'menu-open' : '' }}">
                          <a href="{{ route('eventdashboardupdate') }}"
@@ -90,7 +90,7 @@
                  @endif
 
                  {{-- User --}}
-                  @if ($user->is_role == 2)
+                 @if ($user->is_role == 2)
                      <li
                          class="nav-item {{ request()->routeIs('usersupdate', 'createusersupdate*') ? 'menu-open' : '' }}">
                          <a href="{{ route('usersupdate') }}"
@@ -100,6 +100,17 @@
                          </a>
                      </li>
                  @endif
+
+                 {{-- User --}}
+                 <li
+                     class="nav-item {{ request()->routeIs('registrationeventindex', 'registrationeventshow*') ? 'menu-open' : '' }}">
+                     <a href="{{ route('registrationeventindex') }}"
+                         class="nav-link {{ request()->routeIs('registrationeventindex', 'registrationeventshow*') ? 'active' : '' }}">
+                         <i class="nav-icon fas fa-user-circle"></i>
+                         <p>Registrasi Form</p>
+                     </a>
+                 </li>
+
 
                  {{-- <li class="nav-item menu-open">
                      <a href="#" class="nav-link">

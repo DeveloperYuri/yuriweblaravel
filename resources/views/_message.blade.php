@@ -1,4 +1,4 @@
-<style type="text/css">
+{{-- <style type="text/css">
     .alert {
         padding: 25px;
         margin-bottom: 20px;
@@ -92,10 +92,16 @@
     .alert-danger .alert-link {
         color: #843534;
     }
-</style>
+</style> --}}
+
+{{-- @if (!empty(session('success')))
+    <div class="alert alert-success" role="alert">
+        {{ session('success') }}
+    </div>
+@endif --}}
 
 @if (!empty(session('success')))
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success text-center" role="alert">
         {{ session('success') }}
     </div>
 @endif

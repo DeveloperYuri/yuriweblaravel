@@ -19,7 +19,7 @@
                         <div class="card h-100"> {{-- ini penting untuk styling card + full height --}}
 
                             <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}" class="card-img-top"
-                                alt="..." style="height: 230px; object-fit: cover;">
+                                alt="..." style="height: 230px; object-fit: contain;">
 
                             <div class="card-body">
                                 <a href="{{ route('indexartikelbaru.show', $artikel->id) }}" style="text-decoration: none;"

@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        
+
         <!-- Content1 -->
         <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1 mb-4">
@@ -14,52 +14,31 @@
             </div>
 
             <div class="row mt-2">
-
                 @forelse ($media as $m)
-                    <div class="col-lg-4 mt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{{ asset('/storage/media/' . $m->image) }}" class="card-img-top"
+                                alt="{{ $m->title }}" style="height: 230px; object-fit: cover;">
 
-                        <img src="{{ asset('/storage/artikels/' . $m->image) }}" class="card-img-top" alt="..."
-                            width="400px" height="230px">
-
-                        <div class="card-body">
-                            <a href="{{ $m->link }}" target="_blank">
-                                <p class="card-title" style="font-size: 20px; font-weight:bold;">{{ $m->title }}
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-
-                @empty
-                    <div class="alert alert-danger text-center">
-                        Tidak Ada Media.
-                    </div>
-                @endforelse
-
-            </div>
-
-            {{-- <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
-                @forelse ($media as $m)
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="{{ asset('/storage/artikels/' . $m->image) }}" class="card-img-top" alt="..."
-                                width="400px" height="230px">
                             <div class="card-body">
-                                <a href="{{ $m->link }}" target="_blank">
-                                    <p class="card-title" style="font-size: 20px; font-weight:bold;">{{ $m->title }}
-                                    </p>
+                                <a href="{{ $m->link }}" target="_blank" class="text-decoration-none text-dark"
+                                    onmouseover="this.querySelector('h5').style.textDecoration='underline';"
+                                    onmouseout="this.querySelector('h5').style.textDecoration='none';">
+                                    <h5 class="card-title fw-bold" style="font-size: 18px; color:#005EB8;">
+                                        {{ $m->title }}
+                                    </h5>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 @empty
-                    <div class="alert alert-danger text-center">
-                        Data Media Tidak Ada.
+                    <div class="col-12">
+                        <div class="alert alert-danger text-center">
+                            Tidak Ada Media.
+                        </div>
                     </div>
                 @endforelse
-
-            </div> --}}
-
+            </div>
         </div>
 
         <div class="mt-5">
@@ -92,5 +71,5 @@
 
     </div>
     <!-- End Container -->
-    
+
 @endsection

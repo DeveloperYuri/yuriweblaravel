@@ -1,5 +1,5 @@
  <!-- Start Footer -->
- <div id="footerindex" class="card-footer text-body-secondary bg-dark"
+ {{-- <div id="footerindex" class="card-footer text-body-secondary bg-dark"
      style="margin-top: auto; background-color: #212529; color: white;">
      <div class="container">
          <div class="row" style="padding-top: 0px;">
@@ -19,10 +19,10 @@
              </div>
          </div>
      </div>
- </div>
+ </div> --}}
  <!-- End Footer -->
 
- {{-- <!-- Start Footer -->
+ <!-- Start Footer -->
  <div id="footerindex" class="card-footer text-body-secondary bg-dark" style="margin-top: auto;">
      <div class="container">
          <div class="row" style="padding-top: 0px;">
@@ -39,7 +39,7 @@
          </div>
      </div>
  </div>
- <!-- End Footer --> --}}
+ <!-- End Footer -->
 
  <script>
      function myFunction() {

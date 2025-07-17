@@ -318,4 +318,14 @@ class ArtikelBaruController extends Controller
         //redirect to index
         return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil di Delete!']);
     }
+
+    public function showindexupdate(string $id)
+    {
+        $artikelbaru = ArtikelBaru::findOrFail($id);
+
+        $artikelbaru->increment('viewer');
+
+        //render view with product
+        return view('baru.frontend.artikel.show', compact('artikelbaru'));
+    }
 }

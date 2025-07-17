@@ -3,15 +3,19 @@
 namespace App\Http\Controllers\baru;
 
 use App\Http\Controllers\Controller;
+use App\Mail\RegistrationSuccessMail;
 use App\Models\Artikel;
 use App\Models\ArtikelBaru;
 use App\Models\EventModel;
+use App\Models\EventRegistration;
 use App\Models\MediaModel;
 use App\Models\ProdukBaru;
 use App\Models\ProdukbaruModel;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Stevebauman\Location\Facades\Location;
+use Illuminate\Support\Facades\Mail;
+
 
 class HomeControllerUpdate extends Controller
 {
@@ -95,12 +99,10 @@ class HomeControllerUpdate extends Controller
 
             $media = MediaModel::latest()->paginate(9);
             return view('baru.frontend.media.index', compact('media'));
-
         } else {
 
             $media = MediaModel::latest()->paginate(9);
             return view('baru.frontend.media.index', compact('media'));
-
         }
     }
 
@@ -160,12 +162,10 @@ class HomeControllerUpdate extends Controller
 
             $events = EventModel::all();
             return view('baru.frontend.event.index', compact('events'));
-
         } else {
 
             $events = EventModel::all();
             return view('baru.frontend.event.index', compact('events'));
-
         }
     }
 
@@ -266,7 +266,7 @@ class HomeControllerUpdate extends Controller
         return view('baru.frontend.brands.produkporstex');
     }
 
-     public function porstexregulerproduk()
+    public function porstexregulerproduk()
     {
         return view('baru.frontend.brands.produkporstexreguler');
     }
@@ -343,6 +343,53 @@ class HomeControllerUpdate extends Controller
     public function childrensfacialwash()
     {
         return view('baru.frontend.brands.produkdee.childrensfacialwash');
+    }
+
+    public function eventregistration()
+    {
+        return view('baru.frontend.event.registration');
+    }
+
+    public function eventregistrationsuccess()
+    {
+        return view('baru.frontend.event.registrationsuccess');
+    }
+
+    public function eventregistrationpost(Request $request)
+    {
+        $request->validate([
+            'nama'             => 'required|string|max:255',
+            'nomor_telepon'    => 'required|string|max:20',
+            'email'            => 'required|email|max:255|unique:registrationevent,email',
+            'domisili'         => 'required|string|max:100',
+            'tanggal_lahir'    => 'required|date',
+            'umur'             => 'required|string|max:50',
+            'kategori_lomba'   => 'required|string|max:100',
+            'info_event'       => 'required|string|max:100',
+            'image_upload'     => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'link'             => 'required|url',
+        ]);
+
+        //upload image
+        $image = $request->file('image_upload');
+        $image->storeAs('public/registrationevent', $image->hashName());
+
+        EventRegistration::create([
+            'nama' => $request->nama,
+            'nomor_telepon' => $request->nomor_telepon,
+            'email' => $request->email,
+            'domisili' => $request->domisili,
+            'tanggal_lahir' => $request->tanggal_lahir,
+            'umur' => $request->umur,
+            'kategori_lomba' => $request->kategori_lomba,
+            'info_event' => $request->info_event,
+            'image_upload' => $image->hashName(),
+            'link' => $request->link,
+        ]);
+
+        Mail::to($request->email)->send(new RegistrationSuccessMail($request->nama));
+
+        return redirect()->route('eventregistrationsuccess')->with('success', 'Pendaftaran sukses');
     }
 
     public function faq(Request $request)

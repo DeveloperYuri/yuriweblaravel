@@ -22,6 +22,9 @@
         rel="stylesheet">
 
     <link rel="canonical" href="https://www.yuri-indonesia.co.id" />
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <meta property="og:title" content="YURI | Produk Kebersihan Keluarga dan Rumah Tangga dari PT Joenoes Ikamulya" />
     <meta property="og:description"
         content="Produk Kebersihan Keluarga dan Rumah Tangga dari PT Joenoes Ikamulya. Cek semua produk YURI sekarang!" />
@@ -103,6 +106,16 @@
             });
         });
     </script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#date", {
+            dateFormat: "d/m/Y"
+        });
+    </script>
+
+
 
 </body>
 

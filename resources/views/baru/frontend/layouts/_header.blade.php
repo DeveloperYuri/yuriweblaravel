@@ -97,8 +97,8 @@
     <div class="menubar">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
-                <a href="{{ route('indexupdate') }}"><img src="images/logo-8.png" width="100px" height="50px"
-                        alt="logo" /></a>
+                <a href="{{ route('indexupdate') }}"><img src="{{ asset('images/logo-8.png') }}" width="100px"
+                        height="50px" alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -140,7 +140,8 @@
                                         target="_blank">LAZADA</a></li>
                                 <li><a class="dropdown-item" href="https://www.blibli.com/brand/yuri-official-store"
                                         target="_blank">BLIBLI</a></li>
-                                <li><a class="dropdown-item" href="https://www.yurrouteIshop.co/id/" target="_blank">YURI
+                                <li><a class="dropdown-item" href="https://www.yurrouteIshop.co/id/"
+                                        target="_blank">YURI
                                         SHOP</a></li>
                             </ul>
                         </li>
@@ -176,11 +177,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold {{ request()->is('eventupdate') ? 'active' : '' }}"
+                            <a class="nav-link fw-bold {{ request()->routeIs('eventupdate') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('eventupdate') }}"
                                 style="color: #005EB8">EVENT</a>
                         </li>
-
+                        
                     </ul>
                 </div>
             </div>
@@ -189,7 +190,7 @@
     <!--End Navbar Menu-->
 
     <!-- Start Button Language -->
-    <div class="language mt-1" style="display:flex; justify-content:flex-end; margin-top:-9px">
+    <div class="language mt-1 mb-2" style="display:flex; justify-content:flex-end; margin-top:-9px">
         <div class="btn-group">
             <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" style="padding-top: 1px">

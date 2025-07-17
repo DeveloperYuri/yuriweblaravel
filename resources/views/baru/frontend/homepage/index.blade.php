@@ -6,6 +6,75 @@
     <!-- Container -->
     <div class="container">
 
+        <!-- Modal -->
+        <div class="modal fade" id="popupCarouselModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content position-relative" style="border-radius: 20px; overflow: hidden">
+                    <!-- Tombol X di pojok kanan atas -->
+                    <button type="button"
+                        class="position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center"
+                        style="
+              z-index: 1055;
+              width: 40px;
+              height: 40px;
+              background: white;
+              border: none;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              font-weight: bold;
+              color: black;
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+              cursor: pointer;
+              font-weight: bold;
+            "
+                        data-bs-dismiss="modal" aria-label="Close">
+                        ×
+                    </button>
+
+                    <div class="modal-body p-0">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="{{ route('eventregistration')}}" target="_blank"> <img src="{{ asset('images/deebrand.png') }}"
+                                            class="d-block w-100" alt="..." />
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="{{ route('eventregistration')}}" target="_blank"> <img src="{{ asset('images/deebrand.png') }}"
+                                            class="d-block w-100" alt="..." />
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="{{ route('eventregistration')}}" target="_blank"> <img src="{{ asset('images/deebrand.png') }}"
+                                            class="d-block w-100" alt="..." />
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -190,5 +259,17 @@
         function myFunction() {
             location.replace("locale/en")
         }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var myModal = new bootstrap.Modal(
+                document.getElementById("popupCarouselModal"), {
+                    backdrop: "static",
+                    keyboard: false,
+                }
+            );
+            myModal.show();
+        });
     </script>
 @endsection
