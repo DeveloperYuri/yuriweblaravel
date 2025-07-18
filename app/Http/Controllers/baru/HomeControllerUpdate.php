@@ -373,6 +373,23 @@ class HomeControllerUpdate extends Controller
             'info_event'       => 'required|string|max:100',
             'image_upload'     => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
             'link'             => 'required|url',
+        ], [
+            'nama.required'             => 'Nama lengkap wajib diisi.',
+            'nomor_telepon.required'    => 'Nomor telepon wajib diisi.',
+            'email.required'            => 'Email wajib diisi.',
+            'email.email'               => 'Format email tidak valid.',
+            'email.unique'              => 'Email sudah terdaftar.',
+            'domisili.required'         => 'Domisili wajib diisi.',
+            'tanggal_lahir.required'    => 'Tanggal lahir wajib diisi.',
+            'tanggal_lahir.date'        => 'Format tanggal lahir tidak valid.',
+            'umur.required'             => 'Kategori umur wajib diisi.',
+            'kategori_lomba.required'   => 'Kategori lomba wajib dipilih.',
+            'info_event.required'       => 'Sumber informasi event wajib diisi.',
+            'image_upload.required'     => 'File wajib diunggah.',
+            'image_upload.mimes'        => 'File harus berupa JPG, JPEG, PNG, atau PDF.',
+            'image_upload.max'          => 'Ukuran file maksimal 2MB.',
+            'link.required'             => 'Link wajib diisi.',
+            'link.url'                  => 'Format link tidak valid.',
         ]);
 
         //upload image

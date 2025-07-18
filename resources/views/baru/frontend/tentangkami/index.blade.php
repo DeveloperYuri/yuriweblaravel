@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        
+
         <!-- Banner Homepage-->
         <div class="banner-tentang-kami" data-aos="fade-up">
             <img src="images/Banner-Tentang-Kami.png" class="img-fluid" alt="..." width="100%">
@@ -26,11 +26,13 @@
         </div>
         <!-- End Content1-->
 
+
         <div class="row mt-3">
             <div class="col-12">
                 <img src="images/garis.png" alt="" width="100%" />
             </div>
         </div>
+
 
         <!-- Content2 -->
         <div class="tentang-kami-content-dua text-center" style="margin-top: 20px" data-aos="fade-up">
@@ -53,6 +55,7 @@
             </div>
         </div>
         <!-- End Content2-->
+
 
         <div class="row mt-3" data-aos="fade-up">
             <div class="col-12">
@@ -93,6 +96,7 @@
         </div>
         <!-- End Content3-->
 
+
         <div class="row mt-3" data-aos="fade-up">
             <div class="col-12">
                 <img src="images/garis.png" alt="" width="100%" />
@@ -113,7 +117,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <p class="textblock2" style="color: white; text-align:justify">
+                        <p class="textblock2" style="color: rgb(245, 7, 7); text-align:justify">
                             @lang('message.DENGANBERBAGAIPERUBAHAN')
                         </p>
                     </div>
@@ -122,9 +126,6 @@
             </div>
         </div>
 
-
     </div>
     <!-- End Container -->
-    </div>
-
 @endsection

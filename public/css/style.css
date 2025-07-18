@@ -267,91 +267,73 @@ a:active {
 
 /* Mobile Screen */
 @media only screen and (max-width: 600px) {
-
-    #ramahlingkungan{
+    #ramahlingkungan {
         color: #005eb8 !important;
         margin-top: 10px !important;
         font-size: 8px !important;
         width: 100px;
     }
 
-    #kamimenggunakan{
+    #kamimenggunakan {
         color: #005eb8 !important;
         margin-top: 30px !important;
         font-size: 8px;
         width: 100px;
     }
 
-    #terjangkau{
+    #terjangkau {
         color: #005eb8 !important;
         margin-top: 10px !important;
         font-size: 8px !important;
     }
 
-    #kamimemberikaproduk{
+    #kamimemberikaproduk {
         color: #005eb8 !important;
         margin-top: 30px !important;
         font-size: 8px;
         width: 100px;
     }
 
-    #kamidisini{
+    #kamidisini {
         color: #005eb8 !important;
         margin-top: 10px !important;
         font-size: 8px !important;
         width: 100px;
     }
 
-    #kamimemberikan{
+    #kamimemberikan {
         color: #005eb8 !important;
         margin-top: 30px !important;
         font-size: 8px;
         width: 100px;
     }
-    
 
-    #footerprodukaganol{
-         height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerprodukligent{
+    #footerprodukaganol {
         height: 50px;
         padding-top: 10px;
         position: fixed;
         bottom: 0;
-        width: 100%; 
+        width: 100%;
     }
 
-    #yurisolbrands{
+    #footerprodukligent {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #yurisolbrands {
         width: 102px;
         margin-left: -85px;
     }
 
-    #yurisoftbrands{
+    #yurisoftbrands {
         width: 102px;
     }
 
-    #footerprodukyurisoft{
-        height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerprodukporstex{
-        height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerproduktril{
+    #footerprodukyurisoft {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -359,7 +341,7 @@ a:active {
         width: 100%;
     }
 
-    #footerproduktaf{
+    #footerprodukporstex {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -367,7 +349,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukhandsoap{
+    #footerproduktril {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -375,7 +357,7 @@ a:active {
         width: 100%;
     }
 
-    #footer-childrentoilet{
+    #footerproduktaf {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -383,12 +365,28 @@ a:active {
         width: 100%;
     }
 
-    .deegeneral img{
+    #footerprodukhandsoap {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footer-childrentoilet {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .deegeneral img {
         width: 90%;
-        border-radius: 10px
+        border-radius: 10px;
     }
 
-    #footerprodukbiosoftdetergen{
+    #footerprodukbiosoftdetergen {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -396,7 +394,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukyurisol{
+    #footerprodukyurisol {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -404,7 +402,7 @@ a:active {
         width: 100%;
     }
 
-    #footerproduklysorin{
+    #footerproduklysorin {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -412,7 +410,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukhandsoap{
+    #footerprodukhandsoap {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -420,7 +418,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukbathroomcleaner{
+    #footerprodukbathroomcleaner {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -428,7 +426,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukyuribleach{
+    #footerprodukyuribleach {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -436,7 +434,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukfabriccare{
+    #footerprodukfabriccare {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -444,7 +442,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukbabysoft{
+    #footerprodukbabysoft {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -452,7 +450,7 @@ a:active {
         width: 100%;
     }
 
-    #footerproduklaundrydisinfektant{
+    #footerproduklaundrydisinfektant {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -510,7 +508,7 @@ a:active {
         position: absolute;
     }
 
-    #footerprodukdisinfektantspray{
+    #footerprodukdisinfektantspray {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -775,6 +773,10 @@ a:active {
 
     .tentang-kami-content-empat {
         position: relative;
+        min-height: calc(
+            40vh
+        ); /* sesuaikan 200px dengan tinggi header + footer */
+       
     }
 
     .textblock {
@@ -1069,14 +1071,13 @@ a:active {
 }
 
 /* Mobile Phone Iphone*/
-@media only screen and (min-width: 410px) and (max-width: 600px) { 
-
-    #yurisolbrands{
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+    #yurisolbrands {
         width: 110px;
         margin-left: -85px;
     }
 
-    #yurisoftbrands{
+    #yurisoftbrands {
         width: 110px;
     }
 
@@ -1680,50 +1681,47 @@ a:active {
     }
 }
 
-
-
 /* Desktop Screen */
 @media only screen and (min-width: 992px) {
-
-    #ramahlingkungan{
+    #ramahlingkungan {
         color: #005eb8 !important;
         margin-top: 25px !important;
         font-size: 18px;
     }
 
-    #kamimenggunakan{
+    #kamimenggunakan {
         color: #005eb8 !important;
         margin-top: 100px !important;
         font-size: 16px;
     }
 
-    #terjangkau{
+    #terjangkau {
         color: #005eb8 !important;
         margin-top: 35px !important;
         font-size: 18px;
     }
 
-    #kamimemberikaproduk{
+    #kamimemberikaproduk {
         color: #005eb8 !important;
         margin-top: 110px !important;
         font-size: 16px;
         width: 300px;
     }
 
-    #kamidisini{
+    #kamidisini {
         color: #005eb8 !important;
         margin-top: 35px !important;
         font-size: 18px;
     }
 
-    #kamimemberikan{
+    #kamimemberikan {
         color: #005eb8 !important;
         margin-top: 110px !important;
         font-size: 16px;
         width: 200px;
     }
 
-    #footer-childrentoilet{
+    #footer-childrentoilet {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -1731,11 +1729,11 @@ a:active {
         width: 100%;
     }
 
-    .deegeneral img{
+    .deegeneral img {
         width: 70%;
-        border-radius: 10px
+        border-radius: 10px;
     }
-    
+
     #footerprodukhandgel {
         height: 50px;
         padding-top: 10px;
@@ -2516,81 +2514,48 @@ a:active {
 
 /* Tablet Screen */
 @media screen and (min-width: 800px) and (max-width: 900px) {
-
-    #ramahlingkungan{
+    #ramahlingkungan {
         color: #005eb8 !important;
         margin-top: 20px !important;
         font-size: 14px !important;
         width: 150px;
     }
 
-    #kamimenggunakan{
+    #kamimenggunakan {
         color: #005eb8 !important;
         margin-top: 70px !important;
         font-size: 12px;
         width: 150px;
     }
 
-    #terjangkau{
+    #terjangkau {
         color: #005eb8 !important;
         margin-top: 25px !important;
         font-size: 14px !important;
     }
 
-    #kamimemberikaproduk{
+    #kamimemberikaproduk {
         color: #005eb8 !important;
         margin-top: 70px !important;
         font-size: 12px;
         width: 150px;
     }
 
-    #kamidisini{
+    #kamidisini {
         color: #005eb8 !important;
         margin-top: 25px !important;
         font-size: 14px !important;
         width: 150px;
     }
 
-    #kamimemberikan{
+    #kamimemberikan {
         color: #005eb8 !important;
         margin-top: 75px !important;
         font-size: 12px;
         width: 200px;
     }
 
-    #footerprodukaganol{
-        height: 50px;
-       padding-top: 10px;
-       position: fixed;
-       bottom: 0;
-       width: 100%; 
-   }
-
-    #footerprodukligent{
-        height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerprodukyurisoft{
-        height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerprodukporstex{
-        height: 50px;
-        padding-top: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-    }
-
-    #footerproduktril{
+    #footerprodukaganol {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2598,7 +2563,7 @@ a:active {
         width: 100%;
     }
 
-    #footerproduktaf{
+    #footerprodukligent {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2606,7 +2571,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukhandsoap{
+    #footerprodukyurisoft {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2614,7 +2579,7 @@ a:active {
         width: 100%;
     }
 
-    #footer-childrentoilet{
+    #footerprodukporstex {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2622,12 +2587,7 @@ a:active {
         width: 100%;
     }
 
-    .deegeneral img{
-        width: 100%;
-        border-radius: 10px
-    }
-
-    #footerprodukbiosoftdetergen{
+    #footerproduktril {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2635,7 +2595,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukyurisol{
+    #footerproduktaf {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2643,7 +2603,7 @@ a:active {
         width: 100%;
     }
 
-    #footerproduklysorin{
+    #footerprodukhandsoap {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2651,7 +2611,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukhandsoap{
+    #footer-childrentoilet {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2659,7 +2619,12 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukbathroomcleaner{
+    .deegeneral img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #footerprodukbiosoftdetergen {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2667,7 +2632,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukyuribleach{
+    #footerprodukyurisol {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2675,7 +2640,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukfabriccare{
+    #footerproduklysorin {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2683,7 +2648,7 @@ a:active {
         width: 100%;
     }
 
-    #footerprodukbabysoft{
+    #footerprodukhandsoap {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -2691,7 +2656,39 @@ a:active {
         width: 100%;
     }
 
-    #footerproduklaundrydisinfektant{
+    #footerprodukbathroomcleaner {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerprodukyuribleach {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerprodukfabriccare {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerprodukbabysoft {
+        height: 50px;
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerproduklaundrydisinfektant {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -3091,55 +3088,53 @@ a:active {
 
 /* High Screen Resolution */
 @media only screen and (min-width: 1300px) {
-
-
-    #footerprodukligent{
+    #footerprodukligent {
         height: 50px;
         padding-top: 10px;
         position: fixed;
         bottom: 0;
-        width: 100%; 
+        width: 100%;
     }
-    
-    #ramahlingkungan{
+
+    #ramahlingkungan {
         color: #005eb8 !important;
         margin-top: 25px !important;
         font-size: 18px;
     }
 
-    #kamimenggunakan{
+    #kamimenggunakan {
         color: #005eb8 !important;
         margin-top: 100px !important;
         font-size: 16px;
     }
 
-    #terjangkau{
+    #terjangkau {
         color: #005eb8 !important;
         margin-top: 35px !important;
         font-size: 18px;
     }
 
-    #kamimemberikaproduk{
+    #kamimemberikaproduk {
         color: #005eb8 !important;
         margin-top: 110px !important;
         font-size: 16px;
         width: 300px;
     }
 
-    #kamidisini{
+    #kamidisini {
         color: #005eb8 !important;
         margin-top: 35px !important;
         font-size: 18px;
     }
 
-    #kamimemberikan{
+    #kamimemberikan {
         color: #005eb8 !important;
         margin-top: 110px !important;
         font-size: 16px;
         width: 200px;
     }
 
-    #footerprodukhandsoap{
+    #footerprodukhandsoap {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -3147,7 +3142,7 @@ a:active {
         width: 100%;
     }
 
-    #footer-childrentoilet{
+    #footer-childrentoilet {
         height: 50px;
         padding-top: 10px;
         position: fixed;
@@ -3155,9 +3150,9 @@ a:active {
         width: 100%;
     }
 
-    .deegeneral img{
+    .deegeneral img {
         width: 70%;
-        border-radius: 10px
+        border-radius: 10px;
     }
 
     .box1 {
@@ -3512,79 +3507,79 @@ a:active {
 
 /* Toggle Switch Style */
 
- .lang-toggle {
-      position: relative;
-      width: 60px;
-      height: 28px;
-      cursor: pointer;
-      user-select: none;
-      margin: 10px 20px;
-    }
+.lang-toggle {
+    position: relative;
+    width: 60px;
+    height: 28px;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px 20px;
+}
 
-    .lang-toggle input[type="checkbox"] {
-      display: none;
-    }
+.lang-toggle input[type="checkbox"] {
+    display: none;
+}
 
-    .toggle-btn {
-      background: #ccc;
-      position: relative;
-      display: flex;
-      flex-direction: row-reverse; /* Membalik urutan EN dan ID */
-      align-items: center;  /* Menjaga agar teks terpusat vertikal */
-      justify-content: space-between;  /* Menjaga ruang seimbang */
-      border-radius: 30px;
-      width: 100%;
-      height: 100%;
-      padding: 0 5px;
-      box-sizing: border-box;
-      font-weight: bold;
-      font-size: 12px;
-      user-select: none;
-    }
+.toggle-btn {
+    background: #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse; /* Membalik urutan EN dan ID */
+    align-items: center; /* Menjaga agar teks terpusat vertikal */
+    justify-content: space-between; /* Menjaga ruang seimbang */
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 12px;
+    user-select: none;
+}
 
-    .label-en,
-    .label-id {
-      width: 50%;
-      height: 100%;
-      text-align: center;
-      line-height: 28px; /* Menjaga agar teks tetap terpusat vertikal */
-      transition: color 0.3s;
-      pointer-events: none;
-      position: relative;
-      z-index: 10;
-      user-select: none;
-    }
+.label-en,
+.label-id {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 28px; /* Menjaga agar teks tetap terpusat vertikal */
+    transition: color 0.3s;
+    pointer-events: none;
+    position: relative;
+    z-index: 10;
+    user-select: none;
+}
 
-    .slider {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 28px;
-      height: 24px;
-      background: #0066cc;
-      border-radius: 30px;
-      transition: transform 0.3s;
-      z-index: 1;
-      box-shadow: 0 0 4px rgba(0, 102, 204, 0.6);
-    }
+.slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 28px;
+    height: 24px;
+    background: #0066cc;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    z-index: 1;
+    box-shadow: 0 0 4px rgba(0, 102, 204, 0.6);
+}
 
-    /* Geser slider saat toggle aktif */
-    .lang-toggle input[type="checkbox"]:checked + .toggle-btn .slider {
-      transform: translateX(30px);
-    }
+/* Geser slider saat toggle aktif */
+.lang-toggle input[type="checkbox"]:checked + .toggle-btn .slider {
+    transform: translateX(30px);
+}
 
-    /* Warna default */
-    .label-en,
-    .label-id {
-      color: white;
-    }
+/* Warna default */
+.label-en,
+.label-id {
+    color: white;
+}
 
-    /* Saat toggle aktif, tetap putih */
-    .lang-toggle input[type="checkbox"]:checked + .toggle-btn .label-en,
-    .lang-toggle input[type="checkbox"]:checked + .toggle-btn .label-id {
-      color: white;
-    }
-    
+/* Saat toggle aktif, tetap putih */
+.lang-toggle input[type="checkbox"]:checked + .toggle-btn .label-en,
+.lang-toggle input[type="checkbox"]:checked + .toggle-btn .label-id {
+    color: white;
+}
+
 /* .lang-toggle {
     position: relative;
     width: 60px;
@@ -3660,5 +3655,3 @@ a:active {
 .lang-toggle input:not(:checked) + .toggle-btn .label-id {
     color: #0066cc;
 } */
-
-

@@ -78,7 +78,9 @@
 
     @include('baru.frontend.layouts._header')
 
-    @yield('content')
+    <main style="flex: 1;">
+        @yield('content')
+    </main>
 
     @include('baru.frontend.layouts._footer')
 
