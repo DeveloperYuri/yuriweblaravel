@@ -11,6 +11,7 @@ use App\Models\EventRegistration;
 use App\Models\MediaModel;
 use App\Models\ProdukBaru;
 use App\Models\ProdukbaruModel;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Stevebauman\Location\Facades\Location;
@@ -401,7 +402,7 @@ class HomeControllerUpdate extends Controller
             'nomor_telepon' => $request->nomor_telepon,
             'email' => $request->email,
             'domisili' => $request->domisili,
-            'tanggal_lahir' => $request->tanggal_lahir,
+            'tanggal_lahir' => Carbon::parse($request->tanggal_lahir)->format('Y-m-d'),
             'umur' => $request->umur,
             'kategori_lomba' => $request->kategori_lomba,
             'info_event' => $request->info_event,

@@ -7,6 +7,9 @@
     <title>Form Yuri Event Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="{{ asset('images/logo-8.png') }}" />
+
 </head>
 
 <body style="background-color: #f0f8ff;">
@@ -94,12 +97,10 @@
                     </div>
 
                     <div class="row mb-3">
-                        <label for="inputDate" class="col-sm-4 col-form-label">
-                            Tanggal Lahir <span style="color: red">*</span>
-                        </label>
+                        <label for="datepicker" class="col-sm-4 col-form-label">Tanggal Lahir</label>
                         <div class="col-sm-12">
-                            <input type="date" class="form-control @error('tanggal_lahir') is-invalid @enderror"
-                                name="tanggal_lahir" value="{{ old('tanggal_lahir') }}">
+                            <input type="text" class="form-control @error('tanggal_lahir') is-invalid @enderror"
+                                name="tanggal_lahir" id="datepicker" value="{{ old('tanggal_lahir') }}">
                             @error('tanggal_lahir')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
@@ -218,6 +219,16 @@
     <!-- End Container -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#datepicker", {
+            dateFormat: "d F Y", // Contoh: 12 May 2025
+            altInput: true,
+            altFormat: "d F Y",
+            allowInput: true
+        });
     </script>
 </body>
 
