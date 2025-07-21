@@ -217,17 +217,17 @@
 
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
-                    @forelse ($artikels as $artikel)
+                    @forelse ($media as $m)
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="{{ asset('/storage/artikels/' . $artikel->image) }}" class="card-img-top"
+                                <img src="{{ asset('/storage/media/' . $m->image) }}" class="card-img-top"
                                     alt="..." style="height: 230px; object-fit: cover;">
                                 <div class="card-body text-center">
-                                    <a href="{{ $artikel->link }}" target="_blank" style="text-decoration: none;"
+                                    <a href="{{ $m->link }}" target="_blank" style="text-decoration: none;"
                                         onmouseover="this.style.textDecoration='underline'"
                                         onmouseout="this.style.textDecoration='none'">
                                         <p class="card-title" style="font-size: 20px; font-weight:bold;">
-                                            {{ $artikel->title }}
+                                            {{ $m->title }}
                                         </p>
                                     </a>
                                 </div>

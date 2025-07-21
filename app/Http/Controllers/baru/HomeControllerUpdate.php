@@ -30,22 +30,21 @@ class HomeControllerUpdate extends Controller
         // dd($var_countryname);
 
         if ($var_countryname == "Indonesia") {
-            //get all products
-            $artikels = Artikel::latest()->paginate(3);
+            $media = MediaModel::latest()->paginate(3);
             $events = EventModel::all();
 
-            //render view with products
             return view('baru.frontend.homepage.index', [
-                'artikels' => $artikels,
+                'media' => $media,
                 'events' => $events
             ]);
-            // return view('baru.frontend.homepage.index', compact('artikels'));
         } else {
-            //get all products
-            $artikels = Artikel::latest()->paginate(3);
+            $media = MediaModel::latest()->paginate(3);
+            $events = EventModel::all();
 
-            //render view with products
-            return view('baru.frontend.homepage.index', compact('artikels'));
+            return view('baru.frontend.homepage.index', [
+                'media' => $media,
+                'events' => $events
+            ]);
         }
     }
 
