@@ -37,7 +37,7 @@
                             <div class="icon">
                                 <i class="ion ion-stats-bars"></i>
                             </div>
-                            <a href="{{ route('artikelindexupdate')}}" class="small-box-footer">More info <i
+                            <a href="{{ route('artikelindexupdate')}}" class="small-box-footer" dusk="artikelinfo">More info <i
                                     class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                             <div class="icon">
                                 <i class="ion ion-stats-bars"></i>
                             </div>
-                            <a href="{{ route('mediaindex')}}" class="small-box-footer">More info <i
+                            <a href="{{ route('mediaindex')}}" class="small-box-footer" dusk="mediainfo">More info <i
                                     class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i
+                            <a href="{{ route('usersupdate')}}" class="small-box-footer" dusk="usersinfo">More info <i
                                     class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i
+                            <a href="{{ route('produkbaruindex')}}" class="small-box-footer" dusk="produkbaruinfo">More info <i
                                     class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>

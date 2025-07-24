@@ -24,7 +24,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <a href="{{ route('createartikel') }}" class="btn btn-md btn-primary mb-3"><i
+                    <a href="{{ route('createartikel') }}" class="btn btn-md btn-primary mb-3" dusk="klikarticlecreate"><i
                             class="nav-icon fas fa-pencil-alt "></i>&nbsp Buat Artikel</a>
 
                     <form method="get">

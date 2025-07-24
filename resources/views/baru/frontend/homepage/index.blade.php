@@ -7,7 +7,7 @@
     <div class="container">
 
         <!-- Modal -->
-        <div class="modal fade" id="popupCarouselModal" tabindex="-1" aria-hidden="true">
+        {{-- <div class="modal fade" id="popupCarouselModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content position-relative" style="border-radius: 20px; overflow: hidden">
                     <!-- Tombol X di pojok kanan atas -->
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">

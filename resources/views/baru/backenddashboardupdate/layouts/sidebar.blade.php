@@ -38,7 +38,7 @@
                  @if ($user->is_role == 2)
                      <li class="nav-item {{ request()->routeIs('dashboardupdate') ? 'menu-open' : '' }}">
                          <a href="{{ route('dashboardupdate') }}"
-                             class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}">
+                             class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}" dusk="SidebarDashboard">
                              <i class="nav-icon fas fa-tachometer-alt"></i>
                              <p>Dashboard</p>
                          </a>
@@ -49,7 +49,7 @@
                  <li
                      class="nav-item {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'menu-open' : '' }}">
                      <a href="{{ route('artikelindexupdate') }}"
-                         class="nav-link {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'active' : '' }}">
+                         class="nav-link {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'active' : '' }}" >
                          <i class="nav-icon fas fa-edit"></i>
                          <p>Artikel</p>
                      </a>
