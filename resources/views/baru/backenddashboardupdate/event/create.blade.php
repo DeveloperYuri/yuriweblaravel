@@ -46,7 +46,7 @@
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">Periode</label>
                                 <input type="text" class="form-control @error('periode') is-invalid @enderror"
-                                    name="periode" value="{{ old('periode') }}" placeholder="Masukkan Description Event">
+                                    name="periode" value="{{ old('periode') }}" placeholder="Masukkan Periode Event">
 
                                 <!-- error message untuk title -->
                                 @error('periode')

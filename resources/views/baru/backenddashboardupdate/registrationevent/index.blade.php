@@ -95,7 +95,7 @@
                                 </tr>
                             @empty
                                 <div class="alert alert-danger">
-                                    Tidak Ada Data Products Baru.
+                                    Tidak Ada Data Baru
                                 </div>
                             @endforelse
                         </tbody>

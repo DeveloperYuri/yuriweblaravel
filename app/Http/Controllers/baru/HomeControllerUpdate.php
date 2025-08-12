@@ -371,7 +371,7 @@ class HomeControllerUpdate extends Controller
             'umur'             => 'required|string|max:50',
             'kategori_lomba'   => 'required|string|max:100',
             'info_event'       => 'required|string|max:100',
-            'image_upload'     => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
+            'image_upload'     => 'required|file|mimes:jpg,jpeg,png|max:5000',
             'link'             => 'required|url',
         ], [
             'nama.required'             => 'Nama lengkap wajib diisi.',
@@ -386,8 +386,8 @@ class HomeControllerUpdate extends Controller
             'kategori_lomba.required'   => 'Kategori lomba wajib dipilih.',
             'info_event.required'       => 'Sumber informasi event wajib diisi.',
             'image_upload.required'     => 'File wajib diunggah.',
-            'image_upload.mimes'        => 'File harus berupa JPG, JPEG, PNG, atau PDF.',
-            'image_upload.max'          => 'Ukuran file maksimal 2MB.',
+            'image_upload.mimes'        => 'File harus berupa JPG, JPEG, PNG',
+            'image_upload.max'          => 'Ukuran file maksimal 5MB.',
             'link.required'             => 'Link wajib diisi.',
             'link.url'                  => 'Format link tidak valid.',
         ]);

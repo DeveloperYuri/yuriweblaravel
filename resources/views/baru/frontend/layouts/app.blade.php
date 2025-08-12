@@ -70,6 +70,24 @@
         font-weight: bold;
         font-style: normal;
     }
+
+    #popupCarouselModal .carousel-item img {
+        max-width: 100%;
+        /* max-height: 600px; */
+        margin: auto;
+        display: block;
+    }
+
+    #popupCarouselModal .modal-dialog {
+        width: auto;
+        max-width: fit-content;
+        /* max-width: 600px; */
+        /* bisa 500px atau sesuai ukuran gambar */
+    }
+
+    #carouselExampleIndicators .carousel-indicators {
+        display: none;
+    }
 </style>
 
 <body style="display: flex; flex-direction: column; min-height: 100%; margin: 0;">

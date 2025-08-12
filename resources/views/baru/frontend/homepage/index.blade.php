@@ -7,8 +7,10 @@
     <div class="container">
 
         <!-- Modal -->
-        {{-- <div class="modal fade" id="popupCarouselModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal fade" id="popupCarouselModal" tabindex="-1" aria-hidden="true">
+            {{-- <div class="modal-dialog modal-dialog-centered modal-lg"> --}}
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+
                 <div class="modal-content position-relative" style="border-radius: 20px; overflow: hidden">
                     <!-- Tombol X di pojok kanan atas -->
                     <button type="button"
@@ -43,12 +45,13 @@
                                     aria-label="Slide 3"></button>
                             </div>
 
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                                data-bs-interval="3000">
                                 <div class="carousel-inner">
                                     @foreach ($events as $index => $e)
                                         <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                             <a href="{{ $e->link_daftar }}" target="_blank">
-                                                <img src="{{ asset('storage/event/' . $e->image) }}" class="d-block w-100"
+                                                <img src="{{ asset('storage/event/' . $e->image) }}" class="d-block"
                                                     alt="..." />
                                             </a>
                                         </div>
@@ -71,7 +74,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
         <!-- Banner Homepage-->
         <div class="banner-home" data-aos="fade-up">
@@ -220,8 +223,8 @@
                     @forelse ($media as $m)
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="{{ asset('/storage/media/' . $m->image) }}" class="card-img-top"
-                                    alt="..." style="height: 230px; object-fit: cover;">
+                                <img src="{{ asset('/storage/media/' . $m->image) }}" class="card-img-top" alt="..."
+                                    style="height: 230px; object-fit: cover;">
                                 <div class="card-body text-center">
                                     <a href="{{ $m->link }}" target="_blank" style="text-decoration: none;"
                                         onmouseover="this.style.textDecoration='underline'"
