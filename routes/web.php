@@ -162,6 +162,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardregistrationform', [RegistrationEventController::class, 'index'])->name('registrationeventindex');
     Route::get('/dashboardregistrationform/show/{id}', [RegistrationEventController::class, 'show'])->name('registrationeventshow');
     Route::get('/export-registration-event', [RegistrationEventController::class, 'export'])->name('export');
+    Route::delete('/registration-event/delete/{id}', [RegistrationEventController::class, 'destroy'])->name('registrationeventdelete');
 
     // Configuration
     Route::get('/configuration', [ConfigurationController::class, 'index'])->name('configindex');
@@ -319,9 +320,7 @@ Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 // Route::post('/updatecategory/{id}', [V2CategoryController::class, 'updatecategory'])->name('updatecategory');
 // Route::delete('/deletecategory/{id}', [V2CategoryController::class, 'deletecategory'])->name('deletecategory');
 
-
 // Route::get('/mediaupdate', [V2CategoryController::class, 'indexmedia'])->name('indexmedia');
-
 
 // Route::get('/produkbaruupdate', [V2CategoryController::class, 'indexprodukbaru'])->name('indexprodukbaru');
 

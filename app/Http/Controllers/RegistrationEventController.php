@@ -7,7 +7,7 @@ use App\Models\EventRegistration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Maatwebsite\Excel\Facades\Excel;
-
+use Illuminate\Support\Facades\Storage;
 
 class RegistrationEventController extends Controller
 {
@@ -35,5 +35,18 @@ class RegistrationEventController extends Controller
     public function export()
     {
         return Excel::download(new RegistrationEventExport, 'registration_event.xlsx');
+    }
+
+    public function destroy(string $id){
+         $registevent = EventRegistration::findOrFail($id);
+
+        //delete image
+        Storage::delete('public/registrationevent/' . $registevent->image);
+
+        //delete product
+        $registevent->delete();
+
+        //redirect to index
+        return redirect()->route('registrationeventindex')->with(['success' => 'Data Berhasil di Delete!']);
     }
 }

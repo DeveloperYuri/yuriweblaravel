@@ -88,9 +88,25 @@
                                     <td class="text-center">{{ $peserta->domisili }}</td>
 
                                     <td class="text-center">
+                                        <form action="{{ route('registrationeventdelete', $peserta->id) }}" method="POST">
+                                            <a href="{{ route('registrationeventshow', $peserta->id) }}"
+                                            class="btn btn-sm btn-warning mt-2">Detail</a>
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="button" class="btn btn-sm btn-danger mt-2"
+                                                onclick="confirmDelete(this.form)">
+                                                HAPUS
+                                            </button>
+                                        </form>
+                                    </td>
+
+                                    {{-- <td class="text-center">
                                         <a href="{{ route('registrationeventshow', $peserta->id) }}"
                                             class="btn btn-sm btn-warning mt-2">Detail</a>
-                                    </td>
+
+                                        <a href="{{ route('registrationeventdelete', $peserta->id) }}"
+                                            class="btn btn-sm btn-danger mt-2">Hapus</a>
+                                    </td> --}}
 
                                 </tr>
                             @empty
