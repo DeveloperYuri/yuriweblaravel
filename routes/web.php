@@ -245,6 +245,9 @@ Route::get('/kontak', [BaruHomeControllerUpdate::class, 'kontak'])->name('kontak
 Route::get('/distributor', [BaruHomeControllerUpdate::class, 'distributor'])->name('distributorupdate');
 Route::get('/event', [BaruHomeControllerUpdate::class, 'event'])->name('eventupdate');
 
+Route::post('/contactsend', [BaruHomeControllerUpdate::class, 'send'])->name('contact.send');
+
+
 Route::get('/event/registration', [BaruHomeControllerUpdate::class, 'eventregistration'])->name('eventregistration');
 Route::post('/event/registration/post', [BaruHomeControllerUpdate::class, 'eventregistrationpost'])->name('eventregistrationpost');
 Route::get('/event/registration/success', [BaruHomeControllerUpdate::class, 'eventregistrationsuccess'])->name('eventregistrationsuccess');

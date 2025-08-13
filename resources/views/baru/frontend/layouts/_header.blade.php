@@ -181,7 +181,7 @@
                                 aria-current="page" href="{{ route('eventupdate') }}"
                                 style="color: #005EB8">EVENT</a>
                         </li>
-                        
+                           
                     </ul>
                 </div>
             </div>

@@ -371,7 +371,7 @@ class HomeControllerUpdate extends Controller
             'umur'             => 'required|string|max:50',
             'kategori_lomba'   => 'required|string|max:100',
             'info_event'       => 'required|string|max:100',
-            'image_upload'     => 'required|file|mimes:jpg,jpeg,png|max:5000',
+            'image_upload' => 'required|file|mimetypes:image/png,image/jpeg|max:10000',
             'link'             => 'required|url',
         ], [
             'nama.required'             => 'Nama lengkap wajib diisi.',
@@ -426,5 +426,31 @@ class HomeControllerUpdate extends Controller
         } else {
             return view('baru.frontend.faq.indexsg');
         }
+    }
+
+    public function send(Request $request)
+    {
+        // Validasi
+        $request->validate([
+            'name' => 'required|string|min:3',
+            'email' => 'required|email',
+            'phone' => 'nullable|string',
+            'subject' => 'required|string',
+            'message' => 'required|string',
+        ]);
+
+        // Kirim email
+        Mail::raw("
+            Nama: {$request->name}
+            Email: {$request->email}
+            Telepon: {$request->phone}
+            Subjek: {$request->subject}
+            Pertanyaan: {$request->message}
+        ", function ($mail) use ($request) {
+            $mail->to('cs@yuri-dee.com') // ganti dengan email tujuan
+                ->subject('Pesan Baru dari Form Kontak website');
+        });
+
+        return back()->with('success', 'Pesan anda berhasil dikirim!');
     }
 }

@@ -36,30 +36,38 @@
             </p>
 
             <div class="col-md-4">
-                <form style="font-size: 12px">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">@lang('message.NAMA')</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">@lang('message.EMAIL')</label>
-                        <input type="email" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">@lang('message.TELEPON')</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">@lang('message.SUBJEK')</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">@lang('message.PERTANYAAN')</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
+                @endif
 
+                <form action="{{ route('contact.send') }}" method="POST" style="font-size: 12px">
+                    @csrf
+                    <div class="mb-3">
+                        <label class="form-label">@lang('message.NAMA')</label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@lang('message.EMAIL')</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@lang('message.TELEPON')</label>
+                        <input type="text" name="phone" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@lang('message.SUBJEK')</label>
+                        <input type="text" name="subject" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@lang('message.PERTANYAAN')</label>
+                        <textarea name="message" class="form-control"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary">@lang('message.KIRIM')</button>
                 </form>
+
             </div>
         </div>
 
