@@ -126,7 +126,7 @@
 
         <div id="imagebrand" class="row mt-3">
             <div class="col-6">
-                <img class="aganol1" src="images/infografisproduk/yuri/handsoap/handsoapFOAMINGinfograph-01.jpg" alt=""
+                <img class="aganol1" src="images/infografisproduk/yuri/handsoap/handsoapinfograph-01.jpg" alt=""
                     width="100%" style="border-radius: 10%;">
             </div>
             <div class="col-6">

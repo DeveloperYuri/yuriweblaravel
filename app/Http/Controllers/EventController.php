@@ -41,6 +41,9 @@ class EventController extends Controller
 
     public function createeventpost(Request $request)
     {
+
+        dd($request->all());
+
         //validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:20048',
@@ -167,8 +170,6 @@ class EventController extends Controller
 
     public function createeventpostupdate(Request $request)
     {
-
-        // dd($request->all());
         // validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:20048',
