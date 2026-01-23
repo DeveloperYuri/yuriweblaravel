@@ -200,11 +200,15 @@ class ArtikelBaruController extends Controller
     {
         $image = $request->file('image');
         $image->storeAs('public/artikelbaru', $image->hashName());
+        // generate slug dari title
+        $slug = Str::slug($request->title);
 
         //create product
         ArtikelBaru::create([
             'image'         => $image->hashName(),
             'title'   => $request->title,
+            'slug'        => $slug,
+            'penulis'   => $request->penulis,
             'description'   => $request->description,
         ]);
 
@@ -258,8 +262,12 @@ class ArtikelBaruController extends Controller
 
     public function editpostupdate(Request $request, string $id)
     {
+
+        // dd($request->all());
         //get product by ID
         $artikelbaru = ArtikelBaru::findOrFail($id);
+        $slugbaru = Str::slug($request->title);
+
 
         //check if image is uploaded
         if ($request->hasFile('image')) {
@@ -275,6 +283,8 @@ class ArtikelBaruController extends Controller
             $artikelbaru->update([
                 'image'         => $image->hashName(),
                 'title'   => $request->title,
+                'penulis'   => $request->penulis,
+                'slug'        => $slugbaru,
                 'description'   => $request->description
             ]);
         } else {
@@ -282,6 +292,8 @@ class ArtikelBaruController extends Controller
             //update product without image
             $artikelbaru->update([
                 'title'   => $request->title,
+                'penulis'   => $request->penulis,
+                'slug'        => $slugbaru,
                 'description'   => $request->description,
             ]);
         }
@@ -319,13 +331,28 @@ class ArtikelBaruController extends Controller
         return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil di Delete!']);
     }
 
-    public function showindexupdate(string $id)
+    public function showindexupdate($id)
     {
         $artikelbaru = ArtikelBaru::findOrFail($id);
+        // $artikelbaru = ArtikelBaru::where('slug', $slug)->firstOrFail();
+
 
         $artikelbaru->increment('viewer');
 
         //render view with product
+        return view('baru.frontend.artikel.show', compact('artikelbaru'));
+    }
+
+    // app/Http/Controllers/ArtikelBaruController.php
+    public function showindexbaruupdate($slug)
+    {
+        // Ambil 1 artikel sesuai slug
+        $artikelbaru = ArtikelBaru::where('slug', $slug)->firstOrFail();
+
+        // Tambah viewer
+        $artikelbaru->increment('viewer');
+
+        // Kirim ke view, pastikan tidak ada spasi
         return view('baru.frontend.artikel.show', compact('artikelbaru'));
     }
 }

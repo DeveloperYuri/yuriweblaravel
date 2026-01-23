@@ -30,6 +30,41 @@
     <meta property="og:url" content="https://www.yuri-indonesia.co.id" />
     <meta property="og:image" content="https://www.yuri-indonesia.co.id/images/logo-8.png" />
 
+    <style type="text/css">
+        /* .ck-editor__editable_inline {
+            height: 500px;
+        } */
+         
+        .artikel-content-satu {
+            max-width: 100%;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        /* Bikin semua elemen nurut container */
+        .artikel-content-satu img,
+        .artikel-content-satu table,
+        .artikel-content-satu iframe,
+        .artikel-content-satu video {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        /* Table biar nggak maksa layar */
+        .artikel-content-satu table {
+            width: 100% !important;
+            display: block;
+            overflow-x: auto;
+        }
+
+        /* Kalau ada text panjang tanpa spasi */
+        .artikel-content-satu p,
+        .artikel-content-satu span,
+        .artikel-content-satu div {
+            word-break: break-word;
+        }
+    </style>
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
             {

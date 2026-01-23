@@ -14,6 +14,8 @@ class ArtikelBaru extends Model
     protected $fillable = [
         'image',
         'title',
+        'slug',
+        'penulis',
         'description',
         'viewer'
     ];

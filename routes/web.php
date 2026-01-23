@@ -239,7 +239,9 @@ Route::get('/', [BaruHomeControllerUpdate::class, 'index'])->name('indexupdate')
 Route::get('/tentangkami', [BaruHomeControllerUpdate::class, 'tentangKami'])->name('tentangkamiupdate');
 Route::get('/brands', [BaruHomeControllerUpdate::class, 'brands'])->name('brandsupdate');
 Route::get('/artikel', [BaruHomeControllerUpdate::class, 'artikel'])->name('artikelupdate');
-Route::get('/showartikelbaru/{id}', [ArtikelBaruController::class, 'showindexupdate'])->name('indexartikelbaru.show');
+Route::get('/artikel/{slug}', [ArtikelBaruController::class, 'showindexbaruupdate'])->name('artikelslug.show');
+// routes/web.php
+Route::get('/artikel/{slug}', [ArtikelBaruController::class, 'showindexbaruupdate'])->name('artikelslug.show');
 Route::get('/media', [BaruHomeControllerUpdate::class, 'media'])->name('mediaupdate');
 Route::get('/produkbaru', [BaruHomeControllerUpdate::class, 'produkbaru'])->name('produkbaruupdate');
 Route::get('/kontak', [BaruHomeControllerUpdate::class, 'kontak'])->name('kontakupdate');
@@ -326,3 +328,5 @@ Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 
 // Event
 // Route::get('/eventdashboard', [EventController::class, 'index'])->name('index.event');
+
+

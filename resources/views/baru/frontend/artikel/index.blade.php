@@ -21,8 +21,12 @@
                             <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}" class="card-img-top"
                                 alt="..." style="height: 230px; object-fit: contain;">
 
+                            {{-- <a href="{{ route('artikelslug.show', $artikel->slug) }}">
+                                {{ $artikel->title }}
+                            </a> --}}
+
                             <div class="card-body">
-                                <a href="{{ route('indexartikelbaru.show', $artikel->id) }}" style="text-decoration: none;"
+                                <a href="{{ route('artikelslug.show', $artikel->slug) }}" style="text-decoration: none;"
                                         onmouseover="this.style.textDecoration='underline'"
                                         onmouseout="this.style.textDecoration='none'">
                                     <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
@@ -39,7 +43,7 @@
                     </div>
                 @endforelse
             </div>
-            
+
             <div class="mt-5 mb-5">
                 {!! $artikelbaru->withQueryString()->links('pagination::bootstrap-5') !!}
             </div>
