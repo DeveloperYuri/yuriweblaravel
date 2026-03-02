@@ -20,7 +20,12 @@ class EventRegistration extends Model
         'kategori_lomba',
         'info_event',
         'image_upload',
-        'link'
+        'link',
+        'provinsi',
+        'kota',
+        'alamat',
+        'instagram',
+        'tiktok'
     ];
 
     static public function getRecord($request)

@@ -31,52 +31,86 @@
 
                     <form>
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Nama</label>
+                            <label class="font-weight-bold">NAMA LENGKAP</label>
                             <input type="text" class="form-control" name="nama"
                                 value="{{ old('nama', $registevent->nama) }}" placeholder="Nama" disabled>
                         </div>
 
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Nomor Telepon / WhatsApp</label>
+                            <label class="font-weight-bold">NOMOR WHATSAPP</label>
                             <input type="text" class="form-control" name="nomor_telepon"
                                 value="{{ old('nomor_telepon', $registevent->nomor_telepon) }}" placeholder="Nomor Telepon"
                                 disabled>
                         </div>
 
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Email</label>
+                            <label class="font-weight-bold">EMAIL</label>
                             <input type="email" class="form-control" name="email"
                                 value="{{ old('email', $registevent->email) }}" placeholder="Email" disabled>
                         </div>
 
-                        <div class="form-group mb-3">
+                        {{-- <div class="form-group mb-3">
                             <label class="font-weight-bold">Domisili</label>
                             <input type="text" class="form-control" name="domisili"
                                 value="{{ old('domisili', $registevent->domisili) }}" placeholder="Domisili" disabled>
-                        </div>
+                        </div> --}}
 
                         <div class="form-group mb-3">
+                            <label class="font-weight-bold">ALAMAT LENGKAP</label>
+                            <input type="text" class="form-control" name="alamat"
+                                value="{{ old('alamat', $registevent->alamat) }}" placeholder="Alamat" disabled>
+                        </div>
+
+                        <div class="row mb-3">
+                            {{-- Provinsi --}}
+                            <div class="col-md-6 mb-3">
+                                <label class="font-weight-bold">PROVINSI</label>
+                                <input type="text" class="form-control" name="provinsi"
+                                    value="{{ old('provinsi', $registevent->provinsi) }}" placeholder="Provinsi" disabled>
+                            </div>
+
+                            {{-- Kota --}}
+                            <div class="col-md-6 mb-3">
+                                <label class="font-weight-bold">KOTA/KABUPATEN</label>
+                                <input type="text" class="form-control" name="kota"
+                                    value="{{ old('kota', $registevent->kota) }}" placeholder="Kota" disabled>
+                            </div>
+                        </div>
+
+                        {{-- <div class="form-group mb-3">
                             <label class="font-weight-bold">Tanggal Lahir</label>
                             <input type="text" class="form-control" name="tanggal_lahir"
                                 value="{{ old('tanggal_lahir', $registevent->tanggal_lahir) }}" placeholder="Tanggal Lahir"
                                 disabled>
-                        </div>
+                        </div> --}}
 
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Kategori Umur</label>
+                            <label class="font-weight-bold">USIA</label>
                             <input type="text" class="form-control" name="umur"
                                 value="{{ old('umur', $registevent->umur) }}" placeholder="Umur" disabled>
                         </div>
 
-                        <div class="form-group mb-3">
+                        {{-- <div class="form-group mb-3">
                             <label class="font-weight-bold">Kategori Lomba</label>
                             <input type="kategori_lomba" class="form-control" name="kategori_lomba"
                                 value="{{ old('kategori_lomba', $registevent->kategori_lomba) }}"
                                 placeholder="Kategori Lomba" disabled>
+                        </div> --}}
+
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">AKUN INSTAGRAM</label>
+                            <input type="text" class="form-control" name="instagram"
+                                value="{{ old('instagram', $registevent->instagram) }}" placeholder="instagram" disabled>
                         </div>
 
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Dapat Info Event</label>
+                            <label class="font-weight-bold">AKUN TIKTOK</label>
+                            <input type="text" class="form-control" name="tiktok"
+                                value="{{ old('tiktok', $registevent->tiktok) }}" placeholder="tiktok" disabled>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">DAPAT INFORMASI LOMBA DARI MANA?</label>
                             <br>
                             <input type="text" class="form-control" name="info_event"
                                 value="{{ old('info_event', $registevent->info_event) }}" placeholder="Info Event" disabled>
@@ -84,9 +118,10 @@
 
                         <!-- File Upload -->
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold d-block mb-2">IMAGE</label>
+                            <label class="font-weight-bold d-block mb-2">STRUK PEMBELIAN</label>
                             @if ($registevent->image_upload)
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal{{ $registevent->id }}">
+                                <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#imageModal{{ $registevent->id }}">
                                     <img src="{{ asset('storage/registrationevent/' . $registevent->image_upload) }}"
                                         class="img-thumbnail" style="width: 100px; height: 70px; object-fit: cover;">
                                 </a>
@@ -149,7 +184,7 @@
                         </div> --}}
 
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Link URL Upload</label>
+                            <label class="font-weight-bold">LINK VIDEO COMPETITION</label>
                             <input type="text" class="form-control" name="link"
                                 value="{{ old('link', $registevent->link) }}" placeholder="Link" disabled>
                         </div>

@@ -45,7 +45,7 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="text-center">No</th>
-                                <th scope="col" class="text-center">Image</th>
+                                <th scope="col" class="text-center">Struk Pembelian</th>
                                 <th scope="col" class="text-center">Nama</th>
                                 <th scope="col" class="text-center">Domisili</th>
                                 <th scope="col" class="text-center">Action</th>

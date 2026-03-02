@@ -113,7 +113,7 @@
                             <!-- Gambar Carousel -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{ asset('images/infografisproduk/pengumuman1.jpeg') }}" class="d-block w-100"
+                                    <img src="{{ asset('images/infografisproduk/popupcokingcompetition.jpeg') }}" class="d-block w-100"
                                         alt="Pengumuman 1">
                                 </div>
                                 <div class="carousel-item">
@@ -145,7 +145,7 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/Banner-Brand.png" class="d-block w-100" alt="...">
+                        <img src="images/infografisproduk/bannerimagecokingcompetition.jpeg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/banner.png" class="d-block w-100" alt="...">
