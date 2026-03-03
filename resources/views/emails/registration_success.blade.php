@@ -32,9 +32,27 @@
 
 <body>
     <div class="container">
-        <h2>Halo, {{ $nama }}!</h2>
-        <p>Terima kasih telah melakukan pendaftaran. Kami telah menerima data kamu.</p>
-        <p>Semoga sukses dalam lombanya ya!</p>
+        {{-- <h2>Halo, {{ $nama }}!</h2> --}}
+        <p>Selamat! 🎉</p>
+        <p>Video kamu sudah berhasil kami terima di Yuri Cooking Video Competition. Ramadhan Sehat #AwalidenganYuri</p>
+        <p>Yuri akan segera melakukan proses verifikasi dan penilaian untuk semua karya yang masuk.</p>
+
+        <p>Berikut data yang kami terima:</p>
+
+        <ul>
+            <li>Nama: {{ $nama}}</li>
+            <li>Provinsi: {{ $provinsi}}</li>
+            <li>Link Video: {{ $link}}</li>
+        </ul>
+
+        <p>Sambil menunggu proses penilaian:</p>
+        <p>✨ Pastikan video kamu tetap aktif (tidak dihapus / di-private)</p>
+        <p>✨ Ajak teman-teman kamu untuk nonton dan dukung videomu</p>
+
+        <p>Kami tidak sabar melihat kreativitas kamu di dapur!</p>
+        <p>Semoga jadi salah satu pemenangnya ya 😉</p>
+        {{-- <p>Terima kasih telah melakukan pendaftaran. Kami telah menerima data kamu.</p>
+        <p>Semoga sukses dalam lombanya ya!</p> --}}
 
         <p>Salam hangat,</p>
         <p><strong>Tim Yuri Indonesia</strong></p>

@@ -78,7 +78,7 @@
                  @endif
 
                  {{-- Event --}}
-                 @if ($user->is_role == 2)
+                 {{-- @if ($user->is_role == 2 && $user->is_role == 1) --}}
                      <li
                          class="nav-item {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'menu-open' : '' }}">
                          <a href="{{ route('eventdashboardupdate') }}"
@@ -87,7 +87,7 @@
                              <p>Event</p>
                          </a>
                      </li>
-                 @endif
+                 {{-- @endif --}}
 
                  {{-- User --}}
                  @if ($user->is_role == 2)

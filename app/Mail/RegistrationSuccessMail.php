@@ -20,7 +20,8 @@ class RegistrationSuccessMail extends Mailable
     public function build()
     {
         return $this->from('infoyuri@yuri-indonesia.co.id', 'Yuri Event')
-            ->subject('Pendaftaran Berhasil')
+            // ->subject('Pendaftaran Berhasil')
+            ->subject('Terima Kasih Sudah Daftar! Video Kamu Sudah Masuk. Siap Jadi Pemenang? 😉')
             ->view('emails.registration_success');
     }
 }
