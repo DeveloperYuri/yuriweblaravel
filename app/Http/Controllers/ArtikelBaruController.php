@@ -302,9 +302,11 @@ class ArtikelBaruController extends Controller
         return redirect()->route('artikelindexupdate')->with(['success' => 'Data Berhasil di Edit!']);
     }
 
-    public function showupdate(string $id)
+    public function showupdate($slug)
     {
-        $artikelbaru = ArtikelBaru::findOrFail($id);
+        // $artikelbaru = ArtikelBaru::findOrFail($id);
+        $artikelbaru = ArtikelBaru::where('slug', $slug)->firstOrFail();
+
 
         $artikelbaru->increment('viewer');
 

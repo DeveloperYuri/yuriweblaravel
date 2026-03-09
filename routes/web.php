@@ -126,7 +126,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/artikeldelete/{id}', [ArtikelBaruController::class, 'destroyupdate'])->name('artikeldeleteupdate');
     Route::get('/artikeleditupdate/{id}', [ArtikelBaruController::class, 'editupdate'])->name('artikeleditupdate');
     Route::put('/artikeleditupdate/post/{id}', [ArtikelBaruController::class, 'editpostupdate'])->name('artikeleditpostupdate');
-    Route::get('/artikelshowupdate/{id}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
+    // Route::get('/artikelshowupdate/{id}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
+    Route::get('/dashboard/artikel/{slug}', [ArtikelBaruController::class, 'showupdate'])->name('artikelshowupdate');
+    ////
 
     // Media Menu
     Route::get('/dashboardmedia', [BaruMediaControllerUpdate::class, 'index'])->name('mediaindex');

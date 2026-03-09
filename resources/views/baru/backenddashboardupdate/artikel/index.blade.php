@@ -63,7 +63,9 @@
 
                                     <td class="text-center">
                                         <form action="{{ route('artikeldeleteupdate', $artikelbaru->id) }}" method="POST">
-                                            <a href="{{ route('artikelshowupdate', $artikelbaru->id) }}"
+                                            {{-- <a href="{{ route('artikelshowupdate', $artikelbaru->id) }}"
+                                                class="btn btn-sm btn-success mt-2">SHOW</a> --}}
+                                            <a href="{{ route('artikelshowupdate', $artikelbaru->slug) }}"
                                                 class="btn btn-sm btn-success mt-2">SHOW</a>
                                             <a href="{{ route('artikeleditupdate', $artikelbaru->id) }}"
                                                 class="btn btn-sm btn-warning mt-2">EDIT</a>
