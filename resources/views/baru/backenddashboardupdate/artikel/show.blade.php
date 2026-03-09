@@ -29,7 +29,7 @@
                         </div>
 
                         <div class="daysarticle text-center" style="font-size: 12px">
-                            <p><strong>Yuri Artikel</strong> -
+                            <p><strong>{{ $artikelbaru->penulis ?? '-' }}</strong> -
                                 {{ $artikelbaru->created_at->isoFormat('dddd, D MMMM Y') }}</p>
                         </div>
 
@@ -39,6 +39,7 @@
                                 alt="...">
                         </div>
                         <!-- End Banner Homepage -->
+                        {{-- test --}}
 
                         <!-- Content1 -->
                         <div class="artikel-content-satu" style="margin-top: 20px; text-align:justify"
