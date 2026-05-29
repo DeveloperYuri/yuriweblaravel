@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        
+
         <!-- Judul Artikel -->
         <div class="article1">
             <h4 class="mb-4 mt-3 text-center" style="color: #005EB8;">
@@ -30,9 +30,13 @@
              style="width: 800px; height: 450px; object-fit: cover; border-radius: 8px;">
     </div> --}}
         <div class="text-center" data-aos="fade-up">
+            {{-- <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" alt="{{ $artikelbaru->title }}"
+                class="img-fluid banner-img"
+                style="max-width: 800px; width: 100%; height: auto; object-fit: cover; border-radius: 8px;"> --}}
             <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}" alt="{{ $artikelbaru->title }}"
                 class="img-fluid banner-img"
-                style="max-width: 800px; width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
+                style="max-width: 800px; width: 100%; height: auto; object-fit: cover; border-radius: 8px;"
+                onerror="this.onerror=null; this.src='{{ asset('images/logo-8.png') }}'">
         </div>
 
         <!-- Konten Artikel -->

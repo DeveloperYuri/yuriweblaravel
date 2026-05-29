@@ -9,7 +9,7 @@
         <div class="media-content-satu text-center" style="margin-top: 20px" data-aos="fade-up">
             <div class="caption1 mb-5">
                 <h1 style="margin-bottom: 20px; color: #005EB8">
-                    ARTIKEL
+                    ARTIKEL TESTTT
                 </h1>
             </div>
 
@@ -18,8 +18,12 @@
                     <div class="col-lg-4 mt-4">
                         <div class="card h-100"> {{-- ini penting untuk styling card + full height --}}
 
+                            {{-- <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}" class="card-img-top"
+                                alt="..." style="height: 230px; object-fit: contain;"> --}}
+
                             <img src="{{ asset('/storage/artikelbaru/' . $artikel->image) }}" class="card-img-top"
-                                alt="..." style="height: 230px; object-fit: contain;">
+                                alt="..." style="height: 230px; object-fit: contain;"
+                                onerror="this.onerror=null; this.src='{{ asset('images/logo-8.png') }}'">
 
                             {{-- <a href="{{ route('artikelslug.show', $artikel->slug) }}">
                                 {{ $artikel->title }}
@@ -27,8 +31,8 @@
 
                             <div class="card-body">
                                 <a href="{{ route('artikelslug.show', $artikel->slug) }}" style="text-decoration: none;"
-                                        onmouseover="this.style.textDecoration='underline'"
-                                        onmouseout="this.style.textDecoration='none'">
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
                                     <h5 class="card-title" style="font-size: 20px;">{{ $artikel->title }}</h5>
                                 </a>
                             </div>

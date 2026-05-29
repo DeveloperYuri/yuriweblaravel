@@ -55,10 +55,17 @@
                                 <tr>
                                     <td class="text-center">{{ $getRecord->firstItem() + $key }}</td>
 
-                                    <td class="text-center">
+                                    {{-- <td class="text-center">
                                         <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}"
                                             class="rounded" style="width: 70px" height="70px">
+                                    </td> --}}
+
+                                    <td class="text-center">
+                                        <img src="{{ asset('/storage/artikelbaru/' . $artikelbaru->image) }}"
+                                            class="rounded" style="width: 70px" height="70px"
+                                            onerror="this.onerror=null; this.src='{{ asset('images/logo-8.png') }}'">
                                     </td>
+
                                     <td class="text-center">{{ $artikelbaru->title }}</td>
 
                                     <td class="text-center">
