@@ -198,6 +198,22 @@ class ArtikelBaruController extends Controller
 
     public function storeupdate(Request $request)
     {
+        $request->validate([
+            'image' => 'required|image|mimes:jpg,jpeg,png,webp|max:5048',
+            'title' => 'required|string|max:255',
+            'penulis' => 'required|string|max:255',
+            'description' => 'required',
+        ], [
+            'image.required' => 'Form Image wajib diisi.',
+            'image.image' => 'File harus berupa gambar.',
+            'image.mimes' => 'Format gambar harus jpg, jpeg, png, atau webp.',
+            'image.max' => 'Ukuran gambar maksimal 2 MB.',
+
+            'title.required' => 'Judul wajib diisi.',
+            'penulis.required' => 'Penulis wajib diisi.',
+            'description.required' => 'Deskripsi wajib diisi.',
+        ]);
+
         $image = $request->file('image');
         $image->storeAs('public/artikelbaru', $image->hashName());
         // generate slug dari title
