@@ -38,7 +38,8 @@
                  @if ($user->is_role == 2)
                      <li class="nav-item {{ request()->routeIs('dashboardupdate') ? 'menu-open' : '' }}">
                          <a href="{{ route('dashboardupdate') }}"
-                             class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}" dusk="SidebarDashboard">
+                             class="nav-link {{ request()->routeIs('dashboardupdate') ? 'active' : '' }}"
+                             dusk="SidebarDashboard">
                              <i class="nav-icon fas fa-tachometer-alt"></i>
                              <p>Dashboard</p>
                          </a>
@@ -49,7 +50,7 @@
                  <li
                      class="nav-item {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'menu-open' : '' }}">
                      <a href="{{ route('artikelindexupdate') }}"
-                         class="nav-link {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'active' : '' }}" >
+                         class="nav-link {{ request()->routeIs('artikelindexupdate', 'createartikel', 'artikeleditupdate', 'artikelshowupdate*') ? 'active' : '' }}">
                          <i class="nav-icon fas fa-edit"></i>
                          <p>Artikel</p>
                      </a>
@@ -79,14 +80,14 @@
 
                  {{-- Event --}}
                  {{-- @if ($user->is_role == 2 && $user->is_role == 1) --}}
-                     <li
-                         class="nav-item {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'menu-open' : '' }}">
-                         <a href="{{ route('eventdashboardupdate') }}"
-                             class="nav-link {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'active' : '' }}">
-                             <i class="nav-icon fas fa-calendar"></i>
-                             <p>Event</p>
-                         </a>
-                     </li>
+                 <li
+                     class="nav-item {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'menu-open' : '' }}">
+                     <a href="{{ route('eventdashboardupdate') }}"
+                         class="nav-link {{ request()->routeIs('eventdashboardupdate', 'createeventupdate', 'editeventupdate*') ? 'active' : '' }}">
+                         <i class="nav-icon fas fa-calendar"></i>
+                         <p>Event</p>
+                     </a>
+                 </li>
                  {{-- @endif --}}
 
                  {{-- User --}}
@@ -110,6 +111,24 @@
                          <p>Registrasi Form</p>
                      </a>
                  </li>
+
+
+                 <li class="nav-item">
+                     <a href="{{ route('pekerjaanindex') }}"
+                         class="nav-link {{ request()->routeIs('pekerjaanindex*') ? 'active' : '' }}">
+                         <i class="nav-icon fas fa-briefcase"></i>
+                         <p>Pekerjaan</p>
+                     </a>
+                 </li>
+
+                 <li class="nav-item">
+                     <a href="{{ route('lamaran.index') }}"
+                         class="nav-link {{ request()->routeIs('lamaran.*') ? 'active' : '' }}">
+                         <i class="nav-icon fas fa-file-alt"></i>
+                         <p>Lamaran Pekerjaan</p>
+                     </a>
+                 </li>
+
 
                  {{-- Configuration --}}
                  {{-- @if ($user->is_role == 2)

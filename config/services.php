@@ -31,4 +31,9 @@ return [
         ],
     ],
 
+    'career_api' => [
+    'url' => env('CAREER_API_URL', env('APP_URL') . '/api'),
+    'token' => env('CAREER_API_TOKEN'),
+    ],
+
 ];

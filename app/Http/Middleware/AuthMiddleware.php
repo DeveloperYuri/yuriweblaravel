@@ -16,6 +16,19 @@ class AuthMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
+
+         // Untuk request API, gunakan autentikasi Sanctum
+        if ($request->is('api/*')) {
+            if (!Auth::guard('sanctum')->check()) {
+                return response()->json([
+                    'message' => 'Unauthenticated.',
+                ], 401);
+            }
+
+            return $next($request);
+        }
+
+        // Untuk halaman web/dashboard, tetap gunakan session login
         if (Auth::check()) {
             return $next($request);
         }

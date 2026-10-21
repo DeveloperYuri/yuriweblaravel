@@ -181,7 +181,14 @@
                                 aria-current="page" href="{{ route('eventupdate') }}"
                                 style="color: #005EB8">EVENT</a>
                         </li>
-                           
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold {{ request()->routeIs('pekerjaan') ? 'active' : '' }}"
+                                aria-current="page" href="{{ route('pekerjaan') }}" style="color: #005EB8">
+                                KARIR
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>

@@ -11,13 +11,17 @@ use App\Http\Controllers\AuthControllerBaru;
 use App\Http\Controllers\baru\HomeControllerUpdate as BaruHomeControllerUpdate;
 use App\Http\Controllers\baru\MediaControllerUpdate as BaruMediaControllerUpdate;
 use App\Http\Controllers\baru\ProdukBaruControllerUpdate;
+use App\Http\Controllers\CareerApiProxyController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeControllerUpdate;
+use App\Http\Controllers\LamaranDashboardController;
+use App\Http\Controllers\LamaranPekerjaanController;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\MediaControllerUpdate;
 use App\Http\Controllers\MediaUpdateController;
+use App\Http\Controllers\PekerjaanDashboardController;
 use App\Http\Controllers\ProdukBaruController;
 use App\Http\Controllers\RegistrationEventController;
 use App\Http\Controllers\UserController;
@@ -115,6 +119,11 @@ Route::post('reset_post/{token}', [AuthControllerBaru::class, 'postReset']);
 // Logout
 Route::get('/logout', [AuthControllerBaru::class, 'logout'])->name('logout');
 
+// Route::get('/tes-controller-pekerjaan', [
+//     \App\Http\Controllers\PekerjaanDashboardController::class,
+//     'index'
+// ]);
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboardupdate', [AuthControllerBaru::class, 'dashboardupdate'])->name('dashboardupdate');
 
@@ -153,6 +162,56 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/editevent/{id}', [EventController::class, 'editeventupdate'])->name('editeventupdate');
     Route::put('/editeventpost/{id}', [EventController::class, 'editeventpostupdate'])->name('editeventpostupdate');
     Route::delete('/deleteevent/{id}', [EventController::class, 'deleteeventupdate'])->name('deleteeventupdate');
+
+    // Pekerjaan Menu 
+    // Route::get('/dashboardpekerjaan', [PekerjaanDashboardController::class, 'index'])->name('pekerjaanindex');
+
+    // 1. Menampilkan daftar pekerjaan
+    Route::get('/dashboardpekerjaan', [
+        PekerjaanDashboardController::class, 'index'
+    ])->name('pekerjaanindex');
+
+    // 2. Menampilkan form tambah pekerjaan
+    Route::get('/dashboardpekerjaancreate', [
+        PekerjaanDashboardController::class, 'create'
+    ])->name('pekerjaancreate');
+
+    // 3. Menyimpan pekerjaan baru
+    Route::post('/dashboardpekerjaan', [
+        PekerjaanDashboardController::class, 'store'
+    ])->name('pekerjaanstore');
+
+    // 4. Menampilkan form edit pekerjaan
+    Route::get('/dashboardpekerjaan/{id}/edit', [
+        PekerjaanDashboardController::class, 'edit'
+    ])->name('pekerjaanedit');
+
+    // 5. Memperbarui pekerjaan
+    Route::put('/dashboardpekerjaan/{id}', [
+        PekerjaanDashboardController::class, 'update'
+    ])->name('pekerjaanupdate');
+
+    // 6. Menghapus pekerjaan
+    Route::delete('/dashboardpekerjaan/{id}', [
+        PekerjaanDashboardController::class, 'destroy'
+    ])->name('pekerjaandelete');
+
+    // Dashboard Lamaran Pekerjaan
+    Route::get(
+        '/dashboardlamaranpekerjaan',
+        [LamaranDashboardController::class, 'index']
+    )->name('lamaran.index');
+
+    Route::patch(
+        '/dashboardlamaranpekerjaan/{id}/status',
+        [LamaranDashboardController::class, 'updateStatus']
+    )->name('lamaran.status');
+
+    Route::get(
+        '/dashboardlamaranpekerjaan/{id}/cv',
+        [LamaranDashboardController::class, 'downloadCv']
+    )->name('lamaran.cv');
+    
 
     // User Menu
     Route::get('/dashboardusers', [UserController::class, 'indexupdate'])->name('usersupdate');
@@ -257,6 +316,9 @@ Route::get('/event/registration', [BaruHomeControllerUpdate::class, 'eventregist
 Route::post('/event/registration/post', [BaruHomeControllerUpdate::class, 'eventregistrationpost'])->name('eventregistrationpost');
 Route::get('/event/registration/success', [BaruHomeControllerUpdate::class, 'eventregistrationsuccess'])->name('eventregistrationsuccess');
 
+ // Pekerjaan Menu
+Route::view('/pekerjaan', 'baru.frontend.pekerjaan.index')->name('pekerjaan');
+
 //Brand Update
 Route::get('/householdcleaner', [BaruHomeControllerUpdate::class, 'householdcleaner'])->name('householdcleanerupdate');
 Route::get('/childrentoilet', [BaruHomeControllerUpdate::class, 'childrentoilet'])->name('childrentoiletupdate');
@@ -330,5 +392,21 @@ Route::post('/myprofile', [UserController::class, 'UpdateAccountSetting']);
 
 // Event
 // Route::get('/eventdashboard', [EventController::class, 'index'])->name('index.event');
+
+Route::get('/karier/data', [
+    CareerApiProxyController::class,
+    'index'
+]);
+
+Route::get('/karier/data/{id}', [
+    CareerApiProxyController::class,
+    'show'
+]);
+
+Route::post('/karier/lamar', [
+    LamaranPekerjaanController::class,
+    'store',
+])->middleware('throttle:5,1')
+  ->name('karier.lamar');
 
 
