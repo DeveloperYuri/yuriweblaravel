@@ -16,6 +16,7 @@ use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\DashboardControllerBaru;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeControllerUpdate;
+use App\Http\Controllers\KemitraanController;
 use App\Http\Controllers\LamaranDashboardController;
 use App\Http\Controllers\LamaranPekerjaanController;
 use App\Http\Controllers\LocaleController;
@@ -408,5 +409,7 @@ Route::post('/karier/lamar', [
     'store',
 ])->middleware('throttle:5,1')
   ->name('karier.lamar');
+
+Route::get('/kemitraan', [KemitraanController::class, 'index'])->name('kemitraan.index');
 
 

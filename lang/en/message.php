@@ -133,4 +133,8 @@ b. Product damage caused by the shipping process.',
 'BATASWAKTUPENGAJUAN' => 'Yes. The deadline for submitting a return or refund is a maximum of 7x24 hours from your feedback to our Customer Service.',
 
 'BACASELENGKAPNYA' => 'Read More',
+
+'KEMITRAAN' => 'PARTNERSHIP',
+
+
 ];

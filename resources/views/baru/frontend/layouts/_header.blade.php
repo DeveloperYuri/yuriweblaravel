@@ -182,6 +182,18 @@
                                 style="color: #005EB8">EVENT</a>
                         </li>
 
+                        
+                        <li class="nav-item">
+                            <li class="nav-item">
+                            <a class="nav-link fw-bold {{ request()->routeIs('kemitraan.index') ? 'active' : '' }}"
+                                aria-current="page" href="{{ route('kemitraan.index') }}"
+                                style="color: #005EB8">@lang('message.KEMITRAAN')</a>
+                        </li>
+                            {{-- <a class="nav-link fw-bold {{ request()->routeIs('eventupdate') ? 'active' : '' }}"
+                                aria-current="page" href="{{ route('eventupdate') }}"
+                                style="color: #005EB8">@lang('message.KEMITRAAN')</a> --}}
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link fw-bold {{ request()->routeIs('pekerjaan') ? 'active' : '' }}"
                                 aria-current="page" href="{{ route('pekerjaan') }}" style="color: #005EB8">

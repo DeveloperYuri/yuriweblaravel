@@ -149,6 +149,6 @@ b.Kerusakan produk yang disebabkan karena proses pengiriman.',
                                 kepada Customer Service kami',
     'BACASELENGKAPNYA' => 'Selengkapnya',
 
-
+'KEMITRAAN' => 'KEMITRAAN',
 
 ];
